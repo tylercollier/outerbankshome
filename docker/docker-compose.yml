@@ -1,0 +1,14 @@
+version: '3'
+services:
+  mariadb:
+    image: mariadb:10.6.18
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: outerbankshome
+      MARIADB_USER: outerbankshome
+      MARIADB_PASSWORD: outerbankshome
+    volumes:
+      - ./volumes/mysql/:/var/lib/mysql/
+    ports:
+      - "34037:3306"
