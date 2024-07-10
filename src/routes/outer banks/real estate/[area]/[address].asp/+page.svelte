@@ -1,7 +1,7 @@
 <script>
 	import { formatAddress } from '$lib/address';
 	import ListingDetailsLand from './ListingDetailsLand.svelte';
-	import ListingDetailsRes from './ListingDetailsLand.svelte';
+	import ListingDetailsRes from './ListingDetailsRes.svelte';
 
 	export let data;
 	const { listing } = data;
