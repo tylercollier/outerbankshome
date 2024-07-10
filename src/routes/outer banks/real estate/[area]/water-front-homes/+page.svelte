@@ -1,19 +1,17 @@
 <script>
-	import ListingResults from '$lib/components/ListingResults.svelte';
+	import { getAreaNameFromParam } from '$lib/area.js';
+	import AreaListingResults from '../AreaListingResults.svelte';
+
 	export let data;
 	const { area, listings } = data;
 </script>
 
 <svelte:head>
-	<title></title>
+	<title>{getAreaNameFromParam(area)} Waterfront Homes For Sale</title>
 </svelte:head>
 
 <main>
-	<h1>{area} Water Front Homes</h1>
+	<h1>{getAreaNameFromParam(area)} Water Front Homes</h1>
 
-	{#if !listings.length}
-		<div>Unfortunately there are no listings at this time</div>
-	{:else}
-		<ListingResults listings={listings} urlInfix={area} />
-	{/if}
+	<AreaListingResults listings={listings} area={area} />
 </main>
