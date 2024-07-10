@@ -8,7 +8,7 @@
 	}
 </script>
 
-<nav>
+<nav class="bg-[#ffcc99] border border-black border-solid pl-2 pr-4">
 	<h4>Corolla</h4>
 	<ul>
 		<li><a href={makeLink('corolla/')}>Corolla Homes</a></li>
@@ -24,3 +24,14 @@
 		<li><a href={makeLink('duck/water-front-homes/')}>Waterfront Homes</a></li>
 	</ul>
 </nav>
+
+<style lang="scss">
+	ul {
+		list-style: none;
+
+		li {
+			@apply -ml-6;
+			@apply mb-4;
+		}
+	}
+</style>

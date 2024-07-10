@@ -92,7 +92,7 @@ export async function getSearchResultListings(propertyType, buildQueryFn) {
 		.where('Order', '=', 0)
 		.select(fieldNames)
 		.orderBy('Property.ModificationTimestamp', 'desc')
-		.limit(3);
+		.limit(20);
 	listingsQueryBuilder = buildQueryFn(listingsQueryBuilder);
 	const listings = await listingsQueryBuilder.execute();
 	return listings;

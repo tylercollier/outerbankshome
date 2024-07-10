@@ -9,7 +9,7 @@
 	const link = makeLinkForListing(listing, { urlInfix });
 	const address = formatAddress(listing);
 	const maxLength = 200;
-	const publicRemarks = listing.PublicRemarks.length < maxLength ? listing.PublicRemarks : `${listing.PublicRemarks.substring(0, maxLength)}...`;
+	const publicRemarks = listing.PublicRemarks?.length < maxLength ? listing.PublicRemarks : `${listing.PublicRemarks?.substring(0, maxLength)}...`;
 </script>
 
 <div class="flex justify-between items-center">
@@ -30,7 +30,7 @@
 		{/if}
 		<div>
 			{publicRemarks}
-			{#if listing.PublicRemarks.length > maxLength}
+			{#if listing.PublicRemarks?.length > maxLength}
 				<a href={link}>MORE</a>
 			{/if}
 		</div>
