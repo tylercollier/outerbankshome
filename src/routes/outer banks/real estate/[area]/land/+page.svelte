@@ -3,7 +3,7 @@
 	import AreaListingResults from '../AreaListingResults.svelte';
 
 	export let data;
-	const { area, listings } = data;
+	$: ({ area, listings } = data);
 </script>
 
 <svelte:head>

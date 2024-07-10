@@ -3,7 +3,7 @@
 	import { getAreaNameFromParam} from '$lib/area';
 
 	export let data;
-	const { area, listings } = data;
+	$: ({ area, listings } = data);
 </script>
 
 <svelte:head>

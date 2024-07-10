@@ -4,8 +4,8 @@
 	import ListingDetailsRes from './ListingDetailsRes.svelte';
 
 	export let data;
-	const { listing } = data;
-	const formattedAddress = formatAddress(listing);
+	$: ({ listing } = data);
+	$: formattedAddress = formatAddress(listing);
 </script>
 
 <svelte:head>
