@@ -80,6 +80,10 @@ export async function getSearchResultListings(propertyType, buildQueryFn) {
 			'BathroomsFull',
 			'Asking_Price_Per_SqFt',
 		]);
+	} else if (propertyType === 'Land') {
+		fieldNames = fieldNames.concat([
+			'LotSizeAcres',
+		]);
 	}
 	let listingsQueryBuilder = getDb()
 		.selectFrom('Property')
