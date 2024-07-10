@@ -1,6 +1,6 @@
 <script>
 	import { formatAddress } from '$lib/address';
-	import ImageCarousel from '../../../../../components/ImageCarousel.svelte';
+	import ImageCarousel from '$lib/components/ImageCarousel.svelte';
 	import { formatDollarsOnly } from '$lib/money';
 	import { formatDate } from '$lib/date';
 	import { prettyJsonList } from '$lib/listing';
