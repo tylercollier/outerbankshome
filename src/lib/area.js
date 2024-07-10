@@ -11,4 +11,19 @@ export function getAreaNameFromParam(areaParam) {
 
 export const allowedAreas = [
 	'corolla',
+	'duck',
+	'southern-shores',
+	'martins point',
+	'KittyHawk',
+	'KillDevilHills',
+	'nags head',
+	'manteo',
+	'colington',
+	'avon',
+	'buxton',
+	'frisco',
+	'hatteras island',
+	'rodanthe',
+	'salvo',
+	'waves',
 ];
