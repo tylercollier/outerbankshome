@@ -15,7 +15,14 @@
 	<div>
 		<div><a href={link}>{address}</a></div>
 		<div class="font-bold">Asking: {formatDollarsOnly(listing.ListPrice)}</div>
-		<div>Beds-{listing.BedroomsTotal} Baths-{listing.BathroomsFull} SqFt: {sqftAsStr(listing)}</div>
+		{#if listing.PropertyType === 'Residential'}
+			<div>
+				Beds-{listing.BedroomsTotal} Baths-{listing.BathroomsFull}
+				{#if listing.Asking_Price_Per_SqFt}
+					SqFt: {sqftAsStr(listing)}
+				{/if}
+			</div>
+		{/if}
 		<div>
 			{publicRemarks}
 			{#if listing.PublicRemarks.length > maxLength}

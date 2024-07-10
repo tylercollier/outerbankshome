@@ -62,6 +62,8 @@ export async function getSearchResultListings(propertyType, buildQueryFn) {
 		'ListingId',
 		'Property.ModificationTimestamp',
 		'ListPrice',
+		'PropertyType',
+		'PublicRemarks',
 
 		'StreetNumber',
 		'StreetDirPrefix',
@@ -76,7 +78,6 @@ export async function getSearchResultListings(propertyType, buildQueryFn) {
 		fieldNames = fieldNames.concat([
 			'BedroomsTotal',
 			'BathroomsFull',
-			'PublicRemarks',
 			'Asking_Price_Per_SqFt',
 		]);
 	}
