@@ -10,3 +10,11 @@ export function formatAddress(listing) {
 	address += ' in ' + listing.City;
 	return address;
 }
+
+export function getMlsIdFromRoute(addressParam) {
+	const matches = addressParam.match(/(\d+)-.*/);
+	if (matches) {
+		return matches[1];
+	}
+	return null;
+}

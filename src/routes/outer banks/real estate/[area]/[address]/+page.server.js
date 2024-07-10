@@ -1,8 +1,9 @@
 import { error } from '@sveltejs/kit';
-import { getListing } from '$lib/db.js';
+import { getListing } from '$lib/db';
+import { getMlsIdFromRoute } from '$lib/address';
 
 export const load = async ({ params }) => {
-	const mlsId = params.address.match(/(\d+)-.*/)[1];
+	const mlsId = getMlsIdFromRoute(params.address);
 	if (!mlsId) {
 		error(404, 'Not found');
 	}
