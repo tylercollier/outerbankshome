@@ -57,15 +57,11 @@ export async function getListing(mlsId) {
 	return listing;
 }
 
-export async function getListingsForArea(area, propertySubTypes) {
-	const fieldNames = [
+export async function getSearchResultListings(propertyType, buildQueryFn) {
+	let fieldNames = [
 		'ListingId',
 		'Property.ModificationTimestamp',
 		'ListPrice',
-		'BedroomsTotal',
-		'BathroomsFull',
-		'PublicRemarks',
-		'Asking_Price_Per_SqFt',
 
 		'StreetNumber',
 		'StreetDirPrefix',
@@ -76,18 +72,23 @@ export async function getListingsForArea(area, propertySubTypes) {
 
 		'MediaURL',
 	];
-	const listings = await getDb()
+	if (propertyType === 'Residential') {
+		fieldNames = fieldNames.concat([
+			'BedroomsTotal',
+			'BathroomsFull',
+			'PublicRemarks',
+			'Asking_Price_Per_SqFt',
+		]);
+	}
+	let listingsQueryBuilder = getDb()
 		.selectFrom('Property')
 		.rightJoin('Media', 'Property.ListingKey', 'Media.ResourceRecordKey')
-		.where('StandardStatus', '=', 'Active')
-		.where('City', '=', area)
-		.where('PropertyType', '=', 'Residential')
-		.where('PropertySubType', 'in', propertySubTypes)
-		.where('WaterfrontFeatures', 'in', ['["Ocean Front"]', '["Soundfront"]'])
+		.where('PropertyType', '=', propertyType)
 		.where('Order', '=', 0)
 		.select(fieldNames)
-		.orderBy('ModificationTimestamp', 'desc')
-		.limit(3)
-		.execute();
+		.orderBy('Property.ModificationTimestamp', 'desc')
+		.limit(3);
+	listingsQueryBuilder = buildQueryFn(listingsQueryBuilder);
+	const listings = await listingsQueryBuilder.execute();
 	return listings;
 }

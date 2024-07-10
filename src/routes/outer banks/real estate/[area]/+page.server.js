@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { getListingsForArea } from '$lib/db';
+import { getSearchResultListings } from '$lib/db';
 
 export const load = async ({ params }) => {
 	const allowedAreas = [
@@ -10,7 +10,12 @@ export const load = async ({ params }) => {
 		error(404, 'Not found');
 	}
 
-	const listings = await getListingsForArea(area, ['Single Family Residence']);
+	const listings = await getSearchResultListings('Residential', (queryBuilder) => {
+		return queryBuilder
+			.where('StandardStatus', '=', 'Active')
+			.where('City', '=', area)
+			.where('PropertySubType', 'in', ['Single Family Residence'])
+	});
 
 	return {
 		area,
