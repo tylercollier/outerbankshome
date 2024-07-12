@@ -33,6 +33,7 @@
 		"@sveltejs/adapter-node": "^5.2.0",
 		"bigger-picture": "^1.1.17",
 		"date-fns": "^3.6.0",
+		"embla-carousel-svelte": "^8.1.6",
 		"kysely": "^0.27.4",
 		"kysely-ctl": "^0.8.10",
 		"lodash": "^4.17.21",
