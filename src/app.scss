@@ -34,6 +34,10 @@ body {
   }
 }
 
+.border-debug {
+  @apply border border-red-500 border-solid;
+}
+
 @media screen and (width >= 1200px) {
   .mycontainer {
     grid-template-columns: auto 3fr;
