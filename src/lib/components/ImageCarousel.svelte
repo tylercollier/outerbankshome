@@ -4,7 +4,7 @@
 	import 'bigger-picture/css';
 	import emblaCarouselSvelte from 'embla-carousel-svelte';
 	import Fa from 'svelte-fa';
-	import { faCircleChevronLeft, faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
+	import { faCircleChevronLeft, faCircleChevronRight, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 	export let images;
 
@@ -28,11 +28,11 @@
 
 
 	let currentImageIndex = 0;
-	$: currentImage = null;
+	let currentImage = null;
 	$: if (images.length) {
 		currentImage = images[currentImageIndex];
 	}
-	function prevImage() {
+	function prevImageMidSize() {
 		if (currentImageIndex === 0) {
 			currentImageIndex = images.length - 1;
 		} else {
@@ -40,7 +40,7 @@
 		}
 		emblaApi.scrollTo(currentImageIndex);
 	}
-	function nextImage() {
+	function nextImageMidSize() {
 		if (currentImageIndex === images.length - 1) {
 			currentImageIndex = 0;
 		} else {
@@ -53,6 +53,8 @@
 		biggerPicture.open({
 			items,
 			position: currentImageIndex,
+			// This isn't a supported value, but it seems to accomplish no intro animation.
+			intro: 'none',
 			onUpdate(container, activeItem) {
 				const index = images.findIndex(x => x.MediaURL === activeItem.img);
 				if (index !== undefined) {
@@ -66,25 +68,29 @@
 
 <div>
 	{#if images.length}
-		<div class="relative w-[500px]">
+		<div class="relative mid-size">
 			<div class="absolute top-1 left-1 text-sm">{currentImageIndex + 1}/{images.length}</div>
 			<div class="absolute inset-y-0 left-0 flex items-stretch">
-				<button class="arrow" on:click={prevImage}>
-					<Fa color="black" size="2x" icon={faCircleChevronLeft} />
+				<button class="arrow p-0" on:click={prevImageMidSize}>
+					<div class="p-4 rounded bg-black/15 hover:bg-black/20">
+						<Fa color="white" size="2x" icon={faChevronLeft} />
+					</div>
 				</button>
 			</div>
 			<div class="absolute inset-y-0 right-0 flex items-stretch">
-				<button class="arrow" on:click={nextImage}>
-					<Fa color="black" size="2x" icon={faCircleChevronRight} />
+				<button class="arrow p-0" on:click={nextImageMidSize}>
+					<div class="p-4 rounded bg-black/15 hover:bg-black/20">
+						<Fa color="white" size="2x" icon={faChevronRight} />
+					</div>
 				</button>
 			</div>
 			<a class="cursor-pointer" on:click={showBiggerPicture}>
-				<img class="w-[500px]" src={currentImage.MediaURL} title="Primary image for listing; click to enlarge"
+				<img class="mid-size" src={currentImage.MediaURL} title="Primary image for listing; click to enlarge"
 						 alt="alt" />
 			</a>
 		</div>
-		<div class="w-[500px] flex">
-			<button class="arrow" on:click={emblaApi.scrollPrev}>
+		<div class="mid-size flex">
+			<button class="arrow hover:opacity-50" on:click={emblaApi.scrollPrev}>
 				<Fa color="gray" size="lg" icon={faCircleChevronLeft} />
 			</button>
 			<div
@@ -100,7 +106,7 @@
 					{/each}
 				</div>
 			</div>
-			<button class="arrow" on:click={emblaApi.scrollNext}>
+			<button class="arrow hover:opacity-50" on:click={emblaApi.scrollNext}>
 				<Fa color="gray" size="lg" icon={faCircleChevronRight} />
 			</button>
 		</div>
@@ -110,6 +116,10 @@
 </div>
 
 <style>
+	.mid-size {
+		width: min(500px, 100vw);
+	}
+
 	.arrow {
 		background: transparent;
 		border: none;
