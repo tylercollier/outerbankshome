@@ -49,7 +49,7 @@
 		emblaApi.scrollTo(currentImageIndex);
 	}
 	function showBiggerPicture() {
-		const items = images.map(x => ({ img: x.MediaURL }));
+		const items = images.map(x => ({ img: x.MediaURL, caption: x.ShortDescription }));
 		biggerPicture.open({
 			items,
 			position: currentImageIndex,
