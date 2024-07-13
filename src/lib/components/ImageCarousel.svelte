@@ -26,38 +26,48 @@
 		});
 	});
 
-	function showBiggerPicture() {
-		// We make the list of items start with the same image that's currently shown as the primary image.
-		const currentImageIndex = images.findIndex(x => x.MediaURL === currentImage.MediaURL);
-		const imagesStartingFromIndex = images.slice(currentImageIndex).concat(images.slice(0, currentImageIndex));
-		const items = imagesStartingFromIndex.map(x => ({
-			img: x.MediaURL,
-		}));
-		biggerPicture.open({
-			items,
-		});
-	}
 
-	let currentImage = images[0];
+	let currentImageIndex = 0;
+	$: currentImage = null;
+	$: if (images.length) {
+		currentImage = images[currentImageIndex];
+	}
 	function prevImage() {
-		const currentImageIndex = images.findIndex(x => x.MediaURL === currentImage.MediaURL);
 		if (currentImageIndex === 0) {
-			currentImage = images[images.length - 1];
-			emblaApi.scrollTo(images.length - 1);
+			currentImageIndex = images.length - 1;
 		} else {
-			currentImage = images[currentImageIndex - 1];
-			emblaApi.scrollTo(currentImageIndex - 1);
+			currentImageIndex--;
 		}
+		emblaApi.scrollTo(currentImageIndex);
 	}
 	function nextImage() {
-
+		if (currentImageIndex === images.length - 1) {
+			currentImageIndex = 0;
+		} else {
+			currentImageIndex++;
+		}
+		emblaApi.scrollTo(currentImageIndex);
+	}
+	function showBiggerPicture() {
+		const items = images.map(x => ({ img: x.MediaURL }));
+		biggerPicture.open({
+			items,
+			position: currentImageIndex,
+			onUpdate(container, activeItem) {
+				const index = images.findIndex(x => x.MediaURL === activeItem.img);
+				if (index !== undefined) {
+					currentImageIndex = index;
+					emblaApi.scrollTo(currentImageIndex);
+				}
+			},
+		});
 	}
 </script>
 
 <div>
 	{#if images.length}
 		<div class="relative w-[500px]">
-			<div class="absolute top-1 left-1 text-sm">1/{images.length}</div>
+			<div class="absolute top-1 left-1 text-sm">{currentImageIndex + 1}/{images.length}</div>
 			<div class="absolute inset-y-0 left-0 flex items-stretch">
 				<button class="arrow" on:click={prevImage}>
 					<Fa color="black" size="2x" icon={faCircleChevronLeft} />
@@ -83,8 +93,8 @@
 				on:emblaInit={onEmblaInit}
 			>
 				<div class="embla__container">
-					{#each images as image}
-						<a class="cursor-pointer embla__slide" on:click={() => currentImage = image}>
+					{#each images as image, i}
+						<a class="cursor-pointer embla__slide" on:click={() => currentImageIndex = i}>
 							<img class="max-w-[96px]" src={image.MediaURL} />
 						</a>
 					{/each}
