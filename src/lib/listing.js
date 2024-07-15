@@ -2,6 +2,9 @@ import { makeAddressSlug } from '$lib/address.js';
 import urljoin from 'url-join';
 
 export function prettyJsonList(jsonList) {
+	if (!jsonList) {
+		return '';
+	}
 	return JSON.parse(jsonList).join(', ');
 }
 
@@ -13,9 +16,6 @@ export function makeLinkForListing(listing, options = {}) {
 	return url;
 }
 
-export function sqftAsStr(listing) {
-	if (!listing.Asking_Price_Per_SqFt) {
-		return '?'
-	}
-	return Math.round(listing.ListPrice / listing.Asking_Price_Per_SqFt)
+export function sqftTotal(listing) {
+	return Number(listing.HtdLvArSF) + Number(listing.Unheated_LvArSF);
 }

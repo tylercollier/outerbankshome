@@ -1,5 +1,5 @@
 <script>
-	import { makeLinkForListing, sqftAsStr } from '$lib/listing';
+	import { makeLinkForListing, sqftTotal } from '$lib/listing';
 	import { formatAddress } from '$lib/address';
 	import { formatDollarsOnly } from '$lib/money';
 
@@ -10,6 +10,7 @@
 	const address = formatAddress(listing);
 	const maxLength = 200;
 	const publicRemarks = listing.PublicRemarks?.length < maxLength ? listing.PublicRemarks : `${listing.PublicRemarks?.substring(0, maxLength)}...`;
+	const sqft = sqftTotal(listing);
 </script>
 
 <div class="flex justify-between items-center">
@@ -19,8 +20,8 @@
 		{#if listing.PropertyType === 'Residential'}
 			<div>
 				Beds-{listing.BedroomsTotal} Baths-{listing.BathroomsFull}
-				{#if listing.Asking_Price_Per_SqFt}
-					SqFt: {sqftAsStr(listing)}
+				{#if sqft}
+					SqFt: {sqft}
 				{/if}
 			</div>
 		{:else if listing.PropertyType === 'Land'}

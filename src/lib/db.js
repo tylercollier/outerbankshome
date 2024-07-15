@@ -78,7 +78,8 @@ export async function getSearchResultListings(propertyType, buildQueryFn) {
 		fieldNames = fieldNames.concat([
 			'BedroomsTotal',
 			'BathroomsFull',
-			'Asking_Price_Per_SqFt',
+			'HtdLvArSF',
+			'Unheated_LvArSF',
 		]);
 	} else if (propertyType === 'Land') {
 		fieldNames = fieldNames.concat([

@@ -52,12 +52,14 @@
 
 	<table>
 		<tbody>
-		{#if listing.InteriorFeatures}
-			<tr>
-				<td>Interior Features</td>
-				<td>{prettyJsonList(listing.InteriorFeatures)}</td>
-			</tr>
-		{/if}
+		<tr>
+			<td>Heated Living Area</td>
+			<td>{listing.HtdLvArSF}</td>
+		</tr>
+		<tr>
+			<td>Interior Features</td>
+			<td>{prettyJsonList(listing.InteriorFeatures)}</td>
+		</tr>
 		</tbody>
 	</table>
 </div>
