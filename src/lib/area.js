@@ -42,39 +42,38 @@ export const allowedCategories = {
 		'',
 		'condos',
 		'soundfront-homes',
-		'Sold',
+		// 'Sold',
 		'oceanfront-homes',
 		'water-front-homes',
-		'investment-homes',
-		'land',
+		// 'investment-homes',
+		// 'land',
 	],
 	duck: [
 		'',
 		'condos',
 		'soundfront-homes',
-		'Sold',
+		// 'Sold',
 		'oceanfront-homes',
 		'water-front-homes',
-		'investment-homes',
-		'land',
+		// 'investment-homes',
+		// 'land',
 	],
 	'southern-shores': [
 		'',
-		'condos',
 		'soundfront-homes',
-		'Sold',
+		// 'Sold',
 		'oceanfront-homes',
 		'water-front-homes',
-		'investment-homes',
+		// 'investment-homes',
 		'land',
 	],
 	'martins point': [
-		'Sold',
+		// 'Sold',
 	],
 	KittyHawk: [
 		'',
 		'condos',
-		'Sold',
+		// 'Sold',
 		'oceanfront-homes',
 		'waterfront-homes',
 		'land',
@@ -83,74 +82,96 @@ export const allowedCategories = {
 		'',
 		'condos',
 		'soundfront-homes',
-		'Sold',
+		// 'Sold',
 		'oceanfront-homes',
 		'waterfront',
-		'investment-homes',
-		'land',
+		// 'investment-homes',
+		// 'land',
 	],
 	'nags head': [
 		'',
 		'condos',
 		'canalfront-homes',
 		'soundfront-homes',
-		'Sold',
+		// 'Sold',
 		'oceanfront-homes',
 		'water-front-homes',
-		'investment-homes',
+		// 'investment-homes',
 		'land',
 	],
 	manteo: [
 		'',
 		'condos',
 		'soundfront-homes',
-		'Sold',
+		// 'Sold',
 		'land',
 	],
 	colington: [
 		'canalfront-homes',
 		'soundfront-homes',
-		'Sold',
+		// 'Sold',
 		'waterfront-homes',
 		'colington-harbour',
 	],
 	avon: [
 		'canalfront-homes',
 		'soundfront-homes',
-		'Sold',
+		// 'Sold',
 		'oceanfront-homes',
 	],
 	buxton: [
 		'canalfront-homes',
 		'soundfront-homes',
-		'Sold',
+		// 'Sold',
 		'oceanfront-homes',
 	],
 	frisco: [
 		'canalfront-homes',
 		'soundfront-homes',
-		'Sold',
+		// 'Sold',
 		'oceanfront-homes',
 	],
 	'hatteras island': [
 		'canalfront-homes',
 		'soundfront-homes',
-		'Sold',
+		// 'Sold',
 		'oceanfront-homes',
 	],
 	rodanthe: [
 		'soundfront-homes',
-		'Sold',
+		// 'Sold',
 		'oceanfront-homes',
 	],
 	salvo: [
 		'soundfront-homes',
-		'Sold',
+		// 'Sold',
 		'oceanfront-homes',
 	],
 	waves: [
 		'soundfront-homes',
-		'Sold',
+		// 'Sold',
 		'oceanfront-homes',
 	],
 };
+
+export function getCategoryName(slug) {
+	if (slug === '') {
+		return 'Homes';
+	} else if (slug === 'condos') {
+		return 'Condos';
+	} else if (slug === 'canalfront-homes') {
+		return 'Canalfront Homes';
+	} else if (slug === 'oceanfront-homes') {
+		return 'Oceanfront Homes';
+	} else if (slug === 'soundfront-homes') {
+		return 'Soundfront Homes';
+	// } else if (slug === 'Sold') {
+	// 	return 'Sold Homes';
+	// } else if (slug === 'investment-homes') {
+	// 	return 'Investment Homes';
+	} else if (slug === 'land') {
+		return 'Land/Lots';
+	} else if (['waterfront', 'waterfront-homes', 'water-front-homes'].includes(slug)) {
+		return 'Waterfront Homes';
+	}
+}

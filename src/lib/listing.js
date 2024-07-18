@@ -1,4 +1,5 @@
-import { makeAddressSlug } from '$lib/address.js';
+import { makeAddressSlug } from '$lib/address';
+import { basePath } from '$lib/nav';
 import urljoin from 'url-join';
 
 export function prettyJsonList(jsonList) {
@@ -11,8 +12,7 @@ export function prettyJsonList(jsonList) {
 export function makeLinkForListing(listing, options = {}) {
 	const slug = makeAddressSlug(listing);
 	const link = `${listing.ListingId}-${slug}.asp`
-	const linkBase = '/outer banks/real estate';
-	const url = urljoin(linkBase, options.urlInfix ?? '', link);
+	const url = urljoin(basePath, options.urlInfix ?? '', link);
 	return url;
 }
 

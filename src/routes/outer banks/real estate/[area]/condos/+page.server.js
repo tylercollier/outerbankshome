@@ -1,6 +1,6 @@
 import { getSearchResultListings } from '$lib/db';
-import { return404IfInvalidCategory } from '$lib/nav.js';
-import { getCity } from '$lib/area.js';
+import { return404IfInvalidCategory } from '$lib/nav';
+import { getCity } from '$lib/area';
 
 export const load = async ({ params }) => {
 	const area = params.area;
