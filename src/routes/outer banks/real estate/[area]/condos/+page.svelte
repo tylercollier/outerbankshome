@@ -1,5 +1,5 @@
 <script>
-	import AreaListingResults from '../AreaListingResults.svelte';
+	import AreaListingResults from '$lib/components/AreaListingResults.svelte';
 	import { getAreaNameFromParam} from '$lib/area';
 
 	export let data;

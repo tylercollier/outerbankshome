@@ -23,6 +23,14 @@
 		<li><a href={makeLink('duck/land/')}>Duck Land</a></li>
 		<li><a href={makeLink('duck/water-front-homes/')}>Waterfront Homes</a></li>
 	</ul>
+	<h4>Kitty Hawk</h4>
+	<ul>
+		<li><a href={makeLink('KittyHawk/waterfront-homes/')}>Waterfront Homes</a></li>
+	</ul>
+	<h4>Kill Devil Hills</h4>
+	<ul>
+		<li><a href={makeLink('KillDevilHills/waterfront/')}>Waterfront Homes</a></li>
+	</ul>
 </nav>
 
 <style lang="scss">
