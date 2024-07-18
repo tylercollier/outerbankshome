@@ -19,7 +19,7 @@
 
 	<AreaListingResults listings={listings} area={area} />
 
-	<hr />
+	<hr class="orange" />
 
 	<SubdivisionLinks area={area} />
 </main>

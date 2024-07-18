@@ -8,11 +8,11 @@
 </script>
 
 <svelte:head>
-	<title>{getAreaNameFromParam(area)} Canalfront Homes and Houses for Sale in {getAreaNameFromParam(area)}</title>
+	<title>{getAreaNameFromParam(area)} Soundfront Homes for Sale in {getAreaNameFromParam(area)}</title>
 </svelte:head>
 
 <main>
-	<h1>{getAreaNameFromParam(area)} Canalfront Homes For Sale</h1>
+	<h1>{getAreaNameFromParam(area)} Soundfront Homes For Sale</h1>
 
 	<CategoryLinks area={area} />
 
