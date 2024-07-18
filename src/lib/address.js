@@ -14,7 +14,7 @@ export function formatAddress(listing) {
 }
 
 export function getMlsIdFromRoute(addressParam) {
-	const matches = addressParam.match(/(\d+)-.*/);
+	const matches = addressParam.match(/^(\d+)-.*/);
 	if (matches) {
 		return matches[1];
 	}

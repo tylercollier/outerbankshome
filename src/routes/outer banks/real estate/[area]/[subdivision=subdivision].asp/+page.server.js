@@ -1,7 +1,10 @@
+import { allowedSubdivisions, getCity } from '$lib/area';
 import { getSearchResultListings } from '$lib/db';
-import { getCity } from '$lib/area';
+
+export const trailingSlash = 'never';
 
 export const load = async ({ params }) => {
+	const subdivision = allowedSubdivisions[params.area].find(x => x.slug === params.subdivision);
 	const area = params.area;
 	const city = getCity(area);
 	const listings = await getSearchResultListings('Residential', (queryBuilder) => {
@@ -9,9 +12,11 @@ export const load = async ({ params }) => {
 			.where('StandardStatus', '=', 'Active')
 			.where('City', '=', city)
 			.where('PropertySubType', 'in', ['Single Family Residence'])
+			.where('SubdivisionName', '=', subdivision.name)
 	});
 	return {
 		area,
 		listings,
+		subdivision,
 	}
 };

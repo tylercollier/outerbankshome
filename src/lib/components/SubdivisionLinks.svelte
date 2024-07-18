@@ -2,6 +2,7 @@
 	import { allowedSubdivisions } from '$lib/area';
 	import urljoin from 'url-join';
 	import { basePath } from '$lib/nav';
+	import { getAreaNameFromParam } from '$lib/area';
 
 	export let area;
 
@@ -12,6 +13,8 @@
 		}
 	})
 </script>
+
+<h2>{getAreaNameFromParam(area)} Subdivisions</h2>
 
 <div class="my-8">
 	<ul class="list-none">

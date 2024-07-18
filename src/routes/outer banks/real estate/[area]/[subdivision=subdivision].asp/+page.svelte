@@ -19,7 +19,5 @@
 
 	<AreaListingResults listings={listings} area={area} />
 
-	<hr />
-
 	<SubdivisionLinks area={area} />
 </main>

@@ -38,6 +38,13 @@ body {
   @apply border border-red-500 border-solid;
 }
 
+hr {
+  width: 75%;
+  height: 6px;
+  border: 1px #ff7e40 solid;
+  background: #ff7e40;
+}
+
 @media screen and (width >= 1200px) {
   .mycontainer {
     grid-template-columns: auto 3fr;
