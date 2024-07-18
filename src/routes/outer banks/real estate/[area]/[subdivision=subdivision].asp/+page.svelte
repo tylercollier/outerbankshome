@@ -1,23 +1,18 @@
 <script>
-	import AreaListingResults from '$lib/components/AreaListingResults.svelte';
-	import { getAreaNameFromParam } from '$lib/area';
-	import CategoryLinks from '$lib/components/CategoryLinks.svelte';
-	import SubdivisionLinks from '$lib/components/SubdivisionLinks.svelte';
+	import { allowedSubdivisions } from '$lib/area';
+	import AreaListingResultsPage from '$lib/components/AreaListingResultsPage.svelte';
 
 	export let data;
-	$: ({ area, listings } = data);
+	$: ({ area, listings, subdivision } = data);
+	$: subdivisionName = allowedSubdivisions[area].find(x => x.slug === subdivision.slug).name;
 </script>
 
 <svelte:head>
-	<title>{getAreaNameFromParam(area)} NC homes, houses, real estate and beach houses for sale </title>
+	<title>{subdivisionName} Real Estate and homes for sale </title>
 </svelte:head>
 
 <main>
-	<h1>{getAreaNameFromParam(area)} Homes, Houses & Beach Houses For Sale</h1>
+	<h1>{subdivisionName} Homes, Houses & Beach Houses For Sale</h1>
 
-	<CategoryLinks area={area} />
-
-	<AreaListingResults listings={listings} area={area} />
-
-	<SubdivisionLinks area={area} />
+	<AreaListingResultsPage area={area} listings={listings} />
 </main>

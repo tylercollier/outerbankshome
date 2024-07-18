@@ -1,7 +1,7 @@
 <script>
-	import AreaListingResults from '$lib/components/AreaListingResults.svelte';
 	import { getAreaNameFromParam} from '$lib/area';
 	import CategoryLinks from '$lib/components/CategoryLinks.svelte';
+	import AreaListingResultsPage from '$lib/components/AreaListingResultsPage.svelte';
 
 	export let data;
 	$: ({ area, listings } = data);
@@ -14,7 +14,5 @@
 <main>
 	<h1>{getAreaNameFromParam(area)} Oceanfront and Beachfront Homes For Sale</h1>
 
-	<CategoryLinks area={area} />
-
-	<AreaListingResults listings={listings} area={area} />
+	<AreaListingResultsPage area={area} listings={listings} />
 </main>
