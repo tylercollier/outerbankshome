@@ -1,0 +1,24 @@
+<script>
+	import { allowedSubdivisions } from '$lib/area';
+	import urljoin from 'url-join';
+	import { basePath } from '$lib/nav';
+
+	export let area;
+
+	$: subdivisionLinks = allowedSubdivisions[area].map(subdivision => {
+		return {
+			label: subdivision.name,
+			href: urljoin(basePath, area, subdivision.slug + '.asp'),
+		}
+	})
+</script>
+
+<div class="my-8">
+	<ul class="list-none">
+		{#each subdivisionLinks as subdivisionLink}
+			<li class="mb-4">
+				<a href={subdivisionLink.href}>{subdivisionLink.label}</a>
+			</li>
+		{/each}
+	</ul>
+</div>

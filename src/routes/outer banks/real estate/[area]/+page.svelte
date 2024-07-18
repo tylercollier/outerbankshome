@@ -2,6 +2,7 @@
 	import AreaListingResults from '$lib/components/AreaListingResults.svelte';
 	import { getAreaNameFromParam } from '$lib/area';
 	import CategoryLinks from '$lib/components/CategoryLinks.svelte';
+	import SubdivisionLinks from '$lib/components/SubdivisionLinks.svelte';
 
 	export let data;
 	$: ({ area, listings } = data);
@@ -17,4 +18,6 @@
 	<CategoryLinks area={area} />
 
 	<AreaListingResults listings={listings} area={area} />
+
+	<SubdivisionLinks area={area} />
 </main>
