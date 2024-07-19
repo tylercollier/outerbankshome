@@ -8,16 +8,16 @@
 	export let soldListings;
 </script>
 
-<CategoryLinks area={area} />
+<CategoryLinks {area} />
 
-<AreaListingResults listings={activeListings} area={area} />
+<AreaListingResults listings={activeListings} {area} />
 
 <hr class="orange" />
 
 <h1>{area} Sold Recently</h1>
 
-<AreaListingResults listings={soldListings} area={area} />
+<AreaListingResults listings={soldListings} {area} />
 
 <hr class="orange" />
 
-<SubdivisionLinks area={area} />
+<SubdivisionLinks {area} />

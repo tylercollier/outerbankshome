@@ -16,8 +16,8 @@
 	<h2>Listing Details For {formattedAddress}</h2>
 
 	{#if listing.PropertyType === 'Land'}
-		<ListingDetailsLand listing={listing} />
+		<ListingDetailsLand {listing} />
 	{:else}
-		<ListingDetailsRes listing={listing} />
+		<ListingDetailsRes {listing} />
 	{/if}
 </main>

@@ -12,7 +12,7 @@ export const load = async ({ params }) => {
 	const listing = await getListing(mlsId);
 
 	if (listing) {
-		return { listing }
+		return { listing };
 	}
 
 	error(404, 'Not found');

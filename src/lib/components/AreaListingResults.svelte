@@ -8,5 +8,5 @@
 {#if !listings.length}
 	<div>Unfortunately there are no listings at this time</div>
 {:else}
-	<ListingResults listings={listings} urlInfix={area} />
+	<ListingResults {listings} urlInfix={area} />
 {/if}

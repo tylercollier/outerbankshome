@@ -7,11 +7,13 @@
 </script>
 
 <svelte:head>
-	<title>{getAreaNameFromParam(area)} NC homes, houses, real estate and beach houses for sale </title>
+	<title
+		>{getAreaNameFromParam(area)} NC homes, houses, real estate and beach houses for sale
+	</title>
 </svelte:head>
 
 <main>
 	<h1>{getAreaNameFromParam(area)} Homes, Houses & Beach Houses For Sale</h1>
 
-	<AreaListingResultsPage area={area} activeListings={activeListings} soldListings={soldListings} />
+	<AreaListingResultsPage {area} {activeListings} {soldListings} />
 </main>

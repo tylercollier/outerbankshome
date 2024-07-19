@@ -7,13 +7,13 @@
 	export let area;
 
 	$: areaName = getAreaNameFromParam(area);
-	$: categoryLinks = allowedCategories[area].map(slug => {
+	$: categoryLinks = allowedCategories[area].map((slug) => {
 		const categoryName = getCategoryName(slug);
 		return {
 			label: `${areaName} ${categoryName}`,
 			href: urljoin(basePath, area, slug, '/'),
-		}
-	})
+		};
+	});
 </script>
 
 <div class="my-8">

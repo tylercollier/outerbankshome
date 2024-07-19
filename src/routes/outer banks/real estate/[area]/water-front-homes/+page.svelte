@@ -4,4 +4,4 @@
 	export let data;
 </script>
 
-<WaterfrontHomes data={data} />
+<WaterfrontHomes {data} />

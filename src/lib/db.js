@@ -7,7 +7,7 @@ let db;
 export function getDb() {
 	if (!db) {
 		const dialect = new MysqlDialect({
-			pool: createPool(process.env.VITE_DB_CONNECTION_STRING).pool
+			pool: createPool(process.env.VITE_DB_CONNECTION_STRING).pool,
 		});
 
 		db = new Kysely({
@@ -15,21 +15,21 @@ export function getDb() {
 			// log: ['query', 'error'],
 			// https://kysely.dev/docs/recipes/logging
 			log(event) {
-				if (event.level === "error") {
-					console.error("Query failed : ", {
+				if (event.level === 'error') {
+					console.error('Query failed : ', {
 						durationMs: event.queryDurationMillis,
 						error: event.error,
 						sql: event.query.sql,
 						params: event.query.parameters,
 					});
 				} else {
-					console.log("Query executed : ", {
+					console.log('Query executed : ', {
 						durationMs: event.queryDurationMillis,
 						sql: event.query.sql,
 						params: event.query.parameters,
 					});
 				}
-			}
+			},
 		});
 	}
 	return db;
@@ -82,9 +82,7 @@ export async function getSearchResultListings(propertyType, buildQueryFn) {
 			'Unheated_LvArSF',
 		]);
 	} else if (propertyType === 'Land') {
-		fieldNames = fieldNames.concat([
-			'LotSizeAcres',
-		]);
+		fieldNames = fieldNames.concat(['LotSizeAcres']);
 	}
 	let listingsQueryBuilder = getDb()
 		.selectFrom('Property')
@@ -99,16 +97,16 @@ export async function getSearchResultListings(propertyType, buildQueryFn) {
 	return listings;
 }
 
-export const filterActive = buildQueryFn => {
+export const filterActive = (buildQueryFn) => {
 	return (queryBuilder) => {
 		queryBuilder = buildQueryFn(queryBuilder);
 		return queryBuilder.where('StandardStatus', '=', 'Active');
-	}
-}
+	};
+};
 
-export const filterSold = buildQueryFn => {
+export const filterSold = (buildQueryFn) => {
 	return (queryBuilder) => {
 		queryBuilder = buildQueryFn(queryBuilder);
 		return queryBuilder.where('StandardStatus', '=', 'Closed');
-	}
-}
+	};
+};

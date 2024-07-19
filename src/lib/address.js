@@ -1,13 +1,8 @@
 import { slugify } from './url';
 
 export function formatAddress(listing) {
-	const fieldNames = [
-		'StreetNumber',
-		'StreetDirPrefix',
-		'StreetName'
-	];
-	const values = fieldNames.map(x => listing[x])
-		.filter(x => x);
+	const fieldNames = ['StreetNumber', 'StreetDirPrefix', 'StreetName'];
+	const values = fieldNames.map((x) => listing[x]).filter((x) => x);
 	let address = values.join(' ');
 	address += ' in ' + listing.City;
 	return address;
@@ -30,8 +25,9 @@ export function makeAddressSlug(listing) {
 		'StateOrProvince',
 		'PostalCode',
 	];
-	const values = fieldNames.map(x => listing[x])
-		.filter(x => x)
+	const values = fieldNames
+		.map((x) => listing[x])
+		.filter((x) => x)
 		.map(slugify);
 
 	const slug = values.join('-');

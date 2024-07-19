@@ -21,28 +21,28 @@
 
 	<table>
 		<tbody>
-		{#if listing.Headline}
+			{#if listing.Headline}
+				<tr>
+					<td>Headline</td>
+					<td>{listing.Headline}</td>
+				</tr>
+			{/if}
 			<tr>
-				<td>Headline</td>
-				<td>{listing.Headline}</td>
+				<td>Area</td>
+				<td>{listing.MLSAreaMinor}</td>
 			</tr>
-		{/if}
-		<tr>
-			<td>Area</td>
-			<td>{listing.MLSAreaMinor}</td>
-		</tr>
-		<tr>
-			<td>Beds</td>
-			<td>{listing.BedroomsTotal}</td>
-		</tr>
-		<tr>
-			<td>Baths</td>
-			<td>{listing.BathroomsFull}</td>
-		</tr>
-		<tr>
-			<td>Asking Price</td>
-			<td>{formatDollarsOnly(listing.ListPrice)}</td>
-		</tr>
+			<tr>
+				<td>Beds</td>
+				<td>{listing.BedroomsTotal}</td>
+			</tr>
+			<tr>
+				<td>Baths</td>
+				<td>{listing.BathroomsFull}</td>
+			</tr>
+			<tr>
+				<td>Asking Price</td>
+				<td>{formatDollarsOnly(listing.ListPrice)}</td>
+			</tr>
 		</tbody>
 	</table>
 </div>
@@ -52,14 +52,14 @@
 
 	<table>
 		<tbody>
-		<tr>
-			<td>Heated Living Area</td>
-			<td>{listing.HtdLvArSF}</td>
-		</tr>
-		<tr>
-			<td>Interior Features</td>
-			<td>{prettyJsonList(listing.InteriorFeatures)}</td>
-		</tr>
+			<tr>
+				<td>Heated Living Area</td>
+				<td>{listing.HtdLvArSF}</td>
+			</tr>
+			<tr>
+				<td>Interior Features</td>
+				<td>{prettyJsonList(listing.InteriorFeatures)}</td>
+			</tr>
 		</tbody>
 	</table>
 </div>

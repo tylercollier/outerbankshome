@@ -16,6 +16,6 @@ export const load = async ({ params }) => {
 	return {
 		area,
 		activeListings,
-		soldListings
+		soldListings,
 	};
 };

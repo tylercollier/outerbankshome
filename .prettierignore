@@ -2,3 +2,8 @@
 package-lock.json
 pnpm-lock.yaml
 yarn.lock
+
+node_modules
+docker
+old_site
+.svelte-kit

@@ -8,13 +8,15 @@ export function getAreaNameFromParam(areaParam) {
 	} else if (areaParam === 'KillDevilHills') {
 		return 'Kill Devil Hills';
 	}
-	return areaParam
-		// Example splits:
-		//   southern-shores
-		//   nags head
-		.split(/[ -]/)
-		.map(capitalizeFirstLetter)
-		.join(' ');
+	return (
+		areaParam
+			// Example splits:
+			//   southern-shores
+			//   nags head
+			.split(/[ -]/)
+			.map(capitalizeFirstLetter)
+			.join(' ')
+	);
 }
 
 export function getCity(areaParam) {
@@ -191,56 +193,56 @@ export const allowedSubdivisions = {
 		{ slug: 'currituck-cottages', name: 'Currituck Cottages' },
 	],
 	duck: [
-		{ slug: 'palmers-island', name: 'Palmer\'s Island Club'},
-		{ slug: 'station-bay-cove', name: 'Station Bay Cove'},
-		{ slug: 'sanderling', name: 'Sanderling'},
-		{ slug: 'gulls-flight', name: 'Gull\'s Flight'},
-		{ slug: 'sound-sea-village', name: 'Sound-Sea Village'},
-		{ slug: 'caffeys-inlet', name: 'Caffey\'s Inlet'},
-		{ slug: 'sea-tern', name: 'Sea Tern'},
-		{ slug: 'port-trinitie', name: 'Port Trinitie'},
-		{ slug: 'wild-duck-dunes', name: 'Wild Duck Dunes'},
-		{ slug: 'north-point', name: 'Northpoint'},
-		{ slug: 'carolina-dunes', name: 'Carolina Dunes'},
-		{ slug: 'snow-geese-dunes', name: 'Snow Geese Dunes'},
-		{ slug: 'osprey', name: 'Osprey'},
-		{ slug: 'sea-ridge', name: 'Sea Ridge'},
-		{ slug: 'sandy-ridge', name: 'Sandy Ridge'},
-		{ slug: 'ships-watch', name: 'Ship\'s Watch'},
-		{ slug: 'barrier-island-station', name: 'Barrier Island Station'},
-		{ slug: 'old-duck-beach', name: 'Old Duck Beach'},
-		{ slug: 'sea-colony', name: 'Sea Colony'},
-		{ slug: 'bayberry-bluffs', name: 'Bayberry Bluffs'},
-		{ slug: 'saltaire', name: 'Saltaire'},
-		{ slug: 'poteskeet-village', name: 'Poteskeet Village'},
-		{ slug: 'schooner-ridge', name: 'Schooner Ridge'},
-		{ slug: 'duck-landing', name: 'Duck Landing'},
-		{ slug: 'poteskeet', name: 'Poteskeet'},
-		{ slug: 'ocean-dunes', name: 'Ocean Dunes'},
-		{ slug: 'seapines', name: 'Seapines'},
-		{ slug: 'amy-acres', name: 'Amy Acres'},
-		{ slug: 'sea-acres', name: 'Sea Acres'},
-		{ slug: 'georgetown-sands', name: 'Georgetown Sands'},
-		{ slug: 'sand-dollar-shores', name: 'Sand Dollar Shores'},
-		{ slug: 'tuckahoe', name: 'Tuckahoe'},
-		{ slug: 'sea-hawk', name: 'Sea Hawk'},
-		{ slug: 'bias-shores', name: 'Bias Shores'},
-		{ slug: 'ocean-crest', name: 'Oceancrest'},
-		{ slug: 'colony-by-the-sea', name: 'Colony By The Sea'},
-		{ slug: 'duck-blind-villas', name: 'Duck Blind Villas'},
-		{ slug: 'duck-ridge-shores', name: 'Duck Ridge Shores'},
-		{ slug: 'jay-crest', name: 'Jay Crest'},
-		{ slug: 'nantucket-village', name: 'Nantucket Village'},
-		{ slug: 'osprey-ridge', name: 'Osprey Ridge'},
-		{ slug: 'tides-of-duck', name: 'Tides of Duck'},
-		{ slug: 'duck-ridge-village', name: 'Duck Ridge Village '},
-		{ slug: 'four-seasons', name: 'Four Seasons'},
-		{ slug: 'cc-byrum', name: 'CC Bryum'},
+		{ slug: 'palmers-island', name: "Palmer's Island Club" },
+		{ slug: 'station-bay-cove', name: 'Station Bay Cove' },
+		{ slug: 'sanderling', name: 'Sanderling' },
+		{ slug: 'gulls-flight', name: "Gull's Flight" },
+		{ slug: 'sound-sea-village', name: 'Sound-Sea Village' },
+		{ slug: 'caffeys-inlet', name: "Caffey's Inlet" },
+		{ slug: 'sea-tern', name: 'Sea Tern' },
+		{ slug: 'port-trinitie', name: 'Port Trinitie' },
+		{ slug: 'wild-duck-dunes', name: 'Wild Duck Dunes' },
+		{ slug: 'north-point', name: 'Northpoint' },
+		{ slug: 'carolina-dunes', name: 'Carolina Dunes' },
+		{ slug: 'snow-geese-dunes', name: 'Snow Geese Dunes' },
+		{ slug: 'osprey', name: 'Osprey' },
+		{ slug: 'sea-ridge', name: 'Sea Ridge' },
+		{ slug: 'sandy-ridge', name: 'Sandy Ridge' },
+		{ slug: 'ships-watch', name: "Ship's Watch" },
+		{ slug: 'barrier-island-station', name: 'Barrier Island Station' },
+		{ slug: 'old-duck-beach', name: 'Old Duck Beach' },
+		{ slug: 'sea-colony', name: 'Sea Colony' },
+		{ slug: 'bayberry-bluffs', name: 'Bayberry Bluffs' },
+		{ slug: 'saltaire', name: 'Saltaire' },
+		{ slug: 'poteskeet-village', name: 'Poteskeet Village' },
+		{ slug: 'schooner-ridge', name: 'Schooner Ridge' },
+		{ slug: 'duck-landing', name: 'Duck Landing' },
+		{ slug: 'poteskeet', name: 'Poteskeet' },
+		{ slug: 'ocean-dunes', name: 'Ocean Dunes' },
+		{ slug: 'seapines', name: 'Seapines' },
+		{ slug: 'amy-acres', name: 'Amy Acres' },
+		{ slug: 'sea-acres', name: 'Sea Acres' },
+		{ slug: 'georgetown-sands', name: 'Georgetown Sands' },
+		{ slug: 'sand-dollar-shores', name: 'Sand Dollar Shores' },
+		{ slug: 'tuckahoe', name: 'Tuckahoe' },
+		{ slug: 'sea-hawk', name: 'Sea Hawk' },
+		{ slug: 'bias-shores', name: 'Bias Shores' },
+		{ slug: 'ocean-crest', name: 'Oceancrest' },
+		{ slug: 'colony-by-the-sea', name: 'Colony By The Sea' },
+		{ slug: 'duck-blind-villas', name: 'Duck Blind Villas' },
+		{ slug: 'duck-ridge-shores', name: 'Duck Ridge Shores' },
+		{ slug: 'jay-crest', name: 'Jay Crest' },
+		{ slug: 'nantucket-village', name: 'Nantucket Village' },
+		{ slug: 'osprey-ridge', name: 'Osprey Ridge' },
+		{ slug: 'tides-of-duck', name: 'Tides of Duck' },
+		{ slug: 'duck-ridge-village', name: 'Duck Ridge Village ' },
+		{ slug: 'four-seasons', name: 'Four Seasons' },
+		{ slug: 'cc-byrum', name: 'CC Bryum' },
 	],
 	'southern-shores': [],
 	'martins point': [],
-	'KittyHawk': [],
-	'KillDevilHills': [],
+	KittyHawk: [],
+	KillDevilHills: [],
 	'nags head': [
 		{ slug: 'nags-head-4-bedroom-homes', name: 'Nags Head 4 Bedroom Homes' },
 		{ slug: 'nags-head-3-bedroom-homes', name: 'Nags Head 3 Bedroom Homes' },
@@ -287,7 +289,7 @@ export const allowedSubdivisions = {
 		{ slug: 'hollywood-beach', name: 'Hollywood Beach' },
 		{ slug: 'nags-head-dunes', name: 'Nags Head Dunes' },
 		{ slug: 'sea-fare', name: 'Sea Fare' },
-		{ slug: 'admirals-view', name: 'Admiral\'s View Condos' },
+		{ slug: 'admirals-view', name: "Admiral's View Condos" },
 		{ slug: 'viking-court', name: 'Viking Court Condos' },
 		{ slug: 'seashore-properties', name: 'Seashore Properties' },
 		{ slug: 'conch-shell-estates', name: 'Conch Shell Estates' },
@@ -311,16 +313,16 @@ export const allowedSubdivisions = {
 		{ slug: 'oceanwatch', name: 'Oceanwatch' },
 		{ slug: 'oceans', name: 'Oceans Condos' },
 	],
-	'manteo': [],
-	'colington': [],
-	'avon': [],
-	'buxton': [],
-	'frisco': [],
+	manteo: [],
+	colington: [],
+	avon: [],
+	buxton: [],
+	frisco: [],
 	'hatteras island': [],
-	'rodanthe': [],
-	'salvo': [],
-	'waves': [],
-}
+	rodanthe: [],
+	salvo: [],
+	waves: [],
+};
 
 export function getCategoryName(slug) {
 	if (slug === '') {
@@ -333,10 +335,10 @@ export function getCategoryName(slug) {
 		return 'Oceanfront Homes';
 	} else if (slug === 'soundfront-homes') {
 		return 'Soundfront Homes';
-	// } else if (slug === 'Sold') {
-	// 	return 'Sold Homes';
-	// } else if (slug === 'investment-homes') {
-	// 	return 'Investment Homes';
+		// } else if (slug === 'Sold') {
+		// 	return 'Sold Homes';
+		// } else if (slug === 'investment-homes') {
+		// 	return 'Investment Homes';
 	} else if (slug === 'land') {
 		return 'Land/Lots';
 	} else if (['waterfront', 'waterfront-homes', 'water-front-homes'].includes(slug)) {

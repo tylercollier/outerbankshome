@@ -8,7 +8,7 @@
 		"preview": "vite preview",
 		"test": "vitest",
 		"lint": "prettier --check . && eslint .",
-		"format": "prettier --write ."
+		"format": "prettier --write . src"
 	},
 	"devDependencies": {
 		"@fortawesome/free-solid-svg-icons": "^6.5.2",

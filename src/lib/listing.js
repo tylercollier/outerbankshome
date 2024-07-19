@@ -11,7 +11,7 @@ export function prettyJsonList(jsonList) {
 
 export function makeLinkForListing(listing, options = {}) {
 	const slug = makeAddressSlug(listing);
-	const link = `${listing.ListingId}-${slug}.asp`
+	const link = `${listing.ListingId}-${slug}.asp`;
 	const url = urljoin(basePath, options.urlInfix ?? '', link);
 	return url;
 }

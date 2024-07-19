@@ -6,12 +6,12 @@
 
 	export let area;
 
-	$: subdivisionLinks = allowedSubdivisions[area].map(subdivision => {
+	$: subdivisionLinks = allowedSubdivisions[area].map((subdivision) => {
 		return {
 			label: subdivision.name,
 			href: urljoin(basePath, area, subdivision.slug + '.asp'),
-		}
-	})
+		};
+	});
 </script>
 
 <h2>{getAreaNameFromParam(area)} Subdivisions</h2>

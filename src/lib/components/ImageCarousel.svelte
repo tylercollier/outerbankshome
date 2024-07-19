@@ -4,7 +4,12 @@
 	import 'bigger-picture/css';
 	import emblaCarouselSvelte from 'embla-carousel-svelte';
 	import Fa from 'svelte-fa';
-	import { faCircleChevronLeft, faCircleChevronRight, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+	import {
+		faCircleChevronLeft,
+		faCircleChevronRight,
+		faChevronLeft,
+		faChevronRight,
+	} from '@fortawesome/free-solid-svg-icons';
 
 	export let images;
 
@@ -25,7 +30,6 @@
 			target: document.body,
 		});
 	});
-
 
 	let currentImageIndex = 0;
 	let currentImage = null;
@@ -49,14 +53,14 @@
 		emblaApi.scrollTo(currentImageIndex);
 	}
 	function showBiggerPicture() {
-		const items = images.map(x => ({ img: x.MediaURL, caption: x.ShortDescription }));
+		const items = images.map((x) => ({ img: x.MediaURL, caption: x.ShortDescription }));
 		biggerPicture.open({
 			items,
 			position: currentImageIndex,
 			// This isn't a supported value, but it seems to accomplish no intro animation.
 			intro: 'none',
 			onUpdate(container, activeItem) {
-				const index = images.findIndex(x => x.MediaURL === activeItem.img);
+				const index = images.findIndex((x) => x.MediaURL === activeItem.img);
 				if (index !== undefined) {
 					currentImageIndex = index;
 					emblaApi.scrollTo(currentImageIndex);
@@ -85,8 +89,12 @@
 				</button>
 			</div>
 			<a class="cursor-pointer" on:click={showBiggerPicture}>
-				<img class="mid-size" src={currentImage.MediaURL} title="Primary image for listing; click to enlarge"
-						 alt="alt" />
+				<img
+					class="mid-size"
+					src={currentImage.MediaURL}
+					title="Primary image for listing; click to enlarge"
+					alt="alt"
+				/>
 			</a>
 		</div>
 		<div class="mid-size flex">
@@ -100,7 +108,7 @@
 			>
 				<div class="embla__container">
 					{#each images as image, i}
-						<a class="cursor-pointer embla__slide" on:click={() => currentImageIndex = i}>
+						<a class="cursor-pointer embla__slide" on:click={() => (currentImageIndex = i)}>
 							<img class="max-w-[96px]" src={image.MediaURL} />
 						</a>
 					{/each}

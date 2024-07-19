@@ -4,15 +4,15 @@
 
 	export let data;
 	$: ({ area, activeListings, soldListings, subdivision } = data);
-	$: subdivisionName = allowedSubdivisions[area].find(x => x.slug === subdivision.slug).name;
+	$: subdivisionName = allowedSubdivisions[area].find((x) => x.slug === subdivision.slug).name;
 </script>
 
 <svelte:head>
-	<title>{subdivisionName} Real Estate and homes for sale </title>
+	<title>{subdivisionName} Real Estate and homes for sale</title>
 </svelte:head>
 
 <main>
 	<h1>{subdivisionName} Homes, Houses & Beach Houses For Sale</h1>
 
-	<AreaListingResultsPage area={area} activeListings={activeListings} soldListings={soldListings} />
+	<AreaListingResultsPage {area} {activeListings} {soldListings} />
 </main>

@@ -13,5 +13,5 @@
 <main>
 	<h1>{getAreaNameFromParam(area)} Lots & Land For Sale</h1>
 
-	<AreaListingResultsPage area={area} activeListings={activeListings} soldListings={soldListings} />
+	<AreaListingResultsPage {area} {activeListings} {soldListings} />
 </main>
