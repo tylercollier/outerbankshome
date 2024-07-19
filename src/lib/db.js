@@ -63,6 +63,7 @@ export async function getSearchResultListings(propertyType, buildQueryFn) {
 		'Property.ModificationTimestamp',
 		'ListPrice',
 		'PropertyType',
+		'PropertySubType',
 		'PublicRemarks',
 
 		'StreetNumber',

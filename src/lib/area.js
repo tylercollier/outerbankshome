@@ -51,7 +51,7 @@ export const allowedCategories = {
 		'oceanfront-homes',
 		'water-front-homes',
 		// 'investment-homes',
-		// 'land',
+		'land',
 	],
 	duck: [
 		'',
@@ -61,7 +61,7 @@ export const allowedCategories = {
 		'oceanfront-homes',
 		'water-front-homes',
 		// 'investment-homes',
-		// 'land',
+		'land',
 	],
 	'southern-shores': [
 		'',

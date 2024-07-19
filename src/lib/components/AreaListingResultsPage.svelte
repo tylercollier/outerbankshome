@@ -15,7 +15,7 @@
 
 <hr class="orange" />
 
-<h1>{displayName} Sold Recently</h1>
+<h1>Sold Recently</h1>
 
 <AreaListingResults listings={soldListings} {areaParam} />
 
