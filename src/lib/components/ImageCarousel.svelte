@@ -10,11 +10,6 @@
 		faChevronLeft,
 		faChevronRight,
 	} from '@fortawesome/free-solid-svg-icons';
-	// Reminder: previously I was importing LazyImage the component. But it seemed to not respect the CSS class I used on
-	// it. I presume that's because the mid-size css class I used is encapsulated in this component, and at that point it
-	// was another component actually rendering the HTML and the CSS no longer applied. At any rate, using "use:lazyImage"
-	// fixes things.
-	import { useLazyImage as lazyImage } from 'svelte-lazy-image';
 
 	export let images;
 
@@ -95,9 +90,8 @@
 			</div>
 			<a class="cursor-pointer" on:click={showBiggerPicture}>
 				<img
-					use:lazyImage
 					class="mid-size"
-					data-src={currentImage.MediaURL}
+					src={currentImage.MediaURL}
 					title="Primary image for listing; click to enlarge"
 					alt="alt"
 				/>
@@ -115,7 +109,7 @@
 				<div class="embla__container">
 					{#each images as image, i}
 						<a class="cursor-pointer embla__slide" on:click={() => (currentImageIndex = i)}>
-							<img use:lazyImage class="max-w-[96px]" data-src={image.MediaURL} />
+							<img class="max-w-[96px]" src={image.MediaURL} />
 						</a>
 					{/each}
 				</div>
