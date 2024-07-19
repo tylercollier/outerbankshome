@@ -2,19 +2,19 @@
 	import { allowedSubdivisions } from '$lib/area';
 	import urljoin from 'url-join';
 	import { basePath } from '$lib/nav';
-	import { getAreaNameFromParam } from '$lib/area';
 
-	export let area;
+	export let areaParam;
+	export let displayName;
 
-	$: subdivisionLinks = allowedSubdivisions[area].map((subdivision) => {
+	$: subdivisionLinks = allowedSubdivisions[areaParam].map((subdivision) => {
 		return {
 			label: subdivision.name,
-			href: urljoin(basePath, area, subdivision.slug + '.asp'),
+			href: urljoin(basePath, areaParam, subdivision.slug + '.asp'),
 		};
 	});
 </script>
 
-<h2>{getAreaNameFromParam(area)} Subdivisions</h2>
+<h2>{displayName} Subdivisions</h2>
 
 <div class="my-8">
 	<ul class="list-none">

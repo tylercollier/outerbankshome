@@ -1,17 +1,17 @@
 <script>
-	import { allowedCategories, getAreaNameFromParam } from '$lib/area';
+	import { allowedCategories } from '$lib/area';
 	import { getCategoryName } from '$lib/area';
 	import urljoin from 'url-join';
 	import { basePath } from '$lib/nav';
 
-	export let area;
+	export let areaParam;
+	export let displayName;
 
-	$: areaName = getAreaNameFromParam(area);
-	$: categoryLinks = allowedCategories[area].map((slug) => {
+	$: categoryLinks = allowedCategories[areaParam].map((slug) => {
 		const categoryName = getCategoryName(slug);
 		return {
-			label: `${areaName} ${categoryName}`,
-			href: urljoin(basePath, area, slug, '/'),
+			label: `${displayName} ${categoryName}`,
+			href: urljoin(basePath, areaParam, slug, '/'),
 		};
 	});
 </script>

@@ -5,9 +5,9 @@ import { getCity } from '$lib/area';
 export const load =
 	(categoryParam) =>
 	async ({ params }) => {
-		const area = params.area;
-		return404IfInvalidCategory(area, categoryParam);
-		const city = getCity(area);
+		const areaParam = params.area;
+		return404IfInvalidCategory(areaParam, categoryParam);
+		const city = getCity(areaParam);
 		const modifyQuery = (queryBuilder) => {
 			return queryBuilder
 				.where('City', '=', city)
@@ -17,7 +17,7 @@ export const load =
 		const activeListings = await getSearchResultListings('Residential', filterActive(modifyQuery));
 		const soldListings = await getSearchResultListings('Residential', filterSold(modifyQuery));
 		return {
-			area,
+			areaParam,
 			activeListings,
 			soldListings,
 		};

@@ -3,21 +3,22 @@
 	import CategoryLinks from '$lib/components/CategoryLinks.svelte';
 	import SubdivisionLinks from '$lib/components/SubdivisionLinks.svelte';
 
-	export let area;
+	export let areaParam;
+	export let displayName;
 	export let activeListings;
 	export let soldListings;
 </script>
 
-<CategoryLinks {area} />
+<CategoryLinks {areaParam} {displayName} />
 
-<AreaListingResults listings={activeListings} {area} />
-
-<hr class="orange" />
-
-<h1>{area} Sold Recently</h1>
-
-<AreaListingResults listings={soldListings} {area} />
+<AreaListingResults listings={activeListings} {areaParam} />
 
 <hr class="orange" />
 
-<SubdivisionLinks {area} />
+<h1>{displayName} Sold Recently</h1>
+
+<AreaListingResults listings={soldListings} {areaParam} />
+
+<hr class="orange" />
+
+<SubdivisionLinks {areaParam} {displayName} />

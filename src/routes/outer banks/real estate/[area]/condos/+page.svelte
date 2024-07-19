@@ -3,19 +3,18 @@
 	import AreaListingResultsPage from '$lib/components/AreaListingResultsPage.svelte';
 
 	export let data;
-	$: ({ area, activeListings, soldListings } = data);
+	$: ({ areaParam, activeListings, soldListings } = data);
+	$: areaName = getAreaNameFromParam(areaParam);
 </script>
 
 <svelte:head>
 	<title
-		>{getAreaNameFromParam(area)} Condos and Town Houses for Sale in {getAreaNameFromParam(
-			area,
-		)}</title
+		>{areaName} Condos and Town Houses for Sale}</title
 	>
 </svelte:head>
 
 <main>
-	<h1>{getAreaNameFromParam(area)} Condos and Town Houses For Sale</h1>
+	<h1>{areaName} Condos and Town Houses For Sale</h1>
 
-	<AreaListingResultsPage {area} {activeListings} {soldListings} />
+	<AreaListingResultsPage {areaParam} displayName={areaName} {activeListings} {soldListings} />
 </main>
