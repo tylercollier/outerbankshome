@@ -3,6 +3,7 @@
 	import { formatAddress } from '$lib/address';
 	import { formatDollarsOnly } from '$lib/money';
 	import { useLazyImage as lazyImage } from 'svelte-lazy-image';
+	import { formatDate } from '$lib/date.js';
 
 	export let listing;
 	export let urlInfix = '';
@@ -15,12 +16,16 @@
 			? listing.PublicRemarks
 			: `${listing.PublicRemarks?.substring(0, maxLength)}...`;
 	const sqft = sqftTotal(listing);
+	const isSold = listing.StandardStatus === 'Closed';
 </script>
 
 <div class="flex justify-between items-center">
 	<div>
 		<div><a href={link}>{address}</a></div>
-		<div class="font-bold">Asking: {formatDollarsOnly(listing.ListPrice)}</div>
+		<div class:font-bold={!isSold}>Asking: {formatDollarsOnly(listing.ListPrice)}</div>
+		{#if isSold}
+			<div class="font-bold">{formatDollarsOnly(listing.ClosePrice)} Closing Date {formatDate(listing.CloseDate)}</div>
+		{/if}
 		{#if listing.PropertyType === 'Residential'}
 			<div>
 				Beds-{listing.BedroomsTotal} Baths-{listing.BathroomsFull}
@@ -39,7 +44,9 @@
 				<a href={link}>MORE</a>
 			{/if}
 		</div>
-		<div><span class="font-bold">Call Agent</span> 800-647-1868</div>
+		{#if !isSold}
+			<div><span class="font-bold">Call Agent</span> 800-647-1868</div>
+		{/if}
 	</div>
 	<div>
 		<a href={link}>

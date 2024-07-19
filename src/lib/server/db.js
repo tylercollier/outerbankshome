@@ -65,6 +65,9 @@ export async function getSearchResultListings(propertyType, buildQueryFn) {
 		'PropertyType',
 		'PropertySubType',
 		'PublicRemarks',
+		'CloseDate',
+		'ClosePrice',
+		'StandardStatus',
 
 		'StreetNumber',
 		'StreetDirPrefix',
