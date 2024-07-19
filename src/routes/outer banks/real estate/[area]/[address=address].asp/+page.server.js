@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { getListing } from '$lib/db';
+import { getListing } from '$lib/server/db';
 import { getMlsIdFromRoute } from '$lib/address';
 
 export const trailingSlash = 'never';

@@ -1,4 +1,4 @@
-import { slugify } from './url';
+import { slugify } from '$lib/url';
 
 export function formatAddress(listing) {
 	const fieldNames = ['StreetNumber', 'StreetDirPrefix', 'StreetName'];

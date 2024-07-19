@@ -1,4 +1,4 @@
-import { filterActive, filterSold, getSearchResultListings } from '$lib/db';
+import { filterActive, filterSold, getSearchResultListings } from '$lib/server/db';
 import { getCity } from '$lib/area';
 
 export const load = async ({ params }) => {

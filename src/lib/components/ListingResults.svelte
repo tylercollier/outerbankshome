@@ -1,5 +1,5 @@
 <script>
-	import ListingResult from './ListingResult.svelte';
+	import ListingResult from '$lib/components/ListingResult.svelte';
 
 	export let listings;
 	export let urlInfix = '';

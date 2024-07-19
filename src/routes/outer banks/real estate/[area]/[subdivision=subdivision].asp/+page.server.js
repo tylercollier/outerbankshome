@@ -1,5 +1,5 @@
 import { allowedSubdivisions, getCity } from '$lib/area';
-import { filterActive, filterSold, getSearchResultListings } from '$lib/db';
+import { filterActive, filterSold, getSearchResultListings } from '$lib/server/db';
 
 export const trailingSlash = 'never';
 
