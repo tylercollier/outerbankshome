@@ -1,6 +1,11 @@
 import { getAreaNameFromParam } from '$lib/area';
 
+// The reason it's the empty string is because it's the slug used in the URL. Instead of e.g.
+// /corolla/homes, we'll just have /corolla/.
+export const homeCategory = '';
+
 export const categories = [
+	homeCategory,
 	'canalfront-homes',
 	'condos',
 	'land',

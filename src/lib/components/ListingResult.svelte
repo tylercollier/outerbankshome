@@ -3,7 +3,7 @@
 	import { formatAddress } from '$lib/address';
 	import { formatDollarsOnly } from '$lib/money';
 	import { useLazyImage as lazyImage } from 'svelte-lazy-image';
-	import { formatDate } from '$lib/date.js';
+	import { formatDate } from '$lib/date';
 
 	export let listing;
 	export let urlInfix = '';

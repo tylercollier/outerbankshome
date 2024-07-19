@@ -1,10 +1,18 @@
-import { getCity } from '$lib/area.js';
-import { filterActive, filterSold, getSearchResultListings } from '$lib/server/db.js';
+import { getCity } from '$lib/area';
+import { filterActive, filterSold, getSearchResultListings } from '$lib/server/db';
+import { return404IfInvalidCategory } from '$lib/server/nav';
+import { homeCategory } from '$lib/category';
+
 
 export async function getListings(areaParam, categoryParam) {
 	const city = getCity(areaParam);
 	let buildQueryFn;
-	if (categoryParam === 'canalfront-homes') {
+	if (categoryParam === homeCategory) {
+		buildQueryFn = queryBuilder => {
+			return queryBuilder
+				.where('PropertySubType', 'in', ['Single Family Residence']);
+		};
+	} else if (categoryParam === 'canalfront-homes') {
 		buildQueryFn = queryBuilder => {
 			return queryBuilder
 				.where('PropertySubType', 'in', ['Single Family Residence'])
@@ -52,3 +60,13 @@ export async function getListings(areaParam, categoryParam) {
 	};
 }
 
+export const load = async (areaParam, categoryParam) => {
+	return404IfInvalidCategory(areaParam, categoryParam);
+	const { activeListings, soldListings } = await getListings(areaParam, categoryParam);
+	return {
+		areaParam,
+		categoryParam,
+		activeListings,
+		soldListings,
+	};
+}
