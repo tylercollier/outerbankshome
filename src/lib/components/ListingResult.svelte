@@ -2,6 +2,7 @@
 	import { makeLinkForListing, sqftTotal } from '$lib/listing';
 	import { formatAddress } from '$lib/address';
 	import { formatDollarsOnly } from '$lib/money';
+	import { useLazyImage as lazyImage } from 'svelte-lazy-image';
 
 	export let listing;
 	export let urlInfix = '';
@@ -42,7 +43,7 @@
 	</div>
 	<div>
 		<a href={link}>
-			<img src={listing.MediaURL} class="w-[120px]" alt="" />
+			<img use:lazyImage data-src={listing.MediaURL} class="max-w-[120px] max-h-[90px]" alt="" />
 		</a>
 	</div>
 </div>

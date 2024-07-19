@@ -10,6 +10,7 @@
 		faChevronLeft,
 		faChevronRight,
 	} from '@fortawesome/free-solid-svg-icons';
+	import { LazyImage } from 'svelte-lazy-image';
 
 	export let images;
 
@@ -89,7 +90,7 @@
 				</button>
 			</div>
 			<a class="cursor-pointer" on:click={showBiggerPicture}>
-				<img
+				<LazyImage
 					class="mid-size"
 					src={currentImage.MediaURL}
 					title="Primary image for listing; click to enlarge"
@@ -109,7 +110,7 @@
 				<div class="embla__container">
 					{#each images as image, i}
 						<a class="cursor-pointer embla__slide" on:click={() => (currentImageIndex = i)}>
-							<img class="max-w-[96px]" src={image.MediaURL} />
+							<LazyImage class="max-w-[96px]" src={image.MediaURL} />
 						</a>
 					{/each}
 				</div>
