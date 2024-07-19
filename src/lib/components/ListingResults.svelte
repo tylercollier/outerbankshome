@@ -5,7 +5,9 @@
 	export let urlInfix = '';
 </script>
 
-{#each listings as listing}
+{#each listings as listing, i}
 	<ListingResult listing={listing} urlInfix={urlInfix} />
-	<hr/>
+	{#if i < listings.length - 1}
+		<hr />
+	{/if}
 {/each}

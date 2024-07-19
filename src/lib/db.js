@@ -98,3 +98,17 @@ export async function getSearchResultListings(propertyType, buildQueryFn) {
 	const listings = await listingsQueryBuilder.execute();
 	return listings;
 }
+
+export const filterActive = buildQueryFn => {
+	return (queryBuilder) => {
+		queryBuilder = buildQueryFn(queryBuilder);
+		return queryBuilder.where('StandardStatus', '=', 'Active');
+	}
+}
+
+export const filterSold = buildQueryFn => {
+	return (queryBuilder) => {
+		queryBuilder = buildQueryFn(queryBuilder);
+		return queryBuilder.where('StandardStatus', '=', 'Closed');
+	}
+}

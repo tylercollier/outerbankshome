@@ -1,5 +1,5 @@
 import { allowedSubdivisions, getCity } from '$lib/area';
-import { getSearchResultListings } from '$lib/db';
+import { filterActive, filterSold, getSearchResultListings } from '$lib/db';
 
 export const trailingSlash = 'never';
 
@@ -7,16 +7,18 @@ export const load = async ({ params }) => {
 	const subdivision = allowedSubdivisions[params.area].find(x => x.slug === params.subdivision);
 	const area = params.area;
 	const city = getCity(area);
-	const listings = await getSearchResultListings('Residential', (queryBuilder) => {
+	const modifyQuery = (queryBuilder) => {
 		return queryBuilder
-			.where('StandardStatus', '=', 'Active')
 			.where('City', '=', city)
 			.where('PropertySubType', 'in', ['Single Family Residence'])
 			.where('SubdivisionName', '=', subdivision.name)
-	});
+	};
+	const activeListings = await getSearchResultListings('Residential', filterActive(modifyQuery));
+	const soldListings = await getSearchResultListings('Residential', filterSold(modifyQuery));
 	return {
 		area,
-		listings,
+		activeListings,
+		soldListings,
 		subdivision,
 	}
 };

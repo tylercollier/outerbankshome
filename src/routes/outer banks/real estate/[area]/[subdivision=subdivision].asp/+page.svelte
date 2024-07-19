@@ -3,7 +3,7 @@
 	import AreaListingResultsPage from '$lib/components/AreaListingResultsPage.svelte';
 
 	export let data;
-	$: ({ area, listings, subdivision } = data);
+	$: ({ area, activeListings, soldListings, subdivision } = data);
 	$: subdivisionName = allowedSubdivisions[area].find(x => x.slug === subdivision.slug).name;
 </script>
 
@@ -14,5 +14,5 @@
 <main>
 	<h1>{subdivisionName} Homes, Houses & Beach Houses For Sale</h1>
 
-	<AreaListingResultsPage area={area} listings={listings} />
+	<AreaListingResultsPage area={area} activeListings={activeListings} soldListings={soldListings} />
 </main>
