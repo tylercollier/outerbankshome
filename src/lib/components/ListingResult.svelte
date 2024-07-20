@@ -8,15 +8,15 @@
 	export let listing;
 	export let urlInfix = '';
 
-	const link = makeLinkForListing(listing, { urlInfix });
-	const address = formatAddress(listing);
-	const maxLength = 200;
-	const publicRemarks =
+	$: link = makeLinkForListing(listing, { urlInfix });
+	$: address = formatAddress(listing);
+	$: maxLength = 200;
+	$: publicRemarks =
 		listing.PublicRemarks?.length < maxLength
 			? listing.PublicRemarks
 			: `${listing.PublicRemarks?.substring(0, maxLength)}...`;
-	const sqft = sqftTotal(listing);
-	const isSold = listing.StandardStatus === 'Closed';
+	$: sqft = sqftTotal(listing);
+	$: isSold = listing.StandardStatus === 'Closed';
 </script>
 
 <div class="flex justify-between items-center">
