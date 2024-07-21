@@ -3,7 +3,7 @@
 	import AreaListingResultsPage from '$lib/components/AreaListingResultsPage.svelte';
 
 	export let data;
-	$: ({ areaParam, activeListings, soldListings, subdivision } = data);
+	$: ({ areaParam, activeListings, soldListings, subdivision, proseComponent } = data);
 	$: subdivisionName = allowedSubdivisions[areaParam].find((x) => x.slug === subdivision.slug).name;
 </script>
 
@@ -14,5 +14,11 @@
 <main>
 	<h1>{subdivisionName} Homes, Houses & Beach Houses For Sale</h1>
 
-	<AreaListingResultsPage {areaParam} displayName={subdivisionName} {activeListings} {soldListings} />
+	<AreaListingResultsPage
+		{areaParam}
+		displayName={subdivisionName}
+		{activeListings}
+		{soldListings}
+		{proseComponent}
+	/>
 </main>

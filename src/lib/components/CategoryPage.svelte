@@ -15,9 +15,12 @@
 
 <main>
 	<h1>{areaName} Homes, Houses & Beach Houses For Sale</h1>
-	{#if proseComponent}
-		<svelte:component this={proseComponent} />
-	{/if}
 
-	<AreaListingResultsPage {areaParam} displayName={areaName} {activeListings} {soldListings} />
+	<AreaListingResultsPage
+		{areaParam}
+		displayName={areaName}
+		{activeListings}
+		{soldListings}
+		{proseComponent}
+	/>
 </main>
