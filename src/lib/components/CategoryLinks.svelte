@@ -1,6 +1,5 @@
 <script>
-	import { allowedCategories } from '$lib/area';
-	import { getCategoryName } from '$lib/area';
+	import { allowedCategories, getCategoryName } from '$lib/category';
 	import urljoin from 'url-join';
 	import { basePath } from '$lib/nav';
 

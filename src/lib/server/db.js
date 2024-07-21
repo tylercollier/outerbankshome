@@ -10,11 +10,7 @@ export function getDb() {
 			pool: createPool(process.env.VITE_DB_CONNECTION_STRING).pool,
 		});
 
-		db = new Kysely({
-			dialect,
-			// log: ['query', 'error'],
-			// https://kysely.dev/docs/recipes/logging
-			log(event) {
+		function log(event) {
 				if (event.level === 'error') {
 					console.error('Query failed : ', {
 						durationMs: event.queryDurationMillis,
@@ -29,7 +25,13 @@ export function getDb() {
 						params: event.query.parameters,
 					});
 				}
-			},
+		}
+
+		db = new Kysely({
+			dialect,
+			// https://kysely.dev/docs/recipes/logging
+			// log: ['query', 'error'],
+			// log,
 		});
 	}
 	return db;

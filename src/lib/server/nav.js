@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { allowedCategories } from '$lib/area';
+import { allowedCategories } from '$lib/category';
 
 export const basePath = '/outer banks/real estate';
 
