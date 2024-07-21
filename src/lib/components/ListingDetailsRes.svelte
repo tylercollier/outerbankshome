@@ -5,6 +5,12 @@
 	import { prettyJsonList } from '$lib/listing';
 
 	export let listing;
+	function blankNull(val) {
+		if (val === null) {
+		return '';
+		}
+		return val;
+	}
 </script>
 
 <div>
@@ -21,28 +27,53 @@
 
 	<table>
 		<tbody>
-			{#if listing.Headline}
-				<tr>
-					<td>Headline</td>
-					<td>{listing.Headline}</td>
-				</tr>
-			{/if}
-			<tr>
-				<td>Area</td>
-				<td>{listing.MLSAreaMinor}</td>
-			</tr>
-			<tr>
-				<td>Beds</td>
-				<td>{listing.BedroomsTotal}</td>
-			</tr>
-			<tr>
-				<td>Baths</td>
-				<td>{listing.BathroomsFull}</td>
-			</tr>
-			<tr>
-				<td>Asking Price</td>
-				<td>{formatDollarsOnly(listing.ListPrice)}</td>
-			</tr>
+		<tr>
+			<td>Area</td>
+			<td>{listing.MLSAreaMinor}</td>
+		</tr>
+		<tr>
+			<td>Mls Status</td>
+			<td>{listing.StandardStatus}</td>
+		</tr>
+		<tr>
+			<td>Days On Market</td>
+			<td>{blankNull(listing.DaysOnMarket)}</td>
+		<tr>
+			<td>Cumulative Days On Market</td>
+			<td>{listing.CumulativeDaysOnMarket}</td>
+		<tr>
+			<td>Listing Price</td>
+			<td>{formatDollarsOnly(listing.ListPrice)}</td>
+		<tr>
+			<td>Original Listing Price</td>
+			<td>{formatDollarsOnly(listing.OriginalListPrice)}</td>
+		<tr>
+			<td>Possession</td>
+			<td>{prettyJsonList(listing.Possession)}</td>
+		<tr>
+			<td>Short Sale</td>
+			<td>{listing.PShortSale}</td>
+		<tr>
+			<td>Price Date</td>
+			<td>{listing.Price_Date}</td>
+		<tr>
+			<td>Furnishing Available</td>
+			<td>{listing.Furnishings_Available_Y_Or_N}</td>
+		<tr>
+			<td>Bill Of Sale Amount</td>
+			<td>{blankNull(listing.Bill_of_Sale_In_Amt__Y_Or_N)}</td>
+		<tr>
+			<td>Expiration Date</td>
+			<td>{blankNull(listing.ExpirationDate)}</td>
+		<tr>
+			<td>Ownership</td>
+			<td>{listing.Ownership}</td>
+		<tr>
+			<td>Listing Restrictions</td>
+			<td>{blankNull(listing.O_LISTING_RESTRICTIONS)}</td>
+		<tr>
+			<td>Listing Type</td>
+			<td>{listing.ListingAgreement}</td>
 		</tbody>
 	</table>
 </div>
