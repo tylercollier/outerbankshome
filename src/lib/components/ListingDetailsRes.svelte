@@ -1,13 +1,13 @@
 <script>
 	import ImageCarousel from '$lib/components/ImageCarousel.svelte';
-	import { formatDollarsOnly } from '$lib/money';
+	import { formatDollarsOnly, formatDollarsAndCents } from '$lib/money';
 	import { formatDate } from '$lib/date';
 	import { prettyJsonList } from '$lib/listing';
 
 	export let listing;
-	function blankNull(val) {
-		if (val === null) {
-		return '';
+	function maybeBlank(val) {
+		if (!val) {
+			return '';
 		}
 		return val;
 	}
@@ -37,7 +37,7 @@
 		</tr>
 		<tr>
 			<td>Days On Market</td>
-			<td>{blankNull(listing.DaysOnMarket)}</td>
+			<td>{maybeBlank(listing.DaysOnMarket)}</td>
 		<tr>
 			<td>Cumulative Days On Market</td>
 			<td>{listing.CumulativeDaysOnMarket}</td>
@@ -61,16 +61,16 @@
 			<td>{listing.Furnishings_Available_Y_Or_N}</td>
 		<tr>
 			<td>Bill Of Sale Amount</td>
-			<td>{blankNull(listing.Bill_of_Sale_In_Amt__Y_Or_N)}</td>
+			<td>{maybeBlank(listing.Bill_of_Sale_In_Amt__Y_Or_N)}</td>
 		<tr>
 			<td>Expiration Date</td>
-			<td>{blankNull(listing.ExpirationDate)}</td>
+			<td>{maybeBlank(listing.ExpirationDate)}</td>
 		<tr>
 			<td>Ownership</td>
 			<td>{listing.Ownership}</td>
 		<tr>
 			<td>Listing Restrictions</td>
-			<td>{blankNull(listing.O_LISTING_RESTRICTIONS)}</td>
+			<td>{maybeBlank(listing.O_LISTING_RESTRICTIONS)}</td>
 		<tr>
 			<td>Listing Type</td>
 			<td>{listing.ListingAgreement}</td>
@@ -83,14 +83,111 @@
 
 	<table>
 		<tbody>
-			<tr>
-				<td>Heated Living Area</td>
-				<td>{listing.HtdLvArSF}</td>
-			</tr>
-			<tr>
-				<td>Interior Features</td>
-				<td>{prettyJsonList(listing.InteriorFeatures)}</td>
-			</tr>
+		<tr>
+			<td>Primary Heated Living Area Sq Ft</td>
+			<td>{maybeBlank(listing.Primary_HtdLvArSF)}</td>
+		<tr>
+			<td>Additional Living Area Sq Ft</td>
+			<td>{maybeBlank(listing.Additional_HtdLvArSF)}</td>
+		<tr>
+			<td>Total Living Area Sq Ft</td>
+			<td>{maybeBlank(listing.Total_HtdLvArSF)}</td>
+		<tr>
+			<td>Asking Price Per SqFt</td>
+			<td>{formatDollarsAndCents(listing.Asking_Price_Per_SqFt)}</td>
+		<tr>
+			<td>Heated Living Area Sq Ft</td>
+			<td>{listing.HtdLvArSF}</td>
+		<tr>
+			<td>Unheated Living Area Sq Ft</td>
+			<td>{maybeBlank(listing.Unheated_LvArSF)}</td>
+		<tr>
+			<td>BedroomsTotal </td>
+			<td>{listing.BedroomsTotal}</td>
+		<tr>
+			<td>Bathrooms Full</td>
+			<td>{listing.BathroomsFull}</td>
+		<tr>
+			<td>Bathrooms Partial</td>
+			<td>{listing.BathroomsPartial}</td>
+		<tr>
+			<td>Year Built</td>
+			<td>{listing.YearBuilt}</td>
+		<tr>
+			<td>Garage</td>
+			<td>{listing.F_GARAGE}</td>
+		<tr>
+			<td>Garage Sq Ft</td>
+			<td>{maybeBlank(listing.Garage_Sq_Ft)}</td>
+		<tr>
+			<td>Architectural Style</td>
+			<td>{prettyJsonList(listing.ArchitecturalStyle)}</td>
+		<tr>
+			<td>Type</td>
+			<td>{maybeBlank(listing.Type)}</td>
+		<tr>
+			<td>Sub Type</td>
+			<td>{listing.PropertySubType}</td>
+		<tr>
+			<td>Appliances</td>
+			<td>{prettyJsonList(listing.Appliances)}</td>
+		<tr>
+			<td>Roof</td>
+			<td>{prettyJsonList(listing.Roof)}</td>
+		<tr>
+			<td>Parking</td>
+			<td>{prettyJsonList(listing.ParkingFeatures)}</td>
+		<tr>
+			<td>Foundation</td>
+			<td>{prettyJsonList(listing.FoundationDetails)}</td>
+		<tr>
+			<td>Pool</td>
+			<td>{listing.Pool}</td>
+		<tr>
+			<td>Pool Type</td>
+			<td>{listing.Pool_Type}</td>
+		<tr>
+			<td>Pool Features</td>
+			<td>{prettyJsonList(listing.PoolFeatures)}</td>
+		<tr>
+			<td>Screen Porch Size</td>
+			<td>{maybeBlank(listing.Screen_Porch_Size)}</td>
+		<tr>
+			<td>Sun Deck Size</td>
+			<td>{maybeBlank(listing.Sun_Deck_Size)}</td>
+		<tr>
+			<td>Builder Name</td>
+			<td>{maybeBlank(listing.BuilderName)}</td>
+		<tr>
+			<td>Driveway</td>
+			<td>{maybeBlank(listing.H_DRIVEWAY)}</td>
+		<tr>
+			<td>Insulation</td>
+			<td>{maybeBlank(listing.T_INSULATION)}</td>
+		<tr>
+			<td>Counter Tops</td>
+			<td>{maybeBlank(listing.ZF_COUNTER_TOPS)}</td>
+		<tr>
+			<td>Cooling</td>
+			<td>{prettyJsonList(listing.Cooling)}</td>
+		<tr>
+			<td>Interior Features</td>
+			<td>{prettyJsonList(listing.InteriorFeatures)}</td>
+		<tr>
+			<td>Heating</td>
+			<td>{prettyJsonList(listing.Heating)}</td>
+		<tr>
+			<td>Room Type</td>
+			<td>{prettyJsonList(listing.RoomType)}</td>
+		<tr>
+			<td>Flooring</td>
+			<td>{prettyJsonList(listing.Flooring)}</td>
+		<tr>
+			<td>Construction Materials</td>
+			<td>{prettyJsonList(listing.ConstructionMaterials)}</td>
+		<tr>
+			<td>Building Features</td>
+			<td>{prettyJsonList(listing.BuildingFeatures)}</td>
 		</tbody>
 	</table>
 </div>
