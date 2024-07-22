@@ -4,6 +4,7 @@
 	import { formatDollarsOnly } from '$lib/money';
 	import { useLazyImage as lazyImage } from 'svelte-lazy-image';
 	import { formatDate } from '$lib/date';
+	import { officeTollFreePhoneNumber } from '$lib/meta';
 
 	export let listing;
 	export let urlInfix = '';
@@ -45,7 +46,7 @@
 			{/if}
 		</div>
 		{#if !isSold}
-			<div><span class="font-bold">Call Agent</span> 800-647-1868</div>
+			<div><span class="font-bold">Call Agent</span> {officeTollFreePhoneNumber}</div>
 		{/if}
 	</div>
 	<div>

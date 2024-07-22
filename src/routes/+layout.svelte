@@ -1,6 +1,7 @@
 <script>
 	import Nav from '$lib/components/Nav.svelte';
 	import '../app.scss';
+	import { officeLocalPhoneNumber, officeTollFreePhoneNumber } from '$lib/meta';
 </script>
 
 <div class="mycontainer">
@@ -63,8 +64,8 @@
 			<b
 				>Shore Realty of the Outer Banks Inc. <br />
 				Locally Owned &amp; Operated<br />
-				<a href="tel://2524413416">252-441-3416</a> OR
-				<a href="tel://8006471868">800-647-1868</a><br />
+				<a href="tel://{officeLocalPhoneNumber}">{officeLocalPhoneNumber}</a> OR
+				<a href="tel://{officeTollFreePhoneNumber}">{officeTollFreePhoneNumber}</a><br />
 			</b>
 		</p>
 		<p align="center">
