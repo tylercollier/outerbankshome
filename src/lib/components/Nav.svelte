@@ -1,13 +1,18 @@
 <script>
 	import urljoin from 'url-join';
 	import { basePath } from '$lib/nav';
+	import { officeTollFreePhoneNumber } from '$lib/meta.js';
 
 	function makeLink(sub) {
 		return urljoin(basePath, sub);
 	}
 </script>
 
-<nav class="bg-[#ffcc99] border border-black border-solid pl-2 pr-4">
+<nav class="bg-lightorange border border-black border-solid pl-2 pr-4">
+	<h4>Call <a href="tel://{officeTollFreePhoneNumber}">{officeTollFreePhoneNumber}</a></h4>
+	<ul>
+		<li><a href="/contact-info.asp">Contact us</a></li>
+	</ul>
 	<h4>Corolla</h4>
 	<ul>
 		<li><a href={makeLink('corolla/')}>Corolla Homes</a></li>

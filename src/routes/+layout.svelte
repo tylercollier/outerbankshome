@@ -46,7 +46,7 @@
 
 	<slot />
 
-	<footer class="bg-[#ffcc99] border border-black border-solid">
+	<footer class="bg-lightorange border border-black border-solid">
 		<p align="center">
 			<a
 				href="/search-mls.html"

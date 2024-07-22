@@ -1,0 +1,25 @@
+button {
+  cursor: pointer;
+}
+
+.contact-form {
+  label {
+    font-weight: bold;
+    cursor: pointer;
+    @apply mr-2;
+    @apply inline-block;
+
+    &.text-label {
+      @apply w-48;
+    }
+  }
+
+  input[type="text"], input[type="email"] {
+    @apply rounded;
+    border: 1px #505050 solid;
+    @apply p-1;
+    @apply outline-none;
+    @apply font-bold;
+    box-shadow: inset 1px 1px 4px #C0C0C0;
+  }
+}

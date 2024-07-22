@@ -45,6 +45,11 @@ hr.orange {
 	background: #ff7e40;
 }
 
+$lightorange: #ffcc99;
+.bg-lightorange {
+	background: $lightorange;
+}
+
 @media screen and (width >= 1200px) {
 	.mycontainer {
 		grid-template-columns: auto 3fr;
@@ -58,3 +63,5 @@ hr.orange {
 //@tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import './lib/css/forms.scss';
