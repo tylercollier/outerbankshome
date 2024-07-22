@@ -1,11 +1,15 @@
 <script>
-	import { enhance } from '$app/forms';
 	import { allowedAreas, getAreaNameFromParam } from '$lib/area';
+	import enhance from 'svelte-captcha-enhance';
 
 	export let form;
 
 	let isFormLoading = false;
 </script>
+
+<svelte:head>
+	<script src="https://www.google.com/recaptcha/api.js?render={import.meta.env.VITE_GOOGLE_RECAPTCHA_SITE_KEY}"></script>
+</svelte:head>
 
 <main>
 	<h1>How Can We Help You?</h1>
@@ -24,14 +28,18 @@
 		</div>
 	{:else}
 		<div class="contact-form inline-block p-8 rounded-2xl bg-lightorange">
-			<form method="post" use:enhance={() => {
-			// I got this from https://stackoverflow.com/a/76629408/135101
-			isFormLoading = true;
-			return async ({ update }) => {
-					isFormLoading = false;
-					update();
-			};
-		}}>
+			<form method="post" use:enhance={{
+				type: 'recaptcha',
+				sitekey: import.meta.env.VITE_GOOGLE_RECAPTCHA_SITE_KEY,
+				submit: async function() {
+					// I got this from https://stackoverflow.com/a/76629408/135101
+					isFormLoading = true;
+					return async ({ update }) => {
+							isFormLoading = false;
+							update();
+					};
+				},
+			}}>
 				<div>
 					<div>
 						<label class="text-label" for="first_name">First Name</label>
