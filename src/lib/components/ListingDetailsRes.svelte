@@ -5,6 +5,7 @@
 	import { prettyJsonList } from '$lib/listing';
 	import { formatAddress } from '$lib/address.js';
 	import { officeLocalPhoneNumber, officeTollFreePhoneNumber } from '$lib/meta.js';
+	import './ListingDetailsPage.scss';
 
 	export let listing;
 	function maybeBlank(val) {
@@ -29,7 +30,7 @@
 <div>
 	<h3>Listing Information</h3>
 
-	<table>
+	<table  class="listing-details-section">
 		<tbody>
 		<tr>
 			<td>Area</td>
@@ -85,7 +86,7 @@
 <div>
 	<h3>Building Details</h3>
 
-	<table>
+	<table  class="listing-details-section">
 		<tbody>
 		<tr>
 			<td>Primary Heated Living Area Sq Ft</td>
@@ -199,7 +200,7 @@
 <div>
 	<h3>Legal Description</h3>
 
-	<table>
+	<table  class="listing-details-section">
 		<tbody>
 		<tr>
 			<td>Lot Number</td>
@@ -280,7 +281,7 @@
 <div>
 	<h3>Lot Details</h3>
 
-	<table>
+	<table  class="listing-details-section">
 		<tbody>
 		<tr>
 			<td>Land Tax Value</td>
@@ -341,7 +342,7 @@
 <div>
 	<h3>Property Expenses & Utilities</h3>
 
-	<table>
+	<table  class="listing-details-section">
 		<tbody>
 		<tr>
 			<td>Tax Year</td>
@@ -478,7 +479,7 @@
 <div>
 	<h3>Financials</h3>
 
-	<table>
+	<table  class="listing-details-section">
 		<tbody>
 		<tr>
 			<td>Bill Of Sale Amoung</td>
@@ -567,7 +568,7 @@
 <div>
 	<h3>Rental Income</h3>
 
-	<table>
+	<table  class="listing-details-section">
 		<tbody>
 		<tr>
 			<td>Annual Rental Income</td>
@@ -692,7 +693,7 @@
 <div>
 	<h3>Schools</h3>
 
-	<table>
+	<table  class="listing-details-section">
 		<tbody>
 		<tr>
 			<td>Elementary School District</td>

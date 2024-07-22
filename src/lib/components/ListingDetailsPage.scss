@@ -1,0 +1,19 @@
+h3 {
+  color: #003366;
+}
+
+table.listing-details-section {
+  @apply pl-4;
+  width: 100%;
+  line-height: 1.75;
+
+  tr {
+    td:nth-child(1) {
+      width: 40%;
+      font-weight: bold;
+    }
+    td:nth-child(2) {
+      width: 60%;
+    }
+  }
+}
