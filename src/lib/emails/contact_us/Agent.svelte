@@ -15,9 +15,9 @@
 </script>
 
 <Html lang="en">
-	<Preview preview="You were contacted by {first_name} {last_name} ({email}) using the Contact Us form on {import.meta.env.VITE_DOMAIN}." />
+	<Preview preview="You were contacted by {first_name} {last_name} ({email}) using the Contact Us form on {import.meta.env.VITE_DOMAIN}" />
 
-	<Text>You were contacted by {first_name} {last_name} ({email}) using the Contact Us form on {import.meta.env.VITE_DOMAIN}</Text>
+	<Text>You were contacted by {first_name} {last_name} ({email}) using the Contact Us form on {import.meta.env.VITE_DOMAIN}.</Text>
 
 	<Container>
 		<Text>First name: {first_name}</Text>

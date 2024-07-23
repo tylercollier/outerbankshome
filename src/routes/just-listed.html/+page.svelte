@@ -1,7 +1,7 @@
 <script>
 	import { allowedAreas, getAreaNameFromParam } from '$lib/area';
 	import enhance from 'svelte-captcha-enhance';
-	import { officeLocalPhoneNumber, officeTollFreePhoneNumber } from '$lib/meta';
+	import { officeTollFreePhoneNumber } from '$lib/meta';
 
 	export let form;
 
@@ -14,9 +14,10 @@
 </svelte:head>
 
 <main>
-	<h1>Contact Shore Realty</h1>
+	<h2>New Listings As They Hit The Market</h2>
 
-	<h2>How Can We Help You?</h2>
+	<h2 class="text-blue-950">Live Updates of Price Changes
+		Straight From The Outer Banks MLS</h2>
 
 	{#if form?.success}
 		<div class="font-bold">
@@ -89,17 +90,18 @@
 				</div>
 				<div class="mt-4">
 					<div>
-						<label class="text-label" for="comments">Comments</label>
-						<input type="text" name="comments" id="comments" value={form?.data?.comments ?? ''} />
+						<label class="text-label" for="price_range">Price Range</label>
+						<input type="text" name="price_range" id="price_range" value={form?.data?.price_range ?? ''} />
 					</div>
 					<div class="text-red-500 text-right mt-2">
-						{#if form?.errors?.comments}
-							{form.errors.comments}
+						{#if form?.errors?.price_range}
+							{form.errors.price_range}
 						{/if}
 					</div>
 				</div>
 
 				<div class="mt-4">
+					<div class="font-bold">Where?</div>
 					{#each allowedAreas as areaSlug}
 						<div><label><input type="checkbox" name="area" value={areaSlug} /> {getAreaNameFromParam(areaSlug)}</label>
 						</div>
@@ -107,6 +109,7 @@
 				</div>
 
 				<div class="mt-4">
+					<div class="font-bold">What?</div>
 					<div><label><input type="checkbox" name="property_type" value="residential" /> Residential</label></div>
 					<div><label><input type="checkbox" name="property_type" value="investment" /> Investment/2nd Home</label>
 					</div>
@@ -115,9 +118,8 @@
 					<div><label><input type="checkbox" name="property_type" value="land" /> Land</label></div>
 				</div>
 
-				<div class="mt-4 font-bold">Level of Interest</div>
-
 				<div class="mt-4">
+					<div class="font-bold">When?</div>
 					<div><label><input type="checkbox" name="level_of_interest" value="Need Help Now" /> Need Help Now</label>
 					</div>
 					<div><label><input type="checkbox" name="level_of_interest" value="Ready To Buy" /> Ready To Buy</label></div>
@@ -134,12 +136,12 @@
 
 				<div class="mt-4">
 					<div>
-						<label class="text-label" for="price_range">Price Range</label>
-						<input type="text" name="price_range" id="price_range" value={form?.data?.price_range ?? ''} />
+						<label class="text-label" for="comments">Comments</label>
+						<textarea class="w-64 h-16 rounded" name="comments" id="comments" value={form?.data?.comments ?? ''} />
 					</div>
 					<div class="text-red-500 text-right mt-2">
-						{#if form?.errors?.price_range}
-							{form.errors.price_range}
+						{#if form?.errors?.comments}
+							{form.errors.comments}
 						{/if}
 					</div>
 				</div>
@@ -156,15 +158,9 @@
 		</div>
 	{/if}
 
-	<h2>
-		<p>Phones:<br>
-			<a href="tel://{officeTollFreePhoneNumber}">{officeTollFreePhoneNumber}</a><br>
-			<a href="tel://{officeLocalPhoneNumber}">{officeLocalPhoneNumber}</a><br>
-			<a href="tel://2524413410">252-441-3410</a></p>
-		<p>Mailing Address:<br>
-			Shore Realty <br>
-			PO Box 1977<br>
-			Nags Head, NC 27959
-		</p>
-	</h2>
+	<div class="mt-4">
+		If you end up getting too many updates or the updates don't match what you are looking, just give us a call and we will fix the problem for you.
+		<a href="tel://{officeTollFreePhoneNumber}">{officeTollFreePhoneNumber}</a>
+
+	</div>
 </main>

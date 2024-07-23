@@ -1,7 +1,7 @@
 import { fail } from '@sveltejs/kit';
 import axios from 'axios';
 
-async function verify(gRecaptchaResponse) {
+export async function verify(gRecaptchaResponse) {
 	let captchaApiResponse;
 	try {
 		const dataString = `secret=${import.meta.env.VITE_GOOGLE_RECAPTCHA_SECRET_KEY}&response=${gRecaptchaResponse}`;

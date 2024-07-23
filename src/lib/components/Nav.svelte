@@ -12,6 +12,7 @@
 	<h4>Call <a href="tel://{officeTollFreePhoneNumber}">{officeTollFreePhoneNumber}</a></h4>
 	<ul>
 		<li><a href="/contact-info.asp">Contact us</a></li>
+		<li><a href="/just-listed.html">Just Listed Updates</a></li>
 	</ul>
 	<h4>Corolla</h4>
 	<ul>

@@ -15,9 +15,9 @@
 </script>
 
 <Html lang="en">
-	<Preview preview="You contacted us using the Contact Us form on {import.meta.env.VITE_DOMAIN}." />
+	<Preview preview="You contacted us using the Contact Us form on {import.meta.env.VITE_DOMAIN}" />
 
-	<Text>You contacted us using the Contact Us form on {import.meta.env.VITE_DOMAIN}</Text>
+	<Text>You contacted us using the Contact Us form on {import.meta.env.VITE_DOMAIN}.</Text>
 
 	<Text>Here's the information you submitted. We'll respond to you as quickly as we can.</Text>
 
