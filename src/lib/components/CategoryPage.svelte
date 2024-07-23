@@ -13,14 +13,12 @@
 	</title>
 </svelte:head>
 
-<main>
-	<h1>{areaName} Homes, Houses & Beach Houses For Sale</h1>
+<h1>{areaName} Homes, Houses & Beach Houses For Sale</h1>
 
-	<AreaListingResultsPage
-		{areaParam}
-		displayName={areaName}
-		{activeListings}
-		{soldListings}
-		{proseComponent}
-	/>
-</main>
+<AreaListingResultsPage
+	{areaParam}
+	displayName={areaName}
+	{activeListings}
+	{soldListings}
+	{proseComponent}
+/>

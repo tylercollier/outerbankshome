@@ -46,7 +46,9 @@
 
 	<Nav />
 
-	<slot />
+	<main class="container mx-auto">
+		<slot />
+	</main>
 
 	<footer class="bg-lightorange border border-black border-solid">
 		<p align="center">

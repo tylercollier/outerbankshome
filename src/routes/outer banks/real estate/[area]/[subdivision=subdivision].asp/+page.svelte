@@ -11,14 +11,12 @@
 	<title>{subdivisionName} Real Estate and homes for sale</title>
 </svelte:head>
 
-<main>
-	<h1>{subdivisionName} Homes, Houses & Beach Houses For Sale</h1>
+<h1>{subdivisionName} Homes, Houses & Beach Houses For Sale</h1>
 
-	<AreaListingResultsPage
-		{areaParam}
-		displayName={subdivisionName}
-		{activeListings}
-		{soldListings}
-		{proseComponent}
-	/>
-</main>
+<AreaListingResultsPage
+	{areaParam}
+	displayName={subdivisionName}
+	{activeListings}
+	{soldListings}
+	{proseComponent}
+/>

@@ -12,12 +12,10 @@
 	<title>{formattedAddress} is for sale.</title>
 </svelte:head>
 
-<main>
-	<h2>Listing Details For {formattedAddress}</h2>
+<h2>Listing Details For {formattedAddress}</h2>
 
-	{#if listing.PropertyType === 'Land'}
-		<ListingDetailsLand {listing} />
-	{:else}
-		<ListingDetailsRes {listing} />
-	{/if}
-</main>
+{#if listing.PropertyType === 'Land'}
+	<ListingDetailsLand {listing} />
+{:else}
+	<ListingDetailsRes {listing} />
+{/if}
