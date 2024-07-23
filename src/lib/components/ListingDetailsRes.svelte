@@ -602,106 +602,110 @@
 <div>
 	<h3>Rental Income</h3>
 
-	<table  class="listing-details-section">
-		<tbody>
-		<tr>
-			<td>Annual Rental Income</td>
-			<td>{maybeBlank(listing.Est_Annual_Rental_Income_Amt)}</td>
-		</tr>
-		<tr>
-			<td>Rental Performance</td>
-			<td>{maybeBlank(listing.Est_Rental_Performance)}</td>
-		</tr>
-		<tr>
-			<td>Rental Cottage Name</td>
-			<td>{maybeBlank(listing.Rental_Cottage_Number)}</td>
-		</tr>
-		<tr>
-			<td>Rental Performnce Last Yesr</td>
-			<td>{maybeBlank(listing.Rental_Performnce_Last_Yr)}</td>
-		</tr>
-		<tr>
-			<td>Gross Income YTD Amt</td>
-			<td>{maybeBlank(listing.Gross_Income_YTD_Amt)}</td>
-		</tr>
-		<tr>
-			<td>How Rented</td>
-			<td>{maybeBlank(listing.How_Rented)}</td>
-		</tr>
-		<tr>
-			<td>Owner Rental Income 2024 Amount</td>
-			<td>{maybeBlank(listing.Owner_Rental_Income_2024Amt)}</td>
-		</tr>
-		<tr>
-			<td>Avertised Income 2024 Amount</td>
-			<td>{maybeBlank(listing.Advertised_Income_2024Amt)}</td>
-		</tr>
-		<tr>
-			<td>Owner Renatl Income 2023 Amount</td>
-			<td>{maybeBlank(listing.Owner_Rental_Income_2023Amt)}</td>
-		</tr>
-		<tr>
-			<td>Avertised Income 2023 Amount</td>
-			<td>{maybeBlank(listing.Advertised_Income_2023Amt)}</td>
-		</tr>
-		<tr>
-			<td>Owner Renatl Income 2022 Amount</td>
-			<td>{maybeBlank(listing.Owner_Rental_Income_2022Amt)}</td>
-		</tr>
-		<tr>
-			<td>Avertised Income 2021 Amount</td>
-			<td>{maybeBlank(listing.Advertised_Income_2022Amt)}</td>
-		</tr>
-		<tr>
-			<td>Owner Rental Income 2021 Amount</td>
-			<td>{maybeBlank(listing.Owner_Rental_Income_2021Amt)}</td>
-		</tr>
-		<tr>
-			<td>Avertised Income 2021 Amount</td>
-			<td>{maybeBlank(listing.Advertised_Income_2021Amt)}</td>
-		</tr>
-		<tr>
-			<td>Income History Year 1</td>
-			<td>{maybeBlank(listing.Income_Hist_Year_1)}</td>
-		</tr>
-		<tr>
-			<td>Income History Year 1 Amount</td>
-			<td>{maybeBlank(listing.Income_Hist_Year_1_Amt)}</td>
-		</tr>
-		<tr>
-			<td>Income History Year 2 </td>
-			<td>{maybeBlank(listing.Income_Hist_Year_2)}</td>
-		</tr>
-		<tr>
-			<td>Income History Year 2 Amount</td>
-			<td>{maybeBlank(listing.Income_Hist_Year_2_Amt)}</td>
-		</tr>
-		<tr>
-			<td>Income History Year 3</td>
-			<td>{maybeBlank(listing.Income_Hist_Year_3)}</td>
-		</tr>
-		<tr>
-			<td>Income History Year 3 Amount</td>
-			<td>{maybeBlank(listing.Income_Hist_Year_3_Amt)}</td>
-		</tr>
-		<tr>
-			<td>Rental Cottage_Name</td>
-			<td>{maybeBlank(listing.Rental_Cottage_Name)}</td>
-		</tr>
-		<tr>
-			<td>Rental Turnover Day</td>
-			<td>{maybeBlank(listing.Rental_Turnover_Day)}</td>
-		</tr>
-		<tr>
-			<td>Rental Company</td>
-			<td>{maybeBlank(listing.Rental_Co)}</td>
-		</tr>
-		<tr>
-			<td>Rental Term</td>
-			<td>{maybeBlank(listing.RTerm)}</td>
-		</tr>
-		</tbody>
-	</table>
+	{#if listing.Est_Annual_Rental_Income_Amt}
+		<table  class="listing-details-section">
+			<tbody>
+			<tr>
+				<td>Annual Rental Income</td>
+				<td>{maybeBlank(listing.Est_Annual_Rental_Income_Amt)}</td>
+			</tr>
+			<tr>
+				<td>Rental Performance</td>
+				<td>{maybeBlank(listing.Est_Rental_Performance)}</td>
+			</tr>
+			<tr>
+				<td>Rental Cottage Name</td>
+				<td>{maybeBlank(listing.Rental_Cottage_Number)}</td>
+			</tr>
+			<tr>
+				<td>Rental Performnce Last Yesr</td>
+				<td>{maybeBlank(listing.Rental_Performnce_Last_Yr)}</td>
+			</tr>
+			<tr>
+				<td>Gross Income YTD Amt</td>
+				<td>{maybeBlank(listing.Gross_Income_YTD_Amt)}</td>
+			</tr>
+			<tr>
+				<td>How Rented</td>
+				<td>{maybeBlank(listing.How_Rented)}</td>
+			</tr>
+			<tr>
+				<td>Owner Rental Income 2024 Amount</td>
+				<td>{maybeBlank(listing.Owner_Rental_Income_2024Amt)}</td>
+			</tr>
+			<tr>
+				<td>Avertised Income 2024 Amount</td>
+				<td>{maybeBlank(listing.Advertised_Income_2024Amt)}</td>
+			</tr>
+			<tr>
+				<td>Owner Renatl Income 2023 Amount</td>
+				<td>{maybeBlank(listing.Owner_Rental_Income_2023Amt)}</td>
+			</tr>
+			<tr>
+				<td>Avertised Income 2023 Amount</td>
+				<td>{maybeBlank(listing.Advertised_Income_2023Amt)}</td>
+			</tr>
+			<tr>
+				<td>Owner Renatl Income 2022 Amount</td>
+				<td>{maybeBlank(listing.Owner_Rental_Income_2022Amt)}</td>
+			</tr>
+			<tr>
+				<td>Avertised Income 2021 Amount</td>
+				<td>{maybeBlank(listing.Advertised_Income_2022Amt)}</td>
+			</tr>
+			<tr>
+				<td>Owner Rental Income 2021 Amount</td>
+				<td>{maybeBlank(listing.Owner_Rental_Income_2021Amt)}</td>
+			</tr>
+			<tr>
+				<td>Avertised Income 2021 Amount</td>
+				<td>{maybeBlank(listing.Advertised_Income_2021Amt)}</td>
+			</tr>
+			<tr>
+				<td>Income History Year 1</td>
+				<td>{maybeBlank(listing.Income_Hist_Year_1)}</td>
+			</tr>
+			<tr>
+				<td>Income History Year 1 Amount</td>
+				<td>{maybeBlank(listing.Income_Hist_Year_1_Amt)}</td>
+			</tr>
+			<tr>
+				<td>Income History Year 2 </td>
+				<td>{maybeBlank(listing.Income_Hist_Year_2)}</td>
+			</tr>
+			<tr>
+				<td>Income History Year 2 Amount</td>
+				<td>{maybeBlank(listing.Income_Hist_Year_2_Amt)}</td>
+			</tr>
+			<tr>
+				<td>Income History Year 3</td>
+				<td>{maybeBlank(listing.Income_Hist_Year_3)}</td>
+			</tr>
+			<tr>
+				<td>Income History Year 3 Amount</td>
+				<td>{maybeBlank(listing.Income_Hist_Year_3_Amt)}</td>
+			</tr>
+			<tr>
+				<td>Rental Cottage_Name</td>
+				<td>{maybeBlank(listing.Rental_Cottage_Name)}</td>
+			</tr>
+			<tr>
+				<td>Rental Turnover Day</td>
+				<td>{maybeBlank(listing.Rental_Turnover_Day)}</td>
+			</tr>
+			<tr>
+				<td>Rental Company</td>
+				<td>{maybeBlank(listing.Rental_Co)}</td>
+			</tr>
+			<tr>
+				<td>Rental Term</td>
+				<td>{maybeBlank(listing.RTerm)}</td>
+			</tr>
+			</tbody>
+		</table>
+	{:else}
+		There is no rental income information available
+	{/if}
 </div>
 
 <ListingDetailsBottom {listing} />
