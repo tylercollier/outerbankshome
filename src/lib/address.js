@@ -1,9 +1,14 @@
 import { slugify } from '$lib/url';
 
-export function formatAddress(listing) {
+export function formatAddressLine1(listing) {
 	const fieldNames = ['StreetNumber', 'StreetDirPrefix', 'StreetName'];
 	const values = fieldNames.map((x) => listing[x]).filter((x) => x);
-	let address = values.join(' ');
+	const address = values.join(' ');
+	return address;
+}
+
+export function formatAddress(listing) {
+	let address = formatAddressLine1(listing);
 	address += ' in ' + listing.City;
 	return address;
 }

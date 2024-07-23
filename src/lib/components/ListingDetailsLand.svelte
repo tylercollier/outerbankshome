@@ -1,22 +1,15 @@
 <script>
-	import ImageCarousel from '$lib/components/ImageCarousel.svelte';
 	import { formatDollarsAndCents, formatDollarsOnly } from '$lib/money';
 	import { formatDate } from '$lib/date';
 	import { prettyJsonList } from '$lib/listing';
 	import ListingDetailsBottom from '$lib/components/ListingDetailsBottom.svelte';
 	import { maybeBlank } from '$lib/listing';
+	import ListingDetailsSection from '$lib/components/ListingDetailsSection.svelte';
 
 	export let listing;
 </script>
 
-<div>
-	<div>MLS: {listing.ListingId}</div>
-	<div>Asking Price: {formatDollarsOnly(listing.ListPrice)}</div>
-	<div>Status: {listing.StandardStatus}</div>
-	<div>Status Date: {formatDate(listing.ModificationTimestamp)}</div>
-</div>
-
-<ImageCarousel images={listing.Media} />
+<ListingDetailsSection {listing} />
 
 <div>
 	<h3>Listing Information</h3>
