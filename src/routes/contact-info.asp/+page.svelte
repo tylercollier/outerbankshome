@@ -13,7 +13,9 @@
 </svelte:head>
 
 <main>
-	<h1>How Can We Help You?</h1>
+	<h1>Contact Shore Realty</h1>
+
+	<h2>How Can We Help You?</h2>
 
 	{#if form?.success}
 		<div class="font-bold">
