@@ -144,27 +144,32 @@
 					</div>
 				</div>
 
-				<button class="mt-4 bg-red-500 text-white rounded-lg px-8 text-xl uppercase" disabled={isFormLoading}
-								class:bg-gray-500={isFormLoading} class:cursor-not-allowed={isFormLoading}
-								type="submit">
+				<button
+					type="submit"
+					class="mt-4 text-white rounded-lg px-8 text-xl uppercase"
+					class:bg-red-500={!isFormLoading}
+					class:bg-gray-500={isFormLoading}
+					class:cursor-not-allowed={isFormLoading}
+					disabled={isFormLoading}
+				>
 					Submit
 				</button>
 				{#if form?.message}
-					<div class="error">{form.message}</div>
+					<div class="mt-4 error">{form.message}</div>
 				{/if}
 			</form>
 		</div>
-	{/if}
 
-	<h2>
-		<p>Phones:<br>
-			<a href="tel://{officeTollFreePhoneNumber}">{officeTollFreePhoneNumber}</a><br>
-			<a href="tel://{officeLocalPhoneNumber}">{officeLocalPhoneNumber}</a><br>
-			<a href="tel://2524413410">252-441-3410</a></p>
-		<p>Mailing Address:<br>
-			Shore Realty <br>
-			PO Box 1977<br>
-			Nags Head, NC 27959
-		</p>
-	</h2>
+		<h2>
+			<p>Phones:<br>
+				<a href="tel://{officeTollFreePhoneNumber}">{officeTollFreePhoneNumber}</a><br>
+				<a href="tel://{officeLocalPhoneNumber}">{officeLocalPhoneNumber}</a><br>
+				<a href="tel://2524413410">252-441-3410</a></p>
+			<p>Mailing Address:<br>
+				Shore Realty <br>
+				PO Box 1977<br>
+				Nags Head, NC 27959
+			</p>
+		</h2>
+	{/if}
 </main>

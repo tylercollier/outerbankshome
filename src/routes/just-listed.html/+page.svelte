@@ -146,21 +146,25 @@
 					</div>
 				</div>
 
-				<button class="mt-4 bg-red-500 text-white rounded-lg px-8 text-xl uppercase" disabled={isFormLoading}
-								class:bg-gray-500={isFormLoading} class:cursor-not-allowed={isFormLoading}
-								type="submit">
+				<button
+					type="submit"
+					class="mt-4 text-white rounded-lg px-8 text-xl uppercase"
+					class:bg-red-500={!isFormLoading}
+					class:bg-gray-500={isFormLoading}
+					class:cursor-not-allowed={isFormLoading}
+					disabled={isFormLoading}
+				>
 					Submit
 				</button>
 				{#if form?.message}
-					<div class="error">{form.message}</div>
+					<div class="mt-4 error">{form.message}</div>
 				{/if}
 			</form>
 		</div>
+
+		<div class="mt-4">
+			If you end up getting too many updates or the updates don't match what you are looking, just give us a call and we will fix the problem for you.
+			<a href="tel://{officeTollFreePhoneNumber}">{officeTollFreePhoneNumber}</a>
+		</div>
 	{/if}
-
-	<div class="mt-4">
-		If you end up getting too many updates or the updates don't match what you are looking, just give us a call and we will fix the problem for you.
-		<a href="tel://{officeTollFreePhoneNumber}">{officeTollFreePhoneNumber}</a>
-
-	</div>
 </main>

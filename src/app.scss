@@ -8,6 +8,11 @@ body {
 	padding: 4px;
 }
 
+.error {
+	@apply text-red-500;
+	@apply font-bold;
+}
+
 .mycontainer {
 	display: grid;
 	gap: 4px;
