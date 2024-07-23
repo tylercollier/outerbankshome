@@ -33,9 +33,7 @@ export function getAreaParamFromCity(city) {
 	} else if (city === 'Southern Shores') {
 		return 'southern-shores';
 	}
-	return city
-		.toLowerCase()
-		.join('');
+	return city.toLowerCase();
 }
 
 export const allowedAreas = [

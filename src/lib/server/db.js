@@ -97,7 +97,10 @@ export async function getSearchResultListings(propertyType, buildQueryFn) {
 		.where('Order', '=', 0)
 		.select(fieldNames)
 		.orderBy('Property.ModificationTimestamp', 'desc')
-		.limit(20);
+		.limit(parseInt(import.meta.env.VITE_DEFAULT_DB_SELECT_LIMIT));
+	if (import.meta.env.VITE_DEFAULT_DB_SELECT_LIMIT) {
+		listingsQueryBuilder = listingsQueryBuilder.limit(parseInt(import.meta.env.VITE_DEFAULT_DB_SELECT_LIMIT));
+	}
 	listingsQueryBuilder = buildQueryFn(listingsQueryBuilder);
 	const listings = await listingsQueryBuilder.execute();
 	return listings;
