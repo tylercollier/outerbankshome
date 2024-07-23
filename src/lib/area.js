@@ -25,6 +25,19 @@ export function getCity(areaParam) {
 	return getAreaNameFromParam(areaParam);
 }
 
+export function getAreaParamFromCity(city) {
+	if (city === 'Kitty Hawk') {
+		return 'KittyHawk';
+	} else if (city === 'Kill Devil Hills') {
+		return 'KillDevilHills';
+	} else if (city === 'Southern Shores') {
+		return 'southern-shores';
+	}
+	return city
+		.toLowerCase()
+		.join('');
+}
+
 export const allowedAreas = [
 	'corolla',
 	'duck',

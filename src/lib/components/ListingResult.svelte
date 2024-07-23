@@ -5,11 +5,13 @@
 	import { useLazyImage as lazyImage } from 'svelte-lazy-image';
 	import { formatDate } from '$lib/date';
 	import { officeTollFreePhoneNumber } from '$lib/meta';
+	import { getAreaParamFromCity } from '$lib/area.js';
 
 	export let listing;
 	export let urlInfix = '';
 
-	$: link = makeLinkForListing(listing, { urlInfix });
+	$: infixToUse = urlInfix || getAreaParamFromCity(listing.City);
+	$: link = makeLinkForListing(listing, { urlInfix: infixToUse });
 	$: address = formatAddress(listing);
 	$: maxLength = 200;
 	$: publicRemarks =
