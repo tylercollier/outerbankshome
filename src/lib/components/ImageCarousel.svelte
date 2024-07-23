@@ -53,14 +53,14 @@
 		emblaApi.scrollTo(currentImageIndex);
 	}
 	function showBiggerPicture() {
-		const items = images.map((x) => ({ img: x.MediaURL, caption: x.ShortDescription }));
+		const items = images.map(x => ({ img: x.MediaURL, caption: x.ShortDescription }));
 		biggerPicture.open({
 			items,
 			position: currentImageIndex,
 			// This isn't a supported value, but it seems to accomplish no intro animation.
 			intro: 'none',
 			onUpdate(container, activeItem) {
-				const index = images.findIndex((x) => x.MediaURL === activeItem.img);
+				const index = images.findIndex(x => x.MediaURL === activeItem.img);
 				if (index !== undefined) {
 					currentImageIndex = index;
 					emblaApi.scrollTo(currentImageIndex);

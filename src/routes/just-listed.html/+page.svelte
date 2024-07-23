@@ -9,21 +9,24 @@
 </script>
 
 <svelte:head>
-	<script src="https://www.google.com/recaptcha/api.js?render={import.meta.env.VITE_GOOGLE_RECAPTCHA_SITE_KEY}">
+	<script
+		src="https://www.google.com/recaptcha/api.js?render={import.meta.env
+			.VITE_GOOGLE_RECAPTCHA_SITE_KEY}"
+	>
 	</script>
 </svelte:head>
 
 <h2>New Listings As They Hit The Market</h2>
 
-<h2 class="text-blue-950">Live Updates of Price Changes
-	Straight From The Outer Banks MLS</h2>
+<h2 class="text-blue-950">Live Updates of Price Changes Straight From The Outer Banks MLS</h2>
 
 {#if form?.success}
 	<div class="font-bold">
 		<div>Your request will be emailed to you.</div>
 
-		<div class="mt-4">Requests are handled on a first come basis, so if you need immediate
-			attention, please let us know.
+		<div class="mt-4">
+			Requests are handled on a first come basis, so if you need immediate attention, please let us
+			know.
 		</div>
 
 		<div class="mt-4">Thank You.</div>
@@ -32,21 +35,29 @@
 	</div>
 {:else}
 	<div class="contact-form inline-block p-8 rounded-2xl bg-lightorange">
-		<form method="post" use:enhance={{
-			type: 'recaptcha',
-			sitekey: import.meta.env.VITE_GOOGLE_RECAPTCHA_SITE_KEY,
-			submit: async function() {
-				isFormLoading = true;
-				return async ({ update }) => {
+		<form
+			method="post"
+			use:enhance={{
+				type: 'recaptcha',
+				sitekey: import.meta.env.VITE_GOOGLE_RECAPTCHA_SITE_KEY,
+				submit: async function () {
+					isFormLoading = true;
+					return async ({ update }) => {
 						isFormLoading = false;
 						update();
-				};
-			},
-		}}>
+					};
+				},
+			}}
+		>
 			<div>
 				<div>
 					<label class="text-label" for="first_name">First Name</label>
-					<input type="text" name="first_name" id="first_name" value={form?.data?.first_name ?? ''} />
+					<input
+						type="text"
+						name="first_name"
+						id="first_name"
+						value={form?.data?.first_name ?? ''}
+					/>
 				</div>
 				<div class="text-red-500 text-right mt-2">
 					{#if form?.errors?.first_name}
@@ -90,7 +101,12 @@
 			<div class="mt-4">
 				<div>
 					<label class="text-label" for="price_range">Price Range</label>
-					<input type="text" name="price_range" id="price_range" value={form?.data?.price_range ?? ''} />
+					<input
+						type="text"
+						name="price_range"
+						id="price_range"
+						value={form?.data?.price_range ?? ''}
+					/>
 				</div>
 				<div class="text-red-500 text-right mt-2">
 					{#if form?.errors?.price_range}
@@ -102,41 +118,95 @@
 			<div class="mt-4">
 				<div class="font-bold">Where?</div>
 				{#each allowedAreas as areaSlug}
-					<div><label><input type="checkbox" name="area" value={areaSlug} /> {getAreaNameFromParam(areaSlug)}</label>
+					<div>
+						<label
+							><input type="checkbox" name="area" value={areaSlug} />
+							{getAreaNameFromParam(areaSlug)}</label
+						>
 					</div>
 				{/each}
 			</div>
 
 			<div class="mt-4">
 				<div class="font-bold">What?</div>
-				<div><label><input type="checkbox" name="property_type" value="residential" /> Residential</label></div>
-				<div><label><input type="checkbox" name="property_type" value="investment" /> Investment/2nd Home</label>
+				<div>
+					<label
+						><input type="checkbox" name="property_type" value="residential" /> Residential</label
+					>
 				</div>
-				<div><label><input type="checkbox" name="property_type" value="condo-townhouse" /> Condo/Townhouse</label>
+				<div>
+					<label
+						><input type="checkbox" name="property_type" value="investment" /> Investment/2nd Home</label
+					>
+				</div>
+				<div>
+					<label
+						><input type="checkbox" name="property_type" value="condo-townhouse" /> Condo/Townhouse</label
+					>
 				</div>
 				<div><label><input type="checkbox" name="property_type" value="land" /> Land</label></div>
 			</div>
 
 			<div class="mt-4">
 				<div class="font-bold">When?</div>
-				<div><label><input type="checkbox" name="level_of_interest" value="Need Help Now" /> Need Help Now</label>
+				<div>
+					<label
+						><input type="checkbox" name="level_of_interest" value="Need Help Now" /> Need Help Now</label
+					>
 				</div>
-				<div><label><input type="checkbox" name="level_of_interest" value="Ready To Buy" /> Ready To Buy</label></div>
-				<div><label><input type="checkbox" name="level_of_interest" value="Buy In Next 12 Months" /> Buy In Next 12
-					Months</label></div>
-				<div><label><input type="checkbox" name="level_of_interest" value="Buy In Next 24 Months" /> Buy In Next 24
-					Months</label></div>
-				<div><label><input type="checkbox" name="level_of_interest" value="Already Own OBX Property/ want more" />
-					Already Own OBX Property/want more</label></div>
-				<div><label><input type="checkbox" name="level_of_interest" value="Already Own / thinking about selling" />
-					Already Own / thinking about selling</label></div>
-				<div><label><input type="checkbox" name="level_of_interest" value="Just Curious" /> Just Curious</label></div>
+				<div>
+					<label
+						><input type="checkbox" name="level_of_interest" value="Ready To Buy" /> Ready To Buy</label
+					>
+				</div>
+				<div>
+					<label
+						><input type="checkbox" name="level_of_interest" value="Buy In Next 12 Months" /> Buy In
+						Next 12 Months</label
+					>
+				</div>
+				<div>
+					<label
+						><input type="checkbox" name="level_of_interest" value="Buy In Next 24 Months" /> Buy In
+						Next 24 Months</label
+					>
+				</div>
+				<div>
+					<label
+						><input
+							type="checkbox"
+							name="level_of_interest"
+							value="Already Own OBX Property/ want more"
+						/>
+						Already Own OBX Property/want more</label
+					>
+				</div>
+				<div>
+					<label
+						><input
+							type="checkbox"
+							name="level_of_interest"
+							value="Already Own / thinking about selling"
+						/>
+						Already Own / thinking about selling</label
+					>
+				</div>
+				<div>
+					<label
+						><input type="checkbox" name="level_of_interest" value="Just Curious" /> Just Curious</label
+					>
+				</div>
 			</div>
 
 			<div class="mt-4">
 				<div>
 					<label class="text-label" for="comments">Comments</label>
-					<textarea class="w-64 h-16 rounded" name="comments" id="comments" value={form?.data?.comments ?? ''} />
+					<textarea
+						class="w-64 h-16 rounded"
+						name="comments"
+						id="comments"
+						value={form?.data?.comments ?? ''}
+					/>
 				</div>
 				<div class="text-red-500 text-right mt-2">
 					{#if form?.errors?.comments}
@@ -162,7 +232,8 @@
 	</div>
 
 	<div class="mt-4">
-		If you end up getting too many updates or the updates don't match what you are looking, just give us a call and we will fix the problem for you.
+		If you end up getting too many updates or the updates don't match what you are looking, just
+		give us a call and we will fix the problem for you.
 		<a href="tel://{officeTollFreePhoneNumber}">{officeTollFreePhoneNumber}</a>
 	</div>
 {/if}

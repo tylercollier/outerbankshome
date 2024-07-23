@@ -10,8 +10,7 @@ export async function getListings(areaParam, categoryParam) {
 	let buildQueryFn;
 	if (categoryParam === homeCategory) {
 		buildQueryFn = queryBuilder => {
-			return queryBuilder
-				.where('PropertySubType', 'in', ['Single Family Residence']);
+			return queryBuilder.where('PropertySubType', 'in', ['Single Family Residence']);
 		};
 	} else if (categoryParam === 'canalfront-homes') {
 		buildQueryFn = queryBuilder => {
@@ -21,12 +20,11 @@ export async function getListings(areaParam, categoryParam) {
 		};
 	} else if (categoryParam === 'condos') {
 		buildQueryFn = queryBuilder => {
-			return queryBuilder
-				.where('PropertySubType', 'in', ['Condominium', 'Townhouse'])
+			return queryBuilder.where('PropertySubType', 'in', ['Condominium', 'Townhouse']);
 		};
 	} else if (categoryParam === 'land') {
 		buildQueryFn = queryBuilder => {
-			return queryBuilder
+			return queryBuilder;
 		};
 	} else if (categoryParam === 'oceanfront-homes') {
 		buildQueryFn = queryBuilder => {
@@ -51,7 +49,7 @@ export async function getListings(areaParam, categoryParam) {
 	buildQueryFn = queryBuilder => {
 		const qb = prevBuildQueryFn(queryBuilder);
 		return qb.where('City', '=', city);
-	}
+	};
 	const propertyType = categoryParam === 'land' ? 'Land' : 'Residential';
 	const activeListings = await getSearchResultListings(propertyType, filterActive(buildQueryFn));
 	const soldListings = await getSearchResultListings(propertyType, filterSold(buildQueryFn));
@@ -82,4 +80,4 @@ export const load = async (areaParam, categoryParam) => {
 		soldListings,
 		hasProse,
 	};
-}
+};

@@ -6,7 +6,7 @@
 	export let areaParam;
 	export let displayName;
 
-	$: categoryLinks = allowedCategories[areaParam].map((slug) => {
+	$: categoryLinks = allowedCategories[areaParam].map(slug => {
 		const categoryName = getCategoryName(slug);
 		return {
 			label: `${displayName} ${categoryName}`,

@@ -2,7 +2,7 @@ import { slugify } from '$lib/url';
 
 export function formatAddressLine1(listing) {
 	const fieldNames = ['StreetNumber', 'StreetDirPrefix', 'StreetName'];
-	const values = fieldNames.map((x) => listing[x]).filter((x) => x);
+	const values = fieldNames.map(x => listing[x]).filter(x => x);
 	const address = values.join(' ');
 	return address;
 }
@@ -31,8 +31,8 @@ export function makeAddressSlug(listing) {
 		'PostalCode',
 	];
 	const values = fieldNames
-		.map((x) => listing[x])
-		.filter((x) => x)
+		.map(x => listing[x])
+		.filter(x => x)
 		.map(slugify);
 
 	const slug = values.join('-');

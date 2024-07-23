@@ -5,7 +5,7 @@
 	import { useLazyImage as lazyImage } from 'svelte-lazy-image';
 	import { formatDate } from '$lib/date';
 	import { officeTollFreePhoneNumber } from '$lib/meta';
-	import { getAreaParamFromCity } from '$lib/area.js';
+	import { getAreaParamFromCity } from '$lib/area';
 
 	export let listing;
 	export let urlInfix = '';
@@ -27,7 +27,9 @@
 		<div><a href={link}>{address}</a></div>
 		<div class:font-bold={!isSold}>Asking: {formatDollarsOnly(listing.ListPrice)}</div>
 		{#if isSold}
-			<div class="font-bold">{formatDollarsOnly(listing.ClosePrice)} Closing Date {formatDate(listing.CloseDate)}</div>
+			<div class="font-bold">
+				{formatDollarsOnly(listing.ClosePrice)} Closing Date {formatDate(listing.CloseDate)}
+			</div>
 		{/if}
 		{#if listing.PropertyType === 'Residential'}
 			<div>

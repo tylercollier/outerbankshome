@@ -15,19 +15,25 @@
 </script>
 
 <Html lang="en">
-<Preview preview="You were contacted by {first_name} {last_name} ({email}) using the Just Listed form on {import.meta.env.VITE_DOMAIN}" />
+	<Preview
+		preview="You were contacted by {first_name} {last_name} ({email}) using the Just Listed form on {import.meta
+			.env.VITE_DOMAIN}"
+	/>
 
-<Text>You were contacted by {first_name} {last_name} ({email}) using the Just Listed form on {import.meta.env.VITE_DOMAIN}.</Text>
+	<Text
+		>You were contacted by {first_name}
+		{last_name} ({email}) using the Just Listed form on {import.meta.env.VITE_DOMAIN}.</Text
+	>
 
-<Container>
-	<Text>First name: {first_name}</Text>
-	<Text>Last name: {last_name}</Text>
-	<Text>Email: {email}</Text>
-	<Text>Phone: {phone}</Text>
-	<Text>Price range: {price_range}</Text>
-	<Text>Areas: {area.map(getAreaNameFromParam).join(', ')}</Text>
-	<Text>Property types: {property_type.join(', ')}</Text>
-	<Text>Level of interest: {level_of_interest.join(', ')}</Text>
-	<Text>Comments: {comments}</Text>
-</Container>
+	<Container>
+		<Text>First name: {first_name}</Text>
+		<Text>Last name: {last_name}</Text>
+		<Text>Email: {email}</Text>
+		<Text>Phone: {phone}</Text>
+		<Text>Price range: {price_range}</Text>
+		<Text>Areas: {area.map(getAreaNameFromParam).join(', ')}</Text>
+		<Text>Property types: {property_type.join(', ')}</Text>
+		<Text>Level of interest: {level_of_interest.join(', ')}</Text>
+		<Text>Comments: {comments}</Text>
+	</Container>
 </Html>

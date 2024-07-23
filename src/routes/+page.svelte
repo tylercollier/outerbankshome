@@ -1,8 +1,8 @@
 <script>
-import ListingResults from '$lib/components/ListingResults.svelte';
+	import ListingResults from '$lib/components/ListingResults.svelte';
 
-export let data;
-$: ({ listings } = data);
+	export let data;
+	$: ({ listings } = data);
 </script>
 
 <svelte:head>

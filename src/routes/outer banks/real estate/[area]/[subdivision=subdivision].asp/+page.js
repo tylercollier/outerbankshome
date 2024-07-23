@@ -6,7 +6,11 @@ export const load = async ({ data }) => {
 			// Vite's ability to do static analysis. If we use a variable, we'll see this warning:
 			//   The above dynamic import cannot be analyzed by Vite.
 			//   See https://github.com/rollup/plugins/tree/master/packages/dynamic-import-vars#limitations for supported dynamic import formats. If this is intended to be left as-is, you can use the /* @vite-ignore */ comment inside the import() call to suppress this warning.
-			proseComponent = (await import(`../../../../../lib/components/prose/area/${data.areaParam}/subdivision/${data.subdivision.slug}.svelte`)).default;
+			proseComponent = (
+				await import(
+					`../../../../../lib/components/prose/area/${data.areaParam}/subdivision/${data.subdivision.slug}.svelte`
+				)
+			).default;
 		} catch (e) {
 			// Do nothing
 		}
@@ -14,5 +18,5 @@ export const load = async ({ data }) => {
 	return {
 		...data,
 		proseComponent,
-	}
+	};
 };

@@ -4,7 +4,7 @@
 
 	export let data;
 	$: ({ areaParam, activeListings, soldListings, subdivision, proseComponent } = data);
-	$: subdivisionName = allowedSubdivisions[areaParam].find((x) => x.slug === subdivision.slug).name;
+	$: subdivisionName = allowedSubdivisions[areaParam].find(x => x.slug === subdivision.slug).name;
 </script>
 
 <svelte:head>

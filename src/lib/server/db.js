@@ -11,20 +11,20 @@ export function getDb() {
 		});
 
 		function log(event) {
-				if (event.level === 'error') {
-					console.error('Query failed : ', {
-						durationMs: event.queryDurationMillis,
-						error: event.error,
-						sql: event.query.sql,
-						params: event.query.parameters,
-					});
-				} else {
-					console.log('Query executed : ', {
-						durationMs: event.queryDurationMillis,
-						sql: event.query.sql,
-						params: event.query.parameters,
-					});
-				}
+			if (event.level === 'error') {
+				console.error('Query failed : ', {
+					durationMs: event.queryDurationMillis,
+					error: event.error,
+					sql: event.query.sql,
+					params: event.query.parameters,
+				});
+			} else {
+				console.log('Query executed : ', {
+					durationMs: event.queryDurationMillis,
+					sql: event.query.sql,
+					params: event.query.parameters,
+				});
+			}
 		}
 
 		db = new Kysely({
@@ -99,22 +99,24 @@ export async function getSearchResultListings(propertyType, buildQueryFn) {
 		.orderBy('Property.ModificationTimestamp', 'desc')
 		.limit(parseInt(import.meta.env.VITE_DEFAULT_DB_SELECT_LIMIT));
 	if (import.meta.env.VITE_DEFAULT_DB_SELECT_LIMIT) {
-		listingsQueryBuilder = listingsQueryBuilder.limit(parseInt(import.meta.env.VITE_DEFAULT_DB_SELECT_LIMIT));
+		listingsQueryBuilder = listingsQueryBuilder.limit(
+			parseInt(import.meta.env.VITE_DEFAULT_DB_SELECT_LIMIT),
+		);
 	}
 	listingsQueryBuilder = buildQueryFn(listingsQueryBuilder);
 	const listings = await listingsQueryBuilder.execute();
 	return listings;
 }
 
-export const filterActive = (buildQueryFn) => {
-	return (queryBuilder) => {
+export const filterActive = buildQueryFn => {
+	return queryBuilder => {
 		queryBuilder = buildQueryFn(queryBuilder);
 		return queryBuilder.where('StandardStatus', '=', 'Active');
 	};
 };
 
-export const filterSold = (buildQueryFn) => {
-	return (queryBuilder) => {
+export const filterSold = buildQueryFn => {
+	return queryBuilder => {
 		queryBuilder = buildQueryFn(queryBuilder);
 		return queryBuilder.where('StandardStatus', '=', 'Closed');
 	};

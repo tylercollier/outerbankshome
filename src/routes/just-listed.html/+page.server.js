@@ -7,7 +7,7 @@ import Agent from '$lib/emails/just_listed/Agent.svelte';
 import Customer from '$lib/emails/just_listed/Customer.svelte';
 
 export const actions = {
-	default: async (event) => {
+	default: async event => {
 		const formData = await event.request.formData();
 
 		const schema = zfd.formData({

@@ -8,9 +8,7 @@
 </script>
 
 <svelte:head>
-	<title
-		>{areaName} NC homes, houses, real estate and beach houses for sale
-	</title>
+	<title>{areaName} NC homes, houses, real estate and beach houses for sale</title>
 </svelte:head>
 
 <h1>{areaName} Homes, Houses & Beach Houses For Sale</h1>

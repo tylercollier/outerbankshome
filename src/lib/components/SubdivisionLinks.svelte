@@ -6,7 +6,7 @@
 	export let areaParam;
 	export let displayName;
 
-	$: subdivisionLinks = allowedSubdivisions[areaParam].map((subdivision) => {
+	$: subdivisionLinks = allowedSubdivisions[areaParam].map(subdivision => {
 		return {
 			label: subdivision.name,
 			href: urljoin(basePath, areaParam, subdivision.slug + '.asp'),

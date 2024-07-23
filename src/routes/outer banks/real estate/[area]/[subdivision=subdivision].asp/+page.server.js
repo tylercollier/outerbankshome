@@ -6,10 +6,10 @@ import fsPromises from 'fs/promises';
 export const trailingSlash = 'never';
 
 export const load = async ({ params }) => {
-	const subdivision = allowedSubdivisions[params.area].find((x) => x.slug === params.subdivision);
+	const subdivision = allowedSubdivisions[params.area].find(x => x.slug === params.subdivision);
 	const areaParam = params.area;
 	const city = getCity(areaParam);
-	const modifyQuery = (queryBuilder) => {
+	const modifyQuery = queryBuilder => {
 		return queryBuilder
 			.where('City', '=', city)
 			.where('PropertySubType', 'in', ['Single Family Residence'])

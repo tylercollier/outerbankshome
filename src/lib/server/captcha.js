@@ -9,9 +9,7 @@ export async function verify(gRecaptchaResponse) {
 			method: 'POST',
 			url: 'https://www.google.com/recaptcha/api/siteverify',
 			data: dataString,
-		})
-			.then(res => res.data)
-		;
+		}).then(res => res.data);
 	} catch (e) {
 		return {
 			success: false,
@@ -25,9 +23,10 @@ export async function verify(gRecaptchaResponse) {
 		}
 		return {
 			success: false,
-			fn: () => fail(400, {
-				message,
-			}),
+			fn: () =>
+				fail(400, {
+					message,
+				}),
 		};
 	}
 	return {
