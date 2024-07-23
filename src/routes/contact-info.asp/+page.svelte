@@ -8,7 +8,8 @@
 </script>
 
 <svelte:head>
-	<script src="https://www.google.com/recaptcha/api.js?render={import.meta.env.VITE_GOOGLE_RECAPTCHA_SITE_KEY}"></script>
+	<script src="https://www.google.com/recaptcha/api.js?render={import.meta.env.VITE_GOOGLE_RECAPTCHA_SITE_KEY}">
+	</script>
 </svelte:head>
 
 <main>
@@ -32,7 +33,6 @@
 				type: 'recaptcha',
 				sitekey: import.meta.env.VITE_GOOGLE_RECAPTCHA_SITE_KEY,
 				submit: async function() {
-					// I got this from https://stackoverflow.com/a/76629408/135101
 					isFormLoading = true;
 					return async ({ update }) => {
 							isFormLoading = false;
@@ -98,31 +98,35 @@
 
 				<div class="mt-4">
 					{#each allowedAreas as areaSlug}
-						<div><label><input type="checkbox" value={areaSlug} /> {getAreaNameFromParam(areaSlug)}</label></div>
+						<div><label><input type="checkbox" name="area" value={areaSlug} /> {getAreaNameFromParam(areaSlug)}</label>
+						</div>
 					{/each}
 				</div>
 
 				<div class="mt-4">
-					<div><label><input type="checkbox" value="residential" /> Residential</label></div>
-					<div><label><input type="checkbox" value="investment" /> Investment/2nd Home</label></div>
-					<div><label><input type="checkbox" value="condo-townhouse" /> Condo/Townhouse</label></div>
-					<div><label><input type="checkbox" value="land" /> Land</label></div>
+					<div><label><input type="checkbox" name="property_type" value="residential" /> Residential</label></div>
+					<div><label><input type="checkbox" name="property_type" value="investment" /> Investment/2nd Home</label>
+					</div>
+					<div><label><input type="checkbox" name="property_type" value="condo-townhouse" /> Condo/Townhouse</label>
+					</div>
+					<div><label><input type="checkbox" name="property_type" value="land" /> Land</label></div>
 				</div>
 
 				<div class="mt-4 font-bold">Level of Interest</div>
 
 				<div class="mt-4">
-					<div><label><input type="checkbox" value="Need Help Now" /> Need Help Now</label></div>
-					<div><label><input type="checkbox" value="Ready To Buy" /> Ready To Buy</label></div>
-					<div><label><input type="checkbox" value="Buy In Next 12 Months" /> Buy In Next 12 Months</label></div>
-					<div><label><input type="checkbox" value="Buy In Next 24 Months" /> Buy In Next 24 Months</label></div>
-					<div><label><input type="checkbox" value="Already Own OBX Property/ want more" /> Already Own OBX Property/
-						want
-						more</label></div>
-					<div><label><input type="checkbox" value="Already Own / thinking about selling" /> Already Own / thinking
-						about
-						selling</label></div>
-					<div><label><input type="checkbox" value="Just Curious" /> Just Curious</label></div>
+					<div><label><input type="checkbox" name="level_of_interest" value="Need Help Now" /> Need Help Now</label>
+					</div>
+					<div><label><input type="checkbox" name="level_of_interest" value="Ready To Buy" /> Ready To Buy</label></div>
+					<div><label><input type="checkbox" name="level_of_interest" value="Buy In Next 12 Months" /> Buy In Next 12
+						Months</label></div>
+					<div><label><input type="checkbox" name="level_of_interest" value="Buy In Next 24 Months" /> Buy In Next 24
+						Months</label></div>
+					<div><label><input type="checkbox" name="level_of_interest" value="Already Own OBX Property/ want more" />
+						Already Own OBX Property/want more</label></div>
+					<div><label><input type="checkbox" name="level_of_interest" value="Already Own / thinking about selling" />
+						Already Own / thinking about selling</label></div>
+					<div><label><input type="checkbox" name="level_of_interest" value="Just Curious" /> Just Curious</label></div>
 				</div>
 
 				<div class="mt-4">

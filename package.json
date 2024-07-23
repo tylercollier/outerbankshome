@@ -41,8 +41,10 @@
 		"kysely-ctl": "^0.8.10",
 		"lodash": "^4.17.21",
 		"mysql2": "^3.10.2",
+		"nodemailer": "^6.9.14",
 		"sass": "^1.77.6",
 		"svelte-captcha-enhance": "^1.2.1",
+		"svelte-email": "^0.0.4",
 		"url-join": "^5.0.0",
 		"zod": "^3.23.8",
 		"zod-form-data": "^2.0.2"
