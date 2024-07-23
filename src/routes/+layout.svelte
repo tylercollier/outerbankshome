@@ -6,14 +6,16 @@
 
 <div class="mycontainer">
 	<header>
-		<div>
+		<div class="relative">
 			<a href="/">
 				<img
 					src="https://www.outerbankshome.com/Shore%20Realty%20Outer%20Banks%20Real%20Estate%20Sales.jpg"
+					class="w-full max-w-[800px]"
 				/>
 			</a>
+			<div class="absolute bottom-1 -z-10 bg-[#041c48] w-full h-[42px]"></div>
 		</div>
-		<div class="bg-[#FF7E40] p-2">
+		<div class="bg-[#FF7E40] p-2 -mt-1" style="border-bottom: 2px black solid;">
 			<a href="/outer banks/real estate/corolla/" title="Corolla Home Sales">Corolla</a>
 			|
 			<a href="/outer banks/real estate/duck/" title="Duck Home Sales">Duck</a>
@@ -47,19 +49,6 @@
 	<slot />
 
 	<footer class="bg-lightorange border border-black border-solid">
-		<p align="center">
-			<a
-				href="/search-mls.html"
-				target="_self"
-				title="Search all Outer Banks NC real estate and homes for sale"
-				><img
-					src="https://www.outerbankshome.com/search button.gif"
-					style="width:25%;"
-					border="0"
-					alt="Search Outer Banks MLS real estate"
-				/></a
-			>
-		</p>
 		<p align="center">
 			<b
 				>Shore Realty of the Outer Banks Inc. <br />
