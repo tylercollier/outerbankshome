@@ -86,7 +86,7 @@
 				</div>
 				<div class="mt-4">
 					<div>
-						<label class="text-label" for="comments">Comments Name</label>
+						<label class="text-label" for="comments">Comments</label>
 						<input type="text" name="comments" id="comments" value={form?.data?.comments ?? ''} />
 					</div>
 					<div class="text-red-500 text-right mt-2">
@@ -142,6 +142,7 @@
 				</div>
 
 				<button class="mt-4 bg-red-500 text-white rounded-lg px-8 text-xl uppercase" disabled={isFormLoading}
+								class:bg-gray-500={isFormLoading} class:cursor-not-allowed={isFormLoading}
 								type="submit">
 					Submit
 				</button>

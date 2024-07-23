@@ -1,7 +1,7 @@
 <script>
 	import urljoin from 'url-join';
 	import { basePath } from '$lib/nav';
-	import { officeTollFreePhoneNumber } from '$lib/meta.js';
+	import { officeTollFreePhoneNumber } from '$lib/meta';
 
 	function makeLink(sub) {
 		return urljoin(basePath, sub);

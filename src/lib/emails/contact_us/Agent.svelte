@@ -1,6 +1,7 @@
 <script>
-	import { Container, Preview, Html, Text } from 'svelte-email';
-	import { getAreaNameFromParam } from '$lib/area.js';
+	import { Container, Preview, Html } from 'svelte-email';
+	import Text from '$lib/emails/components/Text.svelte';
+	import { getAreaNameFromParam } from '$lib/area';
 
 	export let first_name;
 	export let last_name;
@@ -14,13 +15,7 @@
 </script>
 
 <Html lang="en">
-	<style>
-		body {
-			font-family: sans-serif;
-		}
-	</style>
-
-	<Preview>You were contacted by {first_name} {last_name} ({email}) using the Contact Us form on {import.meta.env.VITE_DOMAIN}</Preview>
+	<Preview preview="You were contacted by {first_name} {last_name} ({email}) using the Contact Us form on {import.meta.env.VITE_DOMAIN}." />
 
 	<Text>You were contacted by {first_name} {last_name} ({email}) using the Contact Us form on {import.meta.env.VITE_DOMAIN}</Text>
 

@@ -3,8 +3,8 @@
 	import { formatDollarsOnly, formatDollarsAndCents } from '$lib/money';
 	import { formatDate } from '$lib/date';
 	import { prettyJsonList } from '$lib/listing';
-	import { formatAddress } from '$lib/address.js';
-	import { officeLocalPhoneNumber, officeTollFreePhoneNumber } from '$lib/meta.js';
+	import { formatAddress } from '$lib/address';
+	import { officeLocalPhoneNumber, officeTollFreePhoneNumber } from '$lib/meta';
 	import './ListingDetailsPage.scss';
 
 	export let listing;
