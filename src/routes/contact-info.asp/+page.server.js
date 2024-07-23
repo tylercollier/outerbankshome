@@ -4,6 +4,7 @@ import { z } from 'zod';
 import { sendEmail } from '$lib/email';
 import Agent from '$lib/emails/contact_us/Agent.svelte';
 import Customer from '$lib/emails/contact_us/Customer.svelte';
+import axios from 'axios';
 
 export const actions = {
 	default: async (event) => {
@@ -29,6 +30,30 @@ export const actions = {
 				errors: result.error.flatten().fieldErrors,
 			};
 			return fail(400, data);
+		}
+
+		const gRecaptchaResponse = formData.get('g-recaptcha-response');
+		let captchaApiResponse;
+		try {
+			const dataString = `secret=${import.meta.env.VITE_GOOGLE_RECAPTCHA_SECRET_KEY}&response=${gRecaptchaResponse}`;
+			captchaApiResponse = await axios({
+				method: 'POST',
+				url: 'https://www.google.com/recaptcha/api/siteverify',
+				data: dataString,
+			})
+				.then(res => res.data)
+			;
+		} catch (e) {
+			return fail(500, { message: 'Something went wrong with verifying the captcha' });
+		}
+		if (!captchaApiResponse.success) {
+			let message = 'Captcha is invalid. Please try again.'
+			if (captchaApiResponse['error-codes']) {
+				message += ' ' + captchaApiResponse['error-codes'].join(', ');
+			}
+			return fail(400, {
+				message,
+			});
 		}
 
 		await sendEmail({
