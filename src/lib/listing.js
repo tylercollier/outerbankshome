@@ -19,3 +19,10 @@ export function makeLinkForListing(listing, options = {}) {
 export function sqftTotal(listing) {
 	return Number(listing.HtdLvArSF) + Number(listing.Unheated_LvArSF);
 }
+
+export function maybeBlank(val) {
+	if (!val) {
+		return '';
+	}
+	return val;
+}

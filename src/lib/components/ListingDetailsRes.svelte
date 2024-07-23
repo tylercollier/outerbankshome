@@ -1,21 +1,13 @@
 <script>
 	import ImageCarousel from '$lib/components/ImageCarousel.svelte';
+	import ListingDetailsBottom from '$lib/components/ListingDetailsBottom.svelte';
 	import { formatDollarsOnly, formatDollarsAndCents } from '$lib/money';
 	import { formatDate } from '$lib/date';
 	import { prettyJsonList } from '$lib/listing';
-	import { formatAddress } from '$lib/address';
-	import { officeLocalPhoneNumber, officeTollFreePhoneNumber } from '$lib/meta';
 	import './ListingDetailsPage.scss';
+	import { maybeBlank } from '$lib/listing';
 
 	export let listing;
-	function maybeBlank(val) {
-		if (!val) {
-			return '';
-		}
-		return val;
-	}
-
-	const address = formatAddress(listing);
 </script>
 
 <div>
@@ -43,42 +35,55 @@
 		<tr>
 			<td>Days On Market</td>
 			<td>{maybeBlank(listing.DaysOnMarket)}</td>
+		</tr>
 		<tr>
 			<td>Cumulative Days On Market</td>
 			<td>{maybeBlank(listing.CumulativeDaysOnMarket)}</td>
+		</tr>
 		<tr>
 			<td>Listing Price</td>
 			<td>{formatDollarsOnly(listing.ListPrice)}</td>
+		</tr>
 		<tr>
 			<td>Original Listing Price</td>
 			<td>{formatDollarsOnly(listing.OriginalListPrice)}</td>
+		</tr>
 		<tr>
 			<td>Possession</td>
 			<td>{prettyJsonList(listing.Possession)}</td>
+		</tr>
 		<tr>
 			<td>Short Sale</td>
 			<td>{maybeBlank(listing.PShortSale)}</td>
+		</tr>
 		<tr>
 			<td>Price Date</td>
 			<td>{maybeBlank(listing.Price_Date)}</td>
+		</tr>
 		<tr>
 			<td>Furnishing Available</td>
 			<td>{maybeBlank(listing.Furnishings_Available_Y_Or_N)}</td>
+		</tr>
 		<tr>
 			<td>Bill Of Sale Amount</td>
 			<td>{maybeBlank(listing.Bill_of_Sale_In_Amt__Y_Or_N)}</td>
+		</tr>
 		<tr>
 			<td>Expiration Date</td>
 			<td>{maybeBlank(listing.ExpirationDate)}</td>
+		</tr>
 		<tr>
 			<td>Ownership</td>
 			<td>{maybeBlank(listing.Ownership)}</td>
+		</tr>
 		<tr>
 			<td>Listing Restrictions</td>
 			<td>{maybeBlank(listing.O_LISTING_RESTRICTIONS)}</td>
+		</tr>
 		<tr>
 			<td>Listing Type</td>
 			<td>{maybeBlank(listing.ListingAgreement)}</td>
+		</tr>
 		</tbody>
 	</table>
 </div>
@@ -91,108 +96,143 @@
 		<tr>
 			<td>Primary Heated Living Area Sq Ft</td>
 			<td>{maybeBlank(listing.Primary_HtdLvArSF)}</td>
+		</tr>
 		<tr>
 			<td>Additional Living Area Sq Ft</td>
 			<td>{maybeBlank(listing.Additional_HtdLvArSF)}</td>
+		</tr>
 		<tr>
 			<td>Total Living Area Sq Ft</td>
 			<td>{maybeBlank(listing.Total_HtdLvArSF)}</td>
+		</tr>
 		<tr>
 			<td>Asking Price Per SqFt</td>
 			<td>{formatDollarsAndCents(listing.Asking_Price_Per_SqFt)}</td>
+		</tr>
 		<tr>
 			<td>Heated Living Area Sq Ft</td>
 			<td>{maybeBlank(listing.HtdLvArSF)}</td>
+		</tr>
 		<tr>
 			<td>Unheated Living Area Sq Ft</td>
 			<td>{maybeBlank(listing.Unheated_LvArSF)}</td>
+		</tr>
 		<tr>
 			<td>BedroomsTotal </td>
 			<td>{maybeBlank(listing.BedroomsTotal)}</td>
+		</tr>
 		<tr>
 			<td>Bathrooms Full</td>
 			<td>{maybeBlank(listing.BathroomsFull)}</td>
+		</tr>
 		<tr>
 			<td>Bathrooms Partial</td>
 			<td>{maybeBlank(listing.BathroomsPartial)}</td>
+		</tr>
 		<tr>
 			<td>Year Built</td>
 			<td>{maybeBlank(listing.YearBuilt)}</td>
+		</tr>
 		<tr>
 			<td>Garage</td>
 			<td>{maybeBlank(listing.F_GARAGE)}</td>
+		</tr>
 		<tr>
 			<td>Garage Sq Ft</td>
 			<td>{maybeBlank(listing.Garage_Sq_Ft)}</td>
+		</tr>
 		<tr>
 			<td>Architectural Style</td>
 			<td>{prettyJsonList(listing.ArchitecturalStyle)}</td>
+		</tr>
 		<tr>
 			<td>Type</td>
 			<td>{maybeBlank(listing.Type)}</td>
+		</tr>
 		<tr>
 			<td>Sub Type</td>
 			<td>{maybeBlank(listing.PropertySubType)}</td>
+		</tr>
 		<tr>
 			<td>Appliances</td>
 			<td>{prettyJsonList(listing.Appliances)}</td>
+		</tr>
 		<tr>
 			<td>Roof</td>
 			<td>{prettyJsonList(listing.Roof)}</td>
+		</tr>
 		<tr>
 			<td>Parking</td>
 			<td>{prettyJsonList(listing.ParkingFeatures)}</td>
+		</tr>
 		<tr>
 			<td>Foundation</td>
 			<td>{prettyJsonList(listing.FoundationDetails)}</td>
+		</tr>
 		<tr>
 			<td>Pool</td>
 			<td>{maybeBlank(listing.Pool)}</td>
+		</tr>
 		<tr>
 			<td>Pool Type</td>
 			<td>{maybeBlank(listing.Pool_Type)}</td>
+		</tr>
 		<tr>
 			<td>Pool Features</td>
 			<td>{prettyJsonList(listing.PoolFeatures)}</td>
+		</tr>
 		<tr>
 			<td>Screen Porch Size</td>
 			<td>{maybeBlank(listing.Screen_Porch_Size)}</td>
+		</tr>
 		<tr>
 			<td>Sun Deck Size</td>
 			<td>{maybeBlank(listing.Sun_Deck_Size)}</td>
+		</tr>
 		<tr>
 			<td>Builder Name</td>
 			<td>{maybeBlank(listing.BuilderName)}</td>
+		</tr>
 		<tr>
 			<td>Driveway</td>
 			<td>{maybeBlank(listing.H_DRIVEWAY)}</td>
+		</tr>
 		<tr>
 			<td>Insulation</td>
 			<td>{maybeBlank(listing.T_INSULATION)}</td>
+		</tr>
 		<tr>
 			<td>Counter Tops</td>
 			<td>{maybeBlank(listing.ZF_COUNTER_TOPS)}</td>
+		</tr>
 		<tr>
 			<td>Cooling</td>
 			<td>{prettyJsonList(listing.Cooling)}</td>
+		</tr>
 		<tr>
 			<td>Interior Features</td>
 			<td>{prettyJsonList(listing.InteriorFeatures)}</td>
+		</tr>
 		<tr>
 			<td>Heating</td>
 			<td>{prettyJsonList(listing.Heating)}</td>
+		</tr>
 		<tr>
 			<td>Room Type</td>
 			<td>{prettyJsonList(listing.RoomType)}</td>
+		</tr>
 		<tr>
 			<td>Flooring</td>
 			<td>{prettyJsonList(listing.Flooring)}</td>
+		</tr>
 		<tr>
 			<td>Construction Materials</td>
 			<td>{prettyJsonList(listing.ConstructionMaterials)}</td>
+		</tr>
 		<tr>
 			<td>Building Features</td>
 			<td>{prettyJsonList(listing.BuildingFeatures)}</td>
+		</tr>
 		</tbody>
 	</table>
 </div>
@@ -288,7 +328,7 @@
 			<td>{maybeBlank(listing.Land_Value)}</td>
 		</tr>
 		<tr>
-			<td>Toyal Assessed Value</td>
+			<td>Total Assessed Value</td>
 			<td>{maybeBlank(listing.Total_Assessed_Value)}</td>
 		</tr>
 		<tr>
@@ -670,51 +710,4 @@
 	</table>
 </div>
 
-<div>
-	<h3>Listing Agent Remarks</h3>
-
-	<div>{listing.PublicRemarks}</div>
-</div>
-
-<div>
-	<h3>Directions</h3>
-
-	{listing.Directions ?? '(none)'}
-</div>
-
-<div>
-	<h3>Official MLS Disclaimer</h3>
-
-	<div>
-		The data relating to real estate for sale on this web site comes from the Broker Reciprocity Program of the Outer
-		Banks Association of REALTORS. This property located at {address} is provided courtesy of {listing.ListOfficeName}
-		{listing.ListingBrokerAttribution ?? ''}. Information is believed to be accurate but is not warranted. Copyrighted by
-		Outer Banks Association of REALTORS. All Rights Reserved. IDX information is provided by Shore Realty of the OBX
-		exclusively for consumers, personal, non-commercial use and may not be used for any purpose other than to identify
-		prospective properties consumers may be interested in purchasing. If this page disappears from this site it means
-		the property at {address} is no longer available for sale. If you are interested in this property or have any
-		questions about buying or selling real estate on the Outer Banks call Shore Realty. Local {officeLocalPhoneNumber}
-		OR {officeTollFreePhoneNumber}.
-	</div>
-</div>
-
-<div>
-	<h3>Schools</h3>
-
-	<table  class="listing-details-section">
-		<tbody>
-		<tr>
-			<td>Elementary School District</td>
-			<td>{maybeBlank(listing.Elementary_School_District)}</td>
-		</tr>
-		<tr>
-			<td>Middle School District</td>
-			<td>{maybeBlank(listing.Middle_School_District)}</td>
-		</tr>
-		<tr>
-			<td>High School District</td>
-			<td>{maybeBlank(listing.High_School_District)}</td>
-		</tr>
-		</tbody>
-	</table>
-</div>
+<ListingDetailsBottom {listing} />
