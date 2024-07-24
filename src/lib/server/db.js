@@ -69,7 +69,7 @@ export async function getSearchResultListings(propertyType, buildQueryFn) {
 		'PublicRemarks',
 		'CloseDate',
 		'ClosePrice',
-		'StandardStatus',
+		'Property.StandardStatus',
 
 		'StreetNumber',
 		'StreetDirPrefix',
@@ -111,13 +111,13 @@ export async function getSearchResultListings(propertyType, buildQueryFn) {
 export const filterActive = buildQueryFn => {
 	return queryBuilder => {
 		queryBuilder = buildQueryFn(queryBuilder);
-		return queryBuilder.where('StandardStatus', '=', 'Active');
+		return queryBuilder.where('Property.StandardStatus', '=', 'Active');
 	};
 };
 
 export const filterSold = buildQueryFn => {
 	return queryBuilder => {
 		queryBuilder = buildQueryFn(queryBuilder);
-		return queryBuilder.where('StandardStatus', '=', 'Closed');
+		return queryBuilder.where('Property.StandardStatus', '=', 'Closed');
 	};
 };
