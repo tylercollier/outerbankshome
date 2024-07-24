@@ -9,8 +9,7 @@ export default defineConfig(({ mode }) => {
 	return {
 		plugins: [sveltekit()],
 		server: {
-			// I'm using 172.17.0.1 because that's what I've got caddy set to use.
-			host: '172.17.0.1',
+			host: process.env.VITE_HOST,
 			port: parseInt(process.env.VITE_PORT),
 			strictPort: true,
 		},
