@@ -1,5 +1,4 @@
 <script>
-	import ImageCarousel from '$lib/components/ImageCarousel.svelte';
 	import ListingDetailsBottom from '$lib/components/ListingDetailsBottom.svelte';
 	import { formatDollarsOnly, formatDollarsAndCents } from '$lib/money';
 	import { formatDate } from '$lib/date';

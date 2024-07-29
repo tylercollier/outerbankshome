@@ -38,24 +38,3 @@
 		OR {officeTollFreePhoneNumber}.
 	</div>
 </div>
-
-<div>
-	<h3>Schools</h3>
-
-	<table class="listing-details-section">
-		<tbody>
-			<tr>
-				<td>Elementary School District</td>
-				<td>{maybeBlank(listing.Elementary_School_District)}</td>
-			</tr>
-			<tr>
-				<td>Middle School District</td>
-				<td>{maybeBlank(listing.Middle_School_District)}</td>
-			</tr>
-			<tr>
-				<td>High School District</td>
-				<td>{maybeBlank(listing.High_School_District)}</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
