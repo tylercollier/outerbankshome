@@ -1,11 +1,11 @@
 <script>
-	import { allowedSubdivisions } from '$lib/area';
+	import { allowedSubdivisions, getAreaNameFromParam } from '$lib/area';
 	import urljoin from 'url-join';
 	import { basePath } from '$lib/nav';
 
 	export let areaParam;
-	export let displayName;
 
+	$: areaName = getAreaNameFromParam(areaParam);
 	$: subdivisionLinks = allowedSubdivisions[areaParam].map(subdivision => {
 		return {
 			label: subdivision.name,
@@ -15,7 +15,7 @@
 </script>
 
 {#if subdivisionLinks.length}
-	<h2>{displayName} Subdivisions</h2>
+	<h2>{areaName} Subdivisions</h2>
 
 	<div class="my-8">
 		<ul class="list-none">

@@ -4,13 +4,12 @@
 	import SubdivisionLinks from '$lib/components/SubdivisionLinks.svelte';
 
 	export let areaParam;
-	export let displayName;
 	export let activeListings;
 	export let soldListings;
 	export let proseComponent = null;
 </script>
 
-<CategoryLinks {areaParam} {displayName} />
+<CategoryLinks {areaParam} />
 
 <AreaListingResults listings={activeListings} {areaParam} />
 
@@ -27,4 +26,4 @@
 	<hr class="orange" />
 {/if}
 
-<SubdivisionLinks {areaParam} {displayName} />
+<SubdivisionLinks {areaParam} />

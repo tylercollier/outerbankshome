@@ -15,7 +15,6 @@
 
 <AreaListingResultsPage
 	{areaParam}
-	displayName={subdivisionName}
 	{activeListings}
 	{soldListings}
 	{proseComponent}

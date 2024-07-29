@@ -2,14 +2,15 @@
 	import { allowedCategories, getCategoryName } from '$lib/category';
 	import urljoin from 'url-join';
 	import { basePath } from '$lib/nav';
+	import { getAreaNameFromParam } from '$lib/area.js';
 
 	export let areaParam;
-	export let displayName;
 
+	$: areaName = getAreaNameFromParam(areaParam);
 	$: categoryLinks = allowedCategories[areaParam].map(slug => {
 		const categoryName = getCategoryName(slug);
 		return {
-			label: `${displayName} ${categoryName}`,
+			label: `${areaName} ${categoryName}`,
 			href: urljoin(basePath, areaParam, slug, '/'),
 		};
 	});
