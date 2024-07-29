@@ -14,14 +14,16 @@
 	});
 </script>
 
-<h2>{displayName} Subdivisions</h2>
+{#if subdivisionLinks.length}
+	<h2>{displayName} Subdivisions</h2>
 
-<div class="my-8">
-	<ul class="list-none">
-		{#each subdivisionLinks as subdivisionLink}
-			<li class="mb-4">
-				<a href={subdivisionLink.href}>{subdivisionLink.label}</a>
-			</li>
-		{/each}
-	</ul>
-</div>
+	<div class="my-8">
+		<ul class="list-none">
+			{#each subdivisionLinks as subdivisionLink}
+				<li class="mb-4">
+					<a href={subdivisionLink.href}>{subdivisionLink.label}</a>
+				</li>
+			{/each}
+		</ul>
+	</div>
+{/if}

@@ -14,6 +14,8 @@ export const categories = [
 	'water-front-homes',
 	'waterfront',
 	'waterfront-homes',
+
+	'colington-harbor',
 ];
 
 export const allowedCategories = {
@@ -47,6 +49,7 @@ export const allowedCategories = {
 		'land',
 	],
 	'martins point': [
+		homeCategory,
 		// 'Sold',
 	],
 	KittyHawk: [
@@ -86,47 +89,64 @@ export const allowedCategories = {
 		'land',
 	],
 	colington: [
+		homeCategory,
 		'canalfront-homes',
 		'soundfront-homes',
 		// 'Sold',
 		'waterfront-homes',
-		'colington-harbour',
+		'colington-harbor',
 	],
 	avon: [
+		homeCategory,
+		'condos',
+		'land',
 		'canalfront-homes',
 		'soundfront-homes',
 		// 'Sold',
 		'oceanfront-homes',
 	],
 	buxton: [
+		homeCategory,
+		'land',
 		'canalfront-homes',
 		'soundfront-homes',
 		// 'Sold',
 		'oceanfront-homes',
 	],
 	frisco: [
-		'canalfront-homes',
+		homeCategory,
+		'land',
 		'soundfront-homes',
 		// 'Sold',
 		'oceanfront-homes',
 	],
 	'hatteras island': [
+		homeCategory,
+		'condos',
+		'land',
 		'canalfront-homes',
 		'soundfront-homes',
 		// 'Sold',
 		'oceanfront-homes',
 	],
 	rodanthe: [
+		homeCategory,
+		'condos',
+		'land',
 		'soundfront-homes',
 		// 'Sold',
 		'oceanfront-homes',
 	],
 	salvo: [
+		homeCategory,
+		'land',
 		'soundfront-homes',
 		// 'Sold',
 		'oceanfront-homes',
 	],
 	waves: [
+		homeCategory,
+		'land',
 		'soundfront-homes',
 		// 'Sold',
 		'oceanfront-homes',
@@ -190,6 +210,8 @@ export function getCategoryName(slug) {
 		return 'Land/Lots';
 	} else if (isWaterfront(slug)) {
 		return 'Waterfront Homes';
+	} else if (slug === 'colington-harbor') {
+		return 'Harbor';
 	}
 }
 
@@ -197,7 +219,7 @@ export function isWaterfront(categoryParam) {
 	return ['waterfront', 'waterfront-homes', 'water-front-homes'].includes(categoryParam);
 }
 
-// Svelte doesn't seem to look components named (exactly) '.svelte', so we must use SOME name, so how about 'homes'?
+// Svelte doesn't seem to like components named (exactly) '.svelte', so we must use SOME name, so how about 'homes'?
 // Also we can have a single name for waterfront related prose.
 export function getCategoryProseBaseFileName(categoryParam) {
 	if (categoryParam === homeCategory) {

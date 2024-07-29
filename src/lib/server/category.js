@@ -6,9 +6,8 @@ import fsPromises from 'fs/promises';
 import pathLib from 'path';
 
 export async function getListings(areaParam, categoryParam) {
-	const city = getCity(areaParam);
 	let buildQueryFn;
-	if (categoryParam === homeCategory) {
+	if (categoryParam === homeCategory || categoryParam === 'colington-harbor') {
 		buildQueryFn = queryBuilder => {
 			return queryBuilder.where('PropertySubType', 'in', ['Single Family Residence']);
 		};
@@ -48,7 +47,19 @@ export async function getListings(areaParam, categoryParam) {
 	const prevBuildQueryFn = buildQueryFn;
 	buildQueryFn = queryBuilder => {
 		const qb = prevBuildQueryFn(queryBuilder);
-		return qb.where('City', '=', city);
+		if (areaParam === 'colington') {
+			if (categoryParam === 'colington-harbor') {
+				return qb.where('MLSAreaMinor', '=', 'Colington Harbor');
+			}
+			return qb.where('MLSAreaMinor', '=', 'Colington');
+		} else {
+			const city = getCity(areaParam);
+			let qb2 = qb.where('City', '=', city);
+			if (areaParam === 'KillDevilHills') {
+				qb2 = qb2.where('MLSAreaMinor', 'not in', ['Colington', 'Colington Harbor']);
+			}
+			return qb2;
+		}
 	};
 	const propertyType = categoryParam === 'land' ? 'Land' : 'Residential';
 	const activeListings = await getSearchResultListings(propertyType, filterActive(buildQueryFn));

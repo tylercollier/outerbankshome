@@ -34,6 +34,10 @@
 		<li><a href={makeLink('southern-shores/water-front-homes/')}>Waterfront Homes</a></li>
 		<li><a href={makeLink('southern-shores/land/')}>Land</a></li>
 	</ul>
+	<h4>Martin's Point</h4>
+	<ul>
+		<li><a href={makeLink('martins point/')}>Martin's Point Homes</a></li>
+	</ul>
 	<h4>Kitty Hawk</h4>
 	<ul>
 		<li><a href={makeLink('KittyHawk/')}>Kitty Hawk Homes</a></li>
@@ -53,7 +57,29 @@
 		<li><a href={makeLink('nags head/')}>Nags Head Homes</a></li>
 		<li><a href={makeLink('nags head/land/')}>Lots/Land</a></li>
 		<li><a href={makeLink('nags head/condos/')}>Condos</a></li>
-		<li><a href={makeLink('nags head/waterfront-homes/')}>Waterfront Homes</a></li>
+		<li><a href={makeLink('nags head/water-front-homes/')}>Waterfront Homes</a></li>
+	</ul>
+	<h4>Manteo</h4>
+	<ul>
+		<li><a href={makeLink('manteo/')}>Manteo Homes</a></li>
+		<li><a href={makeLink('manteo/condos/')}>Manteo Condos</a></li>
+		<li><a href={makeLink('manteo/land/')}>Manteo Land</a></li>
+	</ul>
+	<h4>Colington</h4>
+	<ul>
+		<li><a href={makeLink('colington/')}>Colington Homes</a></li>
+		<li><a href={makeLink('colington/colington-harbor/')}>Colington Harbor</a></li>
+		<li><a href={makeLink('colington/waterfront-homes/')}>Waterfront Homes</a></li>
+	</ul>
+	<h4>Hatteras Island</h4>
+	<ul>
+		<li><a href={makeLink('avon/')}>Avon Homes</a></li>
+		<li><a href={makeLink('buxton/')}>Buxton Homes</a></li>
+		<li><a href={makeLink('frisco/')}>Frisco Homes</a></li>
+		<li><a href={makeLink('hatteras island/')}>Hatteras Village Homes</a></li>
+		<li><a href={makeLink('rodanthe/')}>Rodanthe Homes</a></li>
+		<li><a href={makeLink('salvo/')}>Salvo Homes</a></li>
+		<li><a href={makeLink('waves/')}>Waves Homes</a></li>
 	</ul>
 </nav>
 
