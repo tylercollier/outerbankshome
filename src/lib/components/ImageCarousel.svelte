@@ -125,7 +125,7 @@
 
 <style>
 	.mid-size {
-		width: min(500px, 100vw);
+		width: min(500px, 95vw);
 	}
 
 	.arrow {

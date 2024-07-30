@@ -1,10 +1,10 @@
-import { fail } from '@sveltejs/kit';
+import { fail, redirect } from '@sveltejs/kit';
 import { zfd } from 'zod-form-data';
 import { z } from 'zod';
 import { sendEmail } from '$lib/server/email';
 import { verify } from '$lib/server/captcha';
-import Agent from '$lib/emails/just_listed/Agent.svelte';
-import Customer from '$lib/emails/just_listed/Customer.svelte';
+import Agent from '$lib/emails/more_info/Agent.svelte';
+import Customer from '$lib/emails/more_info/Customer.svelte';
 import { shouldUse } from '$lib/captcha';
 
 export const actions = {
@@ -12,15 +12,15 @@ export const actions = {
 		const formData = await event.request.formData();
 
 		const schema = zfd.formData({
+			mls: zfd.text(),
+
+			show: zfd.repeatable(),
 			first_name: zfd.text(),
 			last_name: zfd.text(),
 			email: zfd.text(z.string().email()),
 			phone: zfd.text(z.string().optional()),
-			comments: zfd.text(z.string().optional()),
-			area: zfd.repeatable(),
-			property_type: zfd.repeatable(),
+			send_me: zfd.repeatable(),
 			level_of_interest: zfd.repeatable(),
-			price_range: zfd.text(),
 		});
 
 		const result = schema.safeParse(formData);
@@ -44,17 +44,21 @@ export const actions = {
 		await sendEmail({
 			from: import.meta.env.VITE_FROM_EMAIL,
 			to: import.meta.env.VITE_FROM_EMAIL,
-			subject: `Just Listed form submission from ${import.meta.env.VITE_DOMAIN}`,
+			subject: `More Info form submission from ${import.meta.env.VITE_DOMAIN}`,
 			template: Agent,
 			props: result.data,
 		});
 		await sendEmail({
 			from: import.meta.env.VITE_FROM_EMAIL,
 			to: result.data.email,
-			subject: `We received your Just Listed form submission on ${import.meta.env.VITE_DOMAIN}`,
+			subject: `Thank you for request more information on ${import.meta.env.VITE_DOMAIN}`,
 			template: Customer,
 			props: result.data,
 		});
+
+		if (formData.get('vreturn')) {
+			redirect(303, formData.get('vreturn'));
+		}
 
 		return {
 			success: true,

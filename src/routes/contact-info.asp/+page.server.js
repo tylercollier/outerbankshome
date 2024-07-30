@@ -5,6 +5,7 @@ import { sendEmail } from '$lib/server/email';
 import { verify } from '$lib/server/captcha';
 import Agent from '$lib/emails/contact_us/Agent.svelte';
 import Customer from '$lib/emails/contact_us/Customer.svelte';
+import { shouldUse } from '$lib/captcha';
 
 export const actions = {
 	default: async event => {
@@ -32,10 +33,12 @@ export const actions = {
 			return fail(400, data);
 		}
 
-		const gRecaptchaResponse = formData.get('g-recaptcha-response');
-		const verifiedResponse = await verify(gRecaptchaResponse);
-		if (!verifiedResponse.success) {
-			return verifiedResponse.fn();
+		if (shouldUse()) {
+			const gRecaptchaResponse = formData.get('g-recaptcha-response');
+			const verifiedResponse = await verify(gRecaptchaResponse);
+			if (!verifiedResponse.success) {
+				return verifiedResponse.fail();
+			}
 		}
 
 		await sendEmail({

@@ -9,7 +9,7 @@
 	$: addressLine1 = formatAddressLine1(listing);
 </script>
 
-<div class="w-[500px] mb-4">
+<div class="mb-4" style="width: min(500px, 95vw)">
 	<div class="flex justify-between">
 		<div>
 			<div>MLS #: {listing.ListingId}</div>

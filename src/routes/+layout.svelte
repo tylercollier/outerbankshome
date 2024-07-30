@@ -3,9 +3,6 @@
 	import '../app.scss';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-
-	export let data;
-	console.log('data', data)
 </script>
 
 <div class="mycontainer">
@@ -19,6 +16,3 @@
 
 	<Footer />
 </div>
-
-<style lang="scss">
-</style>

@@ -13,7 +13,7 @@ export async function verify(gRecaptchaResponse) {
 	} catch (e) {
 		return {
 			success: false,
-			fn: () => fail(500, { message: 'Something went wrong with verifying the captcha' }),
+			fail: () => fail(500, { message: 'Something went wrong with verifying the captcha' }),
 		};
 	}
 	if (!captchaApiResponse.success) {

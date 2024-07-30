@@ -2,6 +2,7 @@
 	import { allowedAreas, getAreaNameFromParam } from '$lib/area';
 	import enhance from 'svelte-captcha-enhance';
 	import { officeLocalPhoneNumber, officeTollFreePhoneNumber } from '$lib/meta';
+	import CaptchaScript from '$lib/components/CaptchaScript.svelte';
 
 	export let form;
 
@@ -9,11 +10,8 @@
 </script>
 
 <svelte:head>
-	<script
-		src="https://www.google.com/recaptcha/api.js?render={import.meta.env
-			.VITE_GOOGLE_RECAPTCHA_SITE_KEY}"
-	>
-	</script>
+	<title>Contact Info for Shore Realty of the Outer Banks</title>
+	<CaptchaScript />
 </svelte:head>
 
 <h1>Contact Shore Realty</h1>
