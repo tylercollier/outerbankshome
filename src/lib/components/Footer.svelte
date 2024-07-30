@@ -6,7 +6,7 @@
 <footer class="bg-lightorange border border-black border-solid">
 	<p align="center">
 		<b
-		>Shore Realty of the Outer Banks Inc. <br />
+			>Shore Realty of the Outer Banks Inc. <br />
 			Locally Owned &amp; Operated<br />
 			<a href="tel://{officeLocalPhoneNumber}">{officeLocalPhoneNumber}</a> OR
 			<a href="tel://{officeTollFreePhoneNumber}">{officeTollFreePhoneNumber}</a><br />

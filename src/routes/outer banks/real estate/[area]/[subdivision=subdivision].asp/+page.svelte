@@ -13,9 +13,4 @@
 
 <h1>{subdivisionName} Homes, Houses & Beach Houses For Sale</h1>
 
-<AreaListingResultsPage
-	{areaParam}
-	{activeListings}
-	{soldListings}
-	{proseComponent}
-/>
+<AreaListingResultsPage {areaParam} {activeListings} {soldListings} {proseComponent} />

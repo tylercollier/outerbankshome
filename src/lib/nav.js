@@ -7,5 +7,5 @@ export function makeLink(sub) {
 }
 
 export function isPrintPage($page) {
-	return $page.url.searchParams.get('print') === 'true'
+	return $page.url.searchParams.get('print') === 'true';
 }

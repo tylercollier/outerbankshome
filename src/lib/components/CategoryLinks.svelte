@@ -2,7 +2,7 @@
 	import { allowedCategories, getCategoryName } from '$lib/category';
 	import urljoin from 'url-join';
 	import { basePath } from '$lib/nav';
-	import { getAreaNameFromParam } from '$lib/area.js';
+	import { getAreaNameFromParam } from '$lib/area';
 
 	export let areaParam;
 

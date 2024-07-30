@@ -56,8 +56,9 @@
 
 			<div>
 				<label
-				><input type="checkbox" name="show" value="showing" /> I would like to schedule a time to view this property. </label
-				>
+					><input type="checkbox" name="show" value="showing" /> I would like to schedule a time to view
+					this property.
+				</label>
 			</div>
 
 			<div class="mt-4 font-bold">Send Me:</div>
@@ -65,36 +66,39 @@
 			<div class="mt-4">
 				<div>
 					<label
-					><input type="checkbox" name="send_me" value="Rental History" /> Rental History</label
+						><input type="checkbox" name="send_me" value="Rental History" /> Rental History</label
 					>
 				</div>
 				<div>
 					<label
-					><input type="checkbox" name="send_me" value="Insurance Expense" /> Insurance Expense</label
+						><input type="checkbox" name="send_me" value="Insurance Expense" /> Insurance Expense</label
 					>
 				</div>
 				<div>
-					<label
-					><input type="checkbox" name="send_me" value="Sales History" /> Sales History</label
+					<label><input type="checkbox" name="send_me" value="Sales History" /> Sales History</label
 					>
 				</div>
 				<div><label><input type="checkbox" name="send_me" value="Expenses" /> Expenses</label></div>
 				<div>
 					<label
-					><input type="checkbox" name="send_me" value="Comparable Properties" /> Comparable Properties</label
+						><input type="checkbox" name="send_me" value="Comparable Properties" /> Comparable Properties</label
 					>
 				</div>
 				<div>
 					<label
-					><input type="checkbox" name="send_me" value="New listing Updates" /> New listing Updates</label
+						><input type="checkbox" name="send_me" value="New listing Updates" /> New listing Updates</label
 					>
 				</div>
 				<div>
 					<label
-					><input type="checkbox" name="send_me" value="Sold Listing Updates" /> New Listing Updates</label
+						><input type="checkbox" name="send_me" value="Sold Listing Updates" /> New Listing Updates</label
 					>
 				</div>
-				<div><label><input type="checkbox" name="send_me" value="Tax Value/Tax Expense" /> Tax Value/Tax Expense</label></div>
+				<div>
+					<label
+						><input type="checkbox" name="send_me" value="Tax Value/Tax Expense" /> Tax Value/Tax Expense</label
+					>
+				</div>
 			</div>
 
 			<div class="mt-4 font-bold">Level of Interest</div>
@@ -102,49 +106,49 @@
 			<div class="mt-4">
 				<div>
 					<label
-					><input type="checkbox" name="level_of_interest" value="Need Help Now" /> Need Help Now</label
+						><input type="checkbox" name="level_of_interest" value="Need Help Now" /> Need Help Now</label
 					>
 				</div>
 				<div>
 					<label
-					><input type="checkbox" name="level_of_interest" value="Ready To Buy" /> Ready To Buy</label
+						><input type="checkbox" name="level_of_interest" value="Ready To Buy" /> Ready To Buy</label
 					>
 				</div>
 				<div>
 					<label
-					><input type="checkbox" name="level_of_interest" value="Buy In Next 12 Months" /> Buy In
+						><input type="checkbox" name="level_of_interest" value="Buy In Next 12 Months" /> Buy In
 						Next 12 Months</label
 					>
 				</div>
 				<div>
 					<label
-					><input type="checkbox" name="level_of_interest" value="Buy In Next 24 Months" /> Buy In
+						><input type="checkbox" name="level_of_interest" value="Buy In Next 24 Months" /> Buy In
 						Next 24 Months</label
 					>
 				</div>
 				<div>
 					<label
-					><input
-						type="checkbox"
-						name="level_of_interest"
-						value="Already Own OBX Property/ want more"
-					/>
+						><input
+							type="checkbox"
+							name="level_of_interest"
+							value="Already Own OBX Property/ want more"
+						/>
 						Already Own OBX Property/want more</label
 					>
 				</div>
 				<div>
 					<label
-					><input
-						type="checkbox"
-						name="level_of_interest"
-						value="Already Own / thinking about selling"
-					/>
+						><input
+							type="checkbox"
+							name="level_of_interest"
+							value="Already Own / thinking about selling"
+						/>
 						Already Own / thinking about selling</label
 					>
 				</div>
 				<div>
 					<label
-					><input type="checkbox" name="level_of_interest" value="Just Curious" /> Just Curious</label
+						><input type="checkbox" name="level_of_interest" value="Just Curious" /> Just Curious</label
 					>
 				</div>
 			</div>
@@ -169,7 +173,12 @@
 				<div class="mt-4">
 					<div>
 						<label class="text-label" for="last_name">Last Name</label>
-						<input type="text" name="last_name" id="last_name" value={form?.data?.last_name ?? ''} />
+						<input
+							type="text"
+							name="last_name"
+							id="last_name"
+							value={form?.data?.last_name ?? ''}
+						/>
 					</div>
 					<div class="text-red-500 text-right mt-2">
 						{#if form?.errors?.last_name}
@@ -217,5 +226,10 @@
 		</form>
 	</div>
 
-	<p align="center">Shore Realty - Localy Owned &amp; Operated <br> Call Local <a href="tel://{officeLocalPhoneNumber}">{officeLocalPhoneNumber}</a> OR <a href="tel://{officeTollFreePhoneNumber}">{officeTollFreePhoneNumber}</a><br>Helping People Buy and Sell Outer Banks Real Estate! </p>
+	<p align="center">
+		Shore Realty - Localy Owned &amp; Operated <br /> Call Local
+		<a href="tel://{officeLocalPhoneNumber}">{officeLocalPhoneNumber}</a>
+		OR <a href="tel://{officeTollFreePhoneNumber}">{officeTollFreePhoneNumber}</a><br />Helping
+		People Buy and Sell Outer Banks Real Estate!
+	</p>
 {/if}

@@ -18,11 +18,11 @@
 	<h2>Listing Details For {formattedAddress}</h2>
 
 	<div class="mb-4 flex flex-wrap gap-2">
-			<a class="text-black no-underline font-bold" href={printHref}>
-				<div class="inline-block bg-headerorange px-10 py-1 rounded-md shadow-sm shadow-black">
-					Printable Version
-				</div>
-			</a>
+		<a class="text-black no-underline font-bold" href={printHref}>
+			<div class="inline-block bg-headerorange px-10 py-1 rounded-md shadow-sm shadow-black">
+				Printable Version
+			</div>
+		</a>
 		<a class="text-black no-underline font-bold" href={moreInfoHref}>
 			<div class="inline-block bg-headerorange px-10 py-1 rounded-md shadow-sm shadow-black">
 				More Info

@@ -15,15 +15,11 @@
 		|
 		<a href={makeLink('duck/')} title="Duck Home Sales">Duck</a>
 		|
-		<a href={makeLink('southern-shores/')} title="Southern Shores Home Sales"
-		>Southern Shores</a
-		>
+		<a href={makeLink('southern-shores/')} title="Southern Shores Home Sales">Southern Shores</a>
 		|
 		<a href={makeLink('KittyHawk/')} title="Kitty Hawk Home Sales">Kitty Hawk</a>
 		|
-		<a href={makeLink('KillDevilHills/')} title="Kill Devil Hills Home Sales"
-		>Kill Devil Hills</a
-		>
+		<a href={makeLink('KillDevilHills/')} title="Kill Devil Hills Home Sales">Kill Devil Hills</a>
 		|
 		<a href={makeLink('colington/')} title="Colington Home Sales">Colington</a>
 		|
