@@ -1,14 +1,12 @@
 <script>
-	import urljoin from 'url-join';
-	import { basePath } from '$lib/nav';
 	import { officeTollFreePhoneNumber } from '$lib/meta';
+	import { makeLink, isPrintPage } from '$lib/nav';
+	import { page } from '$app/stores';
 
-	function makeLink(sub) {
-		return urljoin(basePath, sub);
-	}
+	$: isPrint = isPrintPage($page);
 </script>
 
-<nav class="bg-lightorange border border-black border-solid pl-2 pr-4">
+<nav class="bg-lightorange border border-black border-solid pl-2 pr-4" class:hidden={isPrint}>
 	<h4>Call <a href="tel://{officeTollFreePhoneNumber}">{officeTollFreePhoneNumber}</a></h4>
 	<ul>
 		<li><a href="/contact-info.asp">Contact us</a></li>
