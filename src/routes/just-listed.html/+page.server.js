@@ -42,14 +42,12 @@ export const actions = {
 		}
 
 		await sendEmail({
-			from: import.meta.env.VITE_FROM_EMAIL,
-			to: import.meta.env.VITE_FROM_EMAIL,
+			to: import.meta.env.VITE_FROM_EMAIL_ADDRESS,
 			subject: `Just Listed form submission from ${import.meta.env.VITE_DOMAIN}`,
 			template: Agent,
 			props: result.data,
 		});
 		await sendEmail({
-			from: import.meta.env.VITE_FROM_EMAIL,
 			to: result.data.email,
 			subject: `We received your Just Listed form submission on ${import.meta.env.VITE_DOMAIN}`,
 			template: Customer,
