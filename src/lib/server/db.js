@@ -49,7 +49,7 @@ export async function getListing(mlsId) {
 	let media = await getDb()
 		.selectFrom('Media')
 		.where('ResourceRecordKey', '=', listing.ListingKey)
-		.select(['Order', 'MediaURL', 'ShortDescription'])
+		.select(['Order', 'MediaURL', 'ShortDescription', 'ImageWidth', 'ImageHeight'])
 		.execute();
 	if (!media.length) {
 		media = [];

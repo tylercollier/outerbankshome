@@ -36,6 +36,7 @@
 	$: if (images.length) {
 		currentImage = images[currentImageIndex];
 	}
+
 	function prevImageMidSize() {
 		if (currentImageIndex === 0) {
 			currentImageIndex = images.length - 1;
@@ -44,6 +45,7 @@
 		}
 		emblaApi.scrollTo(currentImageIndex);
 	}
+
 	function nextImageMidSize() {
 		if (currentImageIndex === images.length - 1) {
 			currentImageIndex = 0;
@@ -52,8 +54,20 @@
 		}
 		emblaApi.scrollTo(currentImageIndex);
 	}
+
 	function showBiggerPicture() {
-		const items = images.map(x => ({ img: x.MediaURL, caption: x.ShortDescription }));
+		const items = images.map(x => ({
+			img: x.MediaURL,
+			caption: x.ShortDescription,
+			// Include width and height because otherwise the image will (probably) be stretched. I don't understand why this
+			// is required and the bigger-picture library can't figure it out itself. I found a discussion here that makes it
+			// sound like it's related to animation, which is a bummer because I've disabled the animation. But, since we have
+			// the image dimensions, we can supply them.
+			// https://github.com/henrygd/bigger-picture/issues/12
+			// A downside is that the user won't be able to zoom.
+			width: x.ImageWidth,
+			height: x.ImageHeight,
+		}));
 		biggerPicture.open({
 			items,
 			position: currentImageIndex,
@@ -124,27 +138,27 @@
 </div>
 
 <style>
-	.mid-size {
-		width: min(500px, 95vw);
-	}
+    .mid-size {
+        width: min(500px, 95vw);
+    }
 
-	.arrow {
-		background: transparent;
-		border: none;
-		cursor: pointer;
-	}
+    .arrow {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
 
-	.embla {
-		overflow: hidden;
-	}
+    .embla {
+        overflow: hidden;
+    }
 
-	.embla__container {
-		display: flex;
-		@apply items-center;
-	}
+    .embla__container {
+        display: flex;
+        @apply items-center;
+    }
 
-	.embla__slide {
-		flex: 0 0 100px;
-		min-width: 0;
-	}
+    .embla__slide {
+        flex: 0 0 100px;
+        min-width: 0;
+    }
 </style>
