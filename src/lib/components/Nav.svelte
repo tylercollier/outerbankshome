@@ -79,6 +79,10 @@
 		<li><a href={makeLink('salvo/')}>Salvo Homes</a></li>
 		<li><a href={makeLink('waves/')}>Waves Homes</a></li>
 	</ul>
+	<h4>Other</h4>
+	<ul>
+		<li><a href={makeLink('retirement-homes/')}>OBX Retirement Homes</a></li>
+	</ul>
 </nav>
 
 <style lang="scss">
