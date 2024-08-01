@@ -1,81 +1,135 @@
 <script>
 	import ListingDetailsBottom from '$lib/components/ListingDetailsBottom.svelte';
 	import { formatDollarsOnly, formatDollarsAndCents } from '$lib/money';
-	import { formatDate } from '$lib/date';
+	import { formatDate, formatDateFromString } from '$lib/date';
 	import { prettyJsonList } from '$lib/listing';
 	import './ListingDetailsPage.scss';
 	import { maybeBlank } from '$lib/listing';
 	import ListingDetailsSection from '$lib/components/ListingDetailsSection.svelte';
+	import { isClosed } from '$lib/listing';
 
 	export let listing;
 </script>
 
 <ListingDetailsSection {listing} />
 
+{#if isClosed(listing)}
+	<h3>Sold Details</h3>
+
+	<table class="listing-details-section">
+		<tbody>
+		<tr>
+			<td>Status</td>
+			<td>{maybeBlank(listing.StandardStatus)}</td>
+		</tr>
+		<tr>
+			<td>Sold Price</td>
+			<td>{formatDollarsAndCents(listing.ClosePrice)}</td>
+		</tr>
+		<tr>
+			<td>Closing Date</td>
+			<td>{formatDate(listing.CloseDate)}</td>
+		</tr>
+		<tr>
+			<td>Off Market Date</td>
+			<td>{formatDateFromString(listing.Off_Market_Status_Date)}</td>
+		</tr>
+		<tr>
+			<td>Contract Date</td>
+			<td>{formatDateFromString(listing.Contract_Date)}</td>
+		</tr>
+		<tr>
+			<td>Seller Concessions</td>
+			<td>{maybeBlank(listing.Concessions)}</td>
+		</tr>
+		<tr>
+			<td>Concession Comments</td>
+			<td>{maybeBlank(listing.ConcessionsComments)}</td>
+		</tr>
+		<tr>
+			<td>Total Days on Market</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Cumulative Days on Market</td>
+			<td>{maybeBlank(listing.CumulativeDaysOnMarket)}</td>
+		</tr>
+		<tr>
+			<td>Multiple Signed Offers</td>
+			<td>{maybeBlank(listing.Multiple_Signed_Offers)}</td>
+		</tr>
+		<tr>
+			<td>Due Diligence Date</td>
+			<td>{formatDateFromString(listing.Due_Diligence_Date)}</td>
+		</tr>
+		</tbody>
+	</table>
+{/if}
+
 <div>
 	<h3>Listing Information</h3>
 
 	<table class="listing-details-section">
 		<tbody>
-			<tr>
-				<td>Area</td>
-				<td>{maybeBlank(listing.MLSAreaMinor)}</td>
-			</tr>
-			<tr>
-				<td>Mls Status</td>
-				<td>{maybeBlank(listing.StandardStatus)}</td>
-			</tr>
-			<tr>
-				<td>Days On Market</td>
-				<td>{maybeBlank(listing.DaysOnMarket)}</td>
-			</tr>
-			<tr>
-				<td>Cumulative Days On Market</td>
-				<td>{maybeBlank(listing.CumulativeDaysOnMarket)}</td>
-			</tr>
-			<tr>
-				<td>Listing Price</td>
-				<td>{formatDollarsOnly(listing.ListPrice)}</td>
-			</tr>
-			<tr>
-				<td>Original Listing Price</td>
-				<td>{formatDollarsOnly(listing.OriginalListPrice)}</td>
-			</tr>
-			<tr>
-				<td>Possession</td>
-				<td>{prettyJsonList(listing.Possession)}</td>
-			</tr>
-			<tr>
-				<td>Short Sale</td>
-				<td>{maybeBlank(listing.PShortSale)}</td>
-			</tr>
-			<tr>
-				<td>Price Date</td>
-				<td>{maybeBlank(listing.Price_Date)}</td>
-			</tr>
-			<tr>
-				<td>Furnishing Available</td>
-				<td>{maybeBlank(listing.Furnishings_Available_Y_Or_N)}</td>
-			</tr>
-			<tr>
-				<td>Bill Of Sale Amount</td>
-				<td>{maybeBlank(listing.Bill_of_Sale_In_Amt__Y_Or_N)}</td>
-			</tr>
-			<tr>
-				<td>Expiration Date</td>
-				<td>{maybeBlank(listing.ExpirationDate)}</td>
-			</tr>
-			<tr>
-				<td>Ownership</td>
-				<td>{maybeBlank(listing.Ownership)}</td>
-			</tr>
-			<tr>
-				<td>Listing Restrictions</td>
-				<td>{maybeBlank(listing.O_LISTING_RESTRICTIONS)}</td>
-			</tr>
-			<tr>
-				<td>Listing Type</td>
-				<td>{maybeBlank(listing.ListingAgreement)}</td>
+		<tr>
+			<td>Area</td>
+			<td>{maybeBlank(listing.MLSAreaMinor)}</td>
+		</tr>
+		<tr>
+			<td>Mls Status</td>
+			<td>{maybeBlank(listing.StandardStatus)}</td>
+		</tr>
+		<tr>
+			<td>Days On Market</td>
+			<td>{maybeBlank(listing.DaysOnMarket)}</td>
+		</tr>
+		<tr>
+			<td>Cumulative Days On Market</td>
+			<td>{maybeBlank(listing.CumulativeDaysOnMarket)}</td>
+		</tr>
+		<tr>
+			<td>Listing Price</td>
+			<td>{formatDollarsOnly(listing.ListPrice)}</td>
+		</tr>
+		<tr>
+			<td>Original Listing Price</td>
+			<td>{formatDollarsOnly(listing.OriginalListPrice)}</td>
+		</tr>
+		<tr>
+			<td>Possession</td>
+			<td>{prettyJsonList(listing.Possession)}</td>
+		</tr>
+		<tr>
+			<td>Short Sale</td>
+			<td>{maybeBlank(listing.PShortSale)}</td>
+		</tr>
+		<tr>
+			<td>Price Date</td>
+			<td>{formatDateFromString(listing.Price_Date)}</td>
+		</tr>
+		<tr>
+			<td>Furnishing Available</td>
+			<td>{maybeBlank(listing.Furnishings_Available_Y_Or_N)}</td>
+		</tr>
+		<tr>
+			<td>Bill Of Sale Amount</td>
+			<td>{maybeBlank(listing.Bill_of_Sale_In_Amt__Y_Or_N)}</td>
+		</tr>
+		<tr>
+			<td>Expiration Date</td>
+			<td>{maybeBlank(listing.ExpirationDate)}</td>
+		</tr>
+		<tr>
+			<td>Ownership</td>
+			<td>{maybeBlank(listing.Ownership)}</td>
+		</tr>
+		<tr>
+			<td>Listing Restrictions</td>
+			<td>{maybeBlank(listing.O_LISTING_RESTRICTIONS)}</td>
+		</tr>
+		<tr>
+			<td>Listing Type</td>
+			<td>{maybeBlank(listing.ListingAgreement)}</td>
 			</tr>
 		</tbody>
 	</table>

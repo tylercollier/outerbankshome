@@ -1,6 +1,6 @@
 <script>
 	import { formatDollarsAndCents, formatDollarsOnly } from '$lib/money';
-	import { formatDate } from '$lib/date';
+	import { formatDate, formatDateFromString } from '$lib/date';
 	import { prettyJsonList } from '$lib/listing';
 	import ListingDetailsBottom from '$lib/components/ListingDetailsBottom.svelte';
 	import { maybeBlank } from '$lib/listing';
@@ -50,7 +50,7 @@
 			</tr>
 			<tr>
 				<td>Price Date</td>
-				<td>{maybeBlank(listing.Price_Date)}</td>
+				<td>{formatDateFromString(listing.Price_Date)}</td>
 			</tr>
 			<tr>
 				<td>Expiration Date</td>

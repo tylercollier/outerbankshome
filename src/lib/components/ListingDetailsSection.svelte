@@ -3,10 +3,12 @@
 	import { formatDate } from '$lib/date';
 	import { formatAddressLine1 } from '$lib/address';
 	import ImageCarousel from '$lib/components/ImageCarousel.svelte';
+	import { isClosed as isListingClosed } from '$lib/listing';
 
 	export let listing;
 
 	$: addressLine1 = formatAddressLine1(listing);
+	$: isClosed = isListingClosed(listing);
 </script>
 
 <div class="mb-4" style="width: min(500px, 95vw)">
@@ -17,9 +19,9 @@
 			<div>{listing.City}, NC {listing.PostalCode}</div>
 		</div>
 		<div class="text-right">
-			<div>Asking Price: {formatDollarsOnly(listing.ListPrice)}</div>
+			<div>{isClosed ? 'Closing' : 'Asking'} Price: {formatDollarsOnly(listing.ListPrice)}</div>
 			<div>Status: {listing.StandardStatus}</div>
-			<div>Status Date: {formatDate(listing.ModificationTimestamp)}</div>
+			<div>{isClosed ? 'Closing' : 'Status'} Date: {formatDate(listing.ModificationTimestamp)}</div>
 		</div>
 	</div>
 </div>

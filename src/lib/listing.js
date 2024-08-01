@@ -26,3 +26,5 @@ export function maybeBlank(val) {
 	}
 	return val;
 }
+
+export const isClosed = listing => listing.StandardStatus === 'Closed';
