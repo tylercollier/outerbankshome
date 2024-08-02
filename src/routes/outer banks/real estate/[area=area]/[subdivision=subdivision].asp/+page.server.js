@@ -3,8 +3,6 @@ import { filterActive, filterSold, getSearchResultListings } from '$lib/server/d
 import pathLib from 'path';
 import fsPromises from 'fs/promises';
 
-export const trailingSlash = 'never';
-
 export const load = async ({ params }) => {
 	const subdivision = allowedSubdivisions[params.area].find(x => x.slug === params.subdivision);
 	const areaParam = params.area;

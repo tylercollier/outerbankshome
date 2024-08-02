@@ -1,5 +1,7 @@
 import { load as categoryLoad } from '$lib/server/category';
 
+export const trailingSlash = 'always';
+
 export const load = async ({ params }) => {
 	const areaParam = params.area;
 	const categoryParam = params.category;
