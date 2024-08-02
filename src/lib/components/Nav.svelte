@@ -82,6 +82,7 @@
 	<h4>Other</h4>
 	<ul>
 		<li><a href={makeLink('retirement-homes/')}>OBX Retirement Homes</a></li>
+		<li><a href={makeLink('boat-slips/')}>OBX Boat Slips</a></li>
 	</ul>
 </nav>
 
