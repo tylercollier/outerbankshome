@@ -1,0 +1,1 @@
+<p>This list below contains all of the 4 bedroom homes in  Corolla listed for sale with all of the real estate companies in the Outer Banks MLS. This list is updated hourly with new properties added and expired and/or sold properties  removed. This is the most accurate and up to date list of 4 bedroom homes for sale in Corolla, so check back often. </p>

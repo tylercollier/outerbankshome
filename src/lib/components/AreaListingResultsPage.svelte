@@ -9,6 +9,8 @@
 	export let proseComponent = null;
 </script>
 
+<slot name="topProse" />
+
 <CategoryLinks {areaParam} />
 
 <AreaListingResults listings={activeListings} {areaParam} />
@@ -21,9 +23,6 @@
 
 <hr class="orange" />
 
-{#if proseComponent}
-	<svelte:component this={proseComponent} />
-	<hr class="orange" />
-{/if}
+<slot name="bottomProse" />
 
 <SubdivisionLinks {areaParam} />

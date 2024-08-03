@@ -1,17 +1,22 @@
 <script>
-	import { allowedSubdivisions, getAreaNameFromParam } from '$lib/area';
+	import { getAreaNameFromParam } from '$lib/area';
+	import { allowedSubdivisions } from '$lib/subdivision';
+	import { allowedSubareas } from '$lib/subarea';
 	import urljoin from 'url-join';
 	import { basePath } from '$lib/nav';
 
 	export let areaParam;
 
-	$: areaName = getAreaNameFromParam(areaParam);
-	$: subdivisionLinks = allowedSubdivisions[areaParam].map(subdivision => {
+	function makeLink(sub) {
 		return {
-			label: subdivision.name,
-			href: urljoin(basePath, areaParam, subdivision.slug + '.asp'),
+			label: sub.name,
+			href: urljoin(basePath, areaParam, sub.slug + '.asp'),
 		};
-	});
+	}
+
+	$: areaName = getAreaNameFromParam(areaParam);
+	$: subdivisionLinks = allowedSubdivisions[areaParam].map(makeLink)
+		.concat(allowedSubareas[areaParam].map(makeLink));
 </script>
 
 {#if subdivisionLinks.length}

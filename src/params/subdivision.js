@@ -1,4 +1,4 @@
-import { allowedSubdivisions } from '$lib/area';
+import { allowedSubdivisions } from '$lib/subdivision';
 
 export function match(slug) {
 	// TODO: I don't know how to get the area parameter name in this matcher. We only get the subdivision param. Thus, we
