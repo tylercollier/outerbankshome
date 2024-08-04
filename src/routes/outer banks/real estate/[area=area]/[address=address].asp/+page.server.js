@@ -33,7 +33,6 @@ export const actions = {
 			email: zfd.text(z.string().email()),
 			phone: zfd.text(z.string().optional()),
 			level_of_interest: zfd.repeatable(),
-			mls_id: zfd.text(),
 		});
 
 		const result = schema.safeParse(formData);
@@ -54,17 +53,21 @@ export const actions = {
 			}
 		}
 
+		const data = {
+			...result.data,
+			ldpLink: event.url.toString(),
+		};
 		await sendEmail({
 			to: import.meta.env.VITE_FROM_EMAIL_ADDRESS,
 			subject: `Listing Details Page form submission from ${import.meta.env.VITE_DOMAIN}`,
 			template: Agent,
-			props: result.data,
+			props: data,
 		});
 		await sendEmail({
 			to: result.data.email,
 			subject: `Thank you for contacting us on ${import.meta.env.VITE_DOMAIN}`,
 			template: Customer,
-			props: result.data,
+			props: data,
 		});
 
 		return {

@@ -1,5 +1,5 @@
 <script>
-	import { Container, Preview, Html } from 'svelte-email';
+	import { Container, Preview, Html, Link } from 'svelte-email';
 	import Text from '$lib/emails/components/Text.svelte';
 
 	export let first_name;
@@ -7,7 +7,7 @@
 	export let email;
 	export let phone;
 	export let level_of_interest;
-	export let mls_id;
+	export let ldpLink;
 </script>
 
 <Html lang="en">
@@ -23,6 +23,8 @@
 		<Text>Email: {email}</Text>
 		<Text>Phone: {phone}</Text>
 		<Text>Level of interest: {level_of_interest.join(', ')}</Text>
-		<Text>MLS ID: {mls_id}</Text>
+		<Text>
+			<Link href={ldpLink}>Link To Listing Details Page</Link>
+		</Text>
 	</Container>
 </Html>
