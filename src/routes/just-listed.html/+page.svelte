@@ -2,6 +2,7 @@
 	import { allowedAreas, getAreaNameFromParam } from '$lib/area';
 	import enhance from 'svelte-captcha-enhance';
 	import { officeTollFreePhoneNumber } from '$lib/meta';
+	import { shouldUse } from '$lib/captcha';
 	import CaptchaScript from '$lib/components/CaptchaScript.svelte';
 
 	export let form;
@@ -36,7 +37,7 @@
 		<form
 			method="post"
 			use:enhance={{
-				type: 'recaptcha',
+				type: shouldUse() ? 'recaptcha' : 'bypass',
 				sitekey: import.meta.env.VITE_GOOGLE_RECAPTCHA_SITE_KEY,
 				submit: async function () {
 					isFormLoading = true;
