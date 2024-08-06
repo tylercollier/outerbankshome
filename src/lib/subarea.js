@@ -1,4 +1,4 @@
-// These were originally in lib/ubdivision.js, and then moved here by hand.
+// These were originally in lib/subdivision.js, and then moved here by hand.
 export const allowedSubareas = {
 	corolla: [
 		{
