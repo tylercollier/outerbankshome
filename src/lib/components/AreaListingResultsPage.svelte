@@ -6,7 +6,6 @@
 	export let areaParam;
 	export let activeListings;
 	export let soldListings;
-	export let proseComponent = null;
 </script>
 
 <slot name="topProse" />
