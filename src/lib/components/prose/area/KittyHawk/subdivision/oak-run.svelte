@@ -1,0 +1,3 @@
+<div class="story"><p>Oak Run is a 17 lot subdivision next to Kitty Hawk Bay in Kitty Hawk with a variety of ocean and bay views. There is no active home owners association. You will find Oak Run just north of the community of <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/woodard-acres.asp" title="Woodard Acres">Woodard Acres</a>. </p>
+<p> <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/oak run covenants.pdf" title="Oak Run Covenants">Oak Run Covenants</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+  </div>

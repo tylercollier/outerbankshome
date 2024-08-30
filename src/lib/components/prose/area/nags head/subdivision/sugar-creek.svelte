@@ -1,0 +1,5 @@
+<div class="story"> 
+   <p>The Landings at Sugar Creek is a condominium complex located on the Roanoke Sound consisting of 2 buildings with roughly 56 units. The small building on the north side is mixed use comprised of some residential units and some commercial units. The main building is 3 stories on pilings which offers some incredible views of the sunset over the Roanoke Sound for most of the units. There is covered parking underneath the condos and elevators to make penthouse living easy on the knees. The association also manages a sound side pool and recreational area for the owners and their guests. The Landings at Sugar Creek is located across the street from <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/whalebone-beaches.asp" title="Whalebone Beaches">Whalebone Beaches</a>. </p>
+	
+    <p><a href="https://www.outerbankshome.com/outer banks/real estate/nags head/sugar-creek-declarations.pdf" title="The Landings at Sugar Creek declarations" target="_blank">The Landings at Sugar Creek declarations</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+  </div>

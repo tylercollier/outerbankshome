@@ -1,0 +1,3 @@
+<div class="story">
+<p>The subdivision of Whalehead has some of the largest building lots in the area with most of the lots measuring 100 ft x 200 ft. There are no amenities and there is an active home owners association which maintains the private roads. There are a number of beach accesses spread through out the community, usually located at the end of each cross road with a walkway to the ocean. You will find Whalehead just past <a href="https://www.outerbankshome.com/outer banks/real estate/corolla/buck-island.asp" title="Buck Island">Buck Island</a> as you travel north on Rte 12 and just before you get to <a href="https://www.outerbankshome.com/outer banks/real estate/corolla/corolla-light.asp" title="Corolla Light">Corolla Light</a>. </p>
+</div>

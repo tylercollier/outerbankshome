@@ -1,0 +1,3 @@
+<div class="story">   
+	<p><a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/crystal shores bylaws.pdf" title="Crystal Shores Bylaws ">Crystal Shores Bylaws </a>&amp;<a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/crystal shores condo declaration.pdf" title="Crystal Shores condo declarations"> Declarations</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>	
+  </div>

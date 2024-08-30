@@ -1,0 +1,3 @@
+<div class="story">
+<p>Old Hotel Lots is an oceanfront subdivision in <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/" title="Nags Head">Nags Head</a> on the ocean side of Rt. 158 just across from <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/old-nags-head-cove.asp" title="Old Nags Head Cove">Old Nags Head Cove</a>. Originally slated to be a hotel, the property has been subdivided and sold as individual lots. </p>
+	  </div>

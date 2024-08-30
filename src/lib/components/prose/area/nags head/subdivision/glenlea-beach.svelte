@@ -1,0 +1,3 @@
+<div class="story">
+<p>Glenlea Beach is located in South Nags Head, just south of the subdivision of <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/goose-wing.asp" title="Goosewing">Goosewing</a> and across from Bodie Island. With just 12 properties, Glenlea is too small for any amenities but it is right on the ocean and all of the properties have a direct beach access and ocean views. </p>
+  </div>

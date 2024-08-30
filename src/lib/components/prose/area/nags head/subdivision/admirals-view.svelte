@@ -1,0 +1,5 @@
+<div class="story">
+      <p><a href="https://www.outerbankshome.com/outer banks/real estate/nags head/admirals-view-covenants.pdf" title="Admirals View Covenants" target="_blank">Admirals View Condo Covenants</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+	
+  <p>Admiral's View is a 12 unit condominium complex located on the oceanfront in <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/" title="Nags Head Homes for sale">Nags Head</a> just south of <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/heron-cove.asp" title="Heron Cove Condos">Heron Cove Condos</a> and north of the <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/windjammer.asp" title="Windjammer Condos">Windjammer Condos</a>. All of the units have 2 bedrooms and 2 full baths with an open kitchen and living area. The second and third story units have unobstructed panoramic ocean views and the first floor views tend to be somewhat obstructed by the dunes.. An elevator was recently installed for ease of access and there is an ocean front pool. </p>
+  </div>

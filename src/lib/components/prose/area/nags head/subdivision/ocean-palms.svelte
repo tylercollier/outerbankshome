@@ -1,0 +1,3 @@
+<div class="story">
+<p>Ocean Palms is an ocean front condominium complex in South Nags Head right next to the <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/yachtsman-condos.asp" title="Yachtsman Condos">Yachtsman Condos</a> consisting of mostly units owned as time share. The existence of timeshare in a complex will hinder getting a loan as some lenders are reluctant to lend in a development where some of the members of the HOA are time share owners.</p>
+  </div>

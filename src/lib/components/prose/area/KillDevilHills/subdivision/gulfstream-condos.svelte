@@ -1,0 +1,3 @@
+<div class="story">
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/gulf stream condo covenants.pdf" title="Gulfstream Condo Covenants">Gulfstream Condo Covenants</a> &amp; <a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/gulf stream condo articles.pdf" title="Gulfstream condo articles">Articles</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+</div>

@@ -1,0 +1,3 @@
+<div class="story">
+<p>Sanderlin Shores is a small ocean front subdivision in Kitty Hawk with no home owners association or dues. You will find Sanderlin Across from <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/sandpiper-cay.asp" title="Sandpiper Cay Condos">Sandpiper Cay Condos</a> and next to the subdivision of <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/kitty-hawk-beach.asp" title="Kitty Hawk Beach">Kitty Hawk Beach</a>. </p>
+</div>

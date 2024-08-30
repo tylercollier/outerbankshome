@@ -1,0 +1,3 @@
+<div class="story">
+<p>Sand Dollar Shores is a 42 lot subdivision in Duck with the lots lining both sides of Seabreeze Dr. There is not an active home owners association but a minimal fee is collected to help keep up with the maintenance of the private road. Sand Dollar Shores is located just north of <a href="https://www.outerbankshome.com/outer banks/real estate/duck/sea-hawk.asp" title="Sea Hawk">Sea Hawk</a> as you leave <a href="https://www.outerbankshome.com/outer banks/real estate/southern-shores/" title="Southern Shores">Southern Shores</a> heading north on Rte 12 and just south of <a href="https://www.outerbankshome.com/outer banks/real estate/duck/georgetown-sands.asp" title="Georgetown Sands">Georgetown Sands</a>. </p>
+</div>

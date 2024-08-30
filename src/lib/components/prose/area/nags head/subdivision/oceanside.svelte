@@ -1,0 +1,3 @@
+<div class="story">
+<p>Oceanside is a small oceanside community of approximately 32 properties running from ocean to sound bordered on the east by the Atlantic Ocean, the community of Nags Head South on the southern border, the Roanoke Sound and the <a href="http://www.nps.gov/caha/index.htm" title="Cape Hatteras Seashore">Cape Hatteras Seashore</a> to the west and <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/bodie-island-beach.asp" title="Bodie Island Beach">Bodie Island Beach</a> to the north. </p>
+	   </div>

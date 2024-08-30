@@ -1,0 +1,4 @@
+<div class="story">
+  <p>Ships Watch is an ocean to sound co-ownership development in Duck. Co-ownership is a form of timeshare except that each unit is split up amongst 10 owners who each get 5 weeks of use compared to the typical 1 week with timeshare. There are 53 homes each with 10 owners a community pool, 2 tennis courts and an ocean boardwalk to the beach. Ships Watch is located just north of <a href="https://www.outerbankshome.com/outer banks/real estate/duck/barrier-island-station.asp" title="Barrier Island Station">Barrier Island Station</a> and south of <a href="https://www.outerbankshome.com/outer banks/real estate/duck/sandy-ridge.asp" title="Sandy Ridge">Sandy Ridge</a>. </p>
+    <p><a href="https://www.outerbankshome.com/outer banks/real estate/duck/ships-watch-covenants.pdf" title="Ships Watch Covenants">Ships Watch Covenants</a>    - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+		</div>

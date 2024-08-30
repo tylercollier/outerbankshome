@@ -1,0 +1,3 @@
+<div class="story">
+<p>Sound-Sea Village is a 95 lot subdivision stretching from the ocean to the sound. There are no amenities other than the ocean and sound access and the Home Owners Association and the accompanying fees are voluntary. The private roads are not paved but are covered with gravel. The terrain is mostly level and heavily vegetated. Sound-Sea Village is located just south of <a href="https://www.outerbankshome.com/outer banks/real estate/duck/gulls-flight.asp" title="Gull's Flight">Gull's Flight</a> and north of <a href="https://www.outerbankshome.com/outer banks/real estate/duck/caffeys-inlet.asp" title="Caffey's Inlet Hamlet">Caffey's Inlet Hamlet</a>. </p>
+</div>

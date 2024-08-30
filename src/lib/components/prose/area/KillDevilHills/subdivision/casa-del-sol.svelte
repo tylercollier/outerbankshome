@@ -1,0 +1,3 @@
+<div class="story">
+<p>Casa Del Sol is a small ocean front condominium complex in Kill Devil Hills with 7 units each with 3 bedrooms and 2.5 baths and each unit has their own laundry. These condos are built in the town house style with 3 levels of living space and are located in the subdivision of <a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/croatan-shores.asp" title="Croatan Shores">Croatan Shores</a>. </p>
+</div>

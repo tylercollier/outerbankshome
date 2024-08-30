@@ -1,0 +1,3 @@
+<div class="story">
+<p>Avery Isle is a small, 19 lot soundfront/canalfront mini-subdivision in the master community of <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/kitty-hawk-landing.asp" title="Kitty Hawk Landing">Kitty Hawk Landing</a> and enjoys the master community amenities which include a boat ramp, picnic area and a dedicated semi-oceanfront parking lot for a private community beach access. The 5 properties on the westside of Dowdy Lane experience living on a canal with wide open, unobstructed sound views provided by the un-buildable peninsula that protrudes into the sound blocking the ferocity of the open sound from the calm waters of the canal. The 14 lots on the east side are all canalfront with peek-a-boo sound views.</p>
+</div>

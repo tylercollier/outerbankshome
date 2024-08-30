@@ -1,0 +1,4 @@
+<div class="story">  
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/frisco/sunset-village-covenants.pdf" title="Sunset Village Covenants">Sunset Village Covenants</a> and the <a href="https://www.outerbankshome.com/outer banks/real estate/frisco/sunset-village-phase-3-covenants.pdf" title="Phase 3 covenants">phase 3 covenants</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+    <p><a href="https://www.outerbankshome.com/outer banks/real estate/frisco/sunset-plat.pdf" title="Sunset Village plat">Sunset Village Plat</a> with the layout of all the lots in the subdivision.    </p>
+</div>

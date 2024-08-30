@@ -1,0 +1,4 @@
+<div class="story">   
+    <p>The Banks Condos consist of 4 buildings with 8 units in each building. Each unit has 1 bedroom and 1 full bath. The top floor units have a loft that some use as an extra sleeping area. There are no onsite laundry facilities. The complex comes with 2 pools and a large community hot tub and the beach is just a short walk away. The Banks condos are located just south of <a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/hughes-retreat.asp" title="Hughes Retreat">Hughes Retreat</a> and north of <a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/mosier-shores.asp" title="Mosier Shores">Mosier Shores</a>. </p>
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/banks condo covenants.pdf" title="Banks Condo Covenants">Banks Condo Covenants</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+</div>

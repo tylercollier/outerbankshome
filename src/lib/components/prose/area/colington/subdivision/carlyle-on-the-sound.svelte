@@ -1,0 +1,4 @@
+<div class="story">
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/colington/carlyle-on-the-sound-covenants.pdf" title="Carlyle On The Sound Covenants">Carlyle On The Sound Covenants</a> <a href="https://www.outerbankshome.com/outer banks/real estate/colington/carlyle-covenants-amended.pdf" title="Carlyle On The Sound Covenants Amended">Carlyle On The Sound Covenants Amended</a> <a href="https://www.outerbankshome.com/outer banks/real estate/colington/carlyle-architectural-guidelines.pdf" title="Carlyle Architectural Guidelines">Carlyle Architectural Guidelines</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+
+</div>

@@ -1,0 +1,3 @@
+<div class="story">
+<p>Sea Acres is a small subdivision  consisting of 31 lots on the south side of Plover Dr. in the southern part of Duck. There is no active home owners association and no amenities. Sea Acres is located just past the <a href="https://www.outerbankshome.com/outer banks/real estate/duck/georgetown-sands.asp" title="Georgetown Sands">Georgetown Sands</a> Town Houses and right before you get to <a href="https://www.outerbankshome.com/outer banks/real estate/duck/four-seasons.asp" title="Four Seasons">Four Seasons</a>. </p>
+</div>

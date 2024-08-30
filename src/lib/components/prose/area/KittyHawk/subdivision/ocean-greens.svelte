@@ -1,0 +1,3 @@
+<div class="story"><p>Ocean Greens is a 5 lot mini-subdivision on Ocean Green Court in the master community of <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/seascape.asp" title="Sea Scape">Sea Scape</a>. Ocean Greens has an active HOA and guidelines to follow. </p>
+    <p><a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/ocean-greens-covenants.pdf" title="Ocean Greens Covenants">Ocean Greens Covenants</a> & <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/ocean-greens-supplement.pdf" title="Ocean Greens Supplement">Ocean Greens Supplement</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+	</div>

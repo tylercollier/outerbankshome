@@ -1,0 +1,2 @@
+<div class="story">   <p><a href="https://www.outerbankshome.com/outer banks/real estate/manteo/holly-woods-covenants.pdf" title="Holly Woods Covenants" target="_blank">Holly Woods Covenants</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+  </div>

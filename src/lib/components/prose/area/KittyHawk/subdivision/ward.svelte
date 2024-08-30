@@ -1,0 +1,3 @@
+<div class="story"> <p>Ward is a 7 lot subdivision in Kitty Hawk with no amenities or home owners association. You can find Ward just behind the subdivision of <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/ted-wood-kitty-hawk-terrace.asp" title="Ted Wood Kitty Hawk Terrace">Ted Wood Kitty Hawk Terrace</a>. </p>  <p> <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/ward-covenants.pdf" title="Ward Covenants">Ward Covenants</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+
+</div>

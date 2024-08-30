@@ -1,0 +1,5 @@
+<div class="story">
+  <p>The majority of the units in Windjammer are owned as time share which makes getting a loan questionable as most lenders are reluctant to make a loan where the HOA has time share members. Windjammer is located in Nags Head on the Beach Rd, just south of <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/admirals-view.asp" title="Admiral's View Condos">Admiral's View Condos</a> and north of <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/village-at-nags-head.asp" title="The Village at Nags Head">The Village at Nags Head</a>. </p>
+  
+  <p> <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/windjammer docs.pdf" title="Windjammer Docs">Windjammer Docs</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+  </div>

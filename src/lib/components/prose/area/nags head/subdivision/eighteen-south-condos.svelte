@@ -1,0 +1,5 @@
+<div class="story">
+<p>Eighteen South is a condominium complex consisting of 2 oceanfront buildings and one semi oceanfront building with 2 duplex units in each building for a total of 6 units. They all share a community pool and an easy beach access in the remote area of South Nags Head with <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/dunes-south.asp" title="Dunes South">Dunes South</a> to the north and <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/hollywood-beach.asp" title="Hollywood Beach">Hollywood Beach</a> to the south. </p>
+   
+ <p> <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/eighteen-south-covenants.pdf" title="Eighteen South Condo Covenants">Eighteen South Condo Covenants</a> and <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/eighteen-south-condo-bylaws.pdf" title="Eighteen South Condo Bylaws">Eighteen South Condo Bylaws</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+   </div>

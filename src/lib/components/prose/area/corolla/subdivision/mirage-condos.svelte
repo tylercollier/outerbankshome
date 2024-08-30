@@ -1,0 +1,3 @@
+<div class="story"><p>The Mirage condos are one of the mini subdivisions in Corolla Light with it's own set of rules and covenants. There are 25 free standing units and 3 buildings of multiple units with it's own tennis court. Owners and guest in Mirage have access to all of the amenities of <a href="https://www.outerbankshome.com/outer banks/real estate/corolla/corolla-light.asp" title="Corolla Light">Corolla Light</a>. </p>
+    <p><a href="https://www.outerbankshome.com/outer banks/real estate/corolla/mirage condo covenants.pdf" title="Mirage Condo Covenants">Mirage Condo Covenants</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+ </div>

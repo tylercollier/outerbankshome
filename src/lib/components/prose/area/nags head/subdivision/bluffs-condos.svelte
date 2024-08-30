@@ -1,0 +1,4 @@
+<div class="story"> 
+<p>The Bluffs Condos are a 3 building condominium complex located in the middle of <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/hollywood-beach.asp" title="Hollywood Beach">Hollywood Beach</a> in <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/" title="Nags Head Homes for sale">South Nags Head</a> right next to the Juncos St beach access. Each building contains 2 duplex units for a total of 6 condos. </p>
+      <p><a href="https://www.outerbankshome.com/outer banks/real estate/nags head/bluffs docs.pdf" title="The Bluffs Condos declarations" target="_blank">The Bluffs Condos declarations</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+</div>

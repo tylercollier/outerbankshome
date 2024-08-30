@@ -1,0 +1,4 @@
+<div class="story">
+<p>Sea Retreat Condos were an 11 unit ocean side cottage court that was converted into condominiums. The units share a pool and there is a beach access across the street at Balchen St. Sea Retreat is located inside the subdivision of <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/kitty-hawk-beach.asp" title="Kitty Hawk Beach">Kitty Hawk Beach</a>. </p>
+  <p><a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/sea retreat covenants.pdf" title="Sea Retreat Covenants">Sea Retreat Covenants</a> & <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/sea-retreat-bylaws.pdf" title="Sea Retreat Bylaws">Sea Retreat Bylaws</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p> 
+    </div>

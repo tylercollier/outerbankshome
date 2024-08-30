@@ -1,0 +1,4 @@
+<div class="story">
+   <p>Sealoft Village is a  complex of 27 townhouse units in the <a href="https://www.outerbankshome.com/outer banks/real estate/corolla/ocean-sands.asp" title="Ocean Sands">Ocean Sands</a> section of Corolla. There is a boardwalk beach access located nearby as well as a tennis court. </p>
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/corolla/sealoft village covenants.pdf" title="Sealoft Village Covenants" target="_blank">Sealoft Village Covenants</a> & <a href="https://www.outerbankshome.com/outer banks/real estate/corolla/sealoft-village-bylaws.pdf" title="Sealoft Village Bylaws" target="_blank">Sealoft Village Bylaws</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+</div>

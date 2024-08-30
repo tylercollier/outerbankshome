@@ -1,0 +1,3 @@
+<div class="story">
+<p>The community of Keepers Hill is perched on top of a ridge and slopes down to Kitty Hawk Bay offering a variety of water views from sunsets over the bay to sun rise over the ocean, depending on where you a situated on the ridge. There are around 50 building lots and there is no active home owners association. You can find Keepers Hill just past the community of <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/first-flight-ridge.asp" title="First Flight Ridge">First Flight Ridge</a> and next to the subdivision of <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/woodard-acres.asp" title="Woodard Acres">Woodard Acres</a>. </p>
+</div>

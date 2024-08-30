@@ -1,0 +1,23 @@
+<div class="story">
+	<p>
+		Southern Shores is made of of 8 different neighborhoods from <a href="https://www.outerbankshome.com/outer banks/real estate/southern-shores/seacrest-village.asp" title="Seacrest Village">Sea Crest Village</a> and <a href="https://www.outerbankshome.com/outer banks/real estate/southern-shores/pelican-watch.asp" title="Pelican Watch ">Pelican Watch </a>on the oceanfront and the neighborhoods of <a href="https://www.outerbankshome.com/outer banks/real estate/southern-shores/chicahauk.asp" title="Chicahauk">Chicahauk</a>, Mallard Cove, Fairway Estates, over on the soundside of Rt.12, with the rest of the Town proper. The newest addition is <a href="https://www.outerbankshome.com/outer banks/real estate/southern-shores/southern-shores-landing.asp" title="Southern Shores Landing ">Southern Shores Landing.</a>
+	</p>
+
+	<p>
+		The oceanfront is separated from the soundfront by a large dune ridge than runs the entire length of the town. On the oceanside of the ridge there are rolling sand dunes with the beach wind swept vegetation. The sound side of the ridge is protected from the salty ocean wind offering protection for a maritime forest of hickory, dogwood, holly and other hardwood trees. Southern Shores also has a variety of <a href="https://www.outerbankshome.com/outer banks/real estate/southern-shores/southern shores amenity map.pdf" title="Southern Shores amenities">amenities</a>.
+	</p>
+	<p>
+		If the house you are looking for is  not on this page, but you still would like to buy a beach house in <a href="https://www.outerbankshome.com/outer banks/real estate/southern-shores/" title="Southern Shores">Southern Shores</a>, you will find the rest of the properties for sale spread out throughout this site. If watching the sun rise over the ocean is your thing, we have a section for <a href="https://www.outerbankshome.com/outer banks/real estate/southern-shores/oceanfront-homes/" title="Southern Shores Oceanfront Homes">Southern Shores Oceanfront Homes</a> and a section for <a href="https://www.outerbankshome.com/outer banks/real estate/southern-shores/soundfront-homes/" title="Southern Shores Soundfront Homes">Southern Shores Soundfront Homes</a> with sunset views over open water. For the boaters, there is a section for <a href="https://www.outerbankshome.com/outer banks/real estate/southern-shores/canalfront-homes/" title="Southern Shores Canalfront Homes">Canalfront Homes</a> in Southern Shores and if your plans are in the future and you just want to get your foot in the door then a <a href="https://www.outerbankshome.com/outer banks/real estate/southern-shores/land/" title="Southern Shores Lots and Land">building lot in Southern Shores</a> might what's needed to get you started. Browse and enjoy.
+	</p>
+	<p>You can drive through rolling, wooded hills reminiscent of the mountains to suddenly find yourself at the beach as you cross over the top of the ridge.</p>
+	<p>Because of this diversity and the oversized lots, Southern shores real estate values have consistently outpaced most of the Outer Banks.</p>
+	<p>
+		Across Ginguite Bay from <a href="https://www.outerbankshome.com/outer banks/real estate/southern-shores/canalfront-homes/" title="Southern Shores Soundront">Southern Shores Soundront</a> is the gated community of <a href="https://www.outerbankshome.com/outer banks/real estate/martins point/" title="Martin's Point">Martin's Point.</a>
+	</p>
+</div>
+
+	<div class="story">
+		<p>
+			The more information you have about the Southern Shores real estate market, the easier it will be to make a decision about buying or selling. We have compiled the sold statistics for the Southern Shores area going back to the year 2004. <a href="https://www.outerbankshome.com/outer banks/real estate/southern-shores/southern-shores-homes-sold-statistics.asp" title="Click HERE For Southern Shores Sold Home Statistics">Click HERE For Southern Shores Sold Home Statistics</a>, <a href="https://www.outerbankshome.com/outer banks/real estate/southern-shores/southern-shores-condos-sold-statistics.asp" title="Click HERE For Southern Shores Sold Condo Statistics">Click HERE For Southern Shores Sold Condo Statistics</a> and <a href="https://www.outerbankshome.com/outer banks/real estate/southern-shores/southern-shores-land-sold-statistics.asp" title="Click HERE For Southern Shores Sold Land Statistics">Click HERE For Southern Shores Sold Land/Lot Statistics.</a>	You can find the homes that sold recently in Southern Shores <a href="https://www.outerbankshome.com/outer banks/real estate/southern-shores/sold/" title="Southern Shores SOLD Homes">HERE</a>.
+		</p>
+	</div>

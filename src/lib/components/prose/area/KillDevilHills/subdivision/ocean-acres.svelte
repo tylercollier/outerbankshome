@@ -1,0 +1,3 @@
+<div class="story">
+<p>The far back section of Ocean Acres backs up to the Nature Preserve and the  ponds used for drinking water. To protect the local water supply this area has been designated  sensitive area where activities relating to housing are regulated and restricted. <a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/ocean-acres-maritime-forest-enviromental-district.pdf" title="Ocean Acres Maritime Forest Enviromental District">Ocean Acres Maritime Forest Enviromental District</a></p>
+</div>

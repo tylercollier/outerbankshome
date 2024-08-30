@@ -1,0 +1,3 @@
+<div class="story">
+<p>Tides Of Duck is one of the smallest subdivisions in Duck with only 8 lots total. There are no amenities other than the ocean access and no home owners association or association fees. The road is private and the owners work together to keep up the maintenance. Located at the southern end of Duck, the Tides of Duck is sandwiched in between <a href="https://www.outerbankshome.com/outer banks/real estate/duck/bias-shores.asp" title="Bias Shores">Bias Shores</a> and <a href="https://www.outerbankshome.com/outer banks/real estate/duck/tuckahoe.asp" title="Tuckahoe">Tuckahoe</a>.</p>
+</div>

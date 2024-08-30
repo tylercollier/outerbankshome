@@ -1,0 +1,7 @@
+<div class="story">
+  
+
+<p> Southridge is a small community of approxamitely 212 properties located on the westside of Rte 158 just behind the Nags Head post office and just north of <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/old-nags-head-cove.asp" title="Old Nags Head Cove">Old Nags Head Cove</a>. The community is comprised of mostly second home owners with a few year round residents. The close proximity to the Roanoke Sound offers sound views to some of the properties on the higher lots and those closer to the water. Some home owners have a fair amount of success renting their homes out as vacation rentals during the summer.</p>
+  
+    <p><a href="https://www.outerbankshome.com/outer banks/real estate/nags head/southridge-covenants.pdf" title="Southridge Covenants" target="_blank">Southridge Covenants</a> & <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/south-ridge-section4-covenants.pdf" title="Southridge Covenants Sec 4" target="_blank">Southridge Covenants Sec 4</a> & <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/south-ridge-section5-covenants.pdf" title="Southridge Covenants Sec 5" target="_blank">Southridge Covenants Sec 5</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+  </div>

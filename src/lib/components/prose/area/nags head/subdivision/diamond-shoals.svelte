@@ -1,0 +1,5 @@
+<div class="story">
+<p>Diamond Shoals is an ocean front condominium complex consisting of 2 buildings with elevators and a community pool. Each unit is rather large at just under 2,000 sq ft each with 3 bedrooms and 2 baths and an open floor plan. Ocean views are limited for the 1st floor units but the second and third floor units have unobstructed ocean views. Located in South Nags Head just past <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/bodie-island-beach.asp" title="Bodie Island Beach">Bodie Island Beach</a> and just north of the <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/yachtsman-condos.asp" title="Yachtsman Condos">Yachtsman Condos.</a></p>
+  
+   <p><a href="https://www.outerbankshome.com/outer banks/real estate/nags head/diamond shoals declaration.pdf" title="Diamond Shoals Declaration">Diamond Shoals Declaration</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+ </div>

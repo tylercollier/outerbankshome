@@ -1,0 +1,3 @@
+<div class="story">
+<p>Jay Crest is a small 25 lot subdivision with 12 lots situated on either side of Jaycrest Rd. You can find Jay Crest just north of <a href="https://www.outerbankshome.com/outer banks/real estate/southern-shores/" title="Southern Shores">Southern Shores</a> and south of <a href="https://www.outerbankshome.com/outer banks/real estate/duck/ocean-crest.asp" title="Oceancrest">Oceancrest</a>. </p>
+</div>

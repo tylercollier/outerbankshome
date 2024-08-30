@@ -1,0 +1,3 @@
+<div class="story">  
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/hatteras island/hatteras-harbor-covenants.pdf" title="Hatteras Harbor Covenants ">Hatteras Harbor Covenants</a> & <a href="https://www.outerbankshome.com/outer banks/real estate/hatteras island/hatteras-harbor-plat.pdf" title="Hatteras Harbor Plat">Hatteras Harbor Plat</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+</div>

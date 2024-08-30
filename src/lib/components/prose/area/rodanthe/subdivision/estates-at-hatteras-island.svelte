@@ -1,0 +1,4 @@
+<div class="story">
+  <p><a href="https://www.outerbankshome.com/outer banks/real estate/rodanthe/estates-at-hatteras-island-covenants.pdf" title="Estates At Hatteras Island  Restrictive Covenants ">Estates At Hatteras Island Restrictive Covenants </a> & <a href="https://www.outerbankshome.com/outer banks/real estate/rodanthe/hatteras-island-resort-covenants.pdf" title="Hatteras Island Resort  Restrictive Covenants ">Hatteras Island Resort Restrictive Covenants </a> &amp; <a href="https://www.outerbankshome.com/outer banks/real estate/rodanthe/hatteras-island-resort-covenants-2.pdf" title="Hatteras Island Resort  Restrictive Covenants 2">Hatteras Island Resort Restrictive Covenants 2</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+
+</div>

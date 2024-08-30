@@ -1,0 +1,2 @@
+<div class="story">   <p><a href="https://www.outerbankshome.com/outer banks/real estate/manteo/croatan-condo-covenants.pdf" title="Croatan Condos Covenants">Croatan Condos Covenants</a> & <a href="https://www.outerbankshome.com/outer banks/real estate/manteo/croatan-condo-rules.pdf" title="Croatan Condos Rules">Croatan Condos Rules</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+</div>

@@ -1,0 +1,3 @@
+<div class="story">
+<p>Captains Quarters are a small condominium complex located across the street from a beach access in Kill Devil Hills. There are only 4 units in the complex, each with 3 bedrooms. Captain's Quarters are located in the subdivision of <a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/kitty-hawk-shores.asp" title="Kitty Hawk Shores">Kitty Hawk Shores</a>.</p>
+</div>

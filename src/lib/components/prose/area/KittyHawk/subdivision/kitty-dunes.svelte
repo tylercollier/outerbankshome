@@ -1,0 +1,3 @@
+<div class="story">
+<p>Kitty Dunes is a small ocean side community in Kitty Hawk with 127 building lots, most of which have already been built on. There are no amenities, other than the ocean views and the beach accesses, and no active home owners association. Kitty Dunes is located with the <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/hurdle-estate.asp" title="Hurdle Estate">Hurdle Estate</a> to the north and <a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/" title="Kill Devil Hills">Kill Devil Hills</a> to the south. </p>
+</div>

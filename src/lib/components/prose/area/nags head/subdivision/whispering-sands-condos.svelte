@@ -1,0 +1,5 @@
+<div class="story">
+<p>Whispering Sands Condos are located on the oceanfront in Nags Head just north of the <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/village-at-nags-head.asp" title="Village at Nags Head">Village at Nags Head</a>. Each unit has 2 bedrooms and 2.5 baths and the complex shares tennis courts and an ocean front pool. </p>
+	
+  <p><a href="https://www.outerbankshome.com/outer banks/real estate/nags head/whispering sands bylaws.pdf" title="Whipsering Sands Bylaws">Whipsering Sands Bylaws</a> &amp; <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/whispering sands declaration.pdf" title="Whipsering Sands Declaration">Whipsering Sands Declaration</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+ </div>

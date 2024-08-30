@@ -1,0 +1,5 @@
+<div class="story">
+<p>Coastal Cove is a small subdivision of only 10 lots, all large enough to hold a large rental house with privates pools. Even though the community is acroos the street from the beach the beach access is actually a couple of blocks away, directly across the street from the <a href="http://www.nagsheadnc.gov/" title="Nags Head Town Hall">Nags Head Town Hall</a>. Coastal Cove is located just north of the <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/village-at-nags-head.asp" title="Village at Nags Head">Village at Nags Head</a> and across the street from <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/heron-cove.asp" title="Heron Cove Condos">Heron Cove Condos</a>. </p>
+
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/nags head/coastal-cove-covenants.pdf" title="Coastal Cove Covenants" target="_blank">Coastal Cove Covenants</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+</div>

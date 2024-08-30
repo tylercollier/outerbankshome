@@ -1,0 +1,9 @@
+<div class="story">
+<p>Old Nags Head Place is one of the newer subdivisions created in 2001 with home sales starting in 2002. There are 152 properties on two streets with no amenities other than a direct beach access down E Curlew St. The building lots are all big enough to hold a large house and an in ground pool and most of the existing houses include a private pool. Old Nags Head Place is just across the bypass from the subdivision of North Ridge Estates and to the south is <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/george-stronach.asp" title="George T Stronach">George Stronach Estates</a> and to the north is <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/nags-head-shore.asp" title="Nags Head Shores">Nags Head Shores</a>. </p>
+    
+
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/nags head/old nags head place covenants.pdf" title="Old Nags Head Place Covenants">Old Nags Head Place Covenants</a> & 
+<a href="https://www.outerbankshome.com/outer banks/real estate/nags head/old nags head place covenants-2.pdf" title="Old Nags Head Place Covenants amended">amended covenants</a> & 
+<a href="https://www.outerbankshome.com/outer banks/real estate/nags head/old-nags-head-place-guidelines.pdf" title="Old Nags Head Place Guidelines">Old Nags Head Place Guidelines</a> &  
+<a href="https://www.outerbankshome.com/outer banks/real estate/nags head/old-nags-head-place-plat.jpg" title="Old Nags Head Place Plat">Plat</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+  </div>

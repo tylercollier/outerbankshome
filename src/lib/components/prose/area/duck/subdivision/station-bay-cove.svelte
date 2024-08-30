@@ -1,0 +1,4 @@
+<div class="story">
+<p>Station Bay Cove is a small community of 25 lots nestled in <a href="https://www.outerbankshome.com/outer banks/real estate/duck/sanderling.asp" title="Sanderling">Sanderling</a>. Owners and guests in Station Bay Cove have access to the Sanderling amenities which include a soundfront pool, fitness club and 2 tennis courts.</p>
+  <p><a href="https://www.outerbankshome.com/outer banks/real estate/duck/station-bay-cove-covenants.pdf" title="Station Bay Cove Covenants">Station Bay Cove Covenants</a> & <a href="https://www.outerbankshome.com/outer banks/real estate/duck/station-bay-cove-covenant-supplement.pdf" title="Station Bay Cove Covenants Supplement">Station Bay Cove Covenants Supplement</a>    - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+ </div>

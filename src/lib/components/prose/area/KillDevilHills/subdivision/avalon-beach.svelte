@@ -1,0 +1,3 @@
+<div class="story">
+<p>Avalon Beach is one of the oldest and largest subdivisions in Kill Devil Hills stretching from the Atlantic ocean to  Kitty Hawk Bay. Developed back in the day before environmental regulations were developed, the 1100 building lots were made small, averaging 5,000 sq ft, and the amenities are a private ocean front parking lot and beach access and a water access of Kitty Hawk Bay. You can find Avalon Beach just south of <a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/virginia-dare-shores.asp" title="Virginia Dare Shores ">Virginia Dare Shores</a> and north of <a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/wrights-shores.asp" title="Wright's Shores">Wright's Shores</a>. </p>
+</div>

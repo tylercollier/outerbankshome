@@ -1,0 +1,3 @@
+<div class="story">
+<p>The subdivision of John Beacham is a small community in Kitty Hawk Village with just 19 building lots all heavily wooded. The subdivision of John Beacham is down near the end of Ridge Road, just across from <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/kitty-hawk-landing.asp" title="Kitty Hawk Landing">Kitty Hawk Landing</a>, just before you get to the <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/hickory-ridge.asp" title="Hickory Ridge">Hickory Ridge</a>. </p>
+</div>

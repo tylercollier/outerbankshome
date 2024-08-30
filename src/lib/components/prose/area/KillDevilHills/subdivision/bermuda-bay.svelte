@@ -1,0 +1,3 @@
+<div class="story">   <p>Bermuda Bay consists of three smaller communities called Cambridge Cove, Devonshire Place and Hamilton Cay. Bermuda Bay has a club house and a large pool for owners and their guests.</p>
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/bermuda-bay-bylaws.pdf" title="Bermuda Bay Bylaws" target="_blank">Bermuda Bay Bylaws</a> & <a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/bermuda-bay-declarations.pdf" title="Bermuda Bay Declarations" target="_blank">Bermuda Bay Declarations</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+</div>

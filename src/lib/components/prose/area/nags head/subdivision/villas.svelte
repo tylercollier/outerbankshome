@@ -1,0 +1,5 @@
+<div class="story"> 
+<p>The Villas is a condominium complex situated on the Roanoke Sound in Nags Head tucked into the back of <a href="http://www.ncparks.gov/jockeys-ridge-state-park" title="Jockey's Ridge State Park">Jockey's Ridge State Park</a>. Owners here can enjoy the use of 2 tennis courts, 2 sound front pools, a private club house, a pier over the sound and a private boat ramp. The  complex is a  mixture of 2 and 3 bedrooms units and one and two story units with an open floor plan. You can find the Villas at the end of Villa Dune Dr behind <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/kitty-dunes-estates.asp" title="Kitty Dunes Estates">Kitty Dunes Estates</a>.</p>
+ 
+    <p><a href="https://www.outerbankshome.com/outer banks/real estate/nags head/villas-plat.pdf" title="The Villas plat" target="_blank">The Villas plat</a> and <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/villas-rules.pdf" title="Villas rules and regulations" target="_blank">rules</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+  </div>

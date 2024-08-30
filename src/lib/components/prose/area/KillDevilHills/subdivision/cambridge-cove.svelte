@@ -1,0 +1,4 @@
+<div class="story">
+   <p>Cambridge Cove is is a town house community in Bermuda Bay. Owners in Cambridge Cove follow the rules of Bermuda By and Cambridge Cove. </p>
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/cambridge-cove-bylaws.pdf" title="Cambridge Cove Bylaws" target="_blank">Cambridge Cove Bylaws</a> & <a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/cambridge-cove-declarations.pdf" title="Cambridge Cove Declarations" target="_blank">Cambridge Cove Declarations</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+  </div>

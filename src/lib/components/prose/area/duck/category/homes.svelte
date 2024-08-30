@@ -1,0 +1,6 @@
+<div class="story">
+	<p>
+		Here you will find all of the houses for sale in Duck broken down by type and area. If watching the sun rise is your thing, we have a section for <a href="https://www.outerbankshome.com/outer banks/real estate/duck/oceanfront-homes/" title="Duck Oceanfront Homes For sale">oceanfront homes in Duck</a> and a section for <a href="https://www.outerbankshome.com/outer banks/real estate/duck/soundfront-homes/" title="Duck Soundfront Homes For sale">soundfront homes</a> for the sunset lovers. If you are looking for more of a hands off place then you might be interested in one of the many <a href="https://www.outerbankshome.com/outer banks/real estate/duck/condos/" title="Duck Condos For sale">condos  in Duck</a> or if your plans are in the future and you just want to get your foot in the door, then a <a href="https://www.outerbankshome.com/outer banks/real estate/duck/land/" title="Duck Lots and land for sale">building lot in Duck</a> might what's needed to get you started. For those wanting a second home and would like some help with the payments, check out our inventory of <a href="https://www.outerbankshome.com/outer banks/real estate/duck/investment-homes/" title="Duck Investment Homes">Duck Investment Homes</a> for a property that helps pay for itself.
+	</p>
+
+</div>

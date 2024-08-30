@@ -1,0 +1,4 @@
+<div class="story">
+  <p>Indian Summer is an ocean side condominium complex in Ocean Sands with a community pool and tennis. There is a boardwalk to the beach for easy access. There are 12 units most of which have 2 bedrooms and 2 baths but a couple of units have 3 bedrooms and 2 baths. </p>
+    <p><a href="https://www.outerbankshome.com/outer banks/real estate/corolla/indian summer covenants.pdf" title="Indian Summer Condo Covenants">Indian Summer Condo Covenants</a> & <a href="https://www.outerbankshome.com/outer banks/real estate/corolla/indian-summer-layout.pdf" title="Indian Summer Layout">Indian Summer Layout</a>  - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+</div>

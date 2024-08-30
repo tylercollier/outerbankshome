@@ -1,0 +1,3 @@
+<div class="story">
+<p>Bodie Island Beach is an oceanfront community consisting of roughly 100 lots with half of them on the ocean and the other half on the opposite side of Rte 12 in <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/" title="Nags Head Homes for sale">South Nags Head</a>. Bordered by The condo complex of<a href="https://www.outerbankshome.com/outer banks/real estate/nags head/ocean-palms.asp" title="Ocean Palms Condo"> Ocean Palms</a> to the north and the subdivision of <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/oceanside.asp" title="Oceanside">Oceanside</a> to the south, Bodie Island Beach has no amenities other than the Atlantic Ocean. </p>
+</div>

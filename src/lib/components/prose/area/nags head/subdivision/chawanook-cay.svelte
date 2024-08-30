@@ -1,0 +1,3 @@
+<div class="story">
+<p>Chawanook Cay &amp; Chawanook West consists of 41 properties in South Nags Head fronting the oceanfront on the east and <a href="http://www.nps.gov/caha/index.htm" title="Cape Hatteras National Seashore">Cape Hatteras National Seashore</a> to the west and <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/high-dunes.asp" title="High Dunes">High Dunes</a> to the south. Located just south of <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/south-creek-acres.asp" title="South Creek Acres">South Creek Acres</a>, Chawanook is popular because of it's close proximity to the Oregon Inlet fishing grounds. </p>
+</div>

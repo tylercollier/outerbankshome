@@ -1,0 +1,3 @@
+ <div class="story">
+ <p>Kitty Hawk Beach is an old subdivision and one of the largest on the beach. At over 3 miles long, Kitty Hawk Beach stretches from the north end of Kitty Hawk down almost to the post office. There are  numerous beach accesses and no active home owners association or dues. You can find Kitty Hawk Beach across the bypass from the community of <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/seascape.asp" title="Sea Scape">Sea Scape</a> and next to <a href="https://www.outerbankshome.com/outer banks/real estate/southern-shores/" title="Southern Shores">Southern Shores</a> at the end of the beach. </p>
+</div>

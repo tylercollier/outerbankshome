@@ -1,0 +1,3 @@
+<div class="story">
+  <p><a href="https://www.outerbankshome.com/outer banks/real estate/nags head/village nest docs.pdf" title="Village Nest Docs">Village Nest Docs</a> <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/village nest & center point docs.pdf" title="Village Nest & Center Point Docs">Village Nest & Center PointDocs</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+  </div>

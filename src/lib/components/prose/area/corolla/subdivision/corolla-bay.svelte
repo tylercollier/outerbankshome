@@ -1,0 +1,5 @@
+<div class="story">
+<p>Corolla Bay is a new community at the north end of Corolla consisting of 28 soundfront and sound side building lots and 57 Villas. It is situated just west of <a href="https://www.outerbankshome.com/outer banks/real estate/corolla/whalehead.asp" title="Whalehead">Whalehead</a> and south of <a href="https://www.outerbankshome.com/outer banks/real estate/corolla/corolla-light.asp" title="Corolla Light">Corolla Light</a>. </p>
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/corolla/corolla-bay-villas-covenants.pdf" title="Villas at Corolla Bay Covenants">Villas at Corolla Bay Covenants</a> &amp; <a href="https://www.outerbankshome.com/outer banks/real estate/corolla/corolla bay plat.pdf" title="Corolla Bay Plat">Corolla Bay Plat</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+  
+	 </div>

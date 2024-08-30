@@ -1,0 +1,3 @@
+<div class="story">
+<p>Woodard Acres is small subdivision in Kitty Hawk with 26 building lots lining either side of Woodard Road. There are no amenities or home owners association. You will find Woodard Acres next to the subdivision of <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/oak-run.asp" title="Oak Run">Oak Run</a> and just past the community of <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/keepers-hill.asp" title="Keepers Hill">Keepers Hill</a>. </p>
+</div>

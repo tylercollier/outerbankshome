@@ -1,0 +1,3 @@
+<div class="story">   <p><a href="https://www.outerbankshome.com/outer banks/real estate/manteo/cypress-cove-covenants.pdf" title="Cypress Cove Covenants">Cypress Cove Covenants</a> & <a href="https://www.outerbankshome.com/outer banks/real estate/manteo/cypress-cove-covenants-amended.pdf" title="Cypress Cove Covenants Amended">Cypress Cove Covenants Amended</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+<p>  <p><a href="https://www.outerbankshome.com/outer banks/real estate/manteo/cypress-cove-plat.jpg" title="Cypress Cove Plat">Cypress Cove Plat</a> with the layout of all the lots in the subdivision.    </p>
+</div>

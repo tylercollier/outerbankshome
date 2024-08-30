@@ -1,0 +1,2 @@
+<div class="story">   <p><a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/Regency Condos covenants.pdf" title="Regency Condo Covenants">Regency Condo Covenants</a> & <a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/regency-declaration-ownership.pdf" title="Regency Condo Declaration">Regency Condo Declaration</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+   </div>

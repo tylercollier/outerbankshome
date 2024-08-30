@@ -1,0 +1,3 @@
+<div class="story">
+<p>Kitty Dunes Estates is a medium sized subdivision located on the westside of Rt. 158 in<a href="https://www.outerbankshome.com/outer banks/real estate/nags head/" title="Nags Head Homes for sale"> Nags Head </a>consisting of some 60+ properties. One side backs up to Jockey's Ridge State Park, the other side backs up to <a href="http://www.nature.org/ourinitiatives/regions/northamerica/unitedstates/northcarolina/placesweprotect/nags-head-woods-ecological-preserve.xml">Nags Head Woods</a> and at the end of the road are the <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/villas.asp" title="Villas Condos">Villas Condos</a>. </p>
+  </div>

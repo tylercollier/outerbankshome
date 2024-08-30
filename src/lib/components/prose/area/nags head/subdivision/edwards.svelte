@@ -1,0 +1,3 @@
+<div class="story">
+<p>Edwards subdivision is a small subdivision of only 32 properties located on the ocean side of Rte 158 and sandwiched in between the <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/enclaves-at-nags-head.asp" title="Enclaves At Nags Head">Enclaves at Nags Head</a> and the upscale community of <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/old-nags-head-place.asp" title="Old Nags Head Place">Old Nags Head Place</a>.</p>
+</div>

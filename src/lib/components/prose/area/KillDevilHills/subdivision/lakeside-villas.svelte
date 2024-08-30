@@ -1,0 +1,3 @@
+<div class="story">   
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/lakeside-villas-bylaws.pdf" title="Lakeside Villas Bylaws" target="_blank">Lakeside Villas Bylaws</a> & <a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/lakeside-villas-covenants.pdf" title="Lakeside Villas Covenants" target="_blank">Lakeside Villas Covenants</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+  </div>

@@ -1,0 +1,3 @@
+<div class="story">
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/avon/pamlico-point-declaration.pdf" title="Pamlico Point Declaration">Pamlico Point Declaration</a> & <a href="https://www.outerbankshome.com/outer banks/real estate/avon/pamlico-point-bylaws.pdf" title="Pamlico Point Bylaws">Pamlico Point Bylaws</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+</div>

@@ -1,0 +1,3 @@
+<div class="story">   <p><a href="https://www.outerbankshome.com/outer banks/real estate/manteo/heritage-pont-covenants.pdf" title="Heritage Point Covenants">Heritage Point Covenants</a> and the <a href="https://www.outerbankshome.com/outer banks/real estate/manteo/heritage-point-harbor-policy.pdf" title="Harbor Use Policy">Harbor Use Policy</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+    <p><a href="https://www.outerbankshome.com/outer banks/real estate/manteo/heritage-point-plat.pdf" title="Heritage Point Plat">Heritage Point Plat</a> with the layout of all the lots in the subdivision. </p>
+  </div

@@ -1,0 +1,3 @@
+<div class="story">  
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/manteo/kellam-estates-covenants.pdf" title="Kellam Estates Covenants" target="_blank">Kellam Estates Covenants</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a> <a href="https://www.outerbankshome.com/outer banks/real estate/manteo/kellam-estates-covenants1.pdf" title="Kellam Estates Covenants1" target="_blank">Kellam Estates Covenants</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+  </div>

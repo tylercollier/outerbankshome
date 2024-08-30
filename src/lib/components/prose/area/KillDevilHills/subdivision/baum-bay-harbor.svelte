@@ -1,0 +1,3 @@
+<div class="story">
+<p>Baum Bay Harbor is a boater friendly community of just over 100 properties located outside of the Kill Devil Hills tax district so the only properties taxes are those levied by the county. A few of the homes are located on a salt water canal and all of the properties have access to the community boat ramp and access to Buzzard Bay and the open sound. Baum Bay Harbor is just behind the <a href="https://www.nps.gov/wrbr/index.htm" title="Wright Memorial">Wright Memorial</a> and north of <a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/bermuda-bay.asp" title="Bermuda Bay">Bermuda Bay</a>. </p>
+</div>

@@ -1,0 +1,3 @@
+<div class="story">
+<p> Nags Head Beach is an ocean front community that starts just north of the <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/quay.asp" title="Quay Condos" >Quay  Condos</a> and runs along the ocean front to  <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/roanoke-sound-shores.asp" title="Roanoke Sound Shores">Roanoke Sound Shores</a>. </p>
+  </div>

@@ -1,0 +1,5 @@
+<div class="story">
+<p>South Creek Acres is a large subdivision in South Nags Head located on the westside of Rt 12 just across from <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/hollywood-beach.asp" title="Hollywod Beach">Hollywood Beach</a>. It backs up to the <a href="https://www.nps.gov/caha/index.htm" title="Cape Hatteras National Seashore">Cape Hatteras National Seashore</a> and offers sunset views from all of the properties. One of the few communities to offer amenities, residents and guest of owners have access to a community pool and tennis courts along with numerous beach accesses. 
+	</p>
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/nags head/south creek acres covenants.pdf" title="South Creek Acres Covenants">South Creek Acres Covenants</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+  </div>

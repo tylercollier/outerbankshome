@@ -1,0 +1,4 @@
+<div class="story"> <p>Wright's Woods is so named because it backs up to the Wright Brothers National Park. There is a deeded access to Kitty Hawk Bay and all the lots are large and wooded. The bike path running through Wright Woods will take you along Kitty Bay all the way to Kitty Hawk on one end and to the First Flight Schools and a beach access on the other end. To get to Wright Woods, go west on Landing Dr. through <a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/the-landing.asp" title="The Landing">The Landing</a> and make a left on First St. </p>
+      <p><a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/wright-woods-plat.pdf" title="Wright Woods Plat" target="_blank">Wright Woods Plat</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+  
+</div>

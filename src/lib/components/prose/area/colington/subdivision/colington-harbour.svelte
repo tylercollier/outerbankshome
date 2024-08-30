@@ -1,0 +1,5 @@
+<div class="story">
+<p>Colington Harbour is a boating community populated mostly by local residents and second homes. The canals are deep and the depth of the harbor channel out to the sound is maintained by the Coast Guard. Consequently, this is one of the few places on the Outer Banks where you can park a 40 foot sail boat in your back yard. </p>
+ <p>While the subdivision is protected by a guard gate the eclectic makeup of the types of houses range from modest 2 bedroom bungalows to large 5 bedroom houses. There is a community pool, tennis courts, clubhouse and a sound front beach. </p>
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/colington/colington-harbour-covenants.pdf" title="Colington Harbor Covenants" target="_blank">Colington Harbour Covenants</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+</div>

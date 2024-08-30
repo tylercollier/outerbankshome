@@ -1,0 +1,3 @@
+<div class="story">
+<p>Whalebone Beaches is a large ocean front subdivision in the southern end of Nags Head just south of <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/pebble-beach-shores.asp" title="Pebble Beach Shores">Pebble Beach Shores</a> and across the bypass from <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/sugar-creek.asp" title="The Landings at Sugar Creek">The Landings at Sugar Creek</a>. </p>
+</div>

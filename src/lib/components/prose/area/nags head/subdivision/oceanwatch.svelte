@@ -1,0 +1,3 @@
+<div class="story">
+  <p><a href="https://www.outerbankshome.com/outer banks/real estate/nags head/oceanwatch-covenants.pdf" title="Oceanwatch Covenants" target="_blank">Oceanwatch Covenants</a> & <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/oceanwatch-articles.pdf" title="Oceanwatch Articles of Incorporation" target="_blank">Oceanwatch Articles of Incorporation</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+  </div>

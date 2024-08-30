@@ -1,0 +1,4 @@
+<div class="story">
+<p>Sea View Place is a 6 lot community in <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/seascape.asp" title="Sea Scape">Sea Scape</a> with some ocean views. Situated right next to the <a href="http://seascapegolf.com/cms/" title="Sea Scape Golf Course">Sea Scape Golf Course</a>, Sea View Place is ideal for those looking for the golfing experience. </p>
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/sea-view-place-covenants.pdf" title="Sea View Place covenants" target="_blank">Sea View Place Covenants</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+    </div>

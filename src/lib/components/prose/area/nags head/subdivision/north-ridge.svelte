@@ -1,0 +1,4 @@
+<div class="story">
+  <p>The subdivision of Northridge is a small community comprised of 132, mostly wooded properties located on the westside of Rte 158 just north and behind Jockeys Ridge State Park and just south of <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/kitty-dunes-estates.asp" title="Kitty Dunes Estates">Kitty Dunes Estates</a>. The community of North Ridge is comprised of mostly year round residents with a few second home owners. </p>
+  <p><a href="https://www.outerbankshome.com/outer banks/real estate/nags head/north-ridge-covenants.pdf" title="North Ridge Covenants" target="_blank">North Ridge Covenants</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+ </div>

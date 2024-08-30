@@ -1,0 +1,3 @@
+<div class="story">
+<p>Poor Ridge Estates is a subdivision in Kitty Hawk located back towards the end of Kitty Hawk Road consisting of about 25 lots on Poor Ridge Road. There is no active home owners association. You will find Poor Ridge Estates just before you get to the community of <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/kitty-hawk-landing.asp" title="Kitty Hawk Landing">Kitty Hawk Landing</a>. </p>
+</div>

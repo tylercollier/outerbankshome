@@ -1,0 +1,2 @@
+<div class="story">   <p><a href="https://www.outerbankshome.com/outer banks/real estate/manteo/dogwood-hills-covenants.pdf" title="Dogwood Hills Covenants">Dogwood Hills Covenants</a> & <a href="https://www.outerbankshome.com/outer banks/real estate/manteo/dogwood-hills-covenants-2.pdf" title="Dogwood Hills Covenants Amended">Dogwood Hills Covenants Amended</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+  </div>

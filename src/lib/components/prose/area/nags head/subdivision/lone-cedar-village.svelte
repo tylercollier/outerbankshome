@@ -1,0 +1,4 @@
+<div class="story">
+ <p> <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/lone-cedar-village-covenants.pdf" title="Lone Cedar Village Covenants">Lone Cedar Village Covenants </a> & <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/lone-cedar-village-covenants-amended.pdf" title="Lone Cedar Village Covenants Amended">Lone Cedar Village Covenants Amended</a>  & <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/lone-cedar-village-covenants-2.pdf" title="Lone Cedar Village Covenants 2">Lone Cedar Village Covenants 2</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a>
+ </p>
+  </div>

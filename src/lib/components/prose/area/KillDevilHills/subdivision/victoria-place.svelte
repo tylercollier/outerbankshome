@@ -1,0 +1,4 @@
+<div class="story"> <p>Victoria Place condos are located across the street from the ocean in Kill Devil Hills. The units contain a mixture of 2 and 3 bedroom units with an elevator, granite counters and upscale appliances and finishes. There is a beach access right across the street. Victoria Place is situated on Rte 12 </p>  
+     <p><a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/victoria-place-declaration.pdf" title="Victoria Place Declaration">Victoria Place Declaration</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+   
+   </div>

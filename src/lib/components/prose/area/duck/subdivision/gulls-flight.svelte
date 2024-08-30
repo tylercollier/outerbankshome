@@ -1,0 +1,3 @@
+<div class="story">
+<p>Gull's Flight is one of the smallest subdivisions in Duck with only 17 building lots situated on the north side of Flight Dr. There is no active home owner's association and no amenities. All of the lots are already built on and most of the houses have pools. You can find Gull's Flight just south of <a href="https://www.outerbankshome.com/outer banks/real estate/duck/sanderling.asp" title="Sanderling">Sanderling</a> and north of <a href="https://www.outerbankshome.com/outer banks/real estate/duck/sound-sea-village.asp" title="Sound-Sea Village">Sound-Sea Village</a>. </p>
+</div>

@@ -1,0 +1,4 @@
+<div class="story"><p>This new waterfront subdivision in Colington features 57 town houses and 21 single family homes. The developement has a community pool and clubhouse. There is a canal on one side of the community with space to dock a boat.</p>
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/colington/colington-pointe-covenants.pdf" title="Colington Pointe restrctive covenants" target="_blank">Colington Pointe restrictive covenants</a> and <a href="https://www.outerbankshome.com/outer banks/real estate/colington/colington-pointe-bylaws1.pdf" title="Colington Point bylaws 1" target="_blank">bylaws.</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+<p><a href="https://www.outerbankshome.com/outer banks/real estate/colington/colington-ponte-site-plan.pdf" title="Colington Pointe site plan" target="_blank">Colington Pointe site plan</a></p>
+</div>

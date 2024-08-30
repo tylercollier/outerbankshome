@@ -1,0 +1,3 @@
+<div class="story">
+<p>Ted Wood Kitty Hawk Terrace is a subdivision in Kitty Hawk with 85 building lots located on the west side of Rte 158 with no amenities and no active home owners association. You can find Ted Wood just south of <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/gables.asp" title="The Gables Condos">The Gables Condos</a> and north of <a href="https://www.outerbankshome.com/outer banks/real estate/KittyHawk/ocean-winds.asp" title="Ocean Winds Condos">Ocean Winds Condos</a>. </p>
+</div>

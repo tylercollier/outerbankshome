@@ -1,0 +1,3 @@
+<div class="story">   <p><a href="https://www.outerbankshome.com/outer banks/real estate/manteo/Alder Branch Estates covenants.pdf" title="Alder Branch Estates">Alder Branch Estates Covenants</a> and the <a href="https://www.outerbankshome.com/outer banks/real estate/manteo/alder-branch-amended-covenants.pdf" title="amended covenants">amended covenants</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+    <p><a href="https://www.outerbankshome.com/outer banks/real estate/manteo/Alder Branch Estates plat.pdf" title="Alder Branch Estates plat">Alder Branch Estates Plat</a> with the layout of all the lots in the subdivision.    </p>
+</div>

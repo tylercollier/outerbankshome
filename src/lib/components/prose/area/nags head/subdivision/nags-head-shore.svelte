@@ -1,0 +1,5 @@
+<div class="story">
+<p>Nags Head Shores is one of the original subdivisions in the north end of Nags Head running from the ocean to Rte 158. There are no amenities but there are a number of beach accesses along the oceanfront. On the north end of Nags Head Shores  is the oceanfront condominium complex of <a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/seawalk-condos.asp" title="Seawalk Condos">Seawalk</a> in <a href="https://www.outerbankshome.com/outer banks/real estate/KillDevilHills/" title="Kill Devil Hills">Kill Devil Hills</a> and on the south end is the <a href="https://www.outerbankshome.com/outer banks/real estate/nags head/old-nags-head-place.asp" title="Old Nags Head Place">Old Nags Head Place</a> subdivision. </p>
+	
+      <p><a href="https://www.outerbankshome.com/outer banks/real estate/nags head/nags-head-shores-covenants.pdf" title="Nags Head Shores Covenants" target="_blank">Nags Head Shores Covenants</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+  </div>
