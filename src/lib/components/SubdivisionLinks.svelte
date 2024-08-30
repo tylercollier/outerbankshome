@@ -9,7 +9,7 @@
 
 	function makeLink(sub) {
 		return {
-			label: sub.name,
+			label: sub.displayName,
 			href: urljoin(basePath, areaParam, sub.slug + '.asp'),
 		};
 	}

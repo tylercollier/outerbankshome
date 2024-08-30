@@ -12,7 +12,7 @@ export const load = async ({ params }) => {
 		return queryBuilder
 			.where('City', '=', city)
 			.where('PropertySubType', 'in', ['Single Family Residence'])
-			.where('SubdivisionName', '=', subdivision.name);
+			.where('SubdivisionName', '=', subdivision.databaseName);
 	};
 	const activeListings = await getSearchResultListings('Residential', filterActive(modifyQuery));
 	const soldListings = await getSearchResultListings('Residential', filterSold(modifyQuery));
