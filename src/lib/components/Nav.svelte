@@ -83,6 +83,7 @@
 	<ul>
 		<li><a href={makeLink('retirement-homes/')}>OBX Retirement Homes</a></li>
 		<li><a href={makeLink('boat-slips/')}>OBX Boat Slips</a></li>
+		<li><a href={makeLink('commercial/')}>OBX Commercial Properties</a></li>
 	</ul>
 </nav>
 

@@ -24,6 +24,10 @@ export function getCity(areaParam) {
 }
 
 export function getAreaParamFromCity(city) {
+	// I'm not sure what effects this will have yet. But some listings have a null city.
+	if (!city) {
+		return null;
+	}
 	if (city === 'Kitty Hawk') {
 		return 'KittyHawk';
 	} else if (city === 'Kill Devil Hills') {

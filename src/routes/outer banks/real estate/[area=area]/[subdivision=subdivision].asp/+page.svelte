@@ -14,6 +14,13 @@
 
 <h1>{subdivisionName} Homes, Houses & Beach Houses For Sale</h1>
 
+<img
+	onerror='this.style.display = "none"'
+	src="/images/area/{areaParam}/subdivision/{subdivision.slug}.jpeg"
+	alt="{subdivisionName} subdivision sign"
+	style="width:30%;" border="0" float="left"
+/>
+
 <AreaListingResultsPage {areaParam} {activeListings} {soldListings}>
 	<svelte:fragment slot="bottomProse">
 		{#if proseComponent}
