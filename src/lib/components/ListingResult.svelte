@@ -2,7 +2,6 @@
 	import { makeLinkForListing, sqftTotal } from '$lib/listing';
 	import { formatAddress } from '$lib/address';
 	import { formatDollarsOnly } from '$lib/money';
-	import { useLazyImage as lazyImage } from 'svelte-lazy-image';
 	import { formatDate } from '$lib/date';
 	import { officeTollFreePhoneNumber } from '$lib/meta';
 	import { getAreaParamFromCity } from '$lib/area';
@@ -55,7 +54,7 @@
 	</div>
 	<div>
 		<a href={link}>
-			<img use:lazyImage data-src={listing.MediaURL} class="max-w-[120px] max-h-[90px]" alt="" />
+			<img src={listing.MediaURL} class="max-w-[120px] max-h-[90px]" alt="" />
 		</a>
 	</div>
 </div>
