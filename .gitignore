@@ -26,3 +26,5 @@ docker/volumes/
 
 old_site/
 
+
+*storybook.log
