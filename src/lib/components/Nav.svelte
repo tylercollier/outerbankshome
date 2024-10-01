@@ -48,7 +48,7 @@
 		<li><a href={makeLink('KillDevilHills/')}>Homes</a></li>
 		<li><a href={makeLink('KillDevilHills/condos/')}>Condos</a></li>
 		<li><a href={makeLink('KillDevilHills/land/')}>Land</a></li>
-		<li><a href={makeLink('KillDevilHills/waterfront-homes/')}>Waterfront Homes</a></li>
+		<li><a href={makeLink('KillDevilHills/waterfront/')}>Waterfront Homes</a></li>
 	</ul>
 	<h4>Nags Head</h4>
 	<ul>
@@ -83,7 +83,9 @@
 	<ul>
 		<li><a href={makeLink('retirement-homes/')}>OBX Retirement Homes</a></li>
 		<li><a href={makeLink('boat-slips/')}>OBX Boat Slips</a></li>
-		<li><a href={makeLink('commercial/')}>OBX Commercial Properties</a></li>
+		<li><a href={makeLink('Commercial/')}>OBX Commercial Properties</a></li>
+		<li><a href={makeLink('time-share/')}>OBX Co-Ownership Properties</a>
+		</li>
 	</ul>
 </nav>
 
