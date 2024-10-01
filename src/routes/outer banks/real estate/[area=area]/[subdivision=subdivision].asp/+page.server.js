@@ -9,10 +9,19 @@ export const load = async ({ params }) => {
 	const areaParam = params.area;
 	const city = getCity(areaParam);
 	const modifyQuery = queryBuilder => {
-		return queryBuilder
+		let qb
+		qb = queryBuilder
 			.where('City', '=', city)
 			.where('PropertySubType', 'in', ['Single Family Residence'])
-			.where('SubdivisionName', '=', subdivision.databaseName);
+			;
+		if (Array.isArray(subdivision.databaseName)) {
+			qb = qb
+				.where('SubdivisionName', 'in', subdivision.databaseName);
+		} else {
+			qb = qb
+				.where('SubdivisionName', '=', subdivision.databaseName);
+		}
+		return qb;
 	};
 	const activeListings = await getSearchResultListings('Residential', filterActive(modifyQuery));
 	const soldListings = await getSearchResultListings('Residential', filterSold(modifyQuery));

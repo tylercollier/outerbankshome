@@ -24,7 +24,7 @@ export const allowedSubdivisions = {
 		{ slug: 'sealoft-village', displayName: 'Sealoft Village',  databaseName: 'Sealoft Village' },
 		{ slug: 'seaside-villas', displayName: 'Seaside Villas',  databaseName: 'Seaside Villas' },
 		{ slug: 'tcc-windswept-ridge', displayName: 'Windswept Ridge',  databaseName: 'TCC-Windswept Ridge' },
-		
+
 		{ slug: 'corolla-phone-numbers', displayName: 'Corolla phone numbers',  databaseName: 'Corolla phone numbers' },
 		{ slug: 'pine-island', displayName: 'Pine Island',  databaseName: 'Pine Island Pud' },
 		{ slug: '4-wheel-drive-beaches', displayName: '4 Wheel Drive Beaches',  databaseName: '4 Wheel Drive Beaches' },
@@ -113,7 +113,7 @@ export const allowedSubdivisions = {
 		{ slug: 'sanderlin-shores', displayName: 'Sanderlin Shores', databaseName: 'Sanderlin Shore'  },
 		{ slug: 'kitty-hawk-landing', displayName: 'Kitty Hawk Landing', databaseName: 'Kitty Hawk Lndg'  },
 		{ slug: 'poor-ridge-estates', displayName: 'Poor Ridge Estates', databaseName: 'Poor Ridge Est'  },
-		{ slug: 'kitty-dunes', displayName: 'Kitty Dunes', databaseName: 'Kitty Dunes E' },
+		{ slug: 'kitty-dunes', displayName: 'Kitty Dunes', databaseName: ['Kitty Dunes Anx', 'Kitty Dunes E', 'Kitty Dunes Ext', 'Kitty Dunes Hgt', 'Kitty Dunes Ii', 'Kitty Dunes So.', 'Kitty Dunes Vil', 'Kitty Dunes W'] },
 
 		{ slug: 'kitty-dunes-heights', displayName: 'Kitty Dunes Heights', databaseName: 'Kitty Dunes Hgt'  },
 		{ slug: 'first-flight-ridge', displayName: 'First Flight Ridge', databaseName: 'First Flt Ridge'  },
@@ -181,7 +181,7 @@ export const allowedSubdivisions = {
 		{ slug: 'sundune-village-condos', displayName: 'Sundune Village Condos' , databaseName: 'Sundune Village Condominiums ' },
 		{ slug: 'vans-town-houses',	displayName: 'Vans Town Houses', databaseName: 'Vans Townhouses'},
 		{ slug: 'lakeside-villas', displayName: 'Lakeside Villas' , databaseName: 'Lakeside Villas' },
-		
+
 		{ slug: 'coastal-retreat-condos', displayName: 'Coastal Retreat Condos' , databaseName: 'Coastal Retreat' },
 		{ slug: 'ocean-east-condos',	displayName: 'Oceans East Condos', databaseName: 'Oceans East '},
 		{ slug: 'Sea-Pointe', displayName: 'Sea Pointe Condos' , databaseName: 'Sea Pointe ' },
@@ -191,7 +191,7 @@ export const allowedSubdivisions = {
 		{ slug: 'soundside-woods', displayName: 'Soundside Woods' , databaseName: 'Soundside Woods' },
 
 
-		
+
 
 
 
@@ -301,7 +301,7 @@ export const allowedSubdivisions = {
 		{ slug: 'waterfront-condos', displayName: 'Waterfront Condos' , databaseName: 'Waterfrnt Condo' },
 		{ slug: 'wildwoods', displayName: 'Wildwoods' , databaseName: 'Wildwoods' },
 	],
-	colington: [       
+	colington: [
 		{ slug: 'colington-harbour/', displayName: 'Colington Harbour' , databaseName: 'Colington Hrbr' },
 		{ slug: 'colington-pointe',	displayName: 'Colington Pointe', databaseName: 'Colington Pointe'},
 		{ slug: 'bay-cliff', displayName: 'Bay Cliff' , databaseName: 'Bay Cliff' },
