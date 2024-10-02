@@ -22,7 +22,14 @@ export const allowedSubdivisions = {
 		{ slug: 'indian-summer', displayName: 'Indian Summer',  databaseName: 'Indian Summer' },
 		{ slug: 'mirage-condos', displayName: 'Mirage Condos',  databaseName: 'Mirage Condo' },
 		{ slug: 'sealoft-village', displayName: 'Sealoft Village',  databaseName: 'Sealoft Village' },
-		{ slug: 'seaside-villas', displayName: 'Seaside Villas',  databaseName: 'Seaside Villas' },
+		{
+			slug: 'seaside-villas',
+			displayName: 'Seaside Villas',
+			databaseName: 'Seaside Villas',
+			propertySubType: ['Condominium'],
+			titleInfix: 'condos',
+			h1Infix: 'Condominiums',
+		},
 		{ slug: 'tcc-windswept-ridge', displayName: 'Windswept Ridge',  databaseName: 'TCC-Windswept Ridge' },
 
 		{ slug: 'corolla-phone-numbers', displayName: 'Corolla phone numbers',  databaseName: 'Corolla phone numbers' },

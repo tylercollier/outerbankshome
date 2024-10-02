@@ -6,13 +6,15 @@
 
 	$: ({ areaParam, activeListings, soldListings, subdivision, proseComponent } = data);
 	$: subdivisionName = allowedSubdivisions[areaParam].find(x => x.slug === subdivision.slug).displayName;
+	$: titleInfix = subdivision.titleInfix ?? 'homes';
+	$: h1Infix = subdivision.h1Infix ?? 'Homes, Houses & Beach Houses';
 </script>
 
 <svelte:head>
-	<title>{subdivisionName} Real Estate and homes for sale</title>
+	<title>{subdivisionName} Real Estate and {titleInfix} for sale</title>
 </svelte:head>
 
-<h1>{subdivisionName} Homes, Houses & Beach Houses For Sale</h1>
+<h1>{subdivisionName} {h1Infix} For Sale</h1>
 
 <img
 	onerror='this.style.display = "none"'

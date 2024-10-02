@@ -10,9 +10,10 @@ export const load = async ({ params }) => {
 	const city = getCity(areaParam);
 	const modifyQuery = queryBuilder => {
 		let qb
+		console.log('subdivision', subdivision)
 		qb = queryBuilder
 			.where('City', '=', city)
-			.where('PropertySubType', 'in', ['Single Family Residence'])
+			.where('PropertySubType', 'in', subdivision.propertySubType ?? ['Single Family Residence'])
 			;
 		if (Array.isArray(subdivision.databaseName)) {
 			qb = qb
