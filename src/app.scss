@@ -1,5 +1,9 @@
 $headerorange: #ff7e40;
 $lightorange: #ffcc99;
+$darkblue: #041c48;
+$linkblue: #4380ee;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -7,8 +11,14 @@ $lightorange: #ffcc99;
 
 body {
 	margin: 0;
-	font-family: Verdana, Arial, sans-serif;
+	font-family: Lato;
+	font-size: 18px;
+	line-height: 24px;
 	padding: 4px;
+}
+
+a {
+	color: #4380ee;
 }
 
 .error {

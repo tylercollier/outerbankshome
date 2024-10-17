@@ -26,8 +26,6 @@
 
 {#if !isPrintPage}
 	<h2>Listing Details For {formattedAddress}</h2>
-
-	<LdpButtons class="mb-4" {printHref} {moreInfoHref} />
 {/if}
 
 {#if listing.PropertyType === 'Land'}

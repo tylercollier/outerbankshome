@@ -6,12 +6,16 @@
 	$: isPrint = isPrintPage($page);
 </script>
 
-<nav class="bg-lightorange border border-black border-solid pl-2 pr-4" class:hidden={isPrint}>
-	<h4>Call <a href="tel://{officeTollFreePhoneNumber}">{officeTollFreePhoneNumber}</a></h4>
-	<ul>
-		<li><a href="/contact-info.asp">Contact us</a></li>
-		<li><a href="/just-listed.html">Just Listed Updates</a></li>
-	</ul>
+<nav class="bg-lightorange hidden" class:hidden={isPrint}>
+	<h3 class="bg-darkblue px-4 py-4 text-white text-xl mt-0">Buyer & Seller Tools</h3>
+	<div class="pl-4">
+		<p><a href="#" class="text-black no-underline text-l">Search OBX MLS</a></p>
+		<p><a href="/just-listed.html" class="text-black no-underline">Just Listed Updates</a></p>
+		<p><a href="#" class="text-black no-underline">Free Home Valuation</a></p>
+		<p><a href="#" class="text-black no-underline">New Listings Notifier</a></p>
+		<p><a href="/contact-info.asp" class="text-black no-underline">Contact us</a></p>
+	</div>
+	<h3 class="bg-darkblue px-4 py-4 text-white text-xl mt-0">Find a Property</h3>
 	<h4>Corolla</h4>
 	<ul>
 		<li><a href={makeLink('corolla/')}>Corolla Homes</a></li>
@@ -80,7 +84,7 @@
 		<li><a href={makeLink('waves/')}>Waves Homes</a></li>
 	</ul>
 	<h4>Other</h4>
-	<ul>
+	<ul class="pb-10">
 		<li><a href={makeLink('retirement-homes/')}>OBX Retirement Homes</a></li>
 		<li><a href={makeLink('boat-slips/')}>OBX Boat Slips</a></li>
 		<li><a href={makeLink('Commercial/')}>OBX Commercial Properties</a></li>
@@ -96,6 +100,22 @@
 		li {
 			@apply -ml-6;
 			@apply mb-4;
+			@apply ml-2;
+			@apply mr-4;
 		}
+
+			a {
+				color:black;
+				text-decoration: none;
+				font-weight: normal;
+			}
+	}
+	h4 {
+		border-bottom: 4px solid #ff7e40;
+		margin-left: 20px;
+		font-size: 1.5em;
+		font-weight: normal;
+		padding-bottom: 5px;
+		margin-bottom:0;
 	}
 </style>

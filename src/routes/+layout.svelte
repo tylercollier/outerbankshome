@@ -10,7 +10,7 @@
 
 	<Nav />
 
-	<main class="container mx-auto">
+	<main class="relative container mx-auto mb-16 p-8">
 		<slot />
 	</main>
 

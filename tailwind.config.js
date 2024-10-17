@@ -5,6 +5,18 @@ export default {
 	],
 	theme: {
 		extend: {
+			colors: {
+				obxorange: {
+					DEFAULT: '#ff7e40',
+				},
+				linkblue: {
+					DEFAULT: '#4380ee',
+				},
+				darkblue: {
+					DEFAULT: '#041c48',
+					50: '#36496d',
+				}
+			}
 		},
 	},
 };

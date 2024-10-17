@@ -20,15 +20,12 @@
 </script>
 
 {#if subdivisionLinks.length}
+<div class="bg-darkblue px-8 py-2 mt-10 mb-0 text-white">	
 	<h2>{areaName} Subdivisions</h2>
-
-	<div class="my-8">
-		<ul class="list-none">
-			{#each subdivisionLinks as subdivisionLink}
-				<li class="mb-4">
-					<a href={subdivisionLink.href}>{subdivisionLink.label}</a>
-				</li>
-			{/each}
-		</ul>
-	</div>
+</div>
+<div class="bg-slate-300 grid grid-cols-3 p-8">
+	{#each subdivisionLinks as subdivisionLink}
+			<a href={subdivisionLink.href} class="pb-2">{subdivisionLink.label}</a>
+	{/each}
+</div>
 {/if}

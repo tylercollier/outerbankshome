@@ -67,7 +67,7 @@
 {/if}
 
 <div>
-	<h3>Listing Information</h3>
+	<h3 class="bg-slate-200 border border-solid border-slate-400 p-4">Listing Information</h3>
 
 	<table class="listing-details-section">
 		<tbody>

@@ -16,12 +16,8 @@
 	});
 </script>
 
-<div class="my-8">
-	<ul class="list-none">
-		{#each categoryLinks as categoryLink}
-			<li class="mb-4">
-				<a href={categoryLink.href}>{categoryLink.label}</a>
-			</li>
-		{/each}
-	</ul>
+<div class="flex flex-wrap gap-4 mt-8 mb-16">
+	{#each categoryLinks as categoryLink}
+			<a href={categoryLink.href} class="text-inherit no-underline font-bold bg-slate-300 px-5 py-3 hover:bg-obxorange text-darkblue hover:text-white">{categoryLink.label}</a>
+	{/each}
 </div>
