@@ -7,7 +7,7 @@
 <header class="sticky top-0 z-10 md:static md:z-0">
 	<div class="relative">
 		<a href="/">
-			<img src={headerImage} class="w-full max-w-[800px]" alt="Shore Realty Logo" />
+			<img src={headerImage} class="w-full max-w-[800px] h-full" alt="Shore Realty Logo" />
 		</a>
 		<div class="absolute top-4 right-0 flex items-center gap-5 mr-6 mb-10">
 			<div class="text-xl md:text-2xl font-medium">800-647-1868</div>
@@ -53,6 +53,7 @@
 </header>
 
 <style lang="scss">
+
   .topnav a {
     @apply text-darkblue;
     text-decoration: none;
@@ -70,12 +71,19 @@
     overflow-x: auto;
     scrollbar-width: none;
     gap: 6px;
+	margin-top: 0;
+	padding: 10px 0 10px 10px;
 
     div {
       white-space: nowrap;
-			border: 1px silver solid;
 			border-radius: 20px;
-			@apply p-2;
+			background-color: #ff7e40;
+			@apply px-4 py-2;
+
+			a {
+				color: white;
+				text-decoration: none;
+			}
     }
   }
 

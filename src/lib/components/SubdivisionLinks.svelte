@@ -23,7 +23,7 @@
 <div class="bg-darkblue px-8 py-2 mt-10 mb-0 text-white">	
 	<h2>{areaName} Subdivisions</h2>
 </div>
-<div class="bg-slate-300 grid grid-cols-3 p-8">
+<div class="bg-slate-300 grid grid-cols-2 md:grid-cols-3 p-8">
 	{#each subdivisionLinks as subdivisionLink}
 			<a href={subdivisionLink.href} class="pb-2">{subdivisionLink.label}</a>
 	{/each}
