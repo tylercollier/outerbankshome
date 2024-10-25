@@ -45,10 +45,10 @@
 					{#if listing.PropertyType === 'Residential'}
 						<div class="flex flex-row md:flex-col">
 							<div class="flex flex-row md:w-full">
-								<div class="md:border md:border-solid md:border-l-0 md:border-t-0 md:border-slate-300 p-0 md:p-2 mr-3 md:mr-0 md:text-center">
+								<div class="md:border md:border-solid md:border-l-0 md:border-t-0 md:border-slate-300 p-0 md:p-2 mr-3 md:mr-0 md:text-center md:w-1/2">
 									{listing.BedroomsTotal} bd
 								</div>
-								<div class="md:border md:border-solid md:border-l-0 md:border-r-0 md:border-t-0 md:border-slate-300 p-0 md:p-2 mr-3 md:mr-0 md:text-center">
+								<div class="md:border md:border-solid md:border-l-0 md:border-r-0 md:border-t-0 md:border-slate-300 p-0 md:p-2 mr-3 md:mr-0 md:text-center md:w-1/2">
 									{listing.BathroomsFull} ba
 								</div>
 							</div>
