@@ -4,9 +4,7 @@
 <div id="content">
 	<h2 align="center" id="pageName">Fall Real Estate Season </h2>
 	<div class="feature">
-		<a href="https://www.outerbankshome.com/search-mls.html" target="_self" title="Search all Outer Banks NC real estate and homes for sale">
-			<img src="https://www.outerbankshome.com/search button.gif" style='width:15%;' border="0" align="right"alt="Search Outer Banks MLS real estate" />
-		</a>
+		
 		<p>In the fall the sellers have collected all of the summer's rental income. There will be no more rental income until next year and no help paying the bills over the winter. This is when a seller is in their best position to make a deal. </p>
 		<p>The prospect of nothing but expenditures for the next 4-5 months sometimes makes a seller open to options that they wouldn't have been in the late spring when they were looking at the prospect of lucrative income for the next 4-5 months. </p>
 		<p>Rental houses are easier to see, especially later in the fall, because of the absence of vacationers. Seeing rental properties is often possible mid-week, not just on turnover days. Beach is beautiful and weather is mild, ocean water is still warm even during the days it is cool outside. </p>

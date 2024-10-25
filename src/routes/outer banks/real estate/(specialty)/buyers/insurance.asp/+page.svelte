@@ -1,12 +1,12 @@
 <svelte:head>
 	<title>Outer Banks Insurance Companies and Agents</title>
-</svelte:head><div id="content">
+</svelte:head>
+
+	
 	<p></p>
 	<h2 align="center">Outer Banks Insurance Companies and Agents</h2>
 	<div class="feature">
-		<a href="https://www.outerbankshome.com/search-mls.html" target="_self" title="Search all Outer Banks NC real estate and homes for sale">
-			<img src="https://www.outerbankshome.com/search button.gif" style='width:15%;' border="0" align="right"alt="Search Outer Banks MLS real estate" />
-		</a>
+		
 		<p>The following list of Outer Banks insurance agents will help you get the proper coverage for your new house. This is not an endorsement for any of the Insurance Companies or Agents nor is it a complete list. This list  is being provided simply to help make things easier for you. </p>
 		<p>
 			<b>E.R. Midgett  Insurance Agency</b><br />
@@ -50,12 +50,12 @@
 		<p>
 		</p>
 
-		</li>
+		
 		<p>
 			<span class="style1">Update</span> 3/24/14 <a href="https://www.outerbankshome.com/outer banks/real estate/buyers/flood-insurance.asp" title="Flood Insurance">F</a> Rates will not be skyrocketing like everyone has been talking about. HR3370 was passed and signed into law thereby ending the Bigert-Waters Act and all the dire consequences. <a href="https://www.outerbankshome.com/outer banks/real estate/buyers/flood insurance update 3-26-14.pdf" title="Flood Insurance Update 3/24/14">HERE</a> is a copy of the new law.
 		</p>
 	</div>
-	<HR WIDTH="75%" COLOR="#FF7E40" SIZE="8">
+	
 
 		<div class="story">
 			<p>
@@ -261,4 +261,4 @@
 			</p>
 		</div>
 
-	</div>
+	

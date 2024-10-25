@@ -87,6 +87,11 @@
 		<li><a href={makeLink('time-share/')}>OBX Co-Ownership Properties</a>
 		</li>
 	</ul>
+	<h4>Inner Banks</h4>
+	<ul><li>
+		<a href={makeLink('currituck/')}>Currituck</a>
+	</li>
+	</ul>
 </nav>
 
 <style lang="scss">

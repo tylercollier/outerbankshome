@@ -3,19 +3,19 @@ export const allowedSubareas = {
 	corolla: [
 		{
 			slug: 'corolla-4-bedroom-homes',
-			displayName: 'Corolla 4 Bedroom Homes',
+			name: 'Corolla 4 Bedroom Homes',
 		},
 		{
 			slug: 'corolla-5-bedroom-homes',
-			displayName: 'Corolla 5 Bedroom Homes',
+			name: 'Corolla 5 Bedroom Homes',
 		},
 		{
 			slug: 'corolla-6-bedroom-homes',
-			displayName: 'Corolla 6 Bedroom Homes',
+			name: 'Corolla 6 Bedroom Homes',
 		},
 		{
 			slug: 'corolla-8-bedroom-homes',
-			displayName: 'Corolla 8 Bedroom Homes',
+			name: 'Corolla 8 Bedroom Homes',
 		},
 	],
 };

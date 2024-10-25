@@ -4,9 +4,7 @@
 <div id="content">
 	<h2 align="center" id="pageName">Summer Real Estate Season </h2>
 	<div class="feature">
-		<a href="https://www.outerbankshome.com/search-mls.html" target="_self" title="Search all Outer Banks NC real estate and homes for sale">
-			<img src="https://www.outerbankshome.com/search button.gif" style='width:15%;' border="0" align="right"alt="Search Outer Banks MLS real estate" />
-		</a>
+		
 		<p> Once the  the summer vacation season arrives it becomes much harder to look at homes for sale. Vacation rental beach houses are likely to have renters in them. It is up to the renters as to whether we are allower inside while they are on vacation. So, the only time they are available to see rental homes is between 10am and 2pm on checkout day. </p>
 		<p>Checkout day is also check-in day, we call it turnover day, and inbetween renters is  the only opportunity we have to look at vacation rental houses in the summer. Looking at homes for sale is still possible we just have to plan around this time frame. </p>
 		<p>With only a 4 hour time frame to look at houses and travel times double because of the congestion you need to plan ahead. This is not the time of year to look at a bunch of houses spread out all over the Outer Banks. Plus if the renters have the house booked for 2 weeks then you won't be able to see it until they check out. Please call ahead to make arrangements so we can have everything set up to run smoothly. </p>

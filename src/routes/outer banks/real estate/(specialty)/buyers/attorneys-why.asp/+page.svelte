@@ -4,9 +4,7 @@
 <div id="content">
 	<h2 align="center" id="pageName"> Real Estate Closing Attorneys</h2>
 	<div class="feature">
-		<a href="https://www.outerbankshome.com/search-mls.html" target="_self" title="Search all Outer Banks NC real estate and homes for sale">
-			<img src="https://www.outerbankshome.com/search button.gif" style='width:15%;' border="0" align="right"alt="Search Outer Banks MLS real estate" />
-		</a>
+		
 		<p>IN NORTH CAROLINA, ALL REAL ESTATE TRANSACTIONS ARE CLOSED BY ATTORNEYS. The buyer and the seller each need to hire their own attorney. This attorney list  does not include all of the attorneys on the beach nor is it designed to  endorse anyone in particular. If you would rather work with someone not  on this list please let us know. We have a good rapport with all of the  attorneys on the beach.</p>
 		<p>Some states don't use closing attorneys in real estate transactions. In some areas escrow agents or title companies handle all the paper work involved with the transaction. I have heard this results in a much smoother less expensive way to close a real estate deal but I do not know for sure. We have always used attorneys and the attorneys own the companies that write title insurance on the real estate being purchased. There are no escrow agents or title companies around here. </p>
 

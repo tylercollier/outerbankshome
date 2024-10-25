@@ -8,9 +8,7 @@
 		NO PROBLEM !
 	</h2>
 	<div class="feature">
-		<a href="https://www.outerbankshome.com/search-mls.html" target="_self" title="Search all Outer Banks NC real estate and homes for sale">
-			<img src="https://www.outerbankshome.com/search button.gif" style='width:15%;' border="0" align="right"alt="Search Outer Banks MLS real estate" />
-		</a>
+		
 		<p>
 			If you find the property that you would like and are considering buying it but you live out of sate and you have to go back  home, don't worry. There is no need to sign any paperwork before you leave. Use the ride home to analyze the situation and if you still want to make an offer on a property it can be handled long distance. Once you are sure of the price and terms you want to ask for we can email or fax the <a href="https://www.outerbankshome.com/outer banks/real estate/forms/buyers/Offer_to_Purchase_and_Contract.pdf" title="Offer to Purchase">Offer to Purchase</a> and any other necessary paperwork to you. We have a toll free fax line to help make it easier for you to find a fax machine to use.
 		</p>

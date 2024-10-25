@@ -5,9 +5,7 @@
 
 	<h2 align="center" id="pageName">Title Insurance--Get It </h2>
 	<div class="feature">
-		<a href="https://www.outerbankshome.com/search-mls.html" target="_self" title="Search all Outer Banks NC real estate and homes for sale">
-			<img src="https://www.outerbankshome.com/search button.gif" style='width:15%;' border="0" align="right"alt="Search Outer Banks MLS real estate" />
-		</a>
+		
 		<p>Title insurance protects your deed against any problems which show up after you make your home purchase. The cost is roughly $2.00 on every $1,000.00 of property value and it will protect you forever. </p>
 		<p>It is the best buy you can ever make! It is a one-time purchase and rarely used, but it is needed protection from forged signatures of previous owners, sloppy title searches, last minute liens and other title problems that might arise after you make your property purchase. </p>
 		<p>

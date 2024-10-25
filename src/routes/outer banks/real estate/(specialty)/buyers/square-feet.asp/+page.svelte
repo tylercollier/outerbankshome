@@ -4,9 +4,7 @@
 <div id="content">
 	<h2 align="center" id="pageName">SQUARE  FOOTAGE NOT  AS  ADVERTISED</h2>
 	<div class="feature">
-		<a href="https://www.outerbankshome.com/search-mls.html" target="_self" title="Search all Outer Banks NC real estate and homes for sale">
-			<img src="https://www.outerbankshome.com/search button.gif" style='width:15%;' border="0" align="right"alt="Search Outer Banks MLS real estate" />
-		</a>
+		
 		<p>Most of the time when you look at a house that you like, what you  see and feel is more important than the actual square footage. If the  square footage is important to you then we need to measure the house  before we make an offer. We always have a tape measure handy.</p>
 		<p> I have been in houses that seemed way bigger than they actually were and likewise I have seen homes that were crowded even though they had a lot of square footage. How you feel in a home is the most important thing. </p>
 		<p>Unfortunately, a lot of times we have to deal with agents that either don't know how to use a tape measure, are too lazy to actually take the time to measure the house or their math skills are lacking. We routinely find the square footage measurements listed in the MLS  matching exactly with the square footage numbers in the tax records. Never use the numbers in the tax records. </p>

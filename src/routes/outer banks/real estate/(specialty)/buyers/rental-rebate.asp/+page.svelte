@@ -6,9 +6,7 @@
 		Outer Banks  Rental Rebate<br />
 	</h2>
 	<div class="feature">
-		<a href="https://www.outerbankshome.com/search-mls.html" target="_self" title="Search all Outer Banks NC real estate and homes for sale">
-			<img src="https://www.outerbankshome.com/search button.gif" style='width:15%;' border="0" align="right"alt="Search Outer Banks MLS real estate" />
-		</a>
+		
 		<p>When you buy a house that already has rental reservations, typically there has been money collected which belongs to you.</p>
 		<p> When a renter makes a reservation for a rental house on the Outer Banks, they have a week or so to send in 1/2 of the total amount that the rental house is going to cost for their vacation. This is the rental deposit. Then, about 30 days before they are due to arrive on their vacation, the renters have to send in the second 1/2 of the rental amount. The rental company takes any expenses out of this money and forwards the balance to the owner/seller. </p>
 		<p>A house that is a strong renter might have 1/2 the rental income collected and in possession of the seller by late spring.</p>

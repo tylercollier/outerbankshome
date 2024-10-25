@@ -23,7 +23,7 @@ export const allowedCategories = {
 		homeCategory,
 		'condos',
 		'soundfront-homes',
-		// 'Sold',
+		 //'Sold',
 		'oceanfront-homes',
 		'water-front-homes',
 		// 'investment-homes',
@@ -120,7 +120,7 @@ export const allowedCategories = {
 		// 'Sold',
 		'oceanfront-homes',
 	],
-	'hatteras island': [
+	'hatteras': [
 		homeCategory,
 		'condos',
 		'land',
@@ -151,14 +151,19 @@ export const allowedCategories = {
 		// 'Sold',
 		'oceanfront-homes',
 	],
+	currituck: [
+		homeCategory,
+		'land',
+		'soundfront-homes',
+		// 'Sold',
+		'oceanfront-homes',
+	],
 };
 
 export function getTitleTag(areaParam, categoryParam) {
 	const areaName = getAreaNameFromParam(areaParam);
 	let partial;
-	if (categoryParam === homeCategory) {
-		partial = 'Homes, Houses & Beach Houses For Sale';
-	} else if (categoryParam === 'canalfront-homes') {
+	if (categoryParam === 'canalfront-homes') {
 		partial = 'Canalfront Homes and Houses for Sale';
 	} else if (categoryParam === 'condos') {
 		partial = 'Condos and Town Houses for Sale';
@@ -177,9 +182,7 @@ export function getTitleTag(areaParam, categoryParam) {
 export function getH1(areaParam, categoryParam) {
 	const areaName = getAreaNameFromParam(areaParam);
 	let partial;
-	if (categoryParam === homeCategory) {
-		partial = 'Homes, Houses & Beach Houses For Sale';
-	} else if (categoryParam === 'canalfront-homes') {
+	if (categoryParam === 'canalfront-homes') {
 		partial = 'Canalfront Homes For Sale';
 	} else if (categoryParam === 'condos') {
 		partial = 'Condos and Town Houses For Sale';

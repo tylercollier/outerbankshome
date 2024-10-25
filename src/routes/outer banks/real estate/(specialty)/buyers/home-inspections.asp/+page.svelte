@@ -5,10 +5,8 @@
 <div id="content">
 	<h2 align="center" id="pageName">Home Inspections</h2>
 	<div class="feature">
-		<a href="https://www.outerbankshome.com/search-mls.html" target="_self" title="Search all Outer Banks NC real estate and homes for sale">
-			<img src="https://www.outerbankshome.com/search button.gif" style='width:15%;' border="0" align="right"alt="Search Outer Banks MLS real estate" />
-		</a>
-		<p>&nbsp;</p>
+		
+		
 		<p>&nbsp;</p>
 		<p>WE ENTHUSIASTICALLY ENCOURAGE ALL HOME BUYERS TO HAVE THE HOUSE  CHECKED OUT BY A LICENSED PROFESSIONAL HOME INSPECTOR. </p>
 		<p>
@@ -59,8 +57,7 @@
 		</p>
 
 	</div>
-	<HR WIDTH="75%" COLOR="#FF7E40" SIZE="8">
-
+	
 		<div class="story">
 			<p>
 				<b>More Articles for buyers</b>
@@ -252,4 +249,4 @@
 			</p>
 		</div>
 
-	</div>
+	

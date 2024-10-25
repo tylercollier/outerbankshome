@@ -5,9 +5,7 @@
 	<p></p>
 	<h2 align="center">Home Repairs and Improvement</h2>
 	<div class="feature">
-		<a href="https://www.outerbankshome.com/search-mls.html" target="_self" title="Search all Outer Banks NC real estate and homes for sale">
-			<img src="https://www.outerbankshome.com/search button.gif" style='width:15%;' border="0" align="right"alt="Search Outer Banks MLS real estate" />
-		</a>
+		
 
 		<p>This list of home repair companies and service contractors is provided to you to help with your home improvement and repairs efforts. This list is in no way an endorsement for anyone/company. Most things can typically be handled without your presence as long as there is a key available to your property.</p>
 		<p>If any of the vendors on this page do not live up to what is considered normal business practices please notified us so we can clean up the list. Likewise notify us if you know of someone/company who should be on this list.  </p>

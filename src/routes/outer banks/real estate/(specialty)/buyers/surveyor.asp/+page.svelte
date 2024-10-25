@@ -4,9 +4,7 @@
 <div id="content">
 	<h2 align="center" id="pageName">Outer Banks Surveyors</h2>
 	<div class="feature">
-		<a href="https://www.outerbankshome.com/search-mls.html" target="_self" title="Search all Outer Banks NC real estate and homes for sale">
-			<img src="https://www.outerbankshome.com/search button.gif" style='width:15%;' border="0" align="right"alt="Search Outer Banks MLS real estate" />
-		</a>
+		
 		<p>The company providing your title insurance will want to see a survey of the property before they insure your title against encroachments. Sometimes, the seller has a copy of a survey you can use to satisfy the title insurer. If the seller does not have a survey available then you might have to pay for one yourself. </p>
 		<p>This list of Outer Banks surveyors is not in any way an endorsement of any kind. We do not receive any favors or money for putting surveyors on the list. We just pick them out of the phone book. </p>
 		<p>Jamie Furr, Eastern  GeoMatics &mdash;252-423-0790</p>

@@ -5,9 +5,7 @@
 	<p></p>
 	<h2>List of Outer Banks Utilities and Phone Numbers</h2>
 	<div class="feature">
-		<a href="https://www.outerbankshome.com/search-mls.html" target="_self" title="Search all Outer Banks NC real estate and homes for sale">
-			<img src="https://www.outerbankshome.com/search button.gif" style='width:15%;' border="0" align="right"alt="Search Outer Banks MLS real estate" />
-		</a>
+		
 		<h4>
 			<b>POWER </b>
 		</h4>

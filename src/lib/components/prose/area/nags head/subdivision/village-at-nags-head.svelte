@@ -1,4 +1,4 @@
-div class="story">
+<div class="story">
 <p>Fronting the Atlantic Ocean  and the Roanoke Sound, the &quot;Village at Nags Head&quot; is one of the few golf course communities on the Outer Banks. The Villages at Nags Head is a planned community consisting of 27 micro communities  including 
 Duneridge Estates, Elliot Estates,
 Oceanwatch, Seaside North,

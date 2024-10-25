@@ -5,9 +5,7 @@
 <div id="content">
 	<h2 align="center" id="pageName"> Outer Banks Beach Access Location</h2>
 	<div class="feature">
-		<a href="https://www.outerbankshome.com/search-mls.html" target="_self" title="Search all Outer Banks NC real estate and homes for sale">
-			<img src="https://www.outerbankshome.com/search button.gif" style='width:15%;' border="0" align="right"alt="Search Outer Banks MLS real estate" />
-		</a>
+		
 		<p>So you are finally ready to start shopping for your own special piece of paradise. You are on a web site dedicated to Outer Banks real estate so you have picked a good place to start. It all looks so good and all of it is on the Outer Banks. So how could you go wrong? Easy.</p>
 
 		<p>Just because you are at the beach does not mean that every location is a good one. If you are looking for a house to move into and raise your family there are some areas that are perfect and some areas that are less desirable. I am not saying there are areas that are not safe but you wouldn't want to raise your family in the same house you vacation in. Likewise, you would not want a vacation rental home in a neighborhood where people are raising families.</p>

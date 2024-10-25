@@ -4,9 +4,7 @@
 <div id="content">
 	<h2 align="center" id="pageName">Spring Real Estate Season </h2>
 	<div class="feature">
-		<a href="https://www.outerbankshome.com/search-mls.html" target="_self" title="Search all Outer Banks NC real estate and homes for sale">
-			<img src="https://www.outerbankshome.com/search button.gif" style='width:15%;' border="0" align="right"alt="Search Outer Banks MLS real estate" />
-		</a>
+		
 		<p>
 			Spring is  the time to get your foot in the door and have all of the prepaid rental reservation money  refunded to you at closing. Learn more about how to collect a <a href="https://www.outerbankshome.com/outer banks/real estate/buyers/rental-rebate.asp" title="Rental Rebate" > RENTAL REBATE.</a> Start shopping in the early part of the spring for that rental house so you can arrange the closing of it in the late spring. You will get the advanced rental money that the seller has been collecting right before the rest of the money starts coming in. So you get a check at closing and once a month for the next 3-5 months.
 		</p>

@@ -4,9 +4,7 @@
 <div id="content">
 	<h2 align="center" id="pageName">Not Ready to Buy Your Outer Banks Home Just Yet?</h2>
 	<div class="feature">
-		<a href="https://www.outerbankshome.com/search-mls.html" target="_self" title="Search all Outer Banks NC real estate and homes for sale">
-			<img src="https://www.outerbankshome.com/search button.gif" style='width:15%;' border="0" align="right"alt="Search Outer Banks MLS real estate" />
-		</a>
+		
 		<p>If the time is not right for you to purchase your piece of Outer  Banks real estate right now, bookmark this site for later. Most buyers  of recreational and investment real estate need a year or two to become  familiar enough with the market to make a confident decision. Multiple trips to look at house is normal. A second home is not something that you need, it is more of a want. We will never pressure you to make a decision now. </p>
 		<p>
 			<a href="https://www.outerbankshome.com/just-listed.html" title="Email updates of new homes just listed for sale">Updated  lists of the properties for sale</a> are available with just an e-mail or a  phone call. We also have the internet capability to inform you  immediately via e-mail of properties which may interest you as soon as they are listed  for sale. If you start getting new listings emailed to you now you will be more prepared to make your purchase when the time comes.

@@ -2,11 +2,11 @@
 	<title>Flood Zones and Flood Insurance on the Outer Banks</title>
 </svelte:head>
 <div id="content">
-	<h2 align="center" id="pageName">Flood Zones and Flood Insurance on the Outer Banks</h2>
+	<h2 align="center" id="pageName">Flood Zones and Flood Insurance on the Outer Banks11111111</h2>
 	<div class="feature">
 
 
-		<p>Yes! Flood insurance is available and most of the homes here on the Outer Banks will need aflood insurancepolicy.</p>
+		<p>Yes! Flood insurance is available and most of the homes here on the Outer Banks will need a flood insurance policy.</p>
 		<p>All of the Outer Banks is in some type of flood zone. In fact pretty much everything east of Raleigh is in a flood zone of some sort. Don't panic, it is not as bad as it seems. There are different types of flood zones ranging from areas that flood insurance is not required (low to no premiums) to areas that are dangerously close to being swept away by the ocean (high premiums).</p>
 		<p>Fortunately, on the Outer Banks all the towns conform to and enforce the construction standards required by FEMA resulting in discounted flood insurance rates for everybody here. </p>
 		<p>

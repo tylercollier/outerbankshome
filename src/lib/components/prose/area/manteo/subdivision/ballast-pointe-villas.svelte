@@ -10,7 +10,7 @@
 <a href="https://www.outerbankshome.com/outer banks/real estate/manteo/ballast-point-villas-bylaws.pdf" title="Ballast Point ByLaws">Ballast Point ByLaws</a> & 
 <a href="https://www.outerbankshome.com/outer banks/real estate/manteo/ballast-point-villas-declaration.pdf" title="Ballast Point Declaration">Ballast Point Declaration</a>
 
-   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a></p>
+   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a>
 
     
 	</div>

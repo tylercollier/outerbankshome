@@ -6,9 +6,7 @@
 	<p></p>
 	<h2 align="center">Outer Banks House Plans and Designers</h2>
 	<div class="feature">
-		<a href="https://www.outerbankshome.com/search-mls.html" target="_self" title="Search all Outer Banks NC real estate and homes for sale">
-			<img src="https://www.outerbankshome.com/search button.gif" style='width:15%;' border="0" align="right"alt="Search Outer Banks MLS real estate" />
-		</a>
+		
 		<p>Thinking about building your dream home? You might want to start the process here by looking at some possible house plans provide by the designers on this list. Here are some companies that design house plans that you can build on your Outer Banks lot.</p>
 		<p>
 			You might also want to take a look at some lots or land that is for sale. You can search all <a href="https://www.outerbankshome.com/search-mls.html" title="Search outer Banks real estate for sale">Outer Banks real estate for sale here</a>.

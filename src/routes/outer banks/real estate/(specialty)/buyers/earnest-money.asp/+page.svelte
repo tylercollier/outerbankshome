@@ -5,9 +5,7 @@
 	<h2 align="center" id="pageName">Earnest Money</h2>
 
 	<div class="feature">
-		<a href="https://www.outerbankshome.com/search-mls.html" target="_self" title="Search all Outer Banks NC real estate and homes for sale">
-			<img src="https://www.outerbankshome.com/search button.gif" style='width:15%;' border="0" align="right"alt="Search Outer Banks MLS real estate" />
-		</a>
+		
 		<p>
 			When an offer is written on a piece of real estate, one of the items that needs to be addressed is the earnest money. The Merriam Webster online dictionary defines earnest <b>:</b>a serious and intent mental state &lt;a proposal made in <em>earnest</em>&gt; So the idea behind earnest money is to show the seller that you are serious about the offer and hope that the offer becomes a contract.
 		</p>

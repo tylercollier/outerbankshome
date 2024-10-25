@@ -2,6 +2,6 @@
     <p>Ocean Hill is a small community consisting of a road that runs along the ocean with house on either side, two  short side streets and a small cu-de-sac. All of the houses in Ocean Hill have easy direct access to the ocean. The lots are some of the biggest around so there is room for lots of house and a private pool. </p>
          <p>This link will take you to the web site for the <a href="http://www.oceanhill.org/" target="_blank">Ocean Hill homeowners Association</a></p>
     
-	<img src="https://www.outerbankshome.com/outer banks/real estate/corolla/ocean-hill-plat.jpg" alt="ocean-hill-plat" width="450" height="450" />
-<p><a href="https://www.outerbankshome.com/outer banks/real estate/corolla/ocean-hill-covenants.pdf" title="Ocean Hill Covenantss">Ocean Hill Covenants</a>  - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a>
+	<img src="/outer banks/real estate/corolla/ocean-hill-plat.jpg" alt="ocean-hill-plat" width="450" height="450" />
+<p><a href="/outer banks/real estate/corolla/ocean-hill-covenants.pdf" title="Ocean Hill Covenantss">Ocean Hill Covenants</a>  - - - <a href="/Covenant-Disclaimer.asp" target="_blank"><b>    *</b></a>
 </p></div>
