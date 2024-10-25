@@ -51,4 +51,5 @@ export const allowedAreas = [
 	'rodanthe',
 	'salvo',
 	'waves',
+	'currituck',    
 ];
