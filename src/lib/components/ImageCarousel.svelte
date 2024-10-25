@@ -86,6 +86,7 @@
 
 <div>
 	{#if images.length}
+
 		<div class="relative mid-size">
 			<div class="absolute top-1 left-1 text-sm">{currentImageIndex + 1}/{images.length}</div>
 			<div class="absolute inset-y-0 left-0 flex items-stretch">
@@ -111,6 +112,8 @@
 				/>
 			</a>
 		</div>
+
+		
 		<div class="mid-size flex">
 			<button class="arrow hover:opacity-50" on:click={emblaApi.scrollPrev}>
 				<Fa color="gray" size="lg" icon={faCircleChevronLeft} />
@@ -139,7 +142,7 @@
 
 <style>
     .mid-size {
-        width: min(500px, 95vw);
+        width: min(650px, 95vw);
     }
 
     .arrow {

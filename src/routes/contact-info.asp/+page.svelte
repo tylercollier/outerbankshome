@@ -33,7 +33,7 @@
 		<div>800-647-1868</div>
 	</div>
 {:else}
-	<div class="contact-form inline-block p-8 rounded-2xl bg-lightorange">
+	<div class="inline-block p-8 rounded-2xl">
 		<form
 			method="post"
 			use:enhance={{
@@ -48,6 +48,8 @@
 				},
 			}}
 		>
+	<div class="flex flex-col md:flex-row gap-4 border">
+		<div>
 			<div>
 				<div>
 					<label class="text-label" for="first_name">First Name</label>
@@ -75,7 +77,9 @@
 					{/if}
 				</div>
 			</div>
-			<div class="mt-4">
+		</div>	
+		<div>
+			<div>
 				<div>
 					<label class="text-label" for="email">E-mail</label>
 					<input type="email" name="email" id="email" value={form?.data?.email ?? ''} />
@@ -97,7 +101,9 @@
 					{/if}
 				</div>
 			</div>
-			<div class="mt-4">
+		</div>	
+	</div>
+			<div class="mt-2">
 				<div>
 					<label class="text-label" for="comments">Comments</label>
 					<input type="text" name="comments" id="comments" value={form?.data?.comments ?? ''} />
@@ -239,3 +245,12 @@
 		</p>
 	</h2>
 {/if}
+
+<style>
+	input[type=text], input[type=email] {
+		padding:10px;
+	}
+	label.text-label {
+		width: 300px;
+	}
+</style>

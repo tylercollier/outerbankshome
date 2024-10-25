@@ -14,13 +14,11 @@
 
 <AreaListingResults listings={activeListings} {areaParam} />
 
-<hr class="orange" />
-
-<h1>Sold Recently</h1>
+<div class="bg-darkblue px-8 py-2 mt-10 mb-4 text-white">
+	<h1>Sold Recently</h1>
+</div>
 
 <AreaListingResults listings={soldListings} {areaParam} />
-
-<hr class="orange" />
 
 <slot name="bottomProse" />
 

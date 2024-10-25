@@ -14,9 +14,10 @@
 
 <AreaListingResultsPage {areaParam} {activeListings} {soldListings}>
 	<svelte:fragment slot="bottomProse">
+		<div class="my-12">
 		{#if proseComponent}
 			<svelte:component this={proseComponent} />
-			<hr class="orange" />
 		{/if}
+	</div>
 	</svelte:fragment>
 </AreaListingResultsPage>

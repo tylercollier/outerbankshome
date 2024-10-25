@@ -1,5 +1,9 @@
 $headerorange: #ff7e40;
 $lightorange: #ffcc99;
+$darkblue: #041c48;
+$linkblue: #4380ee;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -7,8 +11,17 @@ $lightorange: #ffcc99;
 
 body {
 	margin: 0;
-	font-family: Verdana, Arial, sans-serif;
-	padding: 4px;
+	font-family: Lato;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+a {
+	color: #4380ee;
+}
+
+h1 {
+	line-height: 1.1em;
 }
 
 .error {
@@ -18,7 +31,6 @@ body {
 
 .mycontainer {
 	display: grid;
-	gap: 4px;
 	grid-template-areas:
 		'header'
 		'main'
@@ -41,6 +53,14 @@ body {
 		grid-area: footer;
 	}
 }
+// Allowing horizontal scroll pills won't work inside a grid area.
+// If I don't do this, it just grows the entire page wider, ignoring
+// my overflow-x where I do the swipie.
+// I don't really understand why, but here's a fix.
+// https://stackoverflow.com/a/77506872/135101
+.mycontainer > * {
+	min-width: 0;
+}
 
 .border-debug {
 	@apply border border-red-500 border-solid;
@@ -60,9 +80,9 @@ hr.orange {
 	background: $headerorange;
 }
 
-@media screen and (width >= 1200px) {
+@media screen and (width >= 1024px) {
 	.mycontainer {
-		grid-template-columns: auto 3fr;
+		grid-template-columns: auto 4fr;
 		grid-template-areas:
 			'header header'
 			'nav main'

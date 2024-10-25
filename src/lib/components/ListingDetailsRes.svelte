@@ -7,6 +7,7 @@
 	import { maybeBlank } from '$lib/listing';
 	import ListingDetailsSection from '$lib/components/ListingDetailsSection.svelte';
 	import { isClosed } from '$lib/listing';
+	import LdpFact from '$lib/components/LdpFact.svelte';
 
 	export let listing;
 </script>
@@ -14,748 +15,225 @@
 <ListingDetailsSection {listing} />
 
 {#if isClosed(listing)}
-	<h3>Sold Details</h3>
-
-	<table class="listing-details-section">
-		<tbody>
-		<tr>
-			<td>Status</td>
-			<td>{maybeBlank(listing.StandardStatus)}</td>
-		</tr>
-		<tr>
-			<td>Sold Price</td>
-			<td>{formatDollarsAndCents(listing.ClosePrice)}</td>
-		</tr>
-		<tr>
-			<td>Closing Date</td>
-			<td>{formatDate(listing.CloseDate)}</td>
-		</tr>
-		<tr>
-			<td>Off Market Date</td>
-			<td>{formatDateFromString(listing.Off_Market_Status_Date)}</td>
-		</tr>
-		<tr>
-			<td>Contract Date</td>
-			<td>{formatDateFromString(listing.Contract_Date)}</td>
-		</tr>
-		<tr>
-			<td>Seller Concessions</td>
-			<td>{maybeBlank(listing.Concessions)}</td>
-		</tr>
-		<tr>
-			<td>Concession Comments</td>
-			<td>{maybeBlank(listing.ConcessionsComments)}</td>
-		</tr>
-		<tr>
-			<td>Total Days on Market</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Cumulative Days on Market</td>
-			<td>{maybeBlank(listing.CumulativeDaysOnMarket)}</td>
-		</tr>
-		<tr>
-			<td>Multiple Signed Offers</td>
-			<td>{maybeBlank(listing.Multiple_Signed_Offers)}</td>
-		</tr>
-		<tr>
-			<td>Due Diligence Date</td>
-			<td>{formatDateFromString(listing.Due_Diligence_Date)}</td>
-		</tr>
-		</tbody>
-	</table>
+<div>
+	<h3 class="bg-slate-200 border border-solid border-slate-400 p-4">Sold Details</h3>
+	<div class="columns-1 md:columns-2 items-start">
+		<LdpFact label="Status" value={maybeBlank(listing.StandardStatus)} />
+		<LdpFact label="Sold Price" value={formatDollarsAndCents(listing.ClosePrice)} />
+		<LdpFact label="Closing Date" value={formatDate(listing.CloseDate)} />
+		<LdpFact label="Off Market Date" value={formatDateFromString(listing.Off_Market_Status_Date)} />
+		<LdpFact label="Contract Date" value={formatDateFromString(listing.Contract_Date)} />
+		<LdpFact label="Seller Concessions" value={maybeBlank(listing.Concessions)} />
+		<LdpFact label="Concession Comments" value={maybeBlank(listing.ConcessionsComments)} />
+		<div class="pb-2"><span class="font-bold">Total Days on Market:</span></div>
+		<LdpFact label="Cumulative Days on Market" value={maybeBlank(listing.CumulativeDaysOnMarket)} />
+		<LdpFact label="Multiple Signed Offers" value={maybeBlank(listing.Multiple_Signed_Offers)} />
+		<LdpFact label="Due Diligence Date" value={formatDateFromString(listing.Due_Diligence_Date)} />
+	</div>
+</div>
 {/if}
 
 <div>
-	<h3>Listing Information</h3>
+	<h3 class="bg-slate-200 border border-solid border-slate-400 p-4">Listing Information</h3>
 
-	<table class="listing-details-section">
-		<tbody>
-		<tr>
-			<td>Area</td>
-			<td>{maybeBlank(listing.MLSAreaMinor)}</td>
-		</tr>
-		<tr>
-			<td>Mls Status</td>
-			<td>{maybeBlank(listing.StandardStatus)}</td>
-		</tr>
-		<tr>
-			<td>Days On Market</td>
-			<td>{maybeBlank(listing.DaysOnMarket)}</td>
-		</tr>
-		<tr>
-			<td>Cumulative Days On Market</td>
-			<td>{maybeBlank(listing.CumulativeDaysOnMarket)}</td>
-		</tr>
-		<tr>
-			<td>Listing Price</td>
-			<td>{formatDollarsOnly(listing.ListPrice)}</td>
-		</tr>
-		<tr>
-			<td>Original Listing Price</td>
-			<td>{formatDollarsOnly(listing.OriginalListPrice)}</td>
-		</tr>
-		<tr>
-			<td>Possession</td>
-			<td>{prettyJsonList(listing.Possession)}</td>
-		</tr>
-		<tr>
-			<td>Short Sale</td>
-			<td>{maybeBlank(listing.PShortSale)}</td>
-		</tr>
-		<tr>
-			<td>Price Date</td>
-			<td>{formatDateFromString(listing.Price_Date)}</td>
-		</tr>
-		<tr>
-			<td>Furnishing Available</td>
-			<td>{maybeBlank(listing.Furnishings_Available_Y_Or_N)}</td>
-		</tr>
-		<tr>
-			<td>Bill Of Sale Amount</td>
-			<td>{maybeBlank(listing.Bill_of_Sale_In_Amt__Y_Or_N)}</td>
-		</tr>
-		<tr>
-			<td>Expiration Date</td>
-			<td>{maybeBlank(listing.ExpirationDate)}</td>
-		</tr>
-		<tr>
-			<td>Ownership</td>
-			<td>{maybeBlank(listing.Ownership)}</td>
-		</tr>
-		<tr>
-			<td>Listing Restrictions</td>
-			<td>{maybeBlank(listing.O_LISTING_RESTRICTIONS)}</td>
-		</tr>
-		<tr>
-			<td>Listing Type</td>
-			<td>{maybeBlank(listing.ListingAgreement)}</td>
-			</tr>
-		</tbody>
-	</table>
+	<div class="columns-1 md:columns-2 items-start">
+		<LdpFact label="Area" value={maybeBlank(listing.MLSAreaMinor)} />
+		<LdpFact label="Mls Status" value={maybeBlank(listing.StandardStatus)} />
+		<LdpFact label="Days On Market" value={maybeBlank(listing.DaysOnMarket)} />
+		<LdpFact label="Cumulative Days On Market" value={maybeBlank(listing.CumulativeDaysOnMarket)} />
+		<LdpFact label="Listing Price" value={formatDollarsOnly(listing.ListPrice)} />
+		<LdpFact label="Original Listing Price" value={formatDollarsOnly(listing.OriginalListPrice)} />
+		<LdpFact label="Possession" value={prettyJsonList(listing.Possession)} />
+		<LdpFact label="Short Sale" value={maybeBlank(listing.PShortSale)} />
+		<LdpFact label="Price Date" value={formatDateFromString(listing.Price_Date)} />
+		<LdpFact label="Furnishing Available" value={maybeBlank(listing.Furnishings_Available_Y_Or_N)} />
+		<LdpFact label="Bill Of Sale Amount" value={maybeBlank(listing.Bill_of_Sale_In_Amt__Y_Or_N)} />
+		<LdpFact label="Expiration Date" value={maybeBlank(listing.ExpirationDate)} />
+		<LdpFact label="Ownership" value={maybeBlank(listing.Ownership)} />
+		<LdpFact label="Listing Restrictions" value={maybeBlank(listing.O_LISTING_RESTRICTIONS)} />
+		<LdpFact label="Listing Type" value={maybeBlank(listing.ListingAgreement)} />
+	</div>
 </div>
 
 <div>
-	<h3>Building Details</h3>
+	<h3 class="bg-slate-200 border border-solid border-slate-400 p-4">Building Details</h3>
 
-	<table class="listing-details-section">
-		<tbody>
-			<tr>
-				<td>Primary Heated Living Area Sq Ft</td>
-				<td>{maybeBlank(listing.Primary_HtdLvArSF)}</td>
-			</tr>
-			<tr>
-				<td>Additional Living Area Sq Ft</td>
-				<td>{maybeBlank(listing.Additional_HtdLvArSF)}</td>
-			</tr>
-			<tr>
-				<td>Total Living Area Sq Ft</td>
-				<td>{maybeBlank(listing.Total_HtdLvArSF)}</td>
-			</tr>
-			<tr>
-				<td>Asking Price Per SqFt</td>
-				<td>{formatDollarsAndCents(listing.Asking_Price_Per_SqFt)}</td>
-			</tr>
-			<tr>
-				<td>Heated Living Area Sq Ft</td>
-				<td>{maybeBlank(listing.HtdLvArSF)}</td>
-			</tr>
-			<tr>
-				<td>Unheated Living Area Sq Ft</td>
-				<td>{maybeBlank(listing.Unheated_LvArSF)}</td>
-			</tr>
-			<tr>
-				<td>BedroomsTotal </td>
-				<td>{maybeBlank(listing.BedroomsTotal)}</td>
-			</tr>
-			<tr>
-				<td>Bathrooms Full</td>
-				<td>{maybeBlank(listing.BathroomsFull)}</td>
-			</tr>
-			<tr>
-				<td>Bathrooms Partial</td>
-				<td>{maybeBlank(listing.BathroomsPartial)}</td>
-			</tr>
-			<tr>
-				<td>Year Built</td>
-				<td>{maybeBlank(listing.YearBuilt)}</td>
-			</tr>
-			<tr>
-				<td>Garage</td>
-				<td>{maybeBlank(listing.F_GARAGE)}</td>
-			</tr>
-			<tr>
-				<td>Garage Sq Ft</td>
-				<td>{maybeBlank(listing.Garage_Sq_Ft)}</td>
-			</tr>
-			<tr>
-				<td>Architectural Style</td>
-				<td>{prettyJsonList(listing.ArchitecturalStyle)}</td>
-			</tr>
-			<tr>
-				<td>Type</td>
-				<td>{maybeBlank(listing.Type)}</td>
-			</tr>
-			<tr>
-				<td>Sub Type</td>
-				<td>{maybeBlank(listing.PropertySubType)}</td>
-			</tr>
-			<tr>
-				<td>Appliances</td>
-				<td>{prettyJsonList(listing.Appliances)}</td>
-			</tr>
-			<tr>
-				<td>Roof</td>
-				<td>{prettyJsonList(listing.Roof)}</td>
-			</tr>
-			<tr>
-				<td>Parking</td>
-				<td>{prettyJsonList(listing.ParkingFeatures)}</td>
-			</tr>
-			<tr>
-				<td>Foundation</td>
-				<td>{prettyJsonList(listing.FoundationDetails)}</td>
-			</tr>
-			<tr>
-				<td>Pool</td>
-				<td>{maybeBlank(listing.Pool)}</td>
-			</tr>
-			<tr>
-				<td>Pool Type</td>
-				<td>{maybeBlank(listing.Pool_Type)}</td>
-			</tr>
-			<tr>
-				<td>Pool Features</td>
-				<td>{prettyJsonList(listing.PoolFeatures)}</td>
-			</tr>
-			<tr>
-				<td>Screen Porch Size</td>
-				<td>{maybeBlank(listing.Screen_Porch_Size)}</td>
-			</tr>
-			<tr>
-				<td>Sun Deck Size</td>
-				<td>{maybeBlank(listing.Sun_Deck_Size)}</td>
-			</tr>
-			<tr>
-				<td>Builder Name</td>
-				<td>{maybeBlank(listing.BuilderName)}</td>
-			</tr>
-			<tr>
-				<td>Driveway</td>
-				<td>{maybeBlank(listing.H_DRIVEWAY)}</td>
-			</tr>
-			<tr>
-				<td>Insulation</td>
-				<td>{maybeBlank(listing.T_INSULATION)}</td>
-			</tr>
-			<tr>
-				<td>Counter Tops</td>
-				<td>{maybeBlank(listing.ZF_COUNTER_TOPS)}</td>
-			</tr>
-			<tr>
-				<td>Cooling</td>
-				<td>{prettyJsonList(listing.Cooling)}</td>
-			</tr>
-			<tr>
-				<td>Interior Features</td>
-				<td>{prettyJsonList(listing.InteriorFeatures)}</td>
-			</tr>
-			<tr>
-				<td>Heating</td>
-				<td>{prettyJsonList(listing.Heating)}</td>
-			</tr>
-			<tr>
-				<td>Room Type</td>
-				<td>{prettyJsonList(listing.RoomType)}</td>
-			</tr>
-			<tr>
-				<td>Flooring</td>
-				<td>{prettyJsonList(listing.Flooring)}</td>
-			</tr>
-			<tr>
-				<td>Construction Materials</td>
-				<td>{prettyJsonList(listing.ConstructionMaterials)}</td>
-			</tr>
-			<tr>
-				<td>Building Features</td>
-				<td>{prettyJsonList(listing.BuildingFeatures)}</td>
-			</tr>
-		</tbody>
-	</table>
+	<div class="columns-1 md:columns-2 align-top">
+		<LdpFact label="Primary Heated Living Area Sq Ft" value={maybeBlank(listing.Primary_HtdLvArSF)} />
+		<LdpFact label="Additional Living Area Sq Ft" value={maybeBlank(listing.Additional_HtdLvArSF)} />
+		<LdpFact label="Total Living Area Sq Ft" value={maybeBlank(listing.Total_HtdLvArSF)} />
+		<LdpFact label="Asking Price Per SqFt" value={formatDollarsAndCents(listing.Asking_Price_Per_SqFt)} />
+		<LdpFact label="Heated Living Area Sq Ft" value={maybeBlank(listing.HtdLvArSF)} />
+		<LdpFact label="Unheated Living Area Sq Ft" value={maybeBlank(listing.Unheated_LvArSF)} />
+		<LdpFact label="BedroomsTotal" value={maybeBlank(listing.BedroomsTotal)} />
+		<LdpFact label="Bathrooms Full" value={maybeBlank(listing.BathroomsFull)} />
+		<LdpFact label="Bathrooms Partial" value={maybeBlank(listing.BathroomsPartial)} />
+		<LdpFact label="Year Built" value={maybeBlank(listing.YearBuilt)} />
+		<LdpFact label="Garage" value={maybeBlank(listing.F_GARAGE)} />
+		<LdpFact label="Garage Sq Ft" value={maybeBlank(listing.Garage_Sq_Ft)} />
+		<LdpFact label="Architectural Style" value={prettyJsonList(listing.ArchitecturalStyle)} />
+		<LdpFact label="Type" value={maybeBlank(listing.Type)} />
+		<LdpFact label="Sub Type" value={maybeBlank(listing.PropertySubType)} />
+		<LdpFact label="Appliances" value={prettyJsonList(listing.Appliances)} />
+		<LdpFact label="Roof" value={prettyJsonList(listing.Roof)} />
+		<LdpFact label="Parking" value={prettyJsonList(listing.ParkingFeatures)} />
+		<LdpFact label="Foundation" value={prettyJsonList(listing.FoundationDetails)} />
+		<LdpFact label="Pool" value={maybeBlank(listing.Pool)} />
+		<LdpFact label="Pool Type" value={maybeBlank(listing.Pool_Type)} />
+		<LdpFact label="Pool Features" value={prettyJsonList(listing.PoolFeatures)} />
+		<LdpFact label="Screen Porch Size" value={maybeBlank(listing.Screen_Porch_Size)} />
+		<LdpFact label="Sun Deck Size" value={maybeBlank(listing.Sun_Deck_Size)} />
+		<LdpFact label="Builder Name" value={maybeBlank(listing.BuilderName)} />
+		<LdpFact label="Driveway" value={maybeBlank(listing.H_DRIVEWAY)} />
+		<LdpFact label="Insulation" value={maybeBlank(listing.T_INSULATION)} />
+		<LdpFact label="Counter Tops" value={maybeBlank(listing.ZF_COUNTER_TOPS)} />
+		<LdpFact label="Cooling" value={prettyJsonList(listing.Cooling)} />
+		<LdpFact label="Interior Features" value={prettyJsonList(listing.InteriorFeatures)} />
+		<LdpFact label="Heating" value={prettyJsonList(listing.Heating)} />
+		<LdpFact label="Room Type" value={prettyJsonList(listing.RoomType)} />
+		<LdpFact label="Flooring" value={prettyJsonList(listing.Flooring)} />
+		<LdpFact label="Construction Materials" value={prettyJsonList(listing.ConstructionMaterials)} />
+		<LdpFact label="Building Features" value={prettyJsonList(listing.BuildingFeatures)} />
+	</div>
+</div>
+<div>
+	<h3 class="bg-slate-200 border border-solid border-slate-400 p-4">Legal Description</h3>
+
+	<div class="columns-1 md:columns-2 align-top">
+		<LdpFact label="Lot Number" value={maybeBlank(listing.Lot_Number)} />
+		<LdpFact label="Section" value={maybeBlank(listing.Section)} />
+		<LdpFact label="Block" value={maybeBlank(listing.TaxTaxBlock)} />
+		<LdpFact label="Phase" value={maybeBlank(listing.Phase)} />
+		<LdpFact label="x TaxTract" value={maybeBlank(listing.TaxTaxTract)} />
+		<LdpFact label="County" value={maybeBlank(listing.CountyOrParish)} />
+		<LdpFact label="Other Counties" value={maybeBlank(listing.Other_Counties)} />
+		<LdpFact label="Subdivision" value={maybeBlank(listing.SubdivisionName)} />
+		<LdpFact label="Subdivision Name" value={maybeBlank(listing.Full_Subdivision_Name)} />
+		<LdpFact label="Deed Book" value={maybeBlank(listing.Deed_Book)} />
+		<LdpFact label="Deed Book Page Number" value={maybeBlank(listing.Deed_Book_PgNumber)} />
+		<LdpFact label="County Pin Number" value={maybeBlank(listing.Pin_Number)} />
+		<LdpFact label="HOA Contact Name" value={maybeBlank(listing.HOA_Contact_Name)} />
+		<LdpFact label="Price Change" value={formatDate(listing.PriceChangeTimestamp)} />
+		<LdpFact label="Block" value={maybeBlank(listing.TaxBlock)} />
+		<LdpFact label="Tract" value={maybeBlank(listing.TaxTract)} />
+		<LdpFact label="Road Surface" value={prettyJsonList(listing.RoadSurfaceType)} />
+		<LdpFact label="Association Amenities" value={prettyJsonList(listing.AssociationAmenities)} />
+	</div>
 </div>
 
 <div>
-	<h3>Legal Description</h3>
-
-	<table class="listing-details-section">
-		<tbody>
-			<tr>
-				<td>Lot Number</td>
-				<td>{maybeBlank(listing.Lot_Number)}</td>
-			</tr>
-			<tr>
-				<td>Section</td>
-				<td>{maybeBlank(listing.Section)}</td>
-			</tr>
-			<tr>
-				<td>Block</td>
-				<td>{maybeBlank(listing.TaxTaxBlock)}</td>
-			</tr>
-			<tr>
-				<td>Phase</td>
-				<td>{maybeBlank(listing.Phase)}</td>
-			</tr>
-			<tr>
-				<td>x TaxTract</td>
-				<td>{maybeBlank(listing.TaxTaxTract)}</td>
-			</tr>
-			<tr>
-				<td>County</td>
-				<td>{maybeBlank(listing.CountyOrParish)}</td>
-			</tr>
-			<tr>
-				<td>Other Counties</td>
-				<td>{maybeBlank(listing.Other_Counties)}</td>
-			</tr>
-			<tr>
-				<td>Subdivision</td>
-				<td>{maybeBlank(listing.SubdivisionName)}</td>
-			</tr>
-			<tr>
-				<td>Subdivision Name</td>
-				<td>{maybeBlank(listing.Full_Subdivision_Name)}</td>
-			</tr>
-			<tr>
-				<td>Deed Book</td>
-				<td>{maybeBlank(listing.Deed_Book)}</td>
-			</tr>
-			<tr>
-				<td>Deed Book Page Number</td>
-				<td>{maybeBlank(listing.Deed_Book_PgNumber)}</td>
-			</tr>
-			<tr>
-				<td>County Pin Number</td>
-				<td>{maybeBlank(listing.Pin_Number)}</td>
-			</tr>
-			<tr>
-				<td>HOA Contact Name</td>
-				<td>{maybeBlank(listing.HOA_Contact_Name)}</td>
-			</tr>
-			<tr>
-				<td>Price Change</td>
-				<td>{formatDate(listing.PriceChangeTimestamp)}</td>
-			</tr>
-			<tr>
-				<td>Block</td>
-				<td>{maybeBlank(listing.TaxBlock)}</td>
-			</tr>
-			<tr>
-				<td>Tract</td>
-				<td>{maybeBlank(listing.TaxTract)}</td>
-			</tr>
-			<tr>
-				<td>Road Surface</td>
-				<td>{prettyJsonList(listing.RoadSurfaceType)}</td>
-			</tr>
-			<tr>
-				<td>Association Amenities</td>
-				<td>{prettyJsonList(listing.AssociationAmenities)}</td>
-			</tr>
-		</tbody>
-	</table>
+	<h3 class="bg-slate-200 border border-solid border-slate-400 p-4">Lot Details</h3>
+	<div class="columns-1 md:columns-2 align-top">
+		<LdpFact label="Land Tax Value" value={maybeBlank(listing.Land_Value)} />
+		<LdpFact label="Total Assessed Value" value={maybeBlank(listing.Total_Assessed_Value)} />
+		<LdpFact label="Timber" value={maybeBlank(listing.C_TIMBER)} />
+		<LdpFact label="Lot Size Acres" value={maybeBlank(listing.LotSizeAcres)} />
+		<LdpFact label="Lot Size Dimensions" value={maybeBlank(listing.LotSizeDimensions)} />
+		<LdpFact label="Lot Size Square Feet" value={maybeBlank(listing.LotSizeSquareFeet)} />
+		<LdpFact label="Lot Features" value={prettyJsonList(listing.LotFeatures)} />
+		<LdpFact label="Lot Faces" value={maybeBlank(listing.Lot_Faces_NEWS)} />
+		<LdpFact label="Water Frontage" value={maybeBlank(listing.Water_Frontage)} />
+		<LdpFact label="Waterfront" value={prettyJsonList(listing.WaterfrontFeatures)} />
+		<LdpFact label="View" value={prettyJsonList(listing.View)} />
+		<LdpFact label="Flood Zone" value={maybeBlank(listing.P_FLOOD_ZONE)} />
+		<LdpFact label="Property Type" value={maybeBlank(listing.PropertyType)} />
+	</div>
 </div>
 
 <div>
-	<h3>Lot Details</h3>
-
-	<table class="listing-details-section">
-		<tbody>
-			<tr>
-				<td>Land Tax Value</td>
-				<td>{maybeBlank(listing.Land_Value)}</td>
-			</tr>
-			<tr>
-				<td>Total Assessed Value</td>
-				<td>{maybeBlank(listing.Total_Assessed_Value)}</td>
-			</tr>
-			<tr>
-				<td>Timber</td>
-				<td>{maybeBlank(listing.C_TIMBER)}</td>
-			</tr>
-			<tr>
-				<td>Lot Size Acres</td>
-				<td>{maybeBlank(listing.LotSizeAcres)}</td>
-			</tr>
-			<tr>
-				<td>Lot Size Dimensions</td>
-				<td>{maybeBlank(listing.LotSizeDimensions)}</td>
-			</tr>
-			<tr>
-				<td>Lot Size Square Feet</td>
-				<td>{maybeBlank(listing.LotSizeSquareFeet)}</td>
-			</tr>
-			<tr>
-				<td>Lot Features</td>
-				<td>{prettyJsonList(listing.LotFeatures)}</td>
-			</tr>
-			<tr>
-				<td>Lot Faces</td>
-				<td>{maybeBlank(listing.Lot_Faces_NEWS)}</td>
-			</tr>
-			<tr>
-				<td>Water Frontage</td>
-				<td>{maybeBlank(listing.Water_Frontage)}</td>
-			</tr>
-			<tr>
-				<td>Waterfront</td>
-				<td>{prettyJsonList(listing.WaterfrontFeatures)}</td>
-			</tr>
-			<tr>
-				<td>View</td>
-				<td>{prettyJsonList(listing.View)}</td>
-			</tr>
-			<tr>
-				<td>Flood Zone</td>
-				<td>{maybeBlank(listing.P_FLOOD_ZONE)}</td>
-			</tr>
-			<tr>
-				<td>Property Type</td>
-				<td>{maybeBlank(listing.PropertyType)}</td>
-			</tr>
-		</tbody>
-	</table>
+	<h3 class="bg-slate-200 border border-solid border-slate-400 p-4">Property Expenses & Utilities</h3>
+	<div class="columns-1 md:columns-2 align-top">
+		<LdpFact label="Tax Year" value={maybeBlank(listing.TaxYear)} />
+		<LdpFact label="Annual Property Taxes" value={formatDollarsAndCents(listing.TaxAnnualAmount)} />
+		<LdpFact label="Insurance Expenses" value={maybeBlank(listing.Insurance_Expenses)} />
+		<LdpFact label="Home Oner Insurance Expense" value={maybeBlank(listing.Homeowner_Insurance)} />
+		<LdpFact label="Flood Zone" value={maybeBlank(listing.ZH_FLOOD_ZONE)} />
+		<LdpFact label="Flood Insurance Expense" value={maybeBlank(listing.Flood_Insurance)} />
+		<LdpFact label="Wind Insurance" value={maybeBlank(listing.Wind_Insurance)} />
+		<LdpFact label="Other Insurance" value={maybeBlank(listing.Other_Insurance)} />
+		<LdpFact label="Other Expenses 3" value={maybeBlank(listing.Other_Expenses_3)} />
+		<LdpFact label="Water Source" value={prettyJsonList(listing.WaterSource)} />
+		<LdpFact label="Yearly Water Expense" value={maybeBlank(listing.Yr_Water_Expense)} />
+		<LdpFact label="Other Yearly Expense" value={maybeBlank(listing.Other_Expenses)} />
+		<LdpFact label="Total Yearly Expense" value={maybeBlank(listing.Total_Expenses)} />
+		<LdpFact label="Pool Or Spa Expense" value={maybeBlank(listing.Pool_Or_Spa_Expense)} />
+		<LdpFact label="Yearly Expense" value={maybeBlank(listing.Yearly_Expense_Act_Or_Est)} />
+		<LdpFact label="Electric Expense" value={prettyJsonList(listing.Electric)} />
+		<LdpFact label="Management Fee" value={maybeBlank(listing.Management_Fee)} />
+		<LdpFact label="Yearly Elecric Expense" value={maybeBlank(listing.Yr_Electric_Expense)} />
+		<LdpFact label="Yearly Telephone Expense" value={maybeBlank(listing.Yr_Telephone_Expense)} />
+		<LdpFact label="Yearly Cable Tv Expense" value={maybeBlank(listing.Yr_Cable_TV_Expense)} />
+		<LdpFact label="Contract Status Change Date" value={formatDate(listing.ContractStatusChangeDate)} />
+		<LdpFact label="Estimated Annual Fee Amt" value={formatDollarsAndCents(listing.Estimated_Annual_Fee_Amt)} />
+		<LdpFact label="Sewer" value={prettyJsonList(listing.Sewer)} />
+		<LdpFact label="Septic Fee" value={maybeBlank(listing.Septic_Fee)} />
+		<LdpFact label="Maintenance Expense" value={maybeBlank(listing.Maintenance_Expenses)} />
+		<LdpFact label="Tax Expense" value={maybeBlank(listing.Tax_Expenses)} />
+		<LdpFact label="Association Fee Includes" value={prettyJsonList(listing.AssociationFeeIncludes)} />
+		<LdpFact label="Association Fee" value={maybeBlank(listing.AssociationFee)} />
+		<LdpFact label="Pet Fee" value={maybeBlank(listing.Pet_Fee_Y_Or_N)} />
+		<LdpFact label="Pet Fee" value={maybeBlank(listing.Pet_Fee_Amount)} />
+		<LdpFact label="Other Expenses 2" value={maybeBlank(listing.Other_Expenses_2)} />
+		<LdpFact label="Association Fee Yes or No" value={maybeBlank(listing.Assoc_____Fee_Y_Or_N_Or_Voluntary)} />
+	</div>
 </div>
 
 <div>
-	<h3>Property Expenses & Utilities</h3>
-
-	<table class="listing-details-section">
-		<tbody>
-			<tr>
-				<td>Tax Year</td>
-				<td>{maybeBlank(listing.TaxYear)}</td>
-			</tr>
-			<tr>
-				<td>Annual Property Taxes</td>
-				<td>{formatDollarsAndCents(listing.TaxAnnualAmount)}</td>
-			</tr>
-			<tr>
-				<td>Insurance Expenses</td>
-				<td>{maybeBlank(listing.Insurance_Expenses)}</td>
-			</tr>
-			<tr>
-				<td>Home Oner Insurance Expense</td>
-				<td>{maybeBlank(listing.Homeowner_Insurance)}</td>
-			</tr>
-			<tr>
-				<td>Flood Zone</td>
-				<td>{maybeBlank(listing.ZH_FLOOD_ZONE)}</td>
-			</tr>
-			<tr>
-				<td>Flood Insurance Expense</td>
-				<td>{maybeBlank(listing.Flood_Insurance)}</td>
-			</tr>
-			<tr>
-				<td>Wind Insurance</td>
-				<td>{maybeBlank(listing.Wind_Insurance)}</td>
-			</tr>
-			<tr>
-				<td>Other Insurance</td>
-				<td>{maybeBlank(listing.Other_Insurance)}</td>
-			</tr>
-			<tr>
-				<td>Other Expenses 3</td>
-				<td>{maybeBlank(listing.Other_Expenses_3)}</td>
-			</tr>
-			<tr>
-				<td>Water Source</td>
-				<td>{prettyJsonList(listing.WaterSource)}</td>
-			</tr>
-			<tr>
-				<td>Yearly Water Expense</td>
-				<td>{maybeBlank(listing.Yr_Water_Expense)}</td>
-			</tr>
-			<tr>
-				<td>Other Yearly Expense</td>
-				<td>{maybeBlank(listing.Other_Expenses)}</td>
-			</tr>
-			<tr>
-				<td>Total Yearly Expense</td>
-				<td>{maybeBlank(listing.Total_Expenses)}</td>
-			</tr>
-			<tr>
-				<td>Pool Or Spa Expense</td>
-				<td>{maybeBlank(listing.Pool_Or_Spa_Expense)}</td>
-			</tr>
-			<tr>
-				<td>Yearly Expense</td>
-				<td>{maybeBlank(listing.Yearly_Expense_Act_Or_Est)}</td>
-			</tr>
-			<tr>
-				<td>Electric Expense</td>
-				<td>{prettyJsonList(listing.Electric)}</td>
-			</tr>
-			<tr>
-				<td>Management Fee</td>
-				<td>{maybeBlank(listing.Management_Fee)}</td>
-			</tr>
-			<tr>
-				<td>Yearly Elecric Expense</td>
-				<td>{maybeBlank(listing.Yr_Electric_Expense)}</td>
-			</tr>
-			<tr>
-				<td>Yearly Telephone Expense</td>
-				<td>{maybeBlank(listing.Yr_Telephone_Expense)}</td>
-			</tr>
-			<tr>
-				<td>Yearly Cable Tv Expense</td>
-				<td>{maybeBlank(listing.Yr_Cable_TV_Expense)}</td>
-			</tr>
-			<tr>
-				<td>Contract Status Change Date</td>
-				<td>{formatDate(listing.ContractStatusChangeDate)}</td>
-			</tr>
-			<tr>
-				<td>Estimated Annual Fee Amt</td>
-				<td>{formatDollarsAndCents(listing.Estimated_Annual_Fee_Amt)}</td>
-			</tr>
-			<tr>
-				<td>Sewer</td>
-				<td>{prettyJsonList(listing.Sewer)}</td>
-			</tr>
-			<tr>
-				<td>Septic Fee</td>
-				<td>{maybeBlank(listing.Septic_Fee)}</td>
-			</tr>
-			<tr>
-				<td>Maintenance Expense</td>
-				<td>{maybeBlank(listing.Maintenance_Expenses)}</td>
-			</tr>
-			<tr>
-				<td>Tax Expense</td>
-				<td>{maybeBlank(listing.Tax_Expenses)}</td>
-			</tr>
-			<tr>
-				<td>Association Fee Includes</td>
-				<td>{prettyJsonList(listing.AssociationFeeIncludes)}</td>
-			</tr>
-			<tr>
-				<td>Association Fee</td>
-				<td>{maybeBlank(listing.AssociationFee)}</td>
-			</tr>
-			<tr>
-				<td>Pet Fee</td>
-				<td>{maybeBlank(listing.Pet_Fee_Y_Or_N)}</td>
-			</tr>
-			<tr>
-				<td>Pet Fee</td>
-				<td>{maybeBlank(listing.Pet_Fee_Amount)}</td>
-			</tr>
-			<tr>
-				<td>Other Expenses 2</td>
-				<td>{maybeBlank(listing.Other_Expenses_2)}</td>
-			</tr>
-			<tr>
-				<td>Association Fee Yes or No</td>
-				<td>{maybeBlank(listing.Assoc_____Fee_Y_Or_N_Or_Voluntary)}</td>
-			</tr>
-		</tbody>
-	</table>
+	<h3 class="bg-slate-200 border border-solid border-slate-400 p-4">Financials</h3>
+	<div class="columns-1 md:columns-2 align-top">
+		<LdpFact label="Bill Of Sale Amoung" value={maybeBlank(listing.Bill_of_Sale_Amount_Amt)} />
+		<LdpFact label="Electroni Locks" value={maybeBlank(listing.Electronic_Locks)} />
+		<LdpFact label="Construction Loan Status" value={maybeBlank(listing.Const_Loan_Status)} />
+		<LdpFact label="Seller to Sever Oil/Gas" value={maybeBlank(listing.Seller_to_sever_Oil_Or_Gas)} />
+		<LdpFact label="Bank/Institution Owned" value={maybeBlank(listing.Bank_Or__Institution_Owned)} />
+		<LdpFact label="Oil/Gas Severed Pre Owner" value={maybeBlank(listing.Oil_Or_Gas_Severed_Pre_Owner)} />
+		<LdpFact label="Oil/Gas Severed By Seller" value={maybeBlank(listing.Oil_Or_Gas_Severed_by_Seller)} />
+		<LdpFact label="Listing Restrictions" value={maybeBlank(listing.ZE_LISTING_RESTRICTIONS)} />
+		<LdpFact label="Exterior" value={maybeBlank(listing.E_EXTERIOR)} />
+		<LdpFact label="HashTag of Units" value={maybeBlank(listing.HashTag__of_Units)} />
+		<LdpFact label="Extras" value={maybeBlank(listing.V_EXTRAS)} />
+		<LdpFact label="Covered Deck Size" value={maybeBlank(listing.Covered_Deck_Size)} />
+		<LdpFact label="Fuel Tanks" value={maybeBlank(listing.Fuel_Tanks)} />
+		<LdpFact label="HOA Contact Name" value={maybeBlank(listing.HOA_Contact)} />
+		<LdpFact label="Limited Service" value={maybeBlank(listing.Limited_Service)} />
+		<LdpFact label="Primary Residence" value={maybeBlank(listing.Primary_Residence_Y_Or_N)} />
+		<LdpFact label="Street Frontage " value={maybeBlank(listing.Street_Frontage)} />
+		<LdpFact label="HOA Contact Info" value={maybeBlank(listing.HOA_Contact_Info)} />
+		<LdpFact label="HOA Contact Name" value={maybeBlank(listing.HOA_Contact_Info_Recom)} />
+		<LdpFact label="Basement" value={prettyJsonList(listing.Basement)} />
+	</div>
 </div>
 
-<div>
-	<h3>Financials</h3>
-
-	<table class="listing-details-section">
-		<tbody>
-			<tr>
-				<td>Bill Of Sale Amoung</td>
-				<td>{maybeBlank(listing.Bill_of_Sale_Amount_Amt)}</td>
-			</tr>
-			<tr>
-				<td>Electroni Locks</td>
-				<td>{maybeBlank(listing.Electronic_Locks)}</td>
-			</tr>
-			<tr>
-				<td>Construction Loan Status</td>
-				<td>{maybeBlank(listing.Const_Loan_Status)}</td>
-			</tr>
-			<tr>
-				<td>Seller to Sever Oil/Gas</td>
-				<td>{maybeBlank(listing.Seller_to_sever_Oil_Or_Gas)}</td>
-			</tr>
-			<tr>
-				<td>Bank/Institution Owned</td>
-				<td>{maybeBlank(listing.Bank_Or__Institution_Owned)}</td>
-			</tr>
-			<tr>
-				<td>Oil/Gas Severed Pre Owner</td>
-				<td>{maybeBlank(listing.Oil_Or_Gas_Severed_Pre_Owner)}</td>
-			</tr>
-			<tr>
-				<td>Oil/Gas Severed By Seller</td>
-				<td>{maybeBlank(listing.Oil_Or_Gas_Severed_by_Seller)}</td>
-			</tr>
-			<tr>
-				<td>Listing Restrictions</td>
-				<td>{maybeBlank(listing.ZE_LISTING_RESTRICTIONS)}</td>
-			</tr>
-			<tr>
-				<td>Exterior</td>
-				<td>{maybeBlank(listing.E_EXTERIOR)}</td>
-			</tr>
-			<tr>
-				<td>HashTag of Units</td>
-				<td>{maybeBlank(listing.HashTag__of_Units)}</td>
-			</tr>
-			<tr>
-				<td>Extras</td>
-				<td>{maybeBlank(listing.V_EXTRAS)}</td>
-			</tr>
-			<tr>
-				<td>Covered Deck Size</td>
-				<td>{maybeBlank(listing.Covered_Deck_Size)}</td>
-			</tr>
-			<tr>
-				<td>Fuel Tanks</td>
-				<td>{maybeBlank(listing.Fuel_Tanks)}</td>
-			</tr>
-			<tr>
-				<td>HOA Contact Name</td>
-				<td>{maybeBlank(listing.HOA_Contact)}</td>
-			</tr>
-			<tr>
-				<td>Limited Service</td>
-				<td>{maybeBlank(listing.Limited_Service)}</td>
-			</tr>
-			<tr>
-				<td>Primary Residence</td>
-				<td>{maybeBlank(listing.Primary_Residence_Y_Or_N)}</td>
-			</tr>
-			<tr>
-				<td>Street Frontage </td>
-				<td>{maybeBlank(listing.Street_Frontage)}</td>
-			</tr>
-			<tr>
-				<td>HOA Contact Info</td>
-				<td>{maybeBlank(listing.HOA_Contact_Info)}</td>
-			</tr>
-			<tr>
-				<td>HOA Contact Name</td>
-				<td>{maybeBlank(listing.HOA_Contact_Info_Recom)}</td>
-			</tr>
-			<tr>
-				<td>Basement</td>
-				<td>{prettyJsonList(listing.Basement)}</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-
-<div>
-	<h3>Rental Income</h3>
+<div class="mb-12">
+	<h3 class="bg-slate-200 border border-solid border-slate-400 p-4">Rental Income</h3>
 
 	{#if listing.Est_Annual_Rental_Income_Amt}
-		<table class="listing-details-section">
-			<tbody>
-				<tr>
-					<td>Annual Rental Income</td>
-					<td>{maybeBlank(listing.Est_Annual_Rental_Income_Amt)}</td>
-				</tr>
-				<tr>
-					<td>Rental Performance</td>
-					<td>{maybeBlank(listing.Est_Rental_Performance)}</td>
-				</tr>
-				<tr>
-					<td>Rental Cottage Name</td>
-					<td>{maybeBlank(listing.Rental_Cottage_Number)}</td>
-				</tr>
-				<tr>
-					<td>Rental Performnce Last Yesr</td>
-					<td>{maybeBlank(listing.Rental_Performnce_Last_Yr)}</td>
-				</tr>
-				<tr>
-					<td>Gross Income YTD Amt</td>
-					<td>{maybeBlank(listing.Gross_Income_YTD_Amt)}</td>
-				</tr>
-				<tr>
-					<td>How Rented</td>
-					<td>{maybeBlank(listing.How_Rented)}</td>
-				</tr>
-				<tr>
-					<td>Owner Rental Income 2024 Amount</td>
-					<td>{maybeBlank(listing.Owner_Rental_Income_2024Amt)}</td>
-				</tr>
-				<tr>
-					<td>Avertised Income 2024 Amount</td>
-					<td>{maybeBlank(listing.Advertised_Income_2024Amt)}</td>
-				</tr>
-				<tr>
-					<td>Owner Renatl Income 2023 Amount</td>
-					<td>{maybeBlank(listing.Owner_Rental_Income_2023Amt)}</td>
-				</tr>
-				<tr>
-					<td>Avertised Income 2023 Amount</td>
-					<td>{maybeBlank(listing.Advertised_Income_2023Amt)}</td>
-				</tr>
-				<tr>
-					<td>Owner Renatl Income 2022 Amount</td>
-					<td>{maybeBlank(listing.Owner_Rental_Income_2022Amt)}</td>
-				</tr>
-				<tr>
-					<td>Avertised Income 2021 Amount</td>
-					<td>{maybeBlank(listing.Advertised_Income_2022Amt)}</td>
-				</tr>
-				<tr>
-					<td>Owner Rental Income 2021 Amount</td>
-					<td>{maybeBlank(listing.Owner_Rental_Income_2021Amt)}</td>
-				</tr>
-				<tr>
-					<td>Avertised Income 2021 Amount</td>
-					<td>{maybeBlank(listing.Advertised_Income_2021Amt)}</td>
-				</tr>
-				<tr>
-					<td>Income History Year 1</td>
-					<td>{maybeBlank(listing.Income_Hist_Year_1)}</td>
-				</tr>
-				<tr>
-					<td>Income History Year 1 Amount</td>
-					<td>{maybeBlank(listing.Income_Hist_Year_1_Amt)}</td>
-				</tr>
-				<tr>
-					<td>Income History Year 2 </td>
-					<td>{maybeBlank(listing.Income_Hist_Year_2)}</td>
-				</tr>
-				<tr>
-					<td>Income History Year 2 Amount</td>
-					<td>{maybeBlank(listing.Income_Hist_Year_2_Amt)}</td>
-				</tr>
-				<tr>
-					<td>Income History Year 3</td>
-					<td>{maybeBlank(listing.Income_Hist_Year_3)}</td>
-				</tr>
-				<tr>
-					<td>Income History Year 3 Amount</td>
-					<td>{maybeBlank(listing.Income_Hist_Year_3_Amt)}</td>
-				</tr>
-				<tr>
-					<td>Rental Cottage_Name</td>
-					<td>{maybeBlank(listing.Rental_Cottage_Name)}</td>
-				</tr>
-				<tr>
-					<td>Rental Turnover Day</td>
-					<td>{maybeBlank(listing.Rental_Turnover_Day)}</td>
-				</tr>
-				<tr>
-					<td>Rental Company</td>
-					<td>{maybeBlank(listing.Rental_Co)}</td>
-				</tr>
-				<tr>
-					<td>Rental Term</td>
-					<td>{maybeBlank(listing.RTerm)}</td>
-				</tr>
-			</tbody>
-		</table>
+	<div class="columns-1 md:columns-2 align-top">
+		<LdpFact label="Annual Rental Income" value={maybeBlank(listing.Est_Annual_Rental_Income_Amt)} />
+		<LdpFact label="Rental Performance" value={maybeBlank(listing.Est_Rental_Performance)} />
+		<LdpFact label="Rental Cottage Name" value={maybeBlank(listing.Rental_Cottage_Number)} />
+		<LdpFact label="Rental Performnce Last Yesr" value={maybeBlank(listing.Rental_Performnce_Last_Yr)} />
+		<LdpFact label="Gross Income YTD Amt" value={maybeBlank(listing.Gross_Income_YTD_Amt)} />
+		<LdpFact label="How Rented" value={maybeBlank(listing.How_Rented)} />
+		<LdpFact label="Owner Rental Income 2024 Amount" value={maybeBlank(listing.Owner_Rental_Income_2024Amt)} />
+		<LdpFact label="Avertised Income 2024 Amount" value={maybeBlank(listing.Advertised_Income_2024Amt)} />
+		<LdpFact label="Owner Renatl Income 2023 Amount" value={maybeBlank(listing.Owner_Rental_Income_2023Amt)} />
+		<LdpFact label="Avertised Income 2023 Amount" value={maybeBlank(listing.Advertised_Income_2023Amt)} />
+		<LdpFact label="Owner Renatl Income 2022 Amount" value={maybeBlank(listing.Owner_Rental_Income_2022Amt)} />
+		<LdpFact label="Avertised Income 2021 Amount" value={maybeBlank(listing.Advertised_Income_2022Amt)} />
+		<LdpFact label="Owner Rental Income 2021 Amount" value={maybeBlank(listing.Owner_Rental_Income_2021Amt)} />
+		<LdpFact label="Avertised Income 2021 Amount" value={maybeBlank(listing.Advertised_Income_2021Amt)} />
+		<LdpFact label="Income History Year 1" value={maybeBlank(listing.Income_Hist_Year_1)} />
+		<LdpFact label="Income History Year 1 Amount" value={maybeBlank(listing.Income_Hist_Year_1_Amt)} />
+		<LdpFact label="Income History Year 2 " value={maybeBlank(listing.Income_Hist_Year_2)} />
+		<LdpFact label="Income History Year 2 Amount" value={maybeBlank(listing.Income_Hist_Year_2_Amt)} />
+		<LdpFact label="Income History Year 3" value={maybeBlank(listing.Income_Hist_Year_3)} />
+		<LdpFact label="Income History Year 3 Amount" value={maybeBlank(listing.Income_Hist_Year_3_Amt)} />
+		<LdpFact label="Rental Cottage_Name" value={maybeBlank(listing.Rental_Cottage_Name)} />
+		<LdpFact label="Rental Turnover Day" value={maybeBlank(listing.Rental_Turnover_Day)} />
+		<LdpFact label="Rental Company" value={maybeBlank(listing.Rental_Co)} />
+		<LdpFact label="Rental Term" value={maybeBlank(listing.RTerm)} />
+	</div>
 	{:else}
 		There is no rental income information available
 	{/if}

@@ -10,9 +10,15 @@
 
 	<Nav />
 
-	<main class="container mx-auto">
+	<main class="relative container mx-auto mb-16 p-2 md:p-8">
 		<slot />
 	</main>
 
 	<Footer />
+
+	<div class="md:hidden w-full p-4 bg-white text-center bottom-0 text-2xl font-bold fixed">
+		<a href="tel:8006471868" class="no-underline"><span class="text-obxorange">Call Agent:</span> <span
+			class="text-black">(800)647-1868</span></a>
+	</div>
 </div>
+

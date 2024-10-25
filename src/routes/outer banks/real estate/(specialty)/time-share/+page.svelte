@@ -1,8 +1,8 @@
 <script>
-	import AreaListingResults from '$lib/components/AreaListingResults.svelte';
+import AreaListingResults from '$lib/components/AreaListingResults.svelte';
 
-	export let data;
-	$: ({ listings } = data);
+export let data;
+$: ({ listings } = data);
 </script>
 
 <svelte:head>
