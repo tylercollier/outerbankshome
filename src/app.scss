@@ -53,6 +53,14 @@ h1 {
 		grid-area: footer;
 	}
 }
+// Allowing horizontal scroll pills won't work inside a grid area.
+// If I don't do this, it just grows the entire page wider, ignoring
+// my overflow-x where I do the swipie.
+// I don't really understand why, but here's a fix.
+// https://stackoverflow.com/a/77506872/135101
+.mycontainer > * {
+	min-width: 0;
+}
 
 .border-debug {
 	@apply border border-red-500 border-solid;
