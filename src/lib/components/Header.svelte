@@ -7,14 +7,14 @@
 <header class="sticky top-0 z-10 md:static md:z-0">
 	<div class="relative">
 		<a href="/">
-			<img src={headerImage} class="w-full max-w-[800px]" />
+			<img src={headerImage} class="w-full max-w-[800px]" alt="Shore Realty Logo" />
 		</a>
 		<div class="absolute top-4 right-0 flex items-center gap-5 mr-6 mb-10">
 			<div class="text-xl md:text-2xl font-medium">800-647-1868</div>
 			<!-- On small screens, the section below should become a hamburger menu -->
 			<div class="hidden md:flex"><LinkButton>Search Listings</LinkButton></div>
 			<div class="hidden lg:flex"><a href="/outer%20banks/real%20estate/sellers/" class="no-underline">Sellers</a></div>
-			<div class="hidden lg:flex"><a hreef="/outer%20banks/real%20estate/buyers/" class="no-underline">Buyers</a></div>
+			<div class="hidden lg:flex"><a href="/outer%20banks/real%20estate/buyers/" class="no-underline">Buyers</a></div>
 			<div class="hidden lg:flex"><a href="/contact-info.asp" class="no-underline">Contact</a></div>
 			<div><!-- HAMBURGER MENU SHOULD GO HERE --></div>
 			<!-- End section -->
