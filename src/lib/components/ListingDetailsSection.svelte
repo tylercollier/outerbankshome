@@ -3,13 +3,14 @@
 	import { formatDate } from '$lib/date';
 	import { formatAddressLine1 } from '$lib/address';
 	import ImageCarousel from '$lib/components/ImageCarousel.svelte';
-	import { isClosed as isListingClosed } from '$lib/listing';
+	import { isClosed as isListingClosed, sqftTotal } from '$lib/listing';
 	import LdpButtons from '$lib/components/LdpButtons.svelte';
 
 	export let listing;
 
 	$: addressLine1 = formatAddressLine1(listing);
 	$: isClosed = isListingClosed(listing);
+	$: sqft = sqftTotal(listing);
 </script>
 
 <div class="flex flex-col lg:flex-row gap-4 border">
@@ -31,21 +32,22 @@
 				<div class="border border-solid border-slate-300 my-2">
 					<div class="flex flex-row">
 						<div class="w-1/2 border border-solid border-l-0 border-t-0 border-slate-300 p-2 text-center">
-						2 bd <!-- TYLER I NEED HELP MAKING THIS DYNAMIC -->
+							{listing.BedroomsTotal} bd
 						</div>
 						<div class="w-1/2 border border-solid border-l-0 border-r-0 border-t-0 border-slate-300 p-2 text-center">
-						2 ba <!-- TYLER I NEED HELP MAKING THIS DYNAMIC -->
+							{listing.BathroomsFull} ba
 						</div>
 					</div>
 					<div class="p-2 text-center">
-					1234 sq ft <!-- TYLER I NEED HELP MAKING THIS DYNAMIC -->
-					</div>	
+						{sqft} sq ft
+					</div>
 				</div>	
 			</div>
 		</div>
 		<div>
 			<LdpButtons class="flex-col" />
 		</div>
+		<!-- Shannon plans to ask Greg if he wants the date here -->
 		<!--<div>{isClosed ? 'Closing' : 'Status'} Date: {formatDate(listing.ModificationTimestamp)}</div>-->	
 	</div>
 </div>

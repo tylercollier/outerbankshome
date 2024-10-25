@@ -12,12 +12,7 @@
 	$: infixToUse = urlInfix || getAreaParamFromCity(listing.City);
 	$: link = makeLinkForListing(listing, { urlInfix: infixToUse });
 	$: address = formatAddress(listing);
-	$: maxLength = 100;
-	$: publicRemarks2 = listing.PublicRemarks;
-	$: publicRemarks =
-		listing.PublicRemarks?.length < maxLength
-			? listing.PublicRemarks
-			: `${listing.PublicRemarks?.substring(0, maxLength)}...`;
+	$: publicRemarks = listing.PublicRemarks;
 	$: sqft = sqftTotal(listing);
 	$: isSold = listing.StandardStatus === 'Closed';
 </script>
@@ -52,11 +47,11 @@
 									{listing.BathroomsFull} ba
 								</div>
 							</div>
-							<div class="p-0 md:p-2 mr-3 md:mr-0 md:text-center md:w-full">
-								{#if sqft}
+							{#if sqft}
+								<div class="p-0 md:p-2 mr-3 md:mr-0 md:text-center md:w-full">
 									{sqft} sq ft
-								{/if}
-							</div>						 
+								</div>
+							{/if}
 						</div>
 					{:else if listing.PropertyType === 'Land'}
 						{#if listing.LotSizeAcres}
@@ -67,7 +62,7 @@
 			</div>
 		</div>
 		<div class="line-clamp-2 md:line-clamp-4">
-			{publicRemarks2}
+			{publicRemarks}
 		</div>
 		<a href={link}>MORE</a>
 		{#if !isSold}
