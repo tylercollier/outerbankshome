@@ -15,9 +15,9 @@
 	<CaptchaScript />
 </svelte:head>
 
-<h2>New Listings As They Hit The Market</h2>
+<h1>New Listings As They Hit The Market</h1>
 
-<h2 class="text-blue-950">Live Updates of Price Changes Straight From The Outer Banks MLS</h2>
+<h2>Live Updates of Price Changes Straight From The Outer Banks MLS</h2>
 
 {#if form?.success}
 	<div class="font-bold">
@@ -33,7 +33,7 @@
 		<div>800-647-1868</div>
 	</div>
 {:else}
-	<div class="contact-form inline-block p-8 rounded-2xl bg-lightorange">
+<div class="p-8 rounded-2xl">
 		<form
 			method="post"
 			use:enhance={{
@@ -48,6 +48,8 @@
 				},
 			}}
 		>
+	<div class="flex flex-col w-full md:flex-row gap-4 border">
+		<div class="w-1/2">
 			<div>
 				<div>
 					<label class="text-label" for="first_name">First Name</label>
@@ -75,7 +77,9 @@
 					{/if}
 				</div>
 			</div>
-			<div class="mt-4">
+		</div>	
+		<div class="w-1/2">
+			<div>
 				<div>
 					<label class="text-label" for="email">E-mail</label>
 					<input type="email" name="email" id="email" value={form?.data?.email ?? ''} />
@@ -97,7 +101,9 @@
 					{/if}
 				</div>
 			</div>
-			<div class="mt-4">
+		</div>	
+	</div>
+			<div class="mt-2">
 				<div>
 					<label class="text-label" for="price_range">Price Range</label>
 					<input
@@ -114,8 +120,8 @@
 				</div>
 			</div>
 
-			<div class="mt-4">
-				<div class="font-bold">Where?</div>
+			<div class="mt-10 font-bold">Where?</div>
+			<div class="columns-2">
 				{#each allowedAreas as areaSlug}
 					<div>
 						<label
@@ -126,8 +132,8 @@
 				{/each}
 			</div>
 
-			<div class="mt-4">
-				<div class="font-bold">What?</div>
+			<div class="mt-10 font-bold">What?</div>
+			<div>
 				<div>
 					<label
 						><input type="checkbox" name="property_type" value="residential" /> Residential</label
@@ -146,8 +152,8 @@
 				<div><label><input type="checkbox" name="property_type" value="land" /> Land</label></div>
 			</div>
 
-			<div class="mt-4">
-				<div class="font-bold">When?</div>
+			<div class="mt-10 font-bold">When?</div>
+			<div>
 				<div>
 					<label
 						><input type="checkbox" name="level_of_interest" value="Need Help Now" /> Need Help Now</label
@@ -199,13 +205,13 @@
 
 			<div class="mt-4">
 				<div>
-					<label class="text-label" for="comments">Comments</label>
-					<textarea
-						class="w-64 h-16 rounded"
+					<div><label class="text-label" for="comments">Comments</label></div>
+					<div><textarea
+						class="w-full h-16 rounded"
 						name="comments"
 						id="comments"
 						value={form?.data?.comments ?? ''}
-					/>
+					/></div>
 				</div>
 				<div class="text-red-500 text-right mt-2">
 					{#if form?.errors?.comments}
@@ -216,9 +222,7 @@
 
 			<button
 				type="submit"
-				class="mt-4 text-white rounded-lg px-8 text-xl uppercase"
-				class:bg-red-500={!isFormLoading}
-				class:bg-gray-500={isFormLoading}
+				class="mt-4 text-white bg-obxorange border-0 px-10 py-2 text-xl uppercase"
 				class:cursor-not-allowed={isFormLoading}
 				disabled={isFormLoading}
 			>
@@ -236,3 +240,13 @@
 		<a href="tel://{officeTollFreePhoneNumber}">{officeTollFreePhoneNumber}</a>
 	</div>
 {/if}
+
+<style>
+	input[type=text], input[type=email] {
+		padding:10px;
+		width: 100%
+	}
+	label.text-label {
+		width: 300px;
+	}
+</style>

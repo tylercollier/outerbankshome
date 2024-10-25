@@ -7,7 +7,7 @@
 <header class="sticky top-0 z-10 md:static md:z-0">
 	<div class="relative">
 		<a href="/">
-			<img src={headerImage} class="w-full max-w-[800px] h-full" alt="Shore Realty Logo" />
+			<img src={headerImage} class="w-full max-w-[800px]" alt="Shore Realty Logo" />
 		</a>
 		<div class="absolute top-4 right-0 flex items-center gap-5 mr-6 mb-10">
 			<div class="text-xl md:text-2xl font-medium">800-647-1868</div>

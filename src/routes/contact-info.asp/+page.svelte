@@ -33,7 +33,7 @@
 		<div>800-647-1868</div>
 	</div>
 {:else}
-	<div class="inline-block p-8 rounded-2xl">
+	<div class="p-8 rounded-2xl">
 		<form
 			method="post"
 			use:enhance={{
@@ -48,8 +48,8 @@
 				},
 			}}
 		>
-	<div class="flex flex-col md:flex-row gap-4 border">
-		<div>
+	<div class="flex flex-col w-full md:flex-row gap-4 border">
+		<div class="w-1/2">
 			<div>
 				<div>
 					<label class="text-label" for="first_name">First Name</label>
@@ -78,7 +78,7 @@
 				</div>
 			</div>
 		</div>	
-		<div>
+		<div class="w-1/2">
 			<div>
 				<div>
 					<label class="text-label" for="email">E-mail</label>
@@ -115,89 +115,67 @@
 				</div>
 			</div>
 
-			<div class="mt-4">
+			<div class="mt-10 font-bold">What area are you interested in?</div>
+
+			<div class="mt-4 columns-2">
 				{#each allowedAreas as areaSlug}
 					<div>
-						<label
-							><input type="checkbox" name="area" value={areaSlug} />
-							{getAreaNameFromParam(areaSlug)}</label
-						>
+						<label><input type="checkbox" name="area" value={areaSlug} />
+							{getAreaNameFromParam(areaSlug)}</label>
 					</div>
 				{/each}
 			</div>
 
+			<div class="mt-10 font-bold">What kind of property is this for you?</div>
+
 			<div class="mt-4">
 				<div>
-					<label
-						><input type="checkbox" name="property_type" value="residential" /> Residential</label
-					>
+					<label><input type="checkbox" name="property_type" value="residential" /> Residential</label>
 				</div>
 				<div>
-					<label
-						><input type="checkbox" name="property_type" value="investment" /> Investment/2nd Home</label
-					>
+					<label><input type="checkbox" name="property_type" value="investment" /> Investment/2nd Home</label>
 				</div>
 				<div>
-					<label
-						><input type="checkbox" name="property_type" value="condo-townhouse" /> Condo/Townhouse</label
-					>
+					<label><input type="checkbox" name="property_type" value="condo-townhouse" /> Condo/Townhouse</label>
 				</div>
 				<div><label><input type="checkbox" name="property_type" value="land" /> Land</label></div>
 			</div>
 
-			<div class="mt-4 font-bold">Level of Interest</div>
+			<div class="mt-10 font-bold">Level of Interest</div>
 
 			<div class="mt-4">
 				<div>
-					<label
-						><input type="checkbox" name="level_of_interest" value="Need Help Now" /> Need Help Now</label
-					>
+					<label><input type="checkbox" name="level_of_interest" value="Need Help Now" /> Need Help Now</label>
 				</div>
 				<div>
-					<label
-						><input type="checkbox" name="level_of_interest" value="Ready To Buy" /> Ready To Buy</label
-					>
+					<label><input type="checkbox" name="level_of_interest" value="Ready To Buy" /> Ready To Buy</label>
 				</div>
 				<div>
-					<label
-						><input type="checkbox" name="level_of_interest" value="Buy In Next 12 Months" /> Buy In
-						Next 12 Months</label
-					>
+					<label><input type="checkbox" name="level_of_interest" value="Buy In Next 12 Months" /> Buy In Next 12 Months</label>
 				</div>
 				<div>
-					<label
-						><input type="checkbox" name="level_of_interest" value="Buy In Next 24 Months" /> Buy In
-						Next 24 Months</label
-					>
+					<label><input type="checkbox" name="level_of_interest" value="Buy In Next 24 Months" /> Buy In Next 24 Months</label>
 				</div>
 				<div>
-					<label
-						><input
+					<label><input
 							type="checkbox"
 							name="level_of_interest"
-							value="Already Own OBX Property/ want more"
-						/>
-						Already Own OBX Property/want more</label
-					>
+							value="Already Own OBX Property/ want more"/>
+						Already Own OBX Property/want more</label>
 				</div>
 				<div>
-					<label
-						><input
+					<label><input
 							type="checkbox"
 							name="level_of_interest"
-							value="Already Own / thinking about selling"
-						/>
-						Already Own / thinking about selling</label
-					>
+							value="Already Own / thinking about selling"/>
+						Already Own / thinking about selling</label>
 				</div>
 				<div>
-					<label
-						><input type="checkbox" name="level_of_interest" value="Just Curious" /> Just Curious</label
-					>
+					<label><input type="checkbox" name="level_of_interest" value="Just Curious" /> Just Curious</label>
 				</div>
 			</div>
 
-			<div class="mt-4">
+			<div class="mt-10">
 				<div>
 					<label class="text-label" for="price_range">Price Range</label>
 					<input
@@ -216,9 +194,7 @@
 
 			<button
 				type="submit"
-				class="mt-4 text-white rounded-lg px-8 text-xl uppercase"
-				class:bg-red-500={!isFormLoading}
-				class:bg-gray-500={isFormLoading}
+				class="mt-4 text-white bg-obxorange border-0 px-10 py-2 text-xl uppercase"
 				class:cursor-not-allowed={isFormLoading}
 				disabled={isFormLoading}
 			>
@@ -230,25 +206,22 @@
 		</form>
 	</div>
 
-	<h2>
-		<p>
-			Phones:<br />
-			<a href="tel://{officeTollFreePhoneNumber}">{officeTollFreePhoneNumber}</a><br />
-			<a href="tel://{officeLocalPhoneNumber}">{officeLocalPhoneNumber}</a><br />
-			<a href="tel://2524413410">252-441-3410</a>
-		</p>
-		<p>
-			Mailing Address:<br />
-			Shore Realty <br />
+	<h3>Phones:</h3>
+		<div><a href="tel://{officeTollFreePhoneNumber}">{officeTollFreePhoneNumber}</a></div>
+		<div><a href="tel://{officeLocalPhoneNumber}">{officeLocalPhoneNumber}</a></div>
+		<div><a href="tel://2524413410">252-441-3410</a></div>
+
+	<h3>Mailing Address:</h3>
+		<div>Shore Realty <br />
 			PO Box 1977<br />
 			Nags Head, NC 27959
-		</p>
-	</h2>
+		</div>
 {/if}
 
 <style>
 	input[type=text], input[type=email] {
 		padding:10px;
+		width: 100%
 	}
 	label.text-label {
 		width: 300px;
