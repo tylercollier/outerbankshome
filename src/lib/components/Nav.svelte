@@ -88,8 +88,7 @@
 		<li><a href={makeLink('retirement-homes/')}>OBX Retirement Homes</a></li>
 		<li><a href={makeLink('boat-slips/')}>OBX Boat Slips</a></li>
 		<li><a href={makeLink('Commercial/')}>OBX Commercial Properties</a></li>
-		<li><a href={makeLink('time-share/')}>OBX Co-Ownership Properties</a>
-		</li>
+		<li><a href={makeLink('time-share/')}>OBX Co-Ownership Properties</a></li>
 	</ul>
 </nav>
 

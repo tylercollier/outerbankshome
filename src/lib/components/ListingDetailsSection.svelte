@@ -12,34 +12,40 @@
 	$: isClosed = isListingClosed(listing);
 </script>
 
-<div class="flex gap-6">
+<div class="flex flex-col lg:flex-row gap-4 border">
 	<div><ImageCarousel images={listing.Media} /></div>
 	<div class="mb-4">
-		<div class="pb-4">{isClosed ? 'Closing' : 'Asking'} Price: <br />
-		<span class="text-3xl font-bold">{formatDollarsOnly(listing.ListPrice)}</span></div>
-		
-		<div class="pb-4">{addressLine1}<br />
-		{listing.City}, NC {listing.PostalCode}</div>
-		
-		<div><span class="font-bold">MLS #:</span> {listing.ListingId}</div>
-		
-		<div><span class="font-bold">Status:</span> {listing.StandardStatus}</div>
-		
-		<div class="border border-solid border-slate-300 mt-6">
-			<div class="flex flex-row">
-				<div class="w-1/2 border border-solid border-l-0 border-t-0 border-slate-300 p-2 text-center">
-				2 bd <!-- TYLER I NEED HELP MAKING THIS DYNAMIC -->
-				</div>
-				<div class="w-1/2 border border-solid border-l-0 border-r-0 border-t-0 border-slate-300 p-2 text-center">
-				2 ba <!-- TYLER I NEED HELP MAKING THIS DYNAMIC -->
-				</div>
+		<div class="flex flex-start flex-row lg:flex-col gap-4 p-2 mb-4">
+			<div class="w-1/2 lg:w-full">
+				<div class="pb-4">{isClosed ? 'Closing' : 'Asking'} Price: <br />
+				<span class="text-3xl font-bold">{formatDollarsOnly(listing.ListPrice)}</span></div>
+					
+				<div class="pb-4">{addressLine1}<br />
+				{listing.City}, NC {listing.PostalCode}</div>
+					
+				<div><span class="font-bold">MLS #:</span> {listing.ListingId}</div>
+					
+				<div><span class="font-bold">Status:</span> {listing.StandardStatus}</div>		
 			</div>
-			<div class="p-2 text-center">
-			1234 sq ft <!-- TYLER I NEED HELP MAKING THIS DYNAMIC -->
-			</div>	
-		</div>	
-		
-		<LdpButtons />
+			<div class="w-1/2 lg:w-full">
+				<div class="border border-solid border-slate-300 my-2">
+					<div class="flex flex-row">
+						<div class="w-1/2 border border-solid border-l-0 border-t-0 border-slate-300 p-2 text-center">
+						2 bd <!-- TYLER I NEED HELP MAKING THIS DYNAMIC -->
+						</div>
+						<div class="w-1/2 border border-solid border-l-0 border-r-0 border-t-0 border-slate-300 p-2 text-center">
+						2 ba <!-- TYLER I NEED HELP MAKING THIS DYNAMIC -->
+						</div>
+					</div>
+					<div class="p-2 text-center">
+					1234 sq ft <!-- TYLER I NEED HELP MAKING THIS DYNAMIC -->
+					</div>	
+				</div>	
+			</div>
+		</div>
+		<div>
+			<LdpButtons class="flex-col" />
+		</div>
 		<!--<div>{isClosed ? 'Closing' : 'Status'} Date: {formatDate(listing.ModificationTimestamp)}</div>-->	
 	</div>
 </div>

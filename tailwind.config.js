@@ -14,7 +14,8 @@ export default {
 				},
 				darkblue: {
 					DEFAULT: '#041c48',
-					50: '#36496d',
+					300: '#c0c6d1',
+					500: '#36496d',
 				}
 			}
 		},

@@ -47,7 +47,7 @@
 			<div><a href="/site-map.asp">Site Map</a></div>
 			<div><a href="mailto:agent@outerbankshome.com">Contact Us</a></div>
 		</div>
-		<p class="bg-darkblue-50 text-center w-full p-4 mb-0">©1995-2024 Shore Realty OBX Inc.</p>
+		<p class="bg-darkblue-500 text-center w-full p-4 mb-0">©1995-2024 Shore Realty OBX Inc.</p>
 	</div>
 </footer>
 

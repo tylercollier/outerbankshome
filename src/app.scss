@@ -14,11 +14,14 @@ body {
 	font-family: Lato;
 	font-size: 18px;
 	line-height: 24px;
-	padding: 4px;
 }
 
 a {
 	color: #4380ee;
+}
+
+h1 {
+	line-height: 1.1em;
 }
 
 .error {
@@ -28,7 +31,6 @@ a {
 
 .mycontainer {
 	display: grid;
-	gap: 4px;
 	grid-template-areas:
 		'header'
 		'main'
@@ -70,9 +72,9 @@ hr.orange {
 	background: $headerorange;
 }
 
-@media screen and (width >= 1200px) {
+@media screen and (width >= 1024px) {
 	.mycontainer {
-		grid-template-columns: auto 3fr;
+		grid-template-columns: auto 4fr;
 		grid-template-areas:
 			'header header'
 			'nav main'

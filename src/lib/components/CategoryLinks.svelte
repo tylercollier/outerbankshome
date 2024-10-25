@@ -16,8 +16,8 @@
 	});
 </script>
 
-<div class="flex flex-wrap gap-4 mt-8 mb-16">
+<div class="flex flex-wrap gap-2 md:gap-4 mt-8 mb-8">
 	{#each categoryLinks as categoryLink}
-			<a href={categoryLink.href} class="text-inherit no-underline font-bold bg-slate-300 px-5 py-3 hover:bg-obxorange text-darkblue hover:text-white">{categoryLink.label}</a>
+			<a href={categoryLink.href} class="text-inherit no-underline font-bold bg-slate-300 px-3 md:px-5 py-2 md:py-3 hover:bg-obxorange text-darkblue hover:text-white">{categoryLink.label}</a>
 	{/each}
 </div>
