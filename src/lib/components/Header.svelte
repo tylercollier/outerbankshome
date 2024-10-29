@@ -1,7 +1,11 @@
 <script>
+	import { fly } from 'svelte/transition';
 	import { makeLink } from '$lib/nav';
 	import headerImage from '$lib/images/shore-realty-logo.gif';
 	import LinkButton from '$lib/components/LinkButton.svelte';
+	import HamburgerMenu from '$lib/components/HamburgerMenu.svelte';
+
+	let hamburgerMenuOpen = false;
 </script>
 
 <header class="sticky top-0 z-10 md:static md:z-0">
@@ -11,6 +15,9 @@
 		</a>
 		<div class="absolute top-4 right-0 flex items-center gap-5 mr-6 mb-10">
 			<div class="text-xl md:text-2xl font-medium">800-647-1868</div>
+			<div class="sm:hidden">
+				<HamburgerMenu open={hamburgerMenuOpen} on:click={() => hamburgerMenuOpen = !hamburgerMenuOpen} />
+			</div>
 			<!-- On small screens, the section below should become a hamburger menu -->
 			<div class="hidden md:flex">
 				<LinkButton>Search Listings</LinkButton>
@@ -50,32 +57,42 @@
 		<div><a href="{makeLink('sellers/')}" title="Sellers">Sellers</a></div>
 		<div><a href={makeLink('buyers/')} title="Buyers">Buyers</a></div>
 	</div>
+
+	{#if hamburgerMenuOpen}
+		<nav transition:fly={{ y: -200, duration: 400 }}>
+			<a href="/tube">Videos</a>
+			<a href="/blog">Blogposts</a>
+			<a href="/tube">Guides</a>
+			<a href="/tube">Portfolio</a>
+			<a href="/milestones">Milestones</a>
+		</nav>
+	{/if}
 </header>
 
 <style lang="scss">
 
-  .topnav a {
-    @apply text-darkblue;
-    text-decoration: none;
-    font-weight: 600;
-  }
+	.topnav a {
+		@apply text-darkblue;
+		text-decoration: none;
+		font-weight: 600;
+	}
 
-  .topnav a:hover {
-    @apply text-linkblue;
-  }
+	.topnav a:hover {
+		@apply text-linkblue;
+	}
 
-  .scrolling-wrapper {
-    background: white;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scrollbar-width: none;
-    gap: 6px;
-	margin-top: 0;
-	padding: 10px 0 10px 10px;
+	.scrolling-wrapper {
+		background: white;
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		scrollbar-width: none;
+		gap: 6px;
+		margin-top: 0;
+		padding: 10px 0 10px 10px;
 
-    div {
-      white-space: nowrap;
+		div {
+			white-space: nowrap;
 			border-radius: 20px;
 			background-color: #ff7e40;
 			@apply px-4 py-2;
@@ -84,12 +101,24 @@
 				color: white;
 				text-decoration: none;
 			}
-    }
-  }
+		}
+	}
 
-  @media screen and (width >= 640px) {
-    .scrolling-wrapper {
-      display: none;
-    }
-  }
+	@media screen and (width >= 640px) {
+		.scrolling-wrapper {
+			display: none;
+		}
+	}
+
+	nav {
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		align-items: center;
+		@apply bg-white;
+	}
 </style>

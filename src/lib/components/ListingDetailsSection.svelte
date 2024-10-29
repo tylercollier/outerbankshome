@@ -20,13 +20,13 @@
 			<div class="w-1/2 lg:w-full">
 				<div class="pb-4">{isClosed ? 'Closing' : 'Asking'} Price: <br />
 				<span class="text-3xl font-bold">{formatDollarsOnly(listing.ListPrice)}</span></div>
-					
+
 				<div class="pb-4">{addressLine1}<br />
 				{listing.City}, NC {listing.PostalCode}</div>
-					
+
 				<div><span class="font-bold">MLS #:</span> {listing.ListingId}</div>
-					
-				<div><span class="font-bold">Status:</span> {listing.StandardStatus}</div>		
+
+				<div><span class="font-bold">Status:</span> {listing.StandardStatus}</div>
 			</div>
 			<div class="w-1/2 lg:w-full">
 				<div class="border border-solid border-slate-300 my-2">
@@ -41,13 +41,13 @@
 					<div class="p-2 text-center">
 						{sqft} sq ft
 					</div>
-				</div>	
+				</div>
 			</div>
 		</div>
 		<div>
 			<LdpButtons class="flex-col" />
 		</div>
 		<!-- Shannon plans to ask Greg if he wants the date here -->
-		<!--<div>{isClosed ? 'Closing' : 'Status'} Date: {formatDate(listing.ModificationTimestamp)}</div>-->	
+		<!--<div>{isClosed ? 'Closing' : 'Status'} Date: {formatDate(listing.ModificationTimestamp)}</div>-->
 	</div>
 </div>
