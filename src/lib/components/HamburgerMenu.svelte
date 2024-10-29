@@ -36,6 +36,8 @@
         display: flex;
         align-items: center;
         overflow: hidden;
+        background: white;
+        border: 0;
     }
 
     svg {

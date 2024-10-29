@@ -25,7 +25,6 @@
 			<div class="hidden lg:flex"><a href="/outer%20banks/real%20estate/sellers/" class="no-underline">Sellers</a></div>
 			<div class="hidden lg:flex"><a href="/outer%20banks/real%20estate/buyers/" class="no-underline">Buyers</a></div>
 			<div class="hidden lg:flex"><a href="/contact-info.asp" class="no-underline">Contact</a></div>
-			<div><!-- HAMBURGER MENU SHOULD GO HERE --></div>
 			<!-- End section -->
 		</div>
 		<div class="absolute bottom-1 -z-10 bg-[#041c48] w-full h-[43px]"></div>
@@ -60,11 +59,18 @@
 
 	{#if hamburgerMenuOpen}
 		<nav transition:fly={{ y: -200, duration: 400 }}>
-			<a href="/tube">Videos</a>
-			<a href="/blog">Blogposts</a>
-			<a href="/tube">Guides</a>
-			<a href="/tube">Portfolio</a>
-			<a href="/milestones">Milestones</a>
+			<LinkButton>Search Listings</LinkButton>
+			<div><a href={makeLink('corolla/')} title="Corolla Home Sales">Corolla</a></div>
+			<div><a href={makeLink('duck/')} title="Duck Home Sales">Duck</a></div>
+			<div><a href={makeLink('southern-shores/')} title="Southern Shores Home Sales">Southern Shores</a></div>
+			<div><a href={makeLink('KittyHawk/')} title="Kitty Hawk Home Sales">Kitty Hawk</a></div>
+			<div><a href={makeLink('KillDevilHills/')} title="Kill Devil Hills Home Sales">Kill Devil Hills</a></div>
+			<div><a href={makeLink('colington/')} title="Colington Home Sales">Colington</a></div>
+			<div><a href={makeLink('nags head/')} title="Nags Head Home Sales">Nags Head</a></div>
+			<div><a href={makeLink('manteo/')} title="Manteo Home Sales">Manteo</a></div>
+			<div><a href={makeLink('hatteras-island/')} title="Hatteras Island Home Sales">Hatteras</a></div>
+			<div><a href="{makeLink('sellers/')}" title="Sellers">Sellers</a></div>
+			<div><a href={makeLink('buyers/')} title="Buyers">Buyers</a></div>
 		</nav>
 	{/if}
 </header>
@@ -112,13 +118,27 @@
 
 	nav {
 		position: absolute;
-		z-index: -1;
-		width: 100%;
-		padding: 1rem;
+		top: 55px;
+		right: 0;
+		z-index: 100;
+		width: 70%;
+		padding: 2rem;
 		display: flex;
 		flex-direction: column;
+		border: 1px solid #333333;
 		gap: 0.5rem;
-		align-items: center;
 		@apply bg-white;
+
+		div {
+			padding: 2px;
+
+			a {
+				text-decoration: none;
+				color: black;
+			}
+			a.hover {
+				@apply text-obxorange; 
+			}
+		}
 	}
 </style>
