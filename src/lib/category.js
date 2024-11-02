@@ -163,7 +163,9 @@ export const allowedCategories = {
 export function getTitleTag(areaParam, categoryParam) {
 	const areaName = getAreaNameFromParam(areaParam);
 	let partial;
-	if (categoryParam === 'canalfront-homes') {
+	if (categoryParam === homeCategory) {
+		partial = 'Homes, Houses & Beach Houses For Sale';
+	} else if (categoryParam === 'canalfront-homes') {
 		partial = 'Canalfront Homes and Houses for Sale';
 	} else if (categoryParam === 'condos') {
 		partial = 'Condos and Town Houses for Sale';
@@ -182,7 +184,9 @@ export function getTitleTag(areaParam, categoryParam) {
 export function getH1(areaParam, categoryParam) {
 	const areaName = getAreaNameFromParam(areaParam);
 	let partial;
-	if (categoryParam === 'canalfront-homes') {
+	if (categoryParam === homeCategory) {
+		partial = 'Homes, Houses & Beach Houses For Sale';
+	} else if (categoryParam === 'canalfront-homes') {
 		partial = 'Canalfront Homes For Sale';
 	} else if (categoryParam === 'condos') {
 		partial = 'Condos and Town Houses For Sale';
