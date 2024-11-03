@@ -68,7 +68,7 @@ export const allowedCategories = {
 		'oceanfront-homes',
 		'waterfront',
 		// 'investment-homes',
-		// 'land',
+		'land',
 	],
 	'nags head': [
 		homeCategory,
