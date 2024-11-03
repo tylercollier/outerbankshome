@@ -177,6 +177,8 @@ export function getTitleTag(areaParam, categoryParam) {
 		partial = 'Soundfront Homes for Sale';
 	} else if (isWaterfront(categoryParam)) {
 		partial = 'Waterfront Homes For Sale';
+	} else if (categoryParam === 'colington-harbor') {
+		partial = 'Harbor Homes For Sale';
 	}
 	return `${areaName} ${partial}`;
 }
@@ -198,6 +200,8 @@ export function getH1(areaParam, categoryParam) {
 		partial = 'Soundfront Homes for Sale';
 	} else if (isWaterfront(categoryParam)) {
 		partial = 'Water Front Homes';
+	} else if (categoryParam === 'colington-harbor') {
+		partial = 'Harbor Homes For Sale';
 	}
 	return `${areaName} ${partial}`;
 }
