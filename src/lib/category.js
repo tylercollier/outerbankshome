@@ -120,7 +120,7 @@ export const allowedCategories = {
 		// 'Sold',
 		'oceanfront-homes',
 	],
-	'hatteras': [
+	'hatteras island': [
 		homeCategory,
 		'condos',
 		'land',
