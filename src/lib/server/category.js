@@ -53,7 +53,10 @@ export async function getListings(areaParam, categoryParam) {
 			}
 			return qb.where('MLSAreaMinor', '=', 'Colington');
 		} else {
-			const city = getCity(areaParam);
+			let city = getCity(areaParam);
+			if (areaParam === 'hatteras island') {
+				city = 'Hatteras';
+			}
 			let qb2 = qb.where('City', '=', city);
 			if (areaParam === 'KillDevilHills') {
 				qb2 = qb2.where('MLSAreaMinor', 'not in', ['Colington', 'Colington Harbor']);
