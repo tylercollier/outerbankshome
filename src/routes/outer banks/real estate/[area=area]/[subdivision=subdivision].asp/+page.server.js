@@ -10,10 +10,17 @@ export const load = async ({ params }) => {
 	const city = getCity(areaParam);
 	const modifyQuery = queryBuilder => {
 		let qb
-		console.log('subdivision', subdivision)
 		qb = queryBuilder
-			.where('City', '=', city)
-			.where('PropertySubType', 'in', subdivision.propertySubType ?? ['Single Family Residence'])
+		if (areaParam === 'colington') {
+			if (subdivision.displayName === 'Colington Harbour') {
+				qb = qb.where('MLSAreaMinor', '=', 'Colington Harbor');
+			} else {
+				qb = qb.where('MLSAreaMinor', '=', 'Colington')
+			}
+		} else {
+			qb = qb.where('City', '=', city)
+		}
+		qb = qb.where('PropertySubType', 'in', subdivision.propertySubType ?? ['Single Family Residence'])
 			;
 		if (Array.isArray(subdivision.databaseName)) {
 			qb = qb

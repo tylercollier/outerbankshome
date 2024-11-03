@@ -36,7 +36,7 @@ export const allowedSubdivisions = {
 		{ slug: '4-wheel-drive-beaches', displayName: '4 Wheel Drive Beaches', databaseName: ['Carova Beach', 'North Swan Bch', 'Ocean Beach', 'Seagull', 'Swan Beach' ]   },
 
 
-		 
+
 		{ slug: 'beacon-villas', displayName: 'Beacon Villas', databaseName: 'Beacon Villas', propertySubType: ['Condominium', 'Townhouse'], titleInfix: 'condos' },
 
 		{ slug: 'monteray-pines', displayName: 'Monteray Pines', databaseName: 'Monteray Pines Condo', propertySubType: ['Condominium', 'Townhouse'], titleInfix: 'condos' },
@@ -46,8 +46,8 @@ export const allowedSubdivisions = {
 
 		//{slug: 'corolla-4-bedroom-homes', displayName: 'Corolla 4 Bedroom Homes', databaseName: 'BedRoomsTotal', 	await getSearchResultListings('Residential', queryBuilder => {	return queryBuilder	.where('PropertySubType', 'in', ['Single Family Residence'])		.where(sql(`match(BedRoomsTotal) against ('8')`));
 
-		
-		
+
+
 
 
 
@@ -68,8 +68,8 @@ export const allowedSubdivisions = {
 		{ slug: 'osprey', displayName: 'Osprey', databaseName: 'Osprey'  },
 		{ slug: 'sea-ridge', displayName: 'Sea Ridge', databaseName: 'Sea Ridge'  },
 		{ slug: 'sandy-ridge', displayName: 'Sandy Ridge', databaseName: 'Sandy Ridge' },
-		        
-		
+
+
 
 		{slug: 'barrier-isl-sta',displayName: 'Barrier Island Station',databaseName: 'Barrier Isl Sta',propertySubType: ['Condominium', 'Townhouse'],titleInfix: 'condos' },
 		{ slug: 'olde-duck-beach', displayName: 'Olde Duck Beach', databaseName: 'Olde Duck Beach'  },
@@ -137,9 +137,9 @@ export const allowedSubdivisions = {
 		{ slug: 'sanderlin-shores', displayName: 'Sanderlin Shores', databaseName: ['Sanderlin Shore', 'T N Sanderlin']  },
 		{ slug: 'kitty-hawk-landing', displayName: 'Kitty Hawk Landing', databaseName: ['Kitty Hawk Lndg', 'A & G Beacham', 'A & G Beacham 2']  },
 		{ slug: 'poor-ridge-estates', displayName: 'Poor Ridge Estates', databaseName: 'Poor Ridge Est'  },
-		
+
 		{slug: 'kitty-dunes', displayName: 'Kitty Dunes', databaseName: ['Kitty Dunes Anx', 'Kitty Dunes E','Kitty Dunes Iv', 'Kitty Dunes Ext', 'Kitty Dunes Hgt', 'Kitty Dunes Ii', 'Kitty Dunes So.', 'Kitty Dunes Vil', 'Kitty Dunes W'] },
-		
+
 
 		{ slug: 'kitty-dunes-heights', displayName: 'Kitty Dunes Heights', databaseName: 'Kitty Dunes Hgt'  },
 		{ slug: 'first-flight-ridge', displayName: 'First Flight Ridge', databaseName: 'First Flt Ridge'  },
@@ -224,7 +224,7 @@ export const allowedSubdivisions = {
 		{ slug: 'soundside-woods', displayName: 'Soundside Woods' , databaseName: 'Soundside Woods' },
 
 		{ slug: 'rustic-woods', displayName: 'Rustic Woods South', databaseName: 'Rustic Woods So', propertySubType: ['Condominium', 'Townhouse'], titleInfix: 'condos' },
-		{ slug: 'colington-harbour/', displayName: 'Colington Harbour', databaseName: 'Colington Hrbr' },
+		{ slug: 'colington-harbour', displayName: 'Colington Harbour', databaseName: 'Colington Hrbr' },
 
 		{ slug: 'colington-pointe', displayName: 'Colington Pointe', databaseName: 'Colington Pointe', propertySubType: ['Condominium', 'Townhouse'], titleInfix: 'condos' },
 
@@ -300,7 +300,7 @@ export const allowedSubdivisions = {
 		{ slug: 'windjammer', displayName: 'Windjammer Condos', databaseName: 'Windjammer Cond ', propertySubType: ['Condominium', 'Townhouse'], titleInfix: 'condos' },
 		{ slug: 'pond-island-marina', displayName: 'Pond Island Marina' , databaseName: 'Pond Isl Marina' },
 		{ slug: 'ocean-palms', displayName: 'Ocean Palms Condos', databaseName: 'Ocean Palms Condo', propertySubType: ['Condominium', 'Townhouse'], titleInfix: 'condos' },
-		
+
 		{ slug: 'moongate', displayName: 'Moongate', databaseName: 'Vil-NH MoonGate',  },
 
 		{
@@ -319,7 +319,7 @@ export const allowedSubdivisions = {
 		{ slug: 'nags-head-beach', displayName: 'Nags Head Beach', databaseName: 'Nags Head Beach' },
 
 		{ slug: 'oceanwatch', displayName: 'Oceanwatch', databaseName: 'Vil-NH Oceanwatch' },
-		
+
 	],
 	manteo: [
 		{ slug: 'pirates-cove', displayName: "Pirate's Cove", databaseName: ['PC-Pirates Cove', 'PC-Ballast Pointe Villas Condos', 'PC-Buccaneer Village Condos', 'PC-Gulf Stream Condos', 'PC-Harbour Place Condos', 'PC-Sailfish Villas Condos', 'PC-Sextant Village'] },
@@ -360,12 +360,12 @@ export const allowedSubdivisions = {
 		{ slug: 'roanoke-park', displayName: 'Roanoke Park', databaseName: ['Roanoke Park', 'Roanoke Prk Ext', 'Roanoke Prk Amn'] },
 		{ slug: 'shallowbag-bay-club', displayName: 'Shallowbag Bay Club Condos', databaseName: 'Shallowbag Bay', propertySubType: ['Condominium', 'Townhouse'], titleInfix: 'condos' },
 		{ slug: 'the-flats', displayName: 'The Flats' , databaseName: 'The Flats' },
-		{ slug: 'vista-lake',	displayName: 'Vista Lake', databaseName: 'Vista Lake Rev'}, 
+		{ slug: 'vista-lake',	displayName: 'Vista Lake', databaseName: 'Vista Lake Rev'},
 		{ slug: 'waterfront-condos', displayName: 'Waterfront Condos', databaseName:'Waterfrnt Condo', propertySubType:['Condominium', 'Townhouse'],titleInfix: 'condos' },
 		{ slug: 'wildwoods', displayName: 'Wildwoods' , databaseName: 'Wildwoods' },
 	],
 	colington: [
-		{ slug: 'colington-harbour/', displayName: 'Colington Harbour', databaseName: 'Colington Hrbr' },
+		{ slug: 'colington-harbour', displayName: 'Colington Harbour', databaseName: 'Colington Hrbr' },
 
 		{ slug: 'colington-pointe', displayName: 'Colington Pointe', databaseName: 'Colington Pointe', propertySubType: ['Condominium', 'Townhouse'], titleInfix: 'condos' },
 
@@ -419,7 +419,7 @@ export const allowedSubdivisions = {
 		{ slug: 'sanderling-ridge', displayName: 'Sanderling Ridge' , databaseName: 'Sanderling Ridge' },
 		{ slug: 'serenity-ridge',	displayName: 'Serenity Ridge', databaseName: 'Serenity Ridge'},
 		{ slug: 'tower-beach', displayName: 'Tower Beach' , databaseName: 'Tower Beach' },
-		
+
 		{ slug: 'wallace-gray-subdivision', displayName: 'Wallace Gray Subdivision ' , databaseName: 'Wallace Gray Sd ' },
 	],
 	frisco: [
@@ -522,7 +522,7 @@ export const allowedSubdivisions = {
 		{ slug: 'st-waves', displayName: 'St Waves' , databaseName: 'St Waves' },
 		{ slug: 'waves-soundside',	displayName: 'Waves Soundside', databaseName: 'Waves Soundside Inc'},
 		{ slug: 'wimble-shores-north', displayName: 'Wimble Shores North', databaseName: 'Wimble Shores N' },
-		
+
 	],
 	currituck: [
 		{ slug: 'amelia-brumsey-brothers', displayName: 'Amelia Brumsey Brothers', databaseName: 'Amelia Brumsey Brothers' },
