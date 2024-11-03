@@ -24,6 +24,9 @@ export function getCity(areaParam) {
 }
 
 export function getAreaParamFromCity(city) {
+	if (!city) {
+		return '(No city)';
+	}
 	if (city === 'Kitty Hawk') {
 		return 'KittyHawk';
 	} else if (city === 'Kill Devil Hills') {
@@ -51,5 +54,5 @@ export const allowedAreas = [
 	'rodanthe',
 	'salvo',
 	'waves',
-	'currituck',    
+	'currituck',
 ];

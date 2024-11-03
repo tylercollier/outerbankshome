@@ -5,17 +5,17 @@ export const load = async () => {
 	const singleLevelListings = await getSearchResultListings('Residential', queryBuilder => {
 		return queryBuilder
 			.where('PropertySubType', 'in', ['Single Family Residence'])
-			.where(sql(`match(ArchitecturalStyle) against ('ranch')`));
+			.where(sql(`json_contains(ArchitecturalStyle, '"Ranch"')`));
 	});
 	const elevatedListings = await getSearchResultListings('Residential', queryBuilder => {
 		return queryBuilder
 			.where('PropertySubType', 'in', ['Single Family Residence'])
-			.where(sql(`match(FoundationDetails) against ('masonry')`));
+			.where(sql(`json_contains(FoundationDetails, '"Masonry"')`));
 	});
 	const beachBoxListings = await getSearchResultListings('Residential', queryBuilder => {
 		return queryBuilder
 			.where('PropertySubType', 'in', ['Single Family Residence'])
-			.where(sql(`match(ArchitecturalStyle) against ('beach box')`));
+			.where(sql(`json_contains(ArchitecturalStyle, '"Beach Box"')`));
 	});
 	return {
 		singleLevelListings,
