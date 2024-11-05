@@ -1,16 +1,17 @@
 <script>
 	import { formatDollarsOnly } from '$lib/money';
-	import { formatDate } from '$lib/date';
-	import { formatAddressLine1 } from '$lib/address';
+	import { formatAddressForGoogleMaps, formatAddressLine1 } from '$lib/address';
 	import ImageCarousel from '$lib/components/ImageCarousel.svelte';
 	import { isClosed as isListingClosed, sqftTotal } from '$lib/listing';
 	import LdpButtons from '$lib/components/LdpButtons.svelte';
+	import GoogleMaps from '$lib/components/GoogleMaps.svelte';
 
 	export let listing;
 
 	$: addressLine1 = formatAddressLine1(listing);
 	$: isClosed = isListingClosed(listing);
 	$: sqft = sqftTotal(listing);
+	$: formattedAddress = formatAddressForGoogleMaps(listing);
 </script>
 
 <div class="flex flex-col lg:flex-row gap-4 border">
@@ -50,4 +51,5 @@
 		<!-- Shannon plans to ask Greg if he wants the date here -->
 		<!--<div>{isClosed ? 'Closing' : 'Status'} Date: {formatDate(listing.ModificationTimestamp)}</div>-->
 	</div>
+	<GoogleMaps lat={listing.Latitude} lng={listing.Longitude} title={formattedAddress}/>
 </div>

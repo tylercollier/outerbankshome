@@ -80,6 +80,13 @@ hr.orange {
 	background: $headerorange;
 }
 
+// Google Maps
+// Hide the default close button in InfoWindow because it's too big/ugly.
+// We just want to show a small address.
+.gm-style-iw-chr > button {
+	display: none !important;
+}
+
 @media screen and (width >= 1024px) {
 	.mycontainer {
 		grid-template-columns: auto 4fr;

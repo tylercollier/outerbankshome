@@ -7,6 +7,11 @@ export function formatAddressLine1(listing) {
 	return address;
 }
 
+export function formatAddressForGoogleMaps(listing) {
+	const l = listing;
+	return `${l.StreetNumber} ${l.StreetDirPrefix ?? ''} ${l.StreetName}, ${l.City} ${l.StateOrProvince} ${l.PostalCode}`
+}
+
 export function formatAddress(listing) {
 	let address = formatAddressLine1(listing);
 	address += ' in ' + listing.City;
