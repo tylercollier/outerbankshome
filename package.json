@@ -45,6 +45,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.8",
     "@sveltejs/adapter-node": "^5.2.0",
     "axios": "^1.7.2",
     "bigger-picture": "^1.1.17",

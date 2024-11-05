@@ -4,10 +4,30 @@ import _ from 'lodash';
 
 let db;
 
+export function makeCreatePoolOptionsFromStr(connectionStr) {
+	const url = new URL(connectionStr);
+	const options = {
+		host: url.hostname,
+		port: parseInt(url.port),
+		// Don't use leading slash
+		database: url.pathname.slice(1),
+		user: url.username,
+		password: url.password,
+
+		// By default, in the mysql2 lib, decimals are returned as strings so as not to lose precision. We don't care about
+		// that level of precision, and want them as decimals for convenience.
+		decimalNumbers: true,
+	};
+	return options;
+};
+
 export function getDb() {
 	if (!db) {
+		const poolOptions = makeCreatePoolOptionsFromStr(
+			process.env.VITE_DB_CONNECTION_STRING
+		);
 		const dialect = new MysqlDialect({
-			pool: createPool(process.env.VITE_DB_CONNECTION_STRING).pool,
+			pool: createPool(poolOptions).pool,
 		});
 
 		function log(event) {
