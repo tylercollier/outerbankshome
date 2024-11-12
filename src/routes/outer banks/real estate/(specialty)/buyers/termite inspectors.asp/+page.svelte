@@ -16,7 +16,7 @@
 			<p>Arrow Pest Control 252-255-1414</p>
 			<p>&nbsp; </p>
 		</div>
-	<HR WIDTH="75%" COLOR="#FF7E40" SIZE="8">
+	<hr WIDTH="75%" COLOR="#FF7E40" SIZE="8" />
 
 		<div class="story">
 			<p>

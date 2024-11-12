@@ -14,7 +14,7 @@
 		<p> Recent changes to the Federal F program, that is run by FEMA, has implications on some newer ground floor enclosures. Some areas that were initially zoned "X" were changed in 2006 to zone "AE". This means that some newer houses with living area built on the ground might now require f with expensive premiums.</p>
 
 	</div>
-	<HR WIDTH="75%" COLOR="#FF7E40" SIZE="8">
+	<hr WIDTH="75%" COLOR="#FF7E40" SIZE="8" />
 
 		<div class="story">
 			<p>

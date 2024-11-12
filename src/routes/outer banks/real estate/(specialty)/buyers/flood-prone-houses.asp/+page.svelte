@@ -43,7 +43,7 @@
 		<p>Tidelines form when debris from a storm is left standing on  the land. You can usually find tidelines along on the ocean side and the sound  side after a big storm. The tide line might not be in the yard of the home you  are looking at. Look around the neighborhood. The Tide Line might be across the  street if the tide flowed under this house. A Tide Line usually consists of  what looks like straw. This is old marsh grass that got washed out of the  marshes during the storm. This stuff moves around in big rafts blown by the wind  and eventually ends up on shore.</p>
 		<p></p>
 	</div>
-	<HR WIDTH="75%" COLOR="#FF7E40" SIZE="8">
+	<hr WIDTH="75%" COLOR="#FF7E40" SIZE="8" />
 
 		<div class="story">
 			<p>

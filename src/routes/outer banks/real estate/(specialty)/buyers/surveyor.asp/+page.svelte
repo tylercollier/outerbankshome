@@ -12,7 +12,7 @@
 		<p>William Jones Land  Surveying --252-441-3673</p>
 		<p>Kirk Foreman Land  Surveying Co. --252-261-1221</p>
 	</div>
-	<HR WIDTH="75%" COLOR="#FF7E40" SIZE="8">
+	<hr WIDTH="75%" COLOR="#FF7E40" SIZE="8" />
 
 		<div class="story">
 			<p>

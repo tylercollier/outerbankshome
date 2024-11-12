@@ -17,7 +17,7 @@
 		<p>At Shore Realty, we try to help our buyers limit their financial exposure while satisfying the seller at the same time. </p>
 
 	</div>
-	<HR WIDTH="75%" COLOR="#FF7E40" SIZE="8">
+	<hr WIDTH="75%" COLOR="#FF7E40" SIZE="8" />
 
 		<div class="story">
 			<p>

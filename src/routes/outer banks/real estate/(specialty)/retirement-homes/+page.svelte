@@ -16,14 +16,14 @@
 	<p>The Outer Banks has a lot to offer to retirees. Low taxes, low crime, great community  senior centers and plenty of flat level nature for those who want to get outside and stay active. </p>
 	<p>I am not going to tell you how or what to do with your Golden Years, I am sure you already know, but I will share what years of experience have shown. The biggest commonality amongst people is the deteriorating condition of  our knees. None of our knees are getting any better which brings up our first topic.</p>
 
-	<hr width="75%" color="#FF7E40" size="8">
+	<hr width="75%" color="#FF7E40" size="8" />
 
 	<p><b>Stairs</b></p>
 
 	<p>The Outer Banks is full of stairs, and stairs, like my forehead and prostrate, seem to be getting bigger every year. Stairs are one of the major concerns shared by soon to be seniors when shopping for their retirement home. Having hospitals and such nearby is great, but having to navigate stairs during the course of your routine day can make life miserable. </p>
 	<p>Add in an extra set or 2 of stairs to get up to the kitchen and living area on the top floor, and it can become insurmountable. These types of houses are commonly referred to as 'Reverse Floor Plans' and are best suited to the more physically inclined unless they are equipped with an elevator.</p>
 
-	<hr width="75%" color="#FF7E40" size="8">
+	<hr width="75%" color="#FF7E40" size="8" />
 
 
 	<p><b>One Level Living</b></p>

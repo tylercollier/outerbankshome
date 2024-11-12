@@ -43,7 +43,7 @@
 		<p>Vacation Rental By Owner There are a number of web sites on the internet that let owners list their rental houses for a small fee. If your rental company will cooperate these companies will send new renters to your house while your rental rental company takes care of the reservations and all of the other related stuff. This is another way to increase the internet exposure of your vacation rental house. </p>
 
 	</div>
-	<HR WIDTH="75%" COLOR="#FF7E40" SIZE="8">
+	<hr WIDTH="75%" COLOR="#FF7E40" SIZE="8" />
 
 		<div class="story">
 			<p>

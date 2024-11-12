@@ -155,7 +155,7 @@
 			If you discover a wrong phone number or a missing phone number please tell us about it. <a href="mailto:realpro@outerbankshome.com">e-mail</a>
 		</p>
 	</div>
-	<HR WIDTH="75%" COLOR="#FF7E40" SIZE="8">
+	<hr WIDTH="75%" COLOR="#FF7E40" SIZE="8" />
 
 		<div class="story">
 			<p>

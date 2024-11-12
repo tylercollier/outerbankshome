@@ -25,7 +25,7 @@
 		<p>Brumsey & Brumsey 232-2252</p>
 
 	</div>
-	<HR WIDTH="75%" COLOR="#FF7E40" SIZE="8">
+	<hr WIDTH="75%" COLOR="#FF7E40" SIZE="8" />
 
 		<div class="story">
 			<p>

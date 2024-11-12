@@ -13,7 +13,7 @@
 		<p>Dress for the cold even if it is warm outside. The insulation in the houses hold the cold  in and make some of the winterized houses very dank and cold. A jacket is good so you can take it off after we leave a house. It is pretty odd putting on a jacket to go into a house to look around. </p>
 
 	</div>
-	<HR WIDTH="75%" COLOR="#FF7E40" SIZE="8">
+	<hr WIDTH="75%" COLOR="#FF7E40" SIZE="8" />
 
 		<div class="story">
 			<p>

@@ -30,7 +30,7 @@
 		<p>Westside properties are located on the sound side (west) of the main road. Renters do not like to cross this road to go to the beach. These homes do not make good vacation rental homes which is why they are typically less expensive. Here is where you can find year round residential neighborhoods.</p>
 
 	</div>
-	<HR WIDTH="75%" COLOR="#FF7E40" SIZE="8">
+	<hr WIDTH="75%" COLOR="#FF7E40" SIZE="8" />
 
 		<div class="story">
 			<p>

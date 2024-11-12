@@ -12,11 +12,11 @@
 		<p>The rental season hasn't kicked into gear yet so looking at houses is very convenient. As the spring gets closer to summer there will be renters checking in and it will get progressively harder to look at properties. Looking at rental houses will soon be restricted to the 4 hour time frame between check out and check in on Saturday and Sunday only. Most rental companies won't let us look at houses when when they occupied by a vacationer. Weekday showings stop in late June. Beating the summer crowd means you will be able to achieve your goal without traffic denying you the opportunity to see everything before you make a decision. </p>
 
 		<p>&nbsp;</p>
-		<HR WIDTH="75%" COLOR="#FF7E40" SIZE="8">
+		<hr WIDTH="75%" COLOR="#FF7E40" SIZE="8" />
   
  
  </div>
-	<HR WIDTH="75%" COLOR="#FF7E40" SIZE="8">
+	<hr WIDTH="75%" COLOR="#FF7E40" SIZE="8" />
 
 		<div class="story">
 			<p>

@@ -15,7 +15,7 @@
 		<p>I used the aerial program on the county website to measure the house and then took a tape measure and actually measured the house. both times it was only 1800 sq ft. The seller was paying taxes on 1,000 sq ft of house that did not exist. This was when the seller found a survey that confirmed my measurements.</p>
 
 	</div>
-	<HR WIDTH="75%" COLOR="#FF7E40" SIZE="8">
+	<hr WIDTH="75%" COLOR="#FF7E40" SIZE="8" />
 
 		<div class="story">
 			<p>
