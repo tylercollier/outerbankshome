@@ -5,7 +5,7 @@
 	<p></p>
 	<h2>List of Outer Banks Utilities and Phone Numbers</h2>
 	<div class="feature">
-		
+
 		<h4>
 			<b>POWER </b>
 		</h4>
@@ -26,7 +26,6 @@
 			<li>Dare County Mainland</li>
 			<li>Currituck County Mainland </li>
 
-			</p>
 
 		</ul>
 
@@ -50,7 +49,6 @@
 		</ul>
 		<p>
 			<b>WATER/PUBLIC</b>
-		</p>
 		</p>
 
 		Dare County Water Dept. has five offices.
@@ -128,8 +126,6 @@
 			Contact us for information regarding areas providing sewer utilities.
 			Most properties are on private septic there are some subdivisions with private sewer.
 		</p>
-		</p>
-		</p>
 		<b>TELEPHONE</b>
 		<p>Embarq (formerly Sprint), 800-215-8037, serves: </p>
 		<ul>
@@ -137,7 +133,6 @@
 				All of Dare and Currituck Counties
 			</li>
 		</ul>
-		</p>
 		<b>CABLE TELEVISION</b>
 		<p>Cable--Charter Communications, 888-438-2427, serves: </p>
 		<ul>
@@ -362,4 +357,3 @@
 		</div>
 
 	</div>
-</div>

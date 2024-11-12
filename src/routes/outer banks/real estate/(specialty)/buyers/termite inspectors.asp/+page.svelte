@@ -6,7 +6,7 @@
 	<h2 align="center">Outer Banks Termite Inspectors </h2>
 
 	<div class="feature">
-		
+
 			<p>Don's Pest Control 252-441-8940</p>
 			<p>Four Seasons 252-480-2889 </p>
 			<p>Outer Banks Pest Control 252-473-1633</p>
@@ -223,4 +223,3 @@
 		</div>
 
 	</div>
-</div>

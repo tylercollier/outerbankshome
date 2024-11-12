@@ -5,8 +5,8 @@
 <div id="content">
 	<h2 align="center" id="pageName">Home Inspections</h2>
 	<div class="feature">
-		
-		
+
+
 		<p>&nbsp;</p>
 		<p>WE ENTHUSIASTICALLY ENCOURAGE ALL HOME BUYERS TO HAVE THE HOUSE  CHECKED OUT BY A LICENSED PROFESSIONAL HOME INSPECTOR. </p>
 		<p>
@@ -57,7 +57,7 @@
 		</p>
 
 	</div>
-	
+
 		<div class="story">
 			<p>
 				<b>More Articles for buyers</b>
@@ -249,4 +249,4 @@
 			</p>
 		</div>
 
-	
+</div>

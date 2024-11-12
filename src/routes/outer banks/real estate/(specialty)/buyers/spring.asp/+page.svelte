@@ -4,7 +4,7 @@
 <div id="content">
 	<h2 align="center" id="pageName">Spring Real Estate Season </h2>
 	<div class="feature">
-		
+
 		<p>
 			Spring is  the time to get your foot in the door and have all of the prepaid rental reservation money  refunded to you at closing. Learn more about how to collect a <a href="https://www.outerbankshome.com/outer banks/real estate/buyers/rental-rebate.asp" title="Rental Rebate" > RENTAL REBATE.</a> Start shopping in the early part of the spring for that rental house so you can arrange the closing of it in the late spring. You will get the advanced rental money that the seller has been collecting right before the rest of the money starts coming in. So you get a check at closing and once a month for the next 3-5 months.
 		</p>
@@ -13,8 +13,8 @@
 
 		<p>&nbsp;</p>
 		<hr WIDTH="75%" COLOR="#FF7E40" SIZE="8" />
-  
- 
+
+
  </div>
 	<hr WIDTH="75%" COLOR="#FF7E40" SIZE="8" />
 
@@ -197,7 +197,6 @@
 			<p>Long distance traveling  to look at houses you might consider purchasing requires some planning. Here are a few weather related tips for planning your trip. </p>
 
 			<a href="https://www.outerbankshome.com/outer banks/real estate/buyers/summer.asp" title="Summer">Summer</a> Once the  the summer vacation season arrives it becomes much harder to look at homes for sale... <a href="https://www.outerbankshome.com/outer banks/real estate/buyers/summer.asp" title="Summer" class="style5">read more</a>
-			</p>
 			<p>
 				<a href="https://www.outerbankshome.com/outer banks/real estate/buyers/fall.asp" title="Fall">Fall</a>  This is when a seller is in their best position to make a deal... <a href="https://www.outerbankshome.com/outer banks/real estate/buyers/fall.asp" title="Fall" class="style5">read more</a>
 			</p>

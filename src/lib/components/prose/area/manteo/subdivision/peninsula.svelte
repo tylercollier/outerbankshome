@@ -1,7 +1,7 @@
 <div class="story">
 	<a href="https://www.outerbankshome.com/outer banks/real estate/manteo/Peninsula Covenants.pdf" title="Peninsula Covenants">Peninsula Covenants</a>   - - - <a href="https://www.outerbankshome.com/Covenant-Disclaimer.asp" target="_blank">
 		<b>    *</b>
-	</a></p>
+	</a>
 
 
 	<p>

@@ -4,7 +4,7 @@
 <div id="content">
 	<h2 align="center" id="pageName">OBX Winter Real Estate Season </h2>
 	<div class="feature">
-		
+
 		<p>Winter on the Outer Banks is not the fast paced hustle and bustle most people are accustomed to in the summer. Most of the summer type retail shops are closed in the winter. Don't be surprised to find your favorite restaurant closed for a couple of weeks or months which coincide with your visit. </p>
 
 		<p>Not much real estate gets sold in the winter on the Outer Banks. Most of the people who come here, have to travel from areas which experience bad weather and it affects their travel here. The majority of the people wait until the spring when the weather starts to get a little nicer. </p>
@@ -208,7 +208,6 @@
 			</p>
 		</div>
 
-		</p>
 	</div>
 
 

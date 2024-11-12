@@ -1219,7 +1219,6 @@
 							<a href="https://www.outerbankshome.com/outer banks/real estate/sold-history.asp" title="Outer Banks Sold Statistics">Outer Banks Sold Statistics </a>
 						</li>
 
-						</li>
 					</ul>
 
 					<h2 align="left">
@@ -4198,7 +4197,6 @@
 							<a href="https://www.outerbankshome.com/outer banks/real estate/waves/waves-land-sold-statistics.asp" title="Waves Sold Land Statistics">Waves Sold Land/Lot Statistics</a>
 						</li>
 					</ul>
-					</ul>
 
 
 
@@ -4567,5 +4565,4 @@
 			</li>
 		</ul>
 	</div>
-</div>
 </div>

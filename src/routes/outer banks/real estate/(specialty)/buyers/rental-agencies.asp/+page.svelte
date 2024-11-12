@@ -4,7 +4,7 @@
 <div id="content">
 	<h2 align="center" id="pageName">Your New Vacation Home And Your Rental Agency </h2>
 	<div class="feature">
-		
+
 		<p>So you have been coming on vacation to the Outer Banks and now you want to buy a rental house. The idea of owning an vacation house that will help pay for itself sounds appealing but you are not sure how  the rental part works.</p>
 		<p> We have been doing it here for so long we take it for granted but I will try to give you the basics about owning a home that is in a rental program and rented out weekly during the summer months. Some of this will apply to some or all of the rental agencies. At the very least you should be able to ask a few more questions of your rental agency about your rental house after you read this. </p>
 		<p>There are many different styles of managing a vacation rental house. Each rental department has their own characteristics and there are deferent strategies involved. </p>
@@ -243,5 +243,3 @@
 			</p>
 		</div>
 	</div>
-
-</div>

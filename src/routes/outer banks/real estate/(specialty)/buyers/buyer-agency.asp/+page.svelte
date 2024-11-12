@@ -5,7 +5,7 @@
 <div id="content">
 	<p>EXCLUSIVE  BUYER  AGENCY?</p>
 	<div class="feature">
-		
+
 		<p>Signing an exclusive buyer agency agreement/contract sounds like a good idea. Right? Having an agent work for you is a good idea, isn't it? The problem is the agent doesn't work exclusively for you but you will have to work exclusively with the agent. Sign the agreement and then find out the agent is a bum and you are committed to this person for the life of the exclusive buyer agency agreement/contract. Because of this some agents will pressure you to sign an exclusive buyer agency agreement/contract to protect themselves at your expense. </p>
 		<p> If you are told there is a law, Rule or some other excuse that you have to sign an exclusive buyer agency agreement before the agent can help you, run away as fast as you can. There is no such law, Rule or reason. </p>
 		<p>
@@ -174,4 +174,4 @@
 			Here you will find some of the various forms used in purchasing real estate in North Carolina... <a href="https://www.outerbankshome.com/outer banks/real estate/forms/buyers/" title="Forms Used in purchasing Real Estate on the Outer Banks " class="style5">HERE </a>
 		</p>
 	</div>
-
+</div>

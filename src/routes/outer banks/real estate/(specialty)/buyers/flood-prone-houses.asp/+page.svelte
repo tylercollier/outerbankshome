@@ -4,7 +4,7 @@
 <div id="content">
 	<h2 align="center" id="pageName">8 Ways To Avoid A Flood Prone House On The Outer Banks Of NC</h2>
 	<div class="feature">
-		
+
 		<p>With so many new agents coming to the Outer Banks lacking the local knowledge of the area's geography it is easy to find yourself buying a home that gets  wet. Across the Outer Banks there are different types of flooding that occurs  and where a property is located will determine what type of flooding, if any,  occurs. Some areas never experience flooding while other areas are flooded  repeatedly. This guide was created is to help home buyers avoid buying a home that is prone to flooding on the on the Outer Banks. </p>
 		<p>
 			<strong>1. Driveway Berm</strong>
@@ -238,5 +238,4 @@
 			</p>
 		</div>
 
-		</p>
 	</div>
