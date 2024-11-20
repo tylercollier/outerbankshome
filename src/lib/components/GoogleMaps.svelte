@@ -53,4 +53,4 @@
 	}
 </script>
 
-<div class="w-full h-[500px] sm:min-h-[250px]" bind:this={element} />
+<div class="w-full h-[300px] sm:min-h-[250px]" bind:this={element} />
