@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite dev",
+    "prod": "npx @dotenvx/dotenvx run -f .env.production -- node build/",
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
@@ -45,6 +46,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@dotenvx/dotenvx": "^1.24.4",
     "@googlemaps/js-api-loader": "^1.16.8",
     "@sveltejs/adapter-node": "^5.2.0",
     "axios": "^1.7.2",
