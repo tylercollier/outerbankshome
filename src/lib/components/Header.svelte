@@ -39,7 +39,7 @@
 		<div><a href={makeLink('colington/')} title="Colington Home Sales">Colington</a></div>
 		<div><a href={makeLink('nags head/')} title="Nags Head Home Sales">Nags Head</a></div>
 		<div><a href={makeLink('manteo/')} title="Manteo Home Sales">Manteo</a></div>
-		<div><a href={makeLink('hatteras-island/')} title="Hatteras Island Home Sales">Hatteras</a></div>
+		<div><a href={makeLink('hatteras island/')} title="Hatteras Island Home Sales">Hatteras</a></div>
 		<div><a href="{makeLink('sellers/')}" title="Sellers">Sellers</a></div>
 		<div><a href={makeLink('buyers/')} title="Buyers">Buyers</a></div>
 	</div>
@@ -52,7 +52,7 @@
 		<div><a href={makeLink('colington/')} title="Colington Home Sales">Colington</a></div>
 		<div><a href={makeLink('nags head/')} title="Nags Head Home Sales">Nags Head</a></div>
 		<div><a href={makeLink('manteo/')} title="Manteo Home Sales">Manteo</a></div>
-		<div><a href={makeLink('hatteras-island/')} title="Hatteras Island Home Sales">Hatteras</a></div>
+		<div><a href={makeLink('hatteras island/')} title="Hatteras Island Home Sales">Hatteras</a></div>
 		<div><a href="{makeLink('sellers/')}" title="Sellers">Sellers</a></div>
 		<div><a href={makeLink('buyers/')} title="Buyers">Buyers</a></div>
 	</div>
@@ -68,7 +68,7 @@
 			<div><a href={makeLink('colington/')} title="Colington Home Sales">Colington</a></div>
 			<div><a href={makeLink('nags head/')} title="Nags Head Home Sales">Nags Head</a></div>
 			<div><a href={makeLink('manteo/')} title="Manteo Home Sales">Manteo</a></div>
-			<div><a href={makeLink('hatteras-island/')} title="Hatteras Island Home Sales">Hatteras</a></div>
+			<div><a href={makeLink('hatteras island/')} title="Hatteras Island Home Sales">Hatteras</a></div>
 			<div><a href="{makeLink('sellers/')}" title="Sellers">Sellers</a></div>
 			<div><a href={makeLink('buyers/')} title="Buyers">Buyers</a></div>
 		</nav>
@@ -137,7 +137,7 @@
 				color: black;
 			}
 			a.hover {
-				@apply text-obxorange; 
+				@apply text-obxorange;
 			}
 		}
 	}
