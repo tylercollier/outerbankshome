@@ -20,7 +20,7 @@
 			<p>Attorney Fees $400 to $700 </p>
 
 			<p>
-				Federal and North Carolina income tax depends on your individual situation. Consult your accountant.</span>
+				Federal and North Carolina income tax depends on your individual situation. Consult your accountant.
 			</p>
 
 		</div>
@@ -214,3 +214,5 @@
 			</ul>
 			<p></p>
 		</div>
+	</div>
+</div>

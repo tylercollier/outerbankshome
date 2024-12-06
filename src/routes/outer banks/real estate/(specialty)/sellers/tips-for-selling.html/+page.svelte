@@ -8,8 +8,6 @@
 		<h1>Tips for Selling a House</h1>
 		<div class="feature">
 
-			<p>
-
 				<ul>
 					<li>Fresh paint is pretty much the only  thing that pays for itself. &nbsp;Fresh paint  works wonders with buyers.</li>
 					<li>Have all carpets cleaned. To a buyer,  dirty carpet looks like a $15,000 fix/discount.</li>
@@ -21,7 +19,6 @@
 					</li>
 					<li>Have someone fix everything that  needs to be fixed. It is expensive to pay a buyer to fix these things. For  every $1,000 in repairs a buyer sees when looking at your house, they expect a $5,000  discount. </li>
 				</ul>
-			</p>
 		</div>
 		<div class="story">
 
@@ -213,3 +210,5 @@
 			</ul>
 			<p></p>
 		</div>
+	</div>
+</div>
