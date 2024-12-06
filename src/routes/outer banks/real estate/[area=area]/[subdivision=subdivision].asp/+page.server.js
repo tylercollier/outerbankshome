@@ -34,8 +34,8 @@ export const load = async ({ params }) => {
 	const activeListings = await getSearchResultListings('Residential', filterActive(modifyQuery));
 	const soldListings = await getSearchResultListings('Residential', filterSold(modifyQuery));
 
-	const proseRelativePath = `../../../../../lib/components/prose/area/${areaParam}/subdivision/${subdivision.slug}.svelte`;
-	const prosePath = pathLib.join(import.meta.dirname, proseRelativePath);
+	const proseRelativePath = `area/${areaParam}/subdivision/${subdivision.slug}.svelte`;
+	const prosePath = pathLib.join(import.meta.env.VITE_PROSE_DIR_ABS_PATH, proseRelativePath);
 	let hasProse = false;
 	try {
 		await fsPromises.access(prosePath, fsPromises.constants.R_OK);
