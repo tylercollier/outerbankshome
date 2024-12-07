@@ -15,8 +15,8 @@ export const load = async ({ params }) => {
 			.where('PropertySubType', 'in', ['Single Family Residence'])
 		return serverSubarea.buildQueryFn(qb);
 	};
-	const activeListings = await getSearchResultListings('Residential', filterActive(modifyQuery));
-	const soldListings = await getSearchResultListings('Residential', filterSold(modifyQuery));
+	const activeListingsWithMeta = await getSearchResultListings('Residential', filterActive(modifyQuery));
+	const soldListingsWithMeta = await getSearchResultListings('Residential', filterSold(modifyQuery));
 
 	const proseRelativePath = `../../../../../lib/components/prose/area/${areaParam}/subarea/${serverSubarea.slug}.svelte`;
 	const prosePath = pathLib.join(import.meta.dirname, proseRelativePath);
@@ -30,8 +30,8 @@ export const load = async ({ params }) => {
 	const clientSubarea = clientAllowedSubareas[params.area].find(x => x.slug === params.subarea);
 	return {
 		areaParam,
-		activeListings,
-		soldListings,
+		activeListingsWithMeta,
+		soldListingsWithMeta,
 		subarea: clientSubarea,
 		hasProse,
 	};

@@ -4,7 +4,7 @@
 
 	export let data;
 
-	$: ({ areaParam, activeListings, soldListings, subarea, proseComponent } = data);
+	$: ({ areaParam, activeListingsWithMeta, soldListingsWithMeta, subarea, proseComponent } = data);
 	$: subareaName = allowedSubareas[areaParam].find(x => x.slug === subarea.slug).displayName;
 </script>
 
@@ -14,7 +14,7 @@
 
 <h1>{subareaName}  For Sale</h1>
 
-<AreaListingResultsPage {areaParam} {activeListings} {soldListings}>
+<AreaListingResultsPage {areaParam} {activeListingsWithMeta} {soldListingsWithMeta}>
 	<svelte:fragment slot="topProse">
 		{#if proseComponent}
 			<svelte:component this={proseComponent} />

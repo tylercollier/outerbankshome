@@ -1,12 +1,18 @@
-import { format, add } from 'date-fns';
+import { format, add, parseISO } from 'date-fns';
 
 export function formatDate(date) {
 	if (!date) {
 		return '';
 	}
 	if (!(date instanceof Date)) {
-		// We're throwing an error to track down such usages
-		throw new Error('date is not a Date: ' + date);
+		// Originally I intended to force a type of Date, but I'm now allowing data to be serialized, which will coerce it
+		// to be a string.
+		if (typeof date === 'string') {
+			date = parseISO(date);
+		} else {
+			// We're throwing an error to track down such usages
+			throw new Error('date is not a string or Date: ' + date);
+		}
 	}
 	return format(date, 'M/d/yyyy');
 }

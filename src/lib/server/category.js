@@ -65,17 +65,17 @@ export async function getListings(areaParam, categoryParam) {
 		}
 	};
 	const propertyType = categoryParam === 'land' ? 'Land' : 'Residential';
-	const activeListings = await getSearchResultListings(propertyType, filterActive(buildQueryFn));
-	const soldListings = await getSearchResultListings(propertyType, filterSold(buildQueryFn));
+	const activeListingsWithMeta = await getSearchResultListings(propertyType, filterActive(buildQueryFn));
+	const soldListingsWithMeta = await getSearchResultListings(propertyType, filterSold(buildQueryFn));
 	return {
-		activeListings,
-		soldListings,
+		activeListingsWithMeta,
+		soldListingsWithMeta,
 	};
 }
 
 export const load = async (areaParam, categoryParam) => {
 	return404IfInvalidCategory(areaParam, categoryParam);
-	const { activeListings, soldListings } = await getListings(areaParam, categoryParam);
+	const { activeListingsWithMeta, soldListingsWithMeta } = await getListings(areaParam, categoryParam);
 	const baseFileName = getCategoryProseBaseFileName(categoryParam);
 	const proseRelativePath = `../components/prose/area/${areaParam}/category/${baseFileName}.svelte`;
 	const prosePath = pathLib.join(import.meta.dirname, proseRelativePath);
@@ -90,8 +90,8 @@ export const load = async (areaParam, categoryParam) => {
 	return {
 		areaParam,
 		categoryParam,
-		activeListings,
-		soldListings,
+		activeListingsWithMeta,
+		soldListingsWithMeta,
 		hasProse,
 	};
 };

@@ -4,7 +4,7 @@
 
 	export let data;
 
-	$: ({ areaParam, activeListings, soldListings, subdivision, proseComponent } = data);
+	$: ({ areaParam, activeListingsWithMeta, soldListingsWithMeta, subdivision, proseComponent } = data);
 	$: subdivisionName = allowedSubdivisions[areaParam].find(x => x.slug === subdivision.slug).displayName;
 	$: titleInfix = subdivision.titleInfix ?? 'homes';
 	$: h1Infix = subdivision.h1Infix ?? 'Homes, Houses & Beach Houses';
@@ -23,7 +23,7 @@
 	style="width:30%;" border="0" float="left"
 />
 
-<AreaListingResultsPage {areaParam} {activeListings} {soldListings}>
+<AreaListingResultsPage {areaParam} {activeListingsWithMeta} {soldListingsWithMeta}>
 	<svelte:fragment slot="bottomProse">
 		{#if proseComponent}
 			<svelte:component this={proseComponent} />

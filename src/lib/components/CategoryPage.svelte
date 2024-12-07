@@ -3,7 +3,7 @@
 	import AreaListingResultsPage from '$lib/components/AreaListingResultsPage.svelte';
 
 	export let data;
-	$: ({ areaParam, activeListings, categoryParam, soldListings, proseComponent } = data);
+	$: ({ areaParam, activeListingsWithMeta, categoryParam, soldListingsWithMeta, proseComponent } = data);
 </script>
 
 <svelte:head>
@@ -12,7 +12,7 @@
 
 <h1>{getH1(areaParam, categoryParam)}</h1>
 
-<AreaListingResultsPage {areaParam} {activeListings} {soldListings}>
+<AreaListingResultsPage {areaParam} {activeListingsWithMeta} {soldListingsWithMeta}>
 	<svelte:fragment slot="bottomProse">
 		<div class="my-12">
 		{#if proseComponent}

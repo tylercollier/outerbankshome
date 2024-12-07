@@ -1,4 +1,4 @@
-import { Kysely, MysqlDialect } from 'kysely';
+import { Kysely, MysqlDialect, sql } from 'kysely';
 import { createPool } from 'mysql2/promise';
 import _ from 'lodash';
 
@@ -79,6 +79,51 @@ export async function getListing(mlsId) {
 	return listing;
 }
 
+export async function getListingsByKeys(listingKeys) {
+	let fieldNames = [
+		'ListingId',
+		'Property.ModificationTimestamp',
+		'ListPrice',
+		'PropertyType',
+		'PropertySubType',
+		'PublicRemarks',
+		'CloseDate',
+		'ClosePrice',
+		'Property.StandardStatus',
+
+		'StreetNumber',
+		'StreetDirPrefix',
+		'StreetName',
+		'City',
+		'StateOrProvince',
+		'PostalCode',
+
+		// Which fields to use? In getSearchResultListings() we choose fields based on PropertyType. We don't know it here.
+		// We could keep track of it along the way and pass it in here. But for now, for simplicity, what if we just grab
+		// all possible fields. Does that cause a problem? Is it good enough for now?
+		//
+		// Residential
+		'BedroomsTotal',
+		'BathroomsFull',
+		'HtdLvArSF',
+		'Unheated_LvArSF',
+		// Land
+		'LotSizeAcres',
+
+		// Media
+		'MediaURL',
+	];
+	const listings = await getDb()
+		.selectFrom('Property')
+		.rightJoin('Media', 'Property.ListingKey', 'Media.ResourceRecordKey')
+		.where('ListingKey', 'in', listingKeys)
+		.where('Order', '=', 0)
+		.select(fieldNames)
+		.orderBy(sql`FIELD(ListingKey, ${listingKeys})`)
+		.execute()
+	return listings;
+}
+
 export async function getSearchResultListings(propertyType, buildQueryFn) {
 	let fieldNames = [
 		'ListingId',
@@ -108,24 +153,36 @@ export async function getSearchResultListings(propertyType, buildQueryFn) {
 			'Unheated_LvArSF',
 		]);
 	} else if (propertyType === 'Land') {
-		fieldNames = fieldNames.concat(['LotSizeAcres']);
+		fieldNames = fieldNames.concat([
+			'LotSizeAcres',
+		]);
 	}
+	const pageSize = parseInt(import.meta.env.VITE_LISTINGS_PAGE_SIZE) ?? 12;
 	let listingsQueryBuilder = getDb()
 		.selectFrom('Property')
 		.rightJoin('Media', 'Property.ListingKey', 'Media.ResourceRecordKey')
 		.where('PropertyType', '=', propertyType)
 		.where('Order', '=', 0)
-		.select(fieldNames)
+		.select('ListingKey')
 		.orderBy('Property.ModificationTimestamp', 'desc')
-		.limit(parseInt(import.meta.env.VITE_DEFAULT_DB_SELECT_LIMIT));
-	if (import.meta.env.VITE_DEFAULT_DB_SELECT_LIMIT) {
-		listingsQueryBuilder = listingsQueryBuilder.limit(
-			parseInt(import.meta.env.VITE_DEFAULT_DB_SELECT_LIMIT),
-		);
-	}
+		.limit(pageSize * 10)
+	;
 	listingsQueryBuilder = buildQueryFn(listingsQueryBuilder);
-	const listings = await listingsQueryBuilder.execute();
-	return listings;
+	const listingKeys = (await listingsQueryBuilder.execute()).map(x => x.ListingKey);
+	const firstListingKeys = _.take(listingKeys, pageSize)
+	const listings = await getDb()
+		.selectFrom('Property')
+		.rightJoin('Media', 'Property.ListingKey', 'Media.ResourceRecordKey')
+		.where('ListingKey', 'in', firstListingKeys)
+		.where('Order', '=', 0)
+		.select(fieldNames)
+		// I'm not sure how to parameterize this raw thing. Probably not worth looking into with this nascent Kysely lib.
+		.orderBy(sql.raw(`FIELD(ListingKey, ${firstListingKeys.map(x => `${x}`).join(', ')})`))
+		.execute()
+	return {
+		listings,
+		listingKeys,
+	};
 }
 
 export const filterActive = buildQueryFn => {

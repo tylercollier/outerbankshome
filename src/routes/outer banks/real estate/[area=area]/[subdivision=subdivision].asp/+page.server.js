@@ -31,8 +31,8 @@ export const load = async ({ params }) => {
 		}
 		return qb;
 	};
-	const activeListings = await getSearchResultListings('Residential', filterActive(modifyQuery));
-	const soldListings = await getSearchResultListings('Residential', filterSold(modifyQuery));
+	const activeListingsWithMeta = await getSearchResultListings('Residential', filterActive(modifyQuery));
+	const soldListingsWithMeta = await getSearchResultListings('Residential', filterSold(modifyQuery));
 
 	const proseRelativePath = `area/${areaParam}/subdivision/${subdivision.slug}.svelte`;
 	const prosePath = pathLib.join(import.meta.env.VITE_PROSE_DIR_ABS_PATH, proseRelativePath);
@@ -45,8 +45,8 @@ export const load = async ({ params }) => {
 	}
 	return {
 		areaParam,
-		activeListings,
-		soldListings,
+		activeListingsWithMeta,
+		soldListingsWithMeta,
 		subdivision,
 		hasProse,
 	};

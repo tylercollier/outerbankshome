@@ -4,21 +4,21 @@
 	import SubdivisionLinks from '$lib/components/SubdivisionLinks.svelte';
 
 	export let areaParam;
-	export let activeListings;
-	export let soldListings;
+	export let activeListingsWithMeta;
+	export let soldListingsWithMeta;
 </script>
 
 <slot name="topProse" />
 
 <CategoryLinks {areaParam} />
 
-<AreaListingResults listings={activeListings} {areaParam} />
+<AreaListingResults listings={activeListingsWithMeta} {areaParam} />
 
 <div class="bg-darkblue px-8 py-2 mt-10 mb-4 text-white">
 	<h1>Sold Recently</h1>
 </div>
 
-<AreaListingResults listings={soldListings} {areaParam} />
+<AreaListingResults listings={soldListingsWithMeta} {areaParam} />
 
 <slot name="bottomProse" />
 
