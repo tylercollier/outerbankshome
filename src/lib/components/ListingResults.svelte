@@ -6,11 +6,10 @@
 	export let listingsWithMeta;
 	export let urlInfix = '';
 
-	const { listings: initialListings, listingKeys } = listingsWithMeta;
-	let listingsToShow = initialListings;
-	let isLoading = false;
-	let numAttemptedToLoadSoFar = listingsToShow.length;
-
+	$: ({ listings: initialListings, listingKeys } = listingsWithMeta);
+	$: listingsToShow = initialListings;
+	$: isLoading = false;
+	$: numAttemptedToLoadSoFar = listingsToShow.length;
 	$: showLoadMore = numAttemptedToLoadSoFar < listingKeys.length;
 
 	async function loadMore() {
