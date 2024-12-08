@@ -2,7 +2,7 @@
 
 
 export const load = async () => {
-	const listings = await getSearchResultListings('Residential', queryBuilder => {
+	const listingsWithMeta = await getSearchResultListings('Residential', queryBuilder => {
 		return queryBuilder
 			.where('PropertySubType', 'in', ['Co-Ownership (5 Weeks +)'])
 			;
