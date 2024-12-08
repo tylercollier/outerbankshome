@@ -113,14 +113,17 @@ export async function getListingsByKeys(listingKeys) {
 		// Media
 		'MediaURL',
 	];
-	const listings = await getDb()
-		.selectFrom('Property')
-		.rightJoin('Media', 'Property.ListingKey', 'Media.ResourceRecordKey')
-		.where('ListingKey', 'in', listingKeys)
-		.where('Order', '=', 0)
-		.select(fieldNames)
-		.orderBy(sql`FIELD(ListingKey, ${listingKeys})`)
-		.execute()
+	let listings = [];
+	if (listingKeys && listingKeys.length > 0) {
+		listings = await getDb()
+			.selectFrom('Property')
+			.rightJoin('Media', 'Property.ListingKey', 'Media.ResourceRecordKey')
+			.where('ListingKey', 'in', listingKeys)
+			.where('Order', '=', 0)
+			.select(fieldNames)
+			.orderBy(sql`FIELD(ListingKey, ${listingKeys})`)
+			.execute()
+	}
 	return listings;
 }
 
@@ -170,15 +173,17 @@ export async function getSearchResultListings(propertyType, buildQueryFn) {
 	listingsQueryBuilder = buildQueryFn(listingsQueryBuilder);
 	const listingKeys = (await listingsQueryBuilder.execute()).map(x => x.ListingKey);
 	const firstListingKeys = _.take(listingKeys, pageSize)
-	const listings = await getDb()
-		.selectFrom('Property')
-		.rightJoin('Media', 'Property.ListingKey', 'Media.ResourceRecordKey')
-		.where('ListingKey', 'in', firstListingKeys)
-		.where('Order', '=', 0)
-		.select(fieldNames)
-		// I'm not sure how to parameterize this raw thing. Probably not worth looking into with this nascent Kysely lib.
-		.orderBy(sql.raw(`FIELD(ListingKey, ${firstListingKeys.map(x => `${x}`).join(', ')})`))
-		.execute()
+	let listings = [];
+	if (firstListingKeys.length) {
+		listings = await getDb()
+			.selectFrom('Property')
+			.rightJoin('Media', 'Property.ListingKey', 'Media.ResourceRecordKey')
+			.where('ListingKey', 'in', firstListingKeys)
+			.where('Order', '=', 0)
+			.select(fieldNames)
+			.orderBy(sql.raw(`FIELD(ListingKey, ${firstListingKeys})`))
+			.execute()
+	}
 	return {
 		listings,
 		listingKeys,
