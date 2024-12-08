@@ -1,8 +1,12 @@
 <script>
-	import AreaListingResults from '$lib/components/AreaListingResults.svelte';
+	import ListingResults from '$lib/components/ListingResults.svelte';
 
 	export let data;
-	$: ({ singleLevelListings, elevatedListings, beachBoxListings } = data);
+	$: ({
+		singleLevelListingsWithMeta,
+		elevatedListingsWithMeta,
+		beachBoxListingsWithMeta,
+	} = data);
 </script>
 
 <svelte:head>
@@ -33,7 +37,7 @@
 	<p>If the ground is 10 feet above sea level then a house can be built right on the ground. The houses below are ranchers, scroll down further for other style houses.  </p>
 </div>
 
-<AreaListingResults listings={singleLevelListings} areaParam="" />
+<ListingResults listingsWithMeta={singleLevelListingsWithMeta} />
 
 <hr class="orange" />
 
@@ -41,11 +45,11 @@
 <p>There are areas on the Outer Banks where the ground has some elevation.  If the ground elevation is 7 feet, which is very common, then a 3 foot high masonry foundation will supply enough elevation to meet the flood insurance requirements and shorten the entrance stairs. </p>
 <p>You can have a rambler or rancher where everything is spread out on one level except that it is built a couple of feet up off the ground. The houses below should be those on masonry foundations with minimal elevation. Scroll down further for different style homes. </p>
 
-<AreaListingResults listings={elevatedListings} areaParam="" />
+<ListingResults listingsWithMeta={elevatedListingsWithMeta} />
 
 <hr class="orange" />
 
 <p><b>Beach Box</b></p>
 <p>The Outer Banks traditional "Beach Box" offers one level living up on pilings. You still have to climb a set of steps to get into your house but once you are inside all of your living area is on one level.   If your one of the lucky ones without knee problems this could be a perfect match for you.  </p>
 
-<AreaListingResults listings={beachBoxListings} areaParam="" />
+<ListingResults listingsWithMeta={beachBoxListingsWithMeta} />

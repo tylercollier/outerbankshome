@@ -6,6 +6,6 @@ export const load = async () => {
 			.where('Type', '=', 'Boat Slip')
 	});
 	return {
-		listings,
+		listingsWithMeta,
 	}
 };

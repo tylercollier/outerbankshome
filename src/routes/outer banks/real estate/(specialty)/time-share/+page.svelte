@@ -1,8 +1,8 @@
 <script>
-import AreaListingResults from '$lib/components/AreaListingResults.svelte';
+import ListingResults from '$lib/components/ListingResults.svelte';
 
 export let data;
-$: ({ listings } = data);
+$: ({ listingsWithMeta } = data);
 </script>
 
 <svelte:head>
@@ -13,4 +13,4 @@ $: ({ listings } = data);
 
 <div>This list below contains the co-ownership homes currently for sale. </div>
 
-<AreaListingResults listings={listings} areaParam="" />
+<ListingResults {listingsWithMeta} />

@@ -8,6 +8,6 @@ export const load = async () => {
 			;
 	});
 	return {
-		listings,
+		listingsWithMeta,
 	};
 }

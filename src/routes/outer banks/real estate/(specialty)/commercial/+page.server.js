@@ -6,6 +6,6 @@ export const load = async () => {
 			// .where('PropertySubType', '=', 'Restaurant')
 	});
 	return {
-		listings,
+		listingsWithMeta,
 	}
 };
