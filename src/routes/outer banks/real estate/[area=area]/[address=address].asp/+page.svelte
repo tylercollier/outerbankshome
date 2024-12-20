@@ -85,7 +85,7 @@
 						<input type="text" name="last_name" id="last_name" value={form?.data?.last_name ?? ''} />
 					</div>
 					<div class="text-red-500 text-right mt-2">
-						{#if form?.errors?.last_name}s
+						{#if form?.errors?.last_name}
 							{form.errors.last_name}
 						{/if}
 					</div>
